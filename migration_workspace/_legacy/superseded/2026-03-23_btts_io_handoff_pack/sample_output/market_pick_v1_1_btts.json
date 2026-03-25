@@ -1,0 +1,60 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "pick_id": "btts_878317_yes",
+  "created_at": "2026-03-23T19:15:00Z",
+  "module_id": "btts",
+  "module_version": "btts_engine.v1.1",
+  "event_id": 878317,
+  "match_label": "Celta Vigo vs Barcelona",
+  "competition": "La Liga",
+  "kickoff_datetime": "2026-03-23T20:00:00Z",
+  "market_family": "btts",
+  "market": "match_btts",
+  "selection": "BTTS Yes",
+  "line": null,
+  "odds": 1.83,
+  "eligibility": true,
+  "score_raw": 77.72,
+  "confidence_raw": 4,
+  "risk_raw": 2,
+  "edge_raw": "acceptable",
+  "rationale_summary": "Bilateralidade ofensiva suficiente, concessão útil dos dois lados e timing favorável sem bloqueio estrutural forte.",
+  "main_drivers": [
+    "bos_strong",
+    "bvs_supportive",
+    "fgt_positive",
+    "tsi_stable_enough"
+  ],
+  "penalties": [
+    "dominance_moderate"
+  ],
+  "data_quality_flag": "partial",
+  "module_rank_internal": 1,
+  "expiry_context": "refresh_if_odds_move_5pct",
+  "module_specific_payload": {
+    "btts_direction": "yes",
+    "scoring_support": {
+      "bos": 79.4,
+      "ami_bilateral": 72.7,
+      "xg_gap_aggregated": 68.1
+    },
+    "concession_support": {
+      "bvs": 76.8,
+      "fgt_btts": 73.6,
+      "sbi": 64.5
+    },
+    "tsi_bilateral": 66.5,
+    "bci_raw": 77.72,
+    "caps_applied": [],
+    "warnings": [
+      "moderate_dominance"
+    ],
+    "input_context": {
+      "data_sources_used": [
+        "btts_match_master_2024.json",
+        "btts_team_profiles_overall_2024.json"
+      ],
+      "data_profile": "semi_real_master_plus_profiles"
+    }
+  }
+}

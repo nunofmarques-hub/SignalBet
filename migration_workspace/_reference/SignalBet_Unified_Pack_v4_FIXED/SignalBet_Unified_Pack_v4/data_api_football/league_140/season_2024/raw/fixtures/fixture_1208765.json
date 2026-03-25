@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208765,
+    "referee": "Isidro Díaz de Mera",
+    "timezone": "UTC",
+    "date": "2025-04-14T19:00:00+00:00",
+    "timestamp": 1744657200,
+    "periods": {
+      "first": 1744657200,
+      "second": 1744660800
+    },
+    "venue": {
+      "id": 19217,
+      "name": "Riyadh Air Metropolitano",
+      "city": "Madrid"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 5
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 31",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 530,
+      "name": "Atletico Madrid",
+      "logo": "https://media.api-sports.io/football/teams/530.png",
+      "winner": true
+    },
+    "away": {
+      "id": 720,
+      "name": "Valladolid",
+      "logo": "https://media.api-sports.io/football/teams/720.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 4,
+    "away": 2
+  },
+  "score": {
+    "halftime": {
+      "home": 2,
+      "away": 1
+    },
+    "fulltime": {
+      "home": 4,
+      "away": 2
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

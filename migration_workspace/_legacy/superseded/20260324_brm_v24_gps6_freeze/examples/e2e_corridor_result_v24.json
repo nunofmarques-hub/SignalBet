@@ -1,0 +1,11 @@
+{
+  "selector_run_id": "gpsv6_run_20260324_001",
+  "decision_batch_id": "brm_batch_20260324_001",
+  "execution_batch_schema_version": "execution_intake_batch.v1",
+  "input_shortlist_size": 4,
+  "approved_or_reduced": 2,
+  "blocked": 1,
+  "reserve": 1,
+  "execution_candidates": 2,
+  "corridor_status": "PASS"
+}

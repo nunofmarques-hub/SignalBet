@@ -1,0 +1,28 @@
+{
+  "profiles": {
+    "daily_run": {
+      "description": "Corre o fluxo completo do dia",
+      "priority": "high",
+      "requires_execution": true,
+      "strict_mode": true
+    },
+    "validation_run": {
+      "description": "Corre checks e subset de modulos",
+      "priority": "medium",
+      "requires_execution": false,
+      "strict_mode": false
+    },
+    "dry_run": {
+      "description": "Simula pipeline sem execution real",
+      "priority": "medium",
+      "requires_execution": false,
+      "strict_mode": false
+    },
+    "module_debug_run": {
+      "description": "Corre apenas modulos selecionados",
+      "priority": "low",
+      "requires_execution": false,
+      "strict_mode": false
+    }
+  }
+}

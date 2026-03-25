@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "run_profile": {
+      "type": "string"
+    },
+    "project_root": {
+      "type": "string"
+    },
+    "forced_modules": {
+      "type": "array"
+    }
+  },
+  "required": [
+    "run_profile"
+  ]
+}

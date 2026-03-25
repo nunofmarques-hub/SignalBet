@@ -1,0 +1,30 @@
+{
+  "run_id": "RUN-20260324T122053Z-79B007",
+  "run_profile": "validation_run",
+  "started_at": "2026-03-24T12:20:53.642053+00:00",
+  "finished_at": "2026-03-24T12:20:53.647816+00:00",
+  "preflight_status": "PASS",
+  "data_api_reference": "Data_API_Official_Trunk_v1",
+  "official_trunk_status": "PASS",
+  "data_api_status": "PASS",
+  "modules_run": [
+    "v12",
+    "cards"
+  ],
+  "modules_skipped": [
+    "btts",
+    "corners"
+  ],
+  "candidates_generated": 3,
+  "gps_status": "PASS",
+  "bankroll_status": "PASS",
+  "execution_status": "SKIPPED",
+  "approved_count": 1,
+  "reduced_count": 1,
+  "reserve_count": 1,
+  "warnings": [
+    "cards_validation_mode_only"
+  ],
+  "errors": [],
+  "final_summary": "Validation pipeline concluído em draft operacional com trunk oficial validado e subset de módulos corrido."
+}

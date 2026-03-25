@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208784,
+    "referee": "Miguel Ortiz",
+    "timezone": "UTC",
+    "date": "2025-04-22T19:30:00+00:00",
+    "timestamp": 1745350200,
+    "periods": {
+      "first": 1745350200,
+      "second": 1745353800
+    },
+    "venue": {
+      "id": 19939,
+      "name": "Estadi Olímpic Lluís Companys",
+      "city": "Barcelona"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 5
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 33",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 529,
+      "name": "Barcelona",
+      "logo": "https://media.api-sports.io/football/teams/529.png",
+      "winner": true
+    },
+    "away": {
+      "id": 798,
+      "name": "Mallorca",
+      "logo": "https://media.api-sports.io/football/teams/798.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

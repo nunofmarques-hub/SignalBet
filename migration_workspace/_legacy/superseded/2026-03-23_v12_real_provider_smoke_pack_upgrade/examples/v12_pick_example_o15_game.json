@@ -1,0 +1,40 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "created_at": "2026-03-23T21:00:00Z",
+  "module_id": "v12",
+  "module_version": "v12.10-input-adapter-pack",
+  "event_id": 878317,
+  "match_label": "Cagliari vs Napoli",
+  "competition": "Serie A",
+  "kickoff_datetime": "2026-03-20T19:45:00Z",
+  "market_family": "goals",
+  "eligibility": true,
+  "data_quality_flag": "clean",
+  "module_rank_internal": 1,
+  "expiry_context": "refresh_if_odds_move_5pct",
+  "pick_id": "v12_878317_match_over_15_serie_a",
+  "market": "match_goals_over",
+  "selection": "Over 1.5",
+  "line": 1.5,
+  "odds": 1.36,
+  "score_raw": 73,
+  "confidence_raw": 3,
+  "risk_raw": 2,
+  "edge_raw": "4.8%",
+  "rationale_summary": "Dinâmica global de 2+ golos apoiada por perfil de liga e capacidade ofensiva agregada.",
+  "main_drivers": [
+    "IPO combinado",
+    "LigaScore over jogo",
+    "TLI adequado"
+  ],
+  "penalties": [
+    "jogo com algum corredor under"
+  ],
+  "module_specific_payload": {
+    "motor_id": "MATCH_OVER_ENGINE",
+    "motor_family": "match_over",
+    "market_variant": "MATCH_OVER_15",
+    "goal_profile": "offensive_global",
+    "model_window": "season_plus_last5"
+  }
+}

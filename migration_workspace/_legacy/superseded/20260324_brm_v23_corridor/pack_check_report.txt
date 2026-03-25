@@ -1,0 +1,8 @@
+PACK CHECK REPORT - BRM v2.3
+status: PASS
+
+smoke_stdout:
+SMOKE PASS - BRM v2.3 corridor pack
+
+smoke_stderr:
+

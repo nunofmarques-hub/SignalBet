@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208515,
+    "referee": "Alejandro Muñiz",
+    "timezone": "UTC",
+    "date": "2024-08-27T17:00:00+00:00",
+    "timestamp": 1724778000,
+    "periods": {
+      "first": 1724778000,
+      "second": 1724781600
+    },
+    "venue": {
+      "id": 19940,
+      "name": "Estadi Mallorca Son Moix",
+      "city": "Palma de Mallorca"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": null
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 3",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 798,
+      "name": "Mallorca",
+      "logo": "https://media.api-sports.io/football/teams/798.png",
+      "winner": null
+    },
+    "away": {
+      "id": 536,
+      "name": "Sevilla",
+      "logo": "https://media.api-sports.io/football/teams/536.png",
+      "winner": null
+    }
+  },
+  "goals": {
+    "home": 0,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 0,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

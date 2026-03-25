@@ -1,0 +1,16 @@
+{
+  "module_id": "cards",
+  "status": "PASS",
+  "warnings": [
+    "sample controlado para validation_run"
+  ],
+  "errors": [],
+  "candidates": [
+    {
+      "pick_id": "CARDS-001",
+      "market": "cards_over_3_5",
+      "fixture": "Porto vs Braga",
+      "confidence": 0.69
+    }
+  ]
+}

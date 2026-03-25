@@ -1,0 +1,33 @@
+{
+  "fixture": {
+    "fixture_id": 878317,
+    "match_label": "Cagliari vs Napoli",
+    "competition": "Serie A",
+    "kickoff_datetime": "2026-03-20T19:45:00Z",
+    "league_id": 135,
+    "league_name": "Serie A",
+    "season": 2025,
+    "country": "Italy"
+  },
+  "teams": {
+    "home": {
+      "team_id": 489,
+      "name": "Cagliari"
+    },
+    "away": {
+      "team_id": 492,
+      "name": "Napoli"
+    }
+  },
+  "standings_context": {},
+  "team_stats_season": {},
+  "team_stats_recent": {},
+  "league_market_profile": {},
+  "odds_snapshot": {
+    "source": "api_market_snapshot",
+    "selected_odd": 1.91
+  },
+  "timing_profile": {},
+  "scoreline_profile": {},
+  "risk_flags": {}
+}

@@ -1,0 +1,15 @@
+{
+  "module_id": "cards",
+  "status": "PASS",
+  "warnings": [],
+  "errors": [],
+  "candidates_count": 1,
+  "candidates": [
+    {
+      "match": "Atalanta vs Torino",
+      "market": "Over Cards",
+      "confidence": 0.74,
+      "score_band": "B"
+    }
+  ]
+}

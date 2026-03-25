@@ -1,0 +1,20 @@
+[
+  {
+    "match_id": 1208494,
+    "source_module": "v12",
+    "market": "under_3_5",
+    "score": 78,
+    "confidence": "alta",
+    "eligible": true,
+    "notes": "perfil conservador de jogo"
+  },
+  {
+    "match_id": 1208501,
+    "source_module": "v12",
+    "market": "over_1_5_game",
+    "score": 71,
+    "confidence": "media",
+    "eligible": true,
+    "notes": "jogo com tendência ofensiva"
+  }
+]

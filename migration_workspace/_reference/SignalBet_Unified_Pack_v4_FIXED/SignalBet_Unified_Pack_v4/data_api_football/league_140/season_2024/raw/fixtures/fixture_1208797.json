@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208797,
+    "referee": "Víctor García",
+    "timezone": "UTC",
+    "date": "2025-05-02T19:00:00+00:00",
+    "timestamp": 1746212400,
+    "periods": {
+      "first": 1746212400,
+      "second": 1746216000
+    },
+    "venue": {
+      "id": 1488,
+      "name": "Estadio de Vallecas",
+      "city": "Madrid"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 8
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 34",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 728,
+      "name": "Rayo Vallecano",
+      "logo": "https://media.api-sports.io/football/teams/728.png",
+      "winner": true
+    },
+    "away": {
+      "id": 546,
+      "name": "Getafe",
+      "logo": "https://media.api-sports.io/football/teams/546.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

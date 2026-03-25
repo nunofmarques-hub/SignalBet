@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208611,
+    "referee": "Gil Manzano",
+    "timezone": "UTC",
+    "date": "2024-11-24T20:00:00+00:00",
+    "timestamp": 1732478400,
+    "periods": {
+      "first": 1732478400,
+      "second": 1732482000
+    },
+    "venue": {
+      "id": 1460,
+      "name": "San Mamés Barria",
+      "city": "Bilbao"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 4
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 14",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 531,
+      "name": "Athletic Club",
+      "logo": "https://media.api-sports.io/football/teams/531.png",
+      "winner": true
+    },
+    "away": {
+      "id": 548,
+      "name": "Real Sociedad",
+      "logo": "https://media.api-sports.io/football/teams/548.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

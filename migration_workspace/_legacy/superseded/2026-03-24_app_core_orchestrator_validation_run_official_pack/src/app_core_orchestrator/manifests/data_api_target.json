@@ -1,0 +1,11 @@
+{
+  "provider_type": "official_trunk",
+  "provider_name": "Data_API_Official_Trunk_v1",
+  "provider_object": "providers/contracts/storage",
+  "required_fields": [
+    "providers_registry.json",
+    "README.md",
+    "contracts/*",
+    "storage/*"
+  ]
+}

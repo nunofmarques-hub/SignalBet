@@ -1,0 +1,28 @@
+{
+  "schema_version": "execution-audit-feed.v1",
+  "required_fields": [
+    "execution_id",
+    "decision_id",
+    "pick_id",
+    "event_id",
+    "module_origin",
+    "market_family",
+    "market",
+    "execution_status",
+    "settlement_status",
+    "approved_odds_reference",
+    "executed_odds",
+    "stake_approved",
+    "stake_executed",
+    "result_profit_loss",
+    "return_amount",
+    "execution_reason_code",
+    "decision_timestamp",
+    "executed_at",
+    "settled_at"
+  ],
+  "notes": {
+    "goal": "Stable export contract for analytics and audit based on real operational history",
+    "source_of_truth": "Execution / Tracking Layer"
+  }
+}

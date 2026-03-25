@@ -1,0 +1,22 @@
+{
+  "v12": [
+    "get_fixtures_by_league_season",
+    "get_standings_snapshot",
+    "get_team_statistics",
+    "get_fixture_statistics"
+  ],
+  "corners": [
+    "get_fixtures_by_league_season",
+    "get_fixture_statistics"
+  ],
+  "btts": [
+    "get_fixtures_by_league_season",
+    "get_fixture_events",
+    "get_team_statistics",
+    "get_standings_snapshot"
+  ],
+  "cards": [
+    "get_fixtures_by_league_season",
+    "get_fixture_events"
+  ]
+}

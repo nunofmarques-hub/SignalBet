@@ -1,0 +1,22 @@
+{
+  "schema_version": "execution-audit-feed.v1",
+  "execution_id": "EXEC-20260323-0001",
+  "decision_id": "DEC-20260323-0101",
+  "pick_id": "PICK-20260323-0101",
+  "event_id": "878317",
+  "module_origin": "OVER15_TEAM",
+  "market_family": "GOALS",
+  "market": "OVER_1_5_TEAM",
+  "execution_status": "SETTLED",
+  "settlement_status": "WIN",
+  "approved_odds_reference": 1.33,
+  "executed_odds": 1.31,
+  "stake_approved": 5.0,
+  "stake_executed": 5.0,
+  "result_profit_loss": 1.55,
+  "return_amount": 6.55,
+  "execution_reason_code": null,
+  "decision_timestamp": "2026-03-23T19:42:10Z",
+  "executed_at": "2026-03-23T19:44:02Z",
+  "settled_at": "2026-03-23T22:31:04Z"
+}

@@ -1,0 +1,43 @@
+{
+  "execution_schema_version": "execution_intake.v2.2",
+  "execution_batch_id": "exec_batch_20260324_001",
+  "generated_at": "2026-03-24T10:36:00Z",
+  "execution_candidates": [
+    {
+      "decision_id": "bank_20260324_001",
+      "pick_id": "v12_20260324_001",
+      "module_origin": "v12",
+      "decision_status": "APPROVED",
+      "execution_ready": true,
+      "stake_approved": 1.25,
+      "event_id": 991100,
+      "match_label": "Roma vs Lecce",
+      "market": "match_under",
+      "selection": "Under 3.5 Goals",
+      "line": 3.5,
+      "odds": 1.62,
+      "bank_state_mode": "Normal",
+      "rules_triggered": []
+    },
+    {
+      "decision_id": "bank_20260324_002",
+      "pick_id": "corners_20260324_002",
+      "module_origin": "corners",
+      "decision_status": "APPROVED_REDUCED",
+      "execution_ready": true,
+      "stake_approved": 0.5,
+      "event_id": 991101,
+      "match_label": "Osasuna vs Girona",
+      "market": "match_corners_under",
+      "selection": "Under 10.5 Corners",
+      "line": 10.5,
+      "odds": 1.91,
+      "bank_state_mode": "Alerta",
+      "rules_triggered": [
+        "REDUCE_HIGH_RISK",
+        "REDUCE_PARTIAL_CORRELATION",
+        "REDUCE_BANK_ALERT"
+      ]
+    }
+  ]
+}

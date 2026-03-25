@@ -1,0 +1,13 @@
+{
+  "execution_id": "EXEC-20260323-0001",
+  "event_id": "878317",
+  "fixture_status": "FT",
+  "fixture_status_detail": "Match Finished",
+  "is_final": true,
+  "home_goals": 2,
+  "away_goals": 0,
+  "result_timestamp": "2026-03-23T22:31:04Z",
+  "result_payload_version": "settlement-hook.v1",
+  "source_system": "DATA_API_LAYER",
+  "source_reference": "fixture:878317:FT"
+}

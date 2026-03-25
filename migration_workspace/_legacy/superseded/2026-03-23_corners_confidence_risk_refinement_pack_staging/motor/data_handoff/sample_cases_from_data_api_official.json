@@ -1,0 +1,287 @@
+{
+  "schema_version": "corners_input.v1",
+  "provider": "data_api",
+  "provider_contract": "official",
+  "cases": [
+    {
+      "case_id": "case_1_forte",
+      "fixture_context": {
+        "fixture_id": 878320,
+        "competition": "La Liga",
+        "season": 2022,
+        "kickoff_datetime": "2026-03-23T20:00:00Z",
+        "home_team": {
+          "team_id": 543,
+          "name": "Espanyol",
+          "role": "slight_underdog"
+        },
+        "away_team": {
+          "team_id": 548,
+          "name": "Almeria",
+          "role": "slight_favorite"
+        },
+        "status": "NS",
+        "competitive_state": "open_league_points"
+      },
+      "home_team_window": {
+        "sample_size": 8,
+        "corners_for_avg": 6.6,
+        "corners_against_avg": 5.9,
+        "corners_for_home_away_avg": 7.0,
+        "corners_against_home_away_avg": 5.8,
+        "total_match_corners_avg": 12.4,
+        "recent_corners_for": [
+          7,
+          6,
+          8,
+          6,
+          6
+        ],
+        "recent_corners_against": [
+          5,
+          6,
+          7,
+          5,
+          6
+        ],
+        "shots_avg": 14.5,
+        "shots_on_target_avg": 5.8,
+        "crossing_volume": 76.0,
+        "final_third_pressure": 80.0,
+        "territorial_proxy": 72.0,
+        "hit_rate_over_8_5": 0.88,
+        "hit_rate_over_9_5": 0.76,
+        "hit_rate_over_10_5": 0.64,
+        "as_favorite_corner_delta": 0.4,
+        "as_underdog_corner_delta": 0.8,
+        "opponent_adjustment_quality": 70.0
+      },
+      "away_team_window": {
+        "sample_size": 8,
+        "corners_for_avg": 5.7,
+        "corners_against_avg": 6.6,
+        "corners_for_home_away_avg": 5.3,
+        "corners_against_home_away_avg": 7.0,
+        "total_match_corners_avg": 12.2,
+        "recent_corners_for": [
+          4,
+          6,
+          5,
+          6,
+          7
+        ],
+        "recent_corners_against": [
+          7,
+          6,
+          8,
+          5,
+          7
+        ],
+        "shots_avg": 12.4,
+        "shots_on_target_avg": 4.6,
+        "crossing_volume": 66.0,
+        "final_third_pressure": 70.0,
+        "territorial_proxy": 60.0,
+        "hit_rate_over_8_5": 0.76,
+        "hit_rate_over_9_5": 0.64,
+        "hit_rate_over_10_5": 0.52,
+        "as_favorite_corner_delta": 0.2,
+        "as_underdog_corner_delta": 0.6,
+        "opponent_adjustment_quality": 63.0
+      },
+      "match_context": {
+        "expected_pace_shape": 74.0,
+        "tactical_asymmetry": 56.0,
+        "expected_game_state_volatility": 68.0,
+        "likely_rotation": false,
+        "low_data_quality": false,
+        "weather_disruption": false,
+        "unstable_tactical_profile": false
+      }
+    },
+    {
+      "case_id": "case_2_media",
+      "fixture_context": {
+        "fixture_id": 878317,
+        "competition": "La Liga",
+        "season": 2022,
+        "kickoff_datetime": "2026-03-23T18:00:00Z",
+        "home_team": {
+          "team_id": 529,
+          "name": "Celta Vigo",
+          "role": "underdog"
+        },
+        "away_team": {
+          "team_id": 541,
+          "name": "Barcelona",
+          "role": "favorite"
+        },
+        "status": "NS",
+        "competitive_state": "normal_league_points"
+      },
+      "home_team_window": {
+        "sample_size": 8,
+        "corners_for_avg": 4.8,
+        "corners_against_avg": 5.2,
+        "corners_for_home_away_avg": 5.0,
+        "corners_against_home_away_avg": 5.0,
+        "total_match_corners_avg": 9.6,
+        "recent_corners_for": [
+          5,
+          4,
+          4,
+          5,
+          6
+        ],
+        "recent_corners_against": [
+          5,
+          4,
+          6,
+          4,
+          6
+        ],
+        "shots_avg": 11.0,
+        "shots_on_target_avg": 3.9,
+        "crossing_volume": 60.0,
+        "final_third_pressure": 62.0,
+        "territorial_proxy": 51.0,
+        "hit_rate_over_8_5": 0.54,
+        "hit_rate_over_9_5": 0.41,
+        "hit_rate_over_10_5": 0.28,
+        "as_favorite_corner_delta": -0.2,
+        "as_underdog_corner_delta": 0.15,
+        "opponent_adjustment_quality": 64.0
+      },
+      "away_team_window": {
+        "sample_size": 8,
+        "corners_for_avg": 5.5,
+        "corners_against_avg": 4.3,
+        "corners_for_home_away_avg": 5.7,
+        "corners_against_home_away_avg": 4.5,
+        "total_match_corners_avg": 9.7,
+        "recent_corners_for": [
+          5,
+          6,
+          4,
+          5,
+          6
+        ],
+        "recent_corners_against": [
+          4,
+          4,
+          5,
+          3,
+          5
+        ],
+        "shots_avg": 13.2,
+        "shots_on_target_avg": 5.2,
+        "crossing_volume": 64.0,
+        "final_third_pressure": 72.0,
+        "territorial_proxy": 66.0,
+        "hit_rate_over_8_5": 0.64,
+        "hit_rate_over_9_5": 0.4,
+        "hit_rate_over_10_5": 0.26,
+        "as_favorite_corner_delta": 0.3,
+        "as_underdog_corner_delta": -0.1,
+        "opponent_adjustment_quality": 72.0
+      },
+      "match_context": {
+        "expected_pace_shape": 55.0,
+        "tactical_asymmetry": 48.0,
+        "expected_game_state_volatility": 47.0,
+        "likely_rotation": false,
+        "low_data_quality": false,
+        "weather_disruption": false,
+        "unstable_tactical_profile": false
+      }
+    },
+    {
+      "case_id": "case_3_rejeitada",
+      "fixture_context": {
+        "fixture_id": 878312,
+        "competition": "La Liga",
+        "season": 2022,
+        "kickoff_datetime": "2026-03-23T16:00:00Z",
+        "home_team": {
+          "team_id": 5431,
+          "name": "Real Betis",
+          "role": "favorite"
+        },
+        "away_team": {
+          "team_id": 532,
+          "name": "Valencia",
+          "role": "underdog"
+        },
+        "status": "NS",
+        "competitive_state": "late_cagey_matchup"
+      },
+      "home_team_window": {
+        "sample_size": 3,
+        "corners_for_avg": 5.0,
+        "corners_against_avg": 4.2,
+        "corners_for_home_away_avg": 5.4,
+        "corners_against_home_away_avg": 4.0,
+        "total_match_corners_avg": 9.0,
+        "recent_corners_for": [
+          3,
+          7,
+          5
+        ],
+        "recent_corners_against": [
+          5,
+          3,
+          4
+        ],
+        "shots_avg": 11.5,
+        "shots_on_target_avg": 4.0,
+        "crossing_volume": 61.0,
+        "final_third_pressure": 64.0,
+        "territorial_proxy": 57.0,
+        "hit_rate_over_8_5": 0.4,
+        "hit_rate_over_9_5": 0.33,
+        "hit_rate_over_10_5": 0.2,
+        "as_favorite_corner_delta": 0.1,
+        "as_underdog_corner_delta": -0.2,
+        "opponent_adjustment_quality": 31.0
+      },
+      "away_team_window": {
+        "sample_size": 3,
+        "corners_for_avg": 3.9,
+        "corners_against_avg": 5.3,
+        "corners_for_home_away_avg": 3.6,
+        "corners_against_home_away_avg": 5.6,
+        "total_match_corners_avg": 8.8,
+        "recent_corners_for": [
+          2,
+          4,
+          6
+        ],
+        "recent_corners_against": [
+          4,
+          6,
+          6
+        ],
+        "shots_avg": 9.2,
+        "shots_on_target_avg": 3.2,
+        "crossing_volume": 49.0,
+        "final_third_pressure": 53.0,
+        "territorial_proxy": 44.0,
+        "hit_rate_over_8_5": 0.33,
+        "hit_rate_over_9_5": 0.2,
+        "hit_rate_over_10_5": 0.1,
+        "as_favorite_corner_delta": -0.3,
+        "as_underdog_corner_delta": -0.1,
+        "opponent_adjustment_quality": 29.0
+      },
+      "match_context": {
+        "expected_pace_shape": 46.0,
+        "tactical_asymmetry": 38.0,
+        "expected_game_state_volatility": 39.0,
+        "likely_rotation": true,
+        "low_data_quality": true,
+        "weather_disruption": false,
+        "unstable_tactical_profile": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "version": "expected_result_map.v1.8",
+  "cases": [
+    {
+      "case": "selector_case_01_duplicate_fixture_input.json",
+      "expected_status": "BLOCKED",
+      "expected_rule": "BLOCK_DUPLICATE_FIXTURE"
+    },
+    {
+      "case": "selector_case_02_odds_out_of_range_input.json",
+      "expected_status": "RESERVE",
+      "expected_rule": "BLOCK_ODD_RANGE"
+    },
+    {
+      "case": "selector_case_03_partial_correlation_input.json",
+      "expected_status": "APPROVED_REDUCED",
+      "expected_rule": "REDUCE_PARTIAL_CORRELATION"
+    },
+    {
+      "case": "selector_case_04_premium_valid_input.json",
+      "expected_status": "APPROVED",
+      "expected_rule": null
+    },
+    {
+      "case": "selector_case_05_invalid_enum_input.json",
+      "expected_status": "BLOCKED",
+      "expected_rule": "BLOCK_INVALID_INPUT"
+    },
+    {
+      "case": "selector_case_06_missing_field_input.json",
+      "expected_status": "BLOCKED",
+      "expected_rule": "BLOCK_INVALID_INPUT"
+    }
+  ]
+}

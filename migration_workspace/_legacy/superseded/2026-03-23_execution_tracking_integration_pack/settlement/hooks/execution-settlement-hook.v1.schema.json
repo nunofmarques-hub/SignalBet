@@ -1,0 +1,100 @@
+{
+  "title": "execution-settlement-hook.v1",
+  "type": "object",
+  "required": [
+    "execution_id",
+    "event_id",
+    "fixture_status",
+    "fixture_status_detail",
+    "is_final",
+    "result_timestamp",
+    "result_payload_version"
+  ],
+  "properties": {
+    "execution_id": {
+      "type": "string"
+    },
+    "event_id": {
+      "type": "string"
+    },
+    "fixture_status": {
+      "type": "string",
+      "enum": [
+        "FT",
+        "AET",
+        "PEN",
+        "CANC",
+        "PST",
+        "ABD",
+        "AWD",
+        "WO"
+      ]
+    },
+    "fixture_status_detail": {
+      "type": "string"
+    },
+    "is_final": {
+      "type": "boolean"
+    },
+    "home_goals": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "away_goals": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "home_team_score": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "away_team_score": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "result_timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "result_payload_version": {
+      "type": "string"
+    },
+    "cancellation_flag": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "postponed_flag": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "abandoned_flag": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "source_system": {
+      "type": "string",
+      "default": "DATA_API_LAYER"
+    },
+    "source_reference": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

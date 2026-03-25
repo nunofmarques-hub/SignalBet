@@ -1,0 +1,11 @@
+{
+  "pack_name": "2026-03-24_cards_official_trunk_hygiene_pack",
+  "module_name": "cards",
+  "pack_version": "1.0",
+  "status": "staging",
+  "entrypoint": "run_smoke.py",
+  "provider_type": "official_trunk",
+  "provider_name": "Data_API_Official_Trunk_v1",
+  "provider_object": "fixtures + fixture_events",
+  "contract_version": "v1.1"
+}

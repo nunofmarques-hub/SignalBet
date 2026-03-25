@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208702,
+    "referee": "Mario Melero",
+    "timezone": "UTC",
+    "date": "2025-02-17T20:00:00+00:00",
+    "timestamp": 1739822400,
+    "periods": {
+      "first": 1739822400,
+      "second": 1739826000
+    },
+    "venue": {
+      "id": 19939,
+      "name": "Estadi Olímpic Lluís Companys",
+      "city": "Barcelona"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 7
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 24",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 529,
+      "name": "Barcelona",
+      "logo": "https://media.api-sports.io/football/teams/529.png",
+      "winner": true
+    },
+    "away": {
+      "id": 728,
+      "name": "Rayo Vallecano",
+      "logo": "https://media.api-sports.io/football/teams/728.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "object",
+  "required": [
+    "module_id",
+    "status",
+    "candidates_count"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208807,
+    "referee": "Adrián Cordero",
+    "timezone": "UTC",
+    "date": "2025-05-10T12:00:00+00:00",
+    "timestamp": 1746878400,
+    "periods": {
+      "first": 1746878400,
+      "second": 1746882000
+    },
+    "venue": {
+      "id": 1497,
+      "name": "Estadio de Mestalla",
+      "city": "Valencia"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 6
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 35",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 532,
+      "name": "Valencia",
+      "logo": "https://media.api-sports.io/football/teams/532.png",
+      "winner": true
+    },
+    "away": {
+      "id": 546,
+      "name": "Getafe",
+      "logo": "https://media.api-sports.io/football/teams/546.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 3,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 3,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 3,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

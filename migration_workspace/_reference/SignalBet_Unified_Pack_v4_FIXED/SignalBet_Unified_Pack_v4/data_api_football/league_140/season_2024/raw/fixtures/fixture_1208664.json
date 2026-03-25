@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208664,
+    "referee": "Javier Alberola",
+    "timezone": "UTC",
+    "date": "2025-01-12T13:00:00+00:00",
+    "timestamp": 1736686800,
+    "periods": {
+      "first": 1736686800,
+      "second": 1736690400
+    },
+    "venue": {
+      "id": 1481,
+      "name": "Estadio de Gran Canaria",
+      "city": "Las Palmas de Gran Canaria"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 8
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 19",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 534,
+      "name": "Las Palmas",
+      "logo": "https://media.api-sports.io/football/teams/534.png",
+      "winner": false
+    },
+    "away": {
+      "id": 546,
+      "name": "Getafe",
+      "logo": "https://media.api-sports.io/football/teams/546.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 2
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 2
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

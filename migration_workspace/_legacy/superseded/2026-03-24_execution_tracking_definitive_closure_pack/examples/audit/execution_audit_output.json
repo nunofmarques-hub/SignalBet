@@ -1,0 +1,66 @@
+{
+  "schema_version": "execution-audit.v1",
+  "execution_id": "EXEC-20260324-0001",
+  "decision_id": "DEC-20260324-0001",
+  "source_system": "BANKROLL_RISK_MANAGER",
+  "upstream_contract": "bank_to_exec_v24",
+  "provider_name": "Data_API_Official_Trunk_v1",
+  "events": [
+    {
+      "at": "2026-03-24T20:15:00Z",
+      "from": null,
+      "to": "RECEIVED",
+      "actor": "system",
+      "actor_type": "AUTOMATION"
+    },
+    {
+      "at": "2026-03-24T20:15:01Z",
+      "from": "RECEIVED",
+      "to": "VALIDATION_PENDING",
+      "actor": "system",
+      "actor_type": "AUTOMATION"
+    },
+    {
+      "at": "2026-03-24T20:15:02Z",
+      "from": "VALIDATION_PENDING",
+      "to": "VALIDATED",
+      "actor": "system",
+      "actor_type": "AUTOMATION"
+    },
+    {
+      "at": "2026-03-24T20:15:03Z",
+      "from": "VALIDATED",
+      "to": "READY_TO_EXECUTE",
+      "actor": "system",
+      "actor_type": "AUTOMATION"
+    },
+    {
+      "at": "2026-03-24T20:16:30Z",
+      "from": "READY_TO_EXECUTE",
+      "to": "EXECUTION_PENDING",
+      "actor": "operator",
+      "actor_type": "USER"
+    },
+    {
+      "at": "2026-03-24T20:17:00Z",
+      "from": "EXECUTION_PENDING",
+      "to": "EXECUTED",
+      "actor": "operator",
+      "actor_type": "USER"
+    },
+    {
+      "at": "2026-03-24T20:17:01Z",
+      "from": "EXECUTED",
+      "to": "AWAITING_SETTLEMENT",
+      "actor": "system",
+      "actor_type": "AUTOMATION"
+    },
+    {
+      "at": "2026-03-24T22:15:00Z",
+      "from": "AWAITING_SETTLEMENT",
+      "to": "SETTLED",
+      "actor": "settlement_service",
+      "actor_type": "SETTLEMENT_SERVICE"
+    }
+  ]
+}

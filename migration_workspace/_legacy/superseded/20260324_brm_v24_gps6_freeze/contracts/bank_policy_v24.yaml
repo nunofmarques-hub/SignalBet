@@ -1,0 +1,37 @@
+version: bank_policy.v24
+upstream_official: gps.v6
+bank_state_modes:
+  - Normal
+  - Alerta
+  - Defesa
+  - Protecao_Maxima
+stake_base_by_priority:
+  Best: 1.25
+  Top: 1.00
+  Actionable: 0.75
+  Watchlist: 0.50
+  Reject: 0.00
+limits:
+  min_effective_stake_u: 0.25
+  max_pick_stake_u: 1.50
+  max_daily_exposure_u: 5.00
+  max_module_exposure_u: 3.00
+  odds_window:
+    min: 1.20
+    max: 2.40
+routing:
+  approved_statuses_to_execution:
+    - APPROVED
+    - APPROVED_REDUCED
+  non_execution_statuses:
+    - BLOCKED
+    - RESERVE
+closure_principles:
+  - reduzir superfície de ambiguidade no corredor real
+  - manter fixture única como política base
+  - output para execution apenas com APPROVED ou APPROVED_REDUCED
+  - edge cases com resultado esperado obrigatório
+notes:
+  - Banca consome batch final do GPS v6.
+  - Banca não lê API externa diretamente.
+  - Upstream indireto estabiliza progressivamente sobre Data_API_Official_Trunk_v1.

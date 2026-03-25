@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208525,
+    "referee": "Víctor García",
+    "timezone": "UTC",
+    "date": "2024-09-01T15:00:00+00:00",
+    "timestamp": 1725202800,
+    "periods": {
+      "first": 1725202800,
+      "second": 1725206400
+    },
+    "venue": {
+      "id": 1470,
+      "name": "Estadio de Mendizorroza",
+      "city": "Vitoria-Gasteiz"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": null
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 4",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 542,
+      "name": "Alaves",
+      "logo": "https://media.api-sports.io/football/teams/542.png",
+      "winner": true
+    },
+    "away": {
+      "id": 534,
+      "name": "Las Palmas",
+      "logo": "https://media.api-sports.io/football/teams/534.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 2,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 2,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

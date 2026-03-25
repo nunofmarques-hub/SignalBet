@@ -1,0 +1,37 @@
+[
+  {
+    "resource": "fixtures_catalog",
+    "collector": "collect_fixtures",
+    "service": "get_fixtures_by_league_season",
+    "priority": "P0",
+    "storage": ["raw"]
+  },
+  {
+    "resource": "fixture_events",
+    "collector": "collect_events",
+    "service": "get_fixture_events",
+    "priority": "P0",
+    "storage": ["raw"]
+  },
+  {
+    "resource": "fixture_statistics",
+    "collector": "collect_fixture_statistics",
+    "service": "get_fixture_statistics",
+    "priority": "P0",
+    "storage": ["raw"]
+  },
+  {
+    "resource": "team_statistics",
+    "collector": "collect_team_statistics",
+    "service": "get_team_statistics",
+    "priority": "P0",
+    "storage": ["raw"]
+  },
+  {
+    "resource": "standings_snapshot",
+    "collector": "collect_standings",
+    "service": "get_standings_snapshot",
+    "priority": "P0",
+    "storage": ["raw"]
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "provider_reference": "Data_API_Official_Trunk_v1",
+  "payload_schema_version": "official_fixture_settlement_payload.v1",
+  "retrieved_at": "2026-03-24T10:42:00+00:00",
+  "event_id": 120101,
+  "fixture_status": "FT",
+  "home_team": "Roma",
+  "away_team": "Lecce",
+  "score": {
+    "fulltime_home": 2,
+    "fulltime_away": 0
+  },
+  "market_context": {
+    "market_family": "goals",
+    "market": "under_3_5",
+    "selection": "Under 3.5 Goals",
+    "line": 3.5
+  },
+  "settlement_flags": {
+    "fixture_cancelled": false,
+    "fixture_postponed": false,
+    "fixture_abandoned": false,
+    "result_official": true
+  },
+  "official_source_note": "Payload modelled to match the future official fixture settlement read from Data_API_Official_Trunk_v1."
+}

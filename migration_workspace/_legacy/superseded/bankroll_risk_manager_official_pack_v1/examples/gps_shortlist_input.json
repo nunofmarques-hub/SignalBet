@@ -1,0 +1,62 @@
+{
+  "gps_version": "1.0.0",
+  "generated_from_modules": [
+    "v12",
+    "btts",
+    "cards",
+    "corners"
+  ],
+  "shortlist": [
+    {
+      "match_id": 1208600,
+      "source_module": "btts",
+      "market": "btts_yes",
+      "score": 81,
+      "confidence": "alta",
+      "eligible": true,
+      "notes": "eventos e team stats favoráveis",
+      "rank": 1
+    },
+    {
+      "match_id": 1208494,
+      "source_module": "v12",
+      "market": "under_3_5",
+      "score": 78,
+      "confidence": "alta",
+      "eligible": true,
+      "notes": "perfil conservador de jogo",
+      "rank": 2
+    },
+    {
+      "match_id": 1208702,
+      "source_module": "corners",
+      "market": "over_corners",
+      "score": 76,
+      "confidence": "alta",
+      "eligible": true,
+      "notes": "corner kicks e shots consistentes",
+      "rank": 3
+    },
+    {
+      "match_id": 1208501,
+      "source_module": "v12",
+      "market": "over_1_5_game",
+      "score": 71,
+      "confidence": "media",
+      "eligible": true,
+      "notes": "jogo com tendência ofensiva",
+      "rank": 4
+    },
+    {
+      "match_id": 1208494,
+      "source_module": "cards",
+      "market": "over_cards",
+      "score": 64,
+      "confidence": "media",
+      "eligible": true,
+      "notes": "presença de card events e perfil físico",
+      "rank": 5
+    }
+  ],
+  "result": "green"
+}

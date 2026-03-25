@@ -1,0 +1,32 @@
+[
+  {
+    "input_file": "selector_case_01_valid_premium_input.json",
+    "expected_status": "APPROVED",
+    "expected_rules": []
+  },
+  {
+    "input_file": "selector_case_02_partial_correlation_input.json",
+    "expected_status": "APPROVED_REDUCED",
+    "expected_rules": ["REDUCE_PARTIAL_CORRELATION", "REDUCE_BANK_ALERT"]
+  },
+  {
+    "input_file": "selector_case_03_duplicate_fixture_input.json",
+    "expected_status": "BLOCKED",
+    "expected_rules": ["BLOCK_DUPLICATE_FIXTURE"]
+  },
+  {
+    "input_file": "selector_case_04_odds_out_of_range_input.json",
+    "expected_status": "BLOCKED",
+    "expected_rules": ["BLOCK_ODD_RANGE"]
+  },
+  {
+    "input_file": "selector_case_05_invalid_missing_field_input.json",
+    "expected_status": "BLOCKED",
+    "expected_rules": ["BLOCK_INVALID_INPUT"]
+  },
+  {
+    "input_file": "selector_case_06_reserve_prudential_input.json",
+    "expected_status": "RESERVE",
+    "expected_rules": ["REDUCE_DAY_EXPOSURE"]
+  }
+]

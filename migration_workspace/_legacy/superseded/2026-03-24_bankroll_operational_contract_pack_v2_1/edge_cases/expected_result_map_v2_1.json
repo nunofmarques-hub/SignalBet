@@ -1,0 +1,48 @@
+{
+  "edge_case_01_valid_approved.json": {
+    "expected_status": "APPROVED",
+    "expected_codes": []
+  },
+  "edge_case_02_partial_correlation_reduced.json": {
+    "expected_status": "APPROVED_REDUCED",
+    "expected_codes": [
+      "REDUCE_HIGH_RISK",
+      "REDUCE_PARTIAL_CORRELATION",
+      "REDUCE_BANK_ALERT"
+    ]
+  },
+  "edge_case_03_duplicate_fixture_blocked.json": {
+    "expected_status": "BLOCKED",
+    "expected_codes": [
+      "BLOCK_DUPLICATE_FIXTURE"
+    ]
+  },
+  "edge_case_04_odds_out_of_range_blocked.json": {
+    "expected_status": "BLOCKED",
+    "expected_codes": [
+      "BLOCK_ODD_RANGE"
+    ]
+  },
+  "edge_case_05_invalid_missing_field_blocked.json": {
+    "expected_status": "BLOCKED",
+    "expected_codes": [
+      "BLOCK_INVALID_INPUT"
+    ]
+  },
+  "edge_case_06_reserve_protection_mode.json": {
+    "expected_status": "RESERVE",
+    "expected_codes": []
+  },
+  "edge_case_07_module_limit_blocked.json": {
+    "expected_status": "BLOCKED",
+    "expected_codes": [
+      "BLOCK_MODULE_LIMIT"
+    ]
+  },
+  "edge_case_08_min_stake_blocked.json": {
+    "expected_status": "BLOCKED",
+    "expected_codes": [
+      "BLOCK_MIN_STAKE"
+    ]
+  }
+}

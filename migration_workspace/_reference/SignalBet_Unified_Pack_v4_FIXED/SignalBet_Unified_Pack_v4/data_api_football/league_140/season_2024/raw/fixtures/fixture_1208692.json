@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208692,
+    "referee": "José Sánchez",
+    "timezone": "UTC",
+    "date": "2025-02-08T15:15:00+00:00",
+    "timestamp": 1739027700,
+    "periods": {
+      "first": 1739027700,
+      "second": 1739031300
+    },
+    "venue": {
+      "id": 1460,
+      "name": "San Mamés Barria",
+      "city": "Bilbao"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 4
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 23",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 531,
+      "name": "Athletic Club",
+      "logo": "https://media.api-sports.io/football/teams/531.png",
+      "winner": true
+    },
+    "away": {
+      "id": 547,
+      "name": "Girona",
+      "logo": "https://media.api-sports.io/football/teams/547.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 3,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 2,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 3,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

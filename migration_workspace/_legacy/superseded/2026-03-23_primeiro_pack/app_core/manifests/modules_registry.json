@@ -1,0 +1,56 @@
+{
+  "modules": [
+    {
+      "module_id": "v12",
+      "enabled": true,
+      "entrypoint": "modules.v12.main:run",
+      "required_contract_version": "1.1",
+      "required_data_sources": [
+        "data_api"
+      ],
+      "run_order": 10,
+      "blocking_on_failure": false,
+      "market_type": "core",
+      "maturity_level": "high"
+    },
+    {
+      "module_id": "cards",
+      "enabled": true,
+      "entrypoint": "modules.cards.main:run",
+      "required_contract_version": "1.1",
+      "required_data_sources": [
+        "data_api"
+      ],
+      "run_order": 20,
+      "blocking_on_failure": false,
+      "market_type": "expansion",
+      "maturity_level": "medium"
+    },
+    {
+      "module_id": "btts",
+      "enabled": false,
+      "entrypoint": "modules.btts.main:run",
+      "required_contract_version": "1.1",
+      "required_data_sources": [
+        "data_api"
+      ],
+      "run_order": 30,
+      "blocking_on_failure": false,
+      "market_type": "expansion",
+      "maturity_level": "medium_low"
+    },
+    {
+      "module_id": "corners",
+      "enabled": false,
+      "entrypoint": "modules.corners.main:run",
+      "required_contract_version": "1.1",
+      "required_data_sources": [
+        "data_api"
+      ],
+      "run_order": 40,
+      "blocking_on_failure": false,
+      "market_type": "expansion",
+      "maturity_level": "medium"
+    }
+  ]
+}

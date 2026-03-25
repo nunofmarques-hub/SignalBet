@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208748,
+    "referee": "Mateo Busquets",
+    "timezone": "UTC",
+    "date": "2025-03-30T19:00:00+00:00",
+    "timestamp": 1743361200,
+    "periods": {
+      "first": 1743361200,
+      "second": 1743364800
+    },
+    "venue": {
+      "id": 1489,
+      "name": "Estadio Benito Villamarín",
+      "city": "Sevilla"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 5
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 29",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 543,
+      "name": "Real Betis",
+      "logo": "https://media.api-sports.io/football/teams/543.png",
+      "winner": true
+    },
+    "away": {
+      "id": 536,
+      "name": "Sevilla",
+      "logo": "https://media.api-sports.io/football/teams/536.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 2,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 2,
+      "away": 1
+    },
+    "fulltime": {
+      "home": 2,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

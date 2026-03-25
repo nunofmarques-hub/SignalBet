@@ -1,0 +1,19 @@
+{
+  "screen": "Opportunity Pool",
+  "top_opportunity": {
+    "fixture": "Leverkusen vs Mainz",
+    "market": "Over 1.5 Equipa Casa",
+    "module_source": "v12",
+    "global_score": 91,
+    "priority_tier": "T1",
+    "decision_status": "approved"
+  },
+  "states_supported": ["success", "loading", "empty", "error"],
+  "orchestrator_panel": {
+    "data_api": "ready",
+    "modules": 4,
+    "gps": "ready",
+    "bankroll": "ready",
+    "execution": "ready"
+  }
+}

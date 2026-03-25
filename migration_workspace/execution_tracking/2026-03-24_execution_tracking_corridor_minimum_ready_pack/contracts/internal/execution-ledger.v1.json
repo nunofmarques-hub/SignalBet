@@ -1,0 +1,23 @@
+{
+  "title": "execution-ledger.v1",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "execution_id",
+    "decision_id",
+    "pick_id",
+    "event_id",
+    "execution_status",
+    "settlement_status",
+    "status_changed_at",
+    "execution_attempted",
+    "executed_at",
+    "executed_odds",
+    "stake_executed",
+    "settled_at",
+    "result_profit_loss",
+    "return_amount",
+    "execution_reason_code",
+    "execution_reason_text"
+  ]
+}

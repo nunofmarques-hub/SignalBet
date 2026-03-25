@@ -1,0 +1,12 @@
+{
+  "module": "Cards",
+  "source": "Data_API_Official_Trunk_v1",
+  "fixtures_count": 380,
+  "fixture_id": 1208494,
+  "events_found": true,
+  "events_count": 15,
+  "card_events_count": 5,
+  "home_team_id": 531,
+  "away_team_id": 546,
+  "result": "green"
+}

@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208497,
+    "referee": "Francisco Hernández",
+    "timezone": "UTC",
+    "date": "2024-08-16T19:30:00+00:00",
+    "timestamp": 1723836600,
+    "periods": {
+      "first": 1723836600,
+      "second": 1723840200
+    },
+    "venue": {
+      "id": 1481,
+      "name": "Estadio de Gran Canaria",
+      "city": "Las Palmas de Gran Canaria"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": null
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 1",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 534,
+      "name": "Las Palmas",
+      "logo": "https://media.api-sports.io/football/teams/534.png",
+      "winner": null
+    },
+    "away": {
+      "id": 536,
+      "name": "Sevilla",
+      "logo": "https://media.api-sports.io/football/teams/536.png",
+      "winner": null
+    }
+  },
+  "goals": {
+    "home": 2,
+    "away": 2
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 1
+    },
+    "fulltime": {
+      "home": 2,
+      "away": 2
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

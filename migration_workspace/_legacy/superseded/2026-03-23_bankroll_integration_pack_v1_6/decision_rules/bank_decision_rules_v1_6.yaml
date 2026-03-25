@@ -1,0 +1,88 @@
+{
+  "decision_rules_version": "bank_decision_rules.v1.6",
+  "input_gate": [
+    {
+      "check": "required_fields_present",
+      "on_fail": "BLOCK_INVALID_INPUT"
+    },
+    {
+      "check": "selector_schema_version_supported",
+      "on_fail": "BLOCK_INVALID_INPUT"
+    },
+    {
+      "check": "pool_status_is_exported_to_bankroll",
+      "on_fail": "BLOCK_INVALID_INPUT"
+    },
+    {
+      "check": "priority_tier_not_reject",
+      "on_fail": "BLOCK_NOT_ELIGIBLE"
+    }
+  ],
+  "hard_blocks": [
+    {
+      "code": "BLOCK_INVALID_INPUT",
+      "condition": "Campos obrigatorios em falta, tipos invalidos ou enum invalido"
+    },
+    {
+      "code": "BLOCK_NOT_ELIGIBLE",
+      "condition": "Pick inelegivel ou priority_tier Reject"
+    },
+    {
+      "code": "BLOCK_DUPLICATE_FIXTURE",
+      "condition": "Ja existe entrada aprovada para o mesmo event_id"
+    },
+    {
+      "code": "BLOCK_DAILY_LIMIT",
+      "condition": "daily_exposure_after_if_accepted > daily_exposure_max_u"
+    },
+    {
+      "code": "BLOCK_MODULE_LIMIT",
+      "condition": "module_daily_exposure_after_if_accepted > module_daily_exposure_max_u"
+    },
+    {
+      "code": "BLOCK_ODD_RANGE",
+      "condition": "odds fora da janela operacional"
+    },
+    {
+      "code": "BLOCK_MIN_STAKE",
+      "condition": "stake_approved < min_effective_stake_u"
+    },
+    {
+      "code": "BLOCK_BANK_PROTECTION_MODE",
+      "condition": "bank_state_mode = Protecao_Maxima e pick nao qualifica"
+    }
+  ],
+  "soft_reductions": [
+    {
+      "code": "REDUCE_HIGH_RISK",
+      "condition": "risk_norm >= 4",
+      "factor": 0.75
+    },
+    {
+      "code": "REDUCE_DAY_EXPOSURE",
+      "condition": "dia com carga media/alta",
+      "factor": 0.85
+    },
+    {
+      "code": "REDUCE_MODULE_EXPOSURE",
+      "condition": "modulo ja com carga elevada",
+      "factor": 0.85
+    },
+    {
+      "code": "REDUCE_BANK_ALERT",
+      "condition": "bank_state_mode in [Alerta, Defesa]",
+      "factor": 0.85
+    },
+    {
+      "code": "REDUCE_PARTIAL_CORRELATION",
+      "condition": "correlation_flags nao bloqueantes presentes",
+      "factor": 0.8
+    }
+  ],
+  "decision_status_logic": {
+    "APPROVED": "passa todos os gates sem corte material",
+    "APPROVED_REDUCED": "passa os gates mas sofre corte formal de stake",
+    "BLOCKED": "falha hard block",
+    "RESERVE": "fica viva mas sem envio imediato para execution"
+  }
+}

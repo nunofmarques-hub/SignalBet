@@ -1,0 +1,42 @@
+{
+  "fixture": {
+    "event_id": 910003,
+    "match_label": "Gil Vicente vs Famalicão",
+    "competition": "Primeira Liga",
+    "kickoff_datetime": "2026-03-30T20:15:00Z"
+  },
+  "teams": {
+    "home": "Gil Vicente",
+    "away": "Famalicão"
+  },
+  "competition_context": {
+    "match_tension_flag": "medium",
+    "competitive_pressure": "high",
+    "home_away_asymmetry": "away_more_cards_likely"
+  },
+  "discipline_context": {
+    "home_profile": {
+      "cards_avg": 2.0,
+      "fouls_avg": 12.0
+    },
+    "away_profile": {
+      "cards_avg": 2.6,
+      "fouls_avg": 14.8
+    },
+    "referee_profile": {
+      "known": false,
+      "cards_avg": 0.0
+    },
+    "recent_intensity_signal": "positive_for_over"
+  },
+  "market_context": {
+    "market": "away_team_cards_over",
+    "selection": "over",
+    "line": 2.5,
+    "odds": 1.95
+  },
+  "data_quality": {
+    "data_quality_flag": "partial",
+    "sample_depth_flag": "medium"
+  }
+}

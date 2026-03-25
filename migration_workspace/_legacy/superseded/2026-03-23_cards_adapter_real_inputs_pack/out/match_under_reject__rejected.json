@@ -1,0 +1,51 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "pick_id": "cards_991002_match_cards_under_4_5",
+  "created_at": "2026-03-23T13:15:28Z",
+  "module_id": "cards",
+  "module_version": "cards.0.2.0-staging",
+  "event_id": 991002,
+  "match_label": "Benfica vs Arouca",
+  "competition": "Primeira Liga",
+  "kickoff_datetime": "2026-03-30T18:00:00Z",
+  "market_family": "cards",
+  "market": "match_cards_under",
+  "selection": "Under 4.5 Cards",
+  "line": 4.5,
+  "odds": 1.72,
+  "eligibility": false,
+  "score_raw": 42,
+  "confidence_raw": 1,
+  "risk_raw": 1,
+  "edge_raw": -0.94,
+  "rationale_summary": "Leitura disciplinar cold com projeção 3.56 para linha 4.5; tensão low e viés estrutural under.",
+  "main_drivers": [
+    "projection=3.56",
+    "combined_cards=3.70",
+    "match_tension=low",
+    "referee_cards_avg=4.30"
+  ],
+  "penalties": [
+    "score_below_threshold"
+  ],
+  "data_quality_flag": "clean",
+  "module_rank_internal": 99,
+  "expiry_context": "refresh_if_odds_move_or_referee_changes",
+  "module_specific_payload": {
+    "discipline_profile": "cold",
+    "match_cards_projection": 3.56,
+    "home_cards_projection": 1.6,
+    "away_cards_projection": 2.1,
+    "match_tension_flag": "low",
+    "competitive_pressure": "medium",
+    "referee_used": true,
+    "referee_bias": -0.9,
+    "home_away_asymmetry": 0.5,
+    "recent_intensity_signal": 3.6,
+    "structural_bias": "under",
+    "signal_consistency": "high",
+    "sample_depth_flag": "strong",
+    "source_missing_blocks": [],
+    "status_at_source": "rejected"
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "title": "selector_pick_v1_1_mature",
+  "type": "object",
+  "required": [
+    "selector_schema_version",
+    "pick_id",
+    "module_id",
+    "module_version",
+    "event_id",
+    "match_label",
+    "market_family",
+    "market",
+    "selection",
+    "odds",
+    "global_score",
+    "confidence_norm",
+    "risk_norm",
+    "edge_norm",
+    "priority_tier",
+    "conflict_flags",
+    "correlation_flags",
+    "executive_rationale",
+    "selector_decision_note",
+    "pool_status",
+    "normalization_version",
+    "rank_position",
+    "shortlist_bucket"
+  ],
+  "properties": {
+    "selector_schema_version": {
+      "type": "string"
+    },
+    "pick_id": {
+      "type": "string"
+    },
+    "module_id": {
+      "type": "string"
+    },
+    "module_version": {
+      "type": "string"
+    },
+    "event_id": {
+      "type": [
+        "integer",
+        "string"
+      ]
+    },
+    "match_label": {
+      "type": "string"
+    },
+    "market_family": {
+      "type": "string"
+    },
+    "market": {
+      "type": "string"
+    },
+    "selection": {
+      "type": "string"
+    },
+    "line": {
+      "type": [
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "odds": {
+      "type": "number"
+    },
+    "global_score": {
+      "type": "integer"
+    },
+    "confidence_norm": {
+      "type": "integer"
+    },
+    "risk_norm": {
+      "type": "integer"
+    },
+    "edge_norm": {
+      "type": "string",
+      "enum": [
+        "weak",
+        "acceptable",
+        "strong",
+        "very_strong"
+      ]
+    },
+    "priority_tier": {
+      "type": "string",
+      "enum": [
+        "Best",
+        "Top",
+        "Actionable",
+        "Watchlist",
+        "Reject"
+      ]
+    },
+    "conflict_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "correlation_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "executive_rationale": {
+      "type": "string"
+    },
+    "selector_decision_note": {
+      "type": "string"
+    },
+    "pool_status": {
+      "type": "string"
+    },
+    "normalization_version": {
+      "type": "string"
+    },
+    "rank_position": {
+      "type": "integer"
+    },
+    "shortlist_bucket": {
+      "type": "string",
+      "enum": [
+        "core",
+        "support",
+        "watch"
+      ]
+    },
+    "selection_status": {
+      "type": "string"
+    }
+  }
+}

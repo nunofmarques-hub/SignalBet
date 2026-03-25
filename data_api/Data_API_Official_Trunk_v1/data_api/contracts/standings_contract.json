@@ -1,0 +1,9 @@
+{
+  "version": "v1.1",
+  "resource": "standings_snapshot",
+  "required_fields": [
+    "league.id",
+    "league.season",
+    "league.standings"
+  ]
+}

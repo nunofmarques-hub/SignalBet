@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1212922,
+    "referee": "Pablo González",
+    "timezone": "UTC",
+    "date": "2024-12-18T20:30:00+00:00",
+    "timestamp": 1734553800,
+    "periods": {
+      "first": 1734553800,
+      "second": 1734557400
+    },
+    "venue": {
+      "id": 1474,
+      "name": "RCDE Stadium",
+      "city": "Cornella de Llobregat"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 6
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 13",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 540,
+      "name": "Espanyol",
+      "logo": "https://media.api-sports.io/football/teams/540.png",
+      "winner": null
+    },
+    "away": {
+      "id": 532,
+      "name": "Valencia",
+      "logo": "https://media.api-sports.io/football/teams/532.png",
+      "winner": null
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

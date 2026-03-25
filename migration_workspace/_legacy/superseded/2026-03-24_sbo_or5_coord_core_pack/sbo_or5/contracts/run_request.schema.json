@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "required": [
+    "run_profile",
+    "initiated_by",
+    "dry_run"
+  ],
+  "properties": {
+    "run_profile": {
+      "type": "string"
+    },
+    "initiated_by": {
+      "type": "string"
+    },
+    "dry_run": {
+      "type": "boolean"
+    },
+    "project_root": {
+      "type": "string"
+    },
+    "forced_modules": {
+      "type": "array"
+    }
+  }
+}

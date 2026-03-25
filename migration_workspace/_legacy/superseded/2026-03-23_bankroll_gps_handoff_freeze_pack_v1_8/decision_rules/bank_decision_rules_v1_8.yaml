@@ -1,0 +1,64 @@
+version: bank_decision_rules.v1.8
+status: staging
+input_contract: gps_shortlist_batch.v1
+output_contracts:
+  - bankroll_response_batch.v1.8
+  - execution_intake_candidate.v1.8
+validation:
+  hard_required_batch:
+    - batch_schema_version
+    - selector_run_id
+    - generated_at
+    - normalization_version
+    - shortlist_size
+    - picks
+  hard_required_pick:
+    - selector_schema_version
+    - pick_id
+    - module_id
+    - module_version
+    - event_id
+    - match_label
+    - market_family
+    - market
+    - selection
+    - odds
+    - global_score
+    - confidence_norm
+    - risk_norm
+    - edge_norm
+    - priority_tier
+    - executive_rationale
+    - pool_status
+    - normalization_version
+  pool_status_must_equal: exported_to_bankroll
+  confidence_norm_range: [1,5]
+  risk_norm_range: [1,5]
+  global_score_range: [0,100]
+  line_required_when_market_has_line: true
+blocks:
+  - BLOCK_INVALID_INPUT
+  - BLOCK_NOT_ELIGIBLE
+  - BLOCK_DUPLICATE_FIXTURE
+  - BLOCK_DAILY_LIMIT
+  - BLOCK_MODULE_LIMIT
+  - BLOCK_ODD_RANGE
+  - BLOCK_MIN_STAKE
+  - BLOCK_BANK_PROTECTION_MODE
+reductions:
+  - REDUCE_HIGH_RISK
+  - REDUCE_DAY_EXPOSURE
+  - REDUCE_MODULE_EXPOSURE
+  - REDUCE_BANK_ALERT
+  - REDUCE_PARTIAL_CORRELATION
+decision_flow:
+  - validate_batch
+  - validate_pick
+  - check_fixture_lock
+  - check_limits
+  - compute_stake_base
+  - compute_stake_suggested
+  - apply_reductions
+  - decide_status
+  - emit_bankroll_response
+  - emit_execution_intake_when_approved

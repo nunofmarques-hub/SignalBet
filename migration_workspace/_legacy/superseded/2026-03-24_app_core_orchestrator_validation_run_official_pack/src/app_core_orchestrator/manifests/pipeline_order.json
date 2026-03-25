@@ -1,0 +1,13 @@
+[
+  "config_check",
+  "environment_check",
+  "data_api_readiness_check",
+  "module_discovery",
+  "run_market_modules",
+  "collect_candidates",
+  "run_global_pick_selector",
+  "run_bankroll_manager",
+  "register_execution",
+  "build_run_summary",
+  "return_ui_status"
+]

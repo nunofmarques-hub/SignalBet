@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "modules_run": {
+      "type": "array"
+    },
+    "modules_failed": {
+      "type": "array"
+    },
+    "final_summary": {
+      "type": "string"
+    }
+  }
+}

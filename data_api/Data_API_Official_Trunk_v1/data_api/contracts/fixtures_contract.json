@@ -1,0 +1,11 @@
+{
+  "version": "v1.1",
+  "resource": "fixtures_catalog",
+  "required_fields": [
+    "fixture.id",
+    "fixture.date",
+    "fixture.status.short",
+    "teams.home.id",
+    "teams.away.id"
+  ]
+}

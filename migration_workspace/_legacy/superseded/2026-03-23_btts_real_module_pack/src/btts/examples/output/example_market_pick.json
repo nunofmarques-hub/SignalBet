@@ -1,0 +1,45 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "pick_id": "btts_1208494_yes",
+  "created_at": "2026-03-23T12:45:25.396568+00:00",
+  "module_id": "btts",
+  "module_version": "btts_engine.v1.1-test",
+  "event_id": 1208494,
+  "match_label": "Athletic Club vs Getafe",
+  "competition": "La Liga",
+  "kickoff_datetime": "2024-08-15T17:00:00+00:00",
+  "market_family": "btts",
+  "market": "match_btts",
+  "selection": "BTTS Yes",
+  "line": null,
+  "odds": 1.8,
+  "eligibility": true,
+  "score_raw": 67.84,
+  "confidence_raw": 3,
+  "risk_raw": 3,
+  "edge_raw": "acceptable",
+  "rationale_summary": "Perfil BTTS utilizável com suporte suficiente do módulo.",
+  "main_drivers": [
+    "bos_supportive",
+    "bvs_supportive",
+    "fgt_positive"
+  ],
+  "penalties": [],
+  "data_quality_flag": "partial",
+  "module_rank_internal": 1,
+  "expiry_context": "refresh_if_odds_or_inputs_change",
+  "module_specific_payload": {
+    "btts_direction": "yes",
+    "scoring_support": {
+      "bos": 71.18,
+      "ami_bilateral": 60.96,
+      "xg_gap_aggregated": 32.77
+    },
+    "concession_support": {
+      "bvs": 72.64,
+      "fgt_btts": 85.0,
+      "sbi": 78.95
+    },
+    "tsi_bilateral": 56.47
+  }
+}

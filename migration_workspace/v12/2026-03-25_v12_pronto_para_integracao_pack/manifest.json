@@ -1,0 +1,25 @@
+{
+  "pack_name": "2026-03-25_v12_pronto_para_integracao_pack",
+  "module_name": "v12",
+  "pack_version": "2026-03-25",
+  "status": "pronto_para_integracao",
+  "entrypoint": "motor/smoke_test.py",
+  "output_contract": "market_pick.v1.1",
+  "provider_type": "official_default",
+  "provider_name": "Data_API_Official_Trunk_v1",
+  "provider_object": [
+    "fixtures_catalog",
+    "standings_snapshot",
+    "fixture_statistics",
+    "home_team_statistics",
+    "away_team_statistics"
+  ],
+  "contract_version": "v1.1",
+  "runtime_validation": {
+    "trunk_physical_mounted": true,
+    "trunk_imports_ok": true,
+    "smoke_basic": "GREEN",
+    "smoke_live": "GREEN",
+    "outputs_generated": 3
+  }
+}

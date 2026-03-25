@@ -1,0 +1,11 @@
+[
+  {
+    "match_id": 1208702,
+    "source_module": "corners",
+    "market": "over_corners",
+    "score": 76,
+    "confidence": "alta",
+    "eligible": true,
+    "notes": "corner kicks e shots consistentes"
+  }
+]

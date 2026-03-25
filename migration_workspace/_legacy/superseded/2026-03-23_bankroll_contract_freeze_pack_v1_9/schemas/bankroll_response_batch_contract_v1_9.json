@@ -1,0 +1,220 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "bankroll_response_batch_contract_v1_9",
+  "type": "object",
+  "required": [
+    "response_schema_version",
+    "bank_policy_version",
+    "decision_batch_id",
+    "selector_run_id",
+    "decision_timestamp",
+    "decisions"
+  ],
+  "properties": {
+    "response_schema_version": {
+      "type": "string",
+      "const": "bankroll_response_batch.v1.9"
+    },
+    "bank_policy_version": {
+      "type": "string"
+    },
+    "decision_batch_id": {
+      "type": "string"
+    },
+    "selector_run_id": {
+      "type": "string"
+    },
+    "decision_timestamp": {
+      "type": "string"
+    },
+    "decisions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "bank_schema_version",
+          "decision_id",
+          "pick_id",
+          "module_origin",
+          "event_id",
+          "match_label",
+          "market_family",
+          "market",
+          "selection",
+          "priority_tier",
+          "global_score",
+          "decision_status",
+          "stake_base",
+          "stake_suggested",
+          "stake_approved",
+          "stake_pct_bankroll",
+          "bank_state_mode",
+          "portfolio_group",
+          "execution_ready",
+          "rules_triggered",
+          "decision_timestamp",
+          "bankroll_note"
+        ],
+        "properties": {
+          "bank_schema_version": {
+            "type": "string",
+            "const": "bank_decision.v1.1"
+          },
+          "decision_id": {
+            "type": "string"
+          },
+          "pick_id": {
+            "type": "string"
+          },
+          "module_origin": {
+            "type": "string",
+            "enum": [
+              "v12",
+              "corners",
+              "btts",
+              "cards"
+            ]
+          },
+          "event_id": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          },
+          "match_label": {
+            "type": "string"
+          },
+          "market_family": {
+            "type": "string",
+            "enum": [
+              "goals",
+              "btts",
+              "corners",
+              "cards"
+            ]
+          },
+          "market": {
+            "type": "string"
+          },
+          "selection": {
+            "type": "string"
+          },
+          "line": {
+            "type": [
+              "number",
+              "integer",
+              "null"
+            ]
+          },
+          "priority_tier": {
+            "type": "string",
+            "enum": [
+              "Best",
+              "Top",
+              "Actionable",
+              "Watchlist",
+              "Reject"
+            ]
+          },
+          "global_score": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "decision_status": {
+            "type": "string",
+            "enum": [
+              "APPROVED",
+              "APPROVED_REDUCED",
+              "BLOCKED",
+              "RESERVE"
+            ]
+          },
+          "stake_base": {
+            "type": "number",
+            "minimum": 0
+          },
+          "stake_suggested": {
+            "type": "number",
+            "minimum": 0
+          },
+          "stake_approved": {
+            "type": "number",
+            "minimum": 0
+          },
+          "stake_pct_bankroll": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "bank_state_mode": {
+            "type": "string",
+            "enum": [
+              "Normal",
+              "Alerta",
+              "Defesa",
+              "Protecao_Maxima"
+            ]
+          },
+          "portfolio_group": {
+            "type": "string",
+            "enum": [
+              "core",
+              "satellite",
+              "optional"
+            ]
+          },
+          "exposure_bucket": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "execution_order": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "approved_odds_window": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "execution_ready": {
+            "type": "boolean"
+          },
+          "rules_triggered": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "block_reason_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "block_reason_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "decision_timestamp": {
+            "type": "string"
+          },
+          "bankroll_note": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

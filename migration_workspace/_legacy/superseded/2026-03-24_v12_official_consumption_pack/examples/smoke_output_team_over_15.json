@@ -1,0 +1,41 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "module_id": "v12",
+  "module_version": "v12.10",
+  "pick_id": "v12_1208494_team_over_15",
+  "event_id": 1208494,
+  "match_label": "Athletic Club vs Getafe",
+  "competition": "La Liga",
+  "kickoff_datetime": "2024-08-15T17:00:00+00:00",
+  "market_family": "goals",
+  "market": "team_goals_over",
+  "selection": "Athletic Club Over 1.5",
+  "line": 1.5,
+  "odds": 1.85,
+  "eligibility": true,
+  "score_raw": 25.2,
+  "confidence_raw": 4,
+  "risk_raw": 2,
+  "edge_raw": "6.3%",
+  "rationale_summary": "Output gerado pela v12 com consumo Data_API_Official_Trunk_v1 (official_default).",
+  "main_drivers": [
+    "FDI support",
+    "team attack",
+    "opponent concession"
+  ],
+  "penalties": [
+    "provider sample odds"
+  ],
+  "created_at": "2026-03-25T11:04:34.439587+00:00",
+  "data_quality_flag": "clean",
+  "module_rank_internal": 1,
+  "expiry_context": "refresh_if_provider_snapshot_changes",
+  "module_specific_payload": {
+    "motor_id": "TEAM_OVER_ENGINE",
+    "motor_family": "team_over",
+    "market_variant": "TEAM_OVER_15",
+    "goal_profile": "offensive_directed",
+    "model_window": "season_plus_last5",
+    "current_core_status": "active_core"
+  }
+}

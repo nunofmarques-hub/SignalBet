@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "bank_to_execution_final_payload_v2_2",
+  "type": "object",
+  "required": [
+    "execution_schema_version",
+    "execution_batch_id",
+    "generated_at",
+    "execution_candidates"
+  ],
+  "properties": {
+    "execution_schema_version": {
+      "type": "string",
+      "const": "execution_intake.v2.2"
+    },
+    "execution_batch_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "execution_candidates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/candidate"
+      }
+    }
+  },
+  "$defs": {
+    "candidate": {
+      "type": "object",
+      "required": [
+        "decision_id",
+        "pick_id",
+        "module_origin",
+        "decision_status",
+        "execution_ready",
+        "stake_approved",
+        "event_id",
+        "match_label",
+        "market",
+        "selection",
+        "odds"
+      ],
+      "properties": {
+        "decision_id": {
+          "type": "string"
+        },
+        "pick_id": {
+          "type": "string"
+        },
+        "module_origin": {
+          "type": "string"
+        },
+        "decision_status": {
+          "type": "string",
+          "enum": [
+            "APPROVED",
+            "APPROVED_REDUCED"
+          ]
+        },
+        "execution_ready": {
+          "type": "boolean",
+          "const": true
+        },
+        "stake_approved": {
+          "type": "number"
+        },
+        "event_id": {
+          "type": "integer"
+        },
+        "match_label": {
+          "type": "string"
+        },
+        "market": {
+          "type": "string"
+        },
+        "selection": {
+          "type": "string"
+        },
+        "line": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "odds": {
+          "type": "number"
+        },
+        "bank_state_mode": {
+          "type": "string"
+        },
+        "rules_triggered": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

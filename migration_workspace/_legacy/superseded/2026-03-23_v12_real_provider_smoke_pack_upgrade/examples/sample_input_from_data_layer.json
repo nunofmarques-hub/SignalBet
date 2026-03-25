@@ -1,0 +1,69 @@
+{
+  "fixture": {
+    "fixture_id": 878317,
+    "match_label": "Cagliari vs Napoli",
+    "competition": "Serie A",
+    "kickoff_datetime": "2026-03-20T19:45:00Z",
+    "league_id": 135,
+    "league_name": "Serie A",
+    "season": 2025,
+    "country": "Italy"
+  },
+  "teams": {
+    "home": {
+      "team_id": 489,
+      "name": "Cagliari"
+    },
+    "away": {
+      "team_id": 492,
+      "name": "Napoli"
+    }
+  },
+  "standings_context": {
+    "home_rank": 15,
+    "away_rank": 2,
+    "home_points": 28,
+    "away_points": 59,
+    "rank_gap": 13
+  },
+  "team_stats_season": {
+    "home": {
+      "goals_for_per_game": 1.0,
+      "goals_against_per_game": 1.6
+    },
+    "away": {
+      "goals_for_per_game": 1.9,
+      "goals_against_per_game": 0.9
+    }
+  },
+  "team_stats_recent": {
+    "home": {
+      "last5_goals_for": 4,
+      "last5_goals_against": 8
+    },
+    "away": {
+      "last5_goals_for": 9,
+      "last5_goals_against": 4
+    }
+  },
+  "league_market_profile": {
+    "team_over_15": 0.41,
+    "match_over_15": 0.76,
+    "match_under_35": 0.72
+  },
+  "odds_snapshot": {
+    "source": "api_market_snapshot",
+    "selected_odd": 1.91,
+    "bookmaker": "average"
+  },
+  "timing_profile": {
+    "away_avg_first_goal_minute": 34
+  },
+  "scoreline_profile": {
+    "corridor_under_35_fit": 0.68
+  },
+  "risk_flags": {
+    "european_context": false,
+    "rotation_unknown": false
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208752,
+    "referee": "José Munuera",
+    "timezone": "UTC",
+    "date": "2025-03-29T17:30:00+00:00",
+    "timestamp": 1743269400,
+    "periods": {
+      "first": 1743269400,
+      "second": 1743273000
+    },
+    "venue": {
+      "id": 1470,
+      "name": "Estadio de Mendizorroza",
+      "city": "Vitoria-Gasteiz"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 6
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 29",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 542,
+      "name": "Alaves",
+      "logo": "https://media.api-sports.io/football/teams/542.png",
+      "winner": false
+    },
+    "away": {
+      "id": 728,
+      "name": "Rayo Vallecano",
+      "logo": "https://media.api-sports.io/football/teams/728.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 0,
+    "away": 2
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 1
+    },
+    "fulltime": {
+      "home": 0,
+      "away": 2
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

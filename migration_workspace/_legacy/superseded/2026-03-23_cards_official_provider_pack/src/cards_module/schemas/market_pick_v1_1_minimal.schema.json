@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cards Market Pick v1.1 Minimal",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "pick_id",
+    "module_id",
+    "event_id",
+    "market_family",
+    "market",
+    "selection",
+    "line",
+    "odds",
+    "eligibility"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "market_pick.v1.1"
+    },
+    "module_id": {
+      "const": "cards"
+    },
+    "market_family": {
+      "const": "cards"
+    }
+  }
+}

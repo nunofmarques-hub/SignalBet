@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208729,
+    "referee": "Mateo Busquets",
+    "timezone": "UTC",
+    "date": "2025-03-27T20:00:00+00:00",
+    "timestamp": 1743105600,
+    "periods": {
+      "first": 1743105600,
+      "second": 1743109200
+    },
+    "venue": {
+      "id": 19939,
+      "name": "Estadi Olímpic Lluís Companys",
+      "city": "Barcelona"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 3
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 27",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 529,
+      "name": "Barcelona",
+      "logo": "https://media.api-sports.io/football/teams/529.png",
+      "winner": true
+    },
+    "away": {
+      "id": 727,
+      "name": "Osasuna",
+      "logo": "https://media.api-sports.io/football/teams/727.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 3,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 2,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 3,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

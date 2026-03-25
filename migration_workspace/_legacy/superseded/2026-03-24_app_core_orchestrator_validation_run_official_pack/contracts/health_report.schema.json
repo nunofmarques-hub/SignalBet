@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "required": [
+    "run_id",
+    "overall_status",
+    "checks"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "overall_status": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "array"
+    }
+  }
+}

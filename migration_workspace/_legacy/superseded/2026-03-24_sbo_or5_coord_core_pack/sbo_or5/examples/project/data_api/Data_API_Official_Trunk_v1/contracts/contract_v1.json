@@ -1,0 +1,7 @@
+{
+  "contract_version": "v1.1",
+  "objects": [
+    "fixtures",
+    "statistics"
+  ]
+}

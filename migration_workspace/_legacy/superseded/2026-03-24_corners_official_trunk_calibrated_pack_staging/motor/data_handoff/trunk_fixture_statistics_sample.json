@@ -1,0 +1,176 @@
+{
+  "878320": [
+    {
+      "team": {
+        "id": 543,
+        "name": "Espanyol"
+      },
+      "statistics": [
+        {
+          "type": "Corner Kicks",
+          "value": 7
+        },
+        {
+          "type": "Total Shots",
+          "value": 15
+        },
+        {
+          "type": "Blocked Shots",
+          "value": 4
+        },
+        {
+          "type": "Ball Possession",
+          "value": "53%"
+        },
+        {
+          "type": "Passes %",
+          "value": "82%"
+        }
+      ]
+    },
+    {
+      "team": {
+        "id": 548,
+        "name": "Almeria"
+      },
+      "statistics": [
+        {
+          "type": "Corner Kicks",
+          "value": 6
+        },
+        {
+          "type": "Total Shots",
+          "value": 12
+        },
+        {
+          "type": "Blocked Shots",
+          "value": 3
+        },
+        {
+          "type": "Ball Possession",
+          "value": "47%"
+        },
+        {
+          "type": "Passes %",
+          "value": "78%"
+        }
+      ]
+    }
+  ],
+  "878317": [
+    {
+      "team": {
+        "id": 529,
+        "name": "Celta Vigo"
+      },
+      "statistics": [
+        {
+          "type": "Corner Kicks",
+          "value": 5
+        },
+        {
+          "type": "Total Shots",
+          "value": 11
+        },
+        {
+          "type": "Blocked Shots",
+          "value": 2
+        },
+        {
+          "type": "Ball Possession",
+          "value": "42%"
+        },
+        {
+          "type": "Passes %",
+          "value": "77%"
+        }
+      ]
+    },
+    {
+      "team": {
+        "id": 541,
+        "name": "Barcelona"
+      },
+      "statistics": [
+        {
+          "type": "Corner Kicks",
+          "value": 5
+        },
+        {
+          "type": "Total Shots",
+          "value": 14
+        },
+        {
+          "type": "Blocked Shots",
+          "value": 3
+        },
+        {
+          "type": "Ball Possession",
+          "value": "58%"
+        },
+        {
+          "type": "Passes %",
+          "value": "87%"
+        }
+      ]
+    }
+  ],
+  "878312": [
+    {
+      "team": {
+        "id": 5431,
+        "name": "Real Betis"
+      },
+      "statistics": [
+        {
+          "type": "Corner Kicks",
+          "value": 4
+        },
+        {
+          "type": "Total Shots",
+          "value": 10
+        },
+        {
+          "type": "Blocked Shots",
+          "value": 2
+        },
+        {
+          "type": "Ball Possession",
+          "value": "55%"
+        },
+        {
+          "type": "Passes %",
+          "value": "81%"
+        }
+      ]
+    },
+    {
+      "team": {
+        "id": 532,
+        "name": "Valencia"
+      },
+      "statistics": [
+        {
+          "type": "Corner Kicks",
+          "value": 4
+        },
+        {
+          "type": "Total Shots",
+          "value": 9
+        },
+        {
+          "type": "Blocked Shots",
+          "value": 2
+        },
+        {
+          "type": "Ball Possession",
+          "value": "45%"
+        },
+        {
+          "type": "Passes %",
+          "value": "76%"
+        }
+      ]
+    }
+  ]
+}

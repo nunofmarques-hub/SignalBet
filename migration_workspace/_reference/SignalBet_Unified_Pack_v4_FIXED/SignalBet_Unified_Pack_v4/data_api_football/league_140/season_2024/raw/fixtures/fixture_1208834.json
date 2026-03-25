@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208834,
+    "referee": "Ricardo De Burgos",
+    "timezone": "UTC",
+    "date": "2025-05-24T19:00:00+00:00",
+    "timestamp": 1748113200,
+    "periods": {
+      "first": 1748113200,
+      "second": 1748116800
+    },
+    "venue": {
+      "id": 1488,
+      "name": "Estadio de Vallecas",
+      "city": "Madrid"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 7
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 38",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 728,
+      "name": "Rayo Vallecano",
+      "logo": "https://media.api-sports.io/football/teams/728.png",
+      "winner": null
+    },
+    "away": {
+      "id": 798,
+      "name": "Mallorca",
+      "logo": "https://media.api-sports.io/football/teams/798.png",
+      "winner": null
+    }
+  },
+  "goals": {
+    "home": 0,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 0,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

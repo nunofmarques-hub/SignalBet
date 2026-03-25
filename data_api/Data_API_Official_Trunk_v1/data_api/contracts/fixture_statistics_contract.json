@@ -1,0 +1,9 @@
+{
+  "version": "v1.1",
+  "resource": "fixture_statistics",
+  "required_fields": [
+    "team.id",
+    "statistics[].type",
+    "statistics[].value"
+  ]
+}

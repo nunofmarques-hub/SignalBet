@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RunSummary",
+  "type": "object",
+  "required": [
+    "run_id",
+    "run_profile",
+    "started_at",
+    "finished_at",
+    "preflight_status",
+    "data_api_reference",
+    "data_api_status",
+    "official_trunk_status",
+    "modules_run",
+    "modules_skipped",
+    "candidates_generated",
+    "gps_status",
+    "bankroll_status",
+    "execution_status",
+    "warnings",
+    "errors",
+    "final_summary"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "run_profile": {
+      "type": "string"
+    },
+    "started_at": {
+      "type": "string"
+    },
+    "finished_at": {
+      "type": "string"
+    },
+    "preflight_status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL"
+      ]
+    },
+    "data_api_status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL"
+      ]
+    },
+    "modules_run": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "modules_skipped": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "candidates_generated": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "gps_status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "SKIPPED"
+      ]
+    },
+    "bankroll_status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "SKIPPED"
+      ]
+    },
+    "execution_status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL",
+        "SKIPPED"
+      ]
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "errors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "final_summary": {
+      "type": "string"
+    },
+    "data_api_reference": {
+      "type": "string"
+    },
+    "official_trunk_status": {
+      "type": "string",
+      "enum": [
+        "PASS",
+        "WARN",
+        "FAIL"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

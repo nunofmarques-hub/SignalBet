@@ -1,0 +1,8 @@
+{
+  "run_profile": "validation_run",
+  "initiated_by": "ui_button",
+  "dry_run": true,
+  "forced_modules": [],
+  "data_snapshot_tag": "latest",
+  "project_root": "examples/demo_data_api"
+}

@@ -1,0 +1,33 @@
+{
+  "profiles": {
+    "validation_run": {
+      "module_subset": [
+        "v12",
+        "cards",
+        "btts",
+        "corners"
+      ],
+      "dry_run": true
+    },
+    "daily_run": {
+      "module_subset": [
+        "v12",
+        "cards",
+        "btts",
+        "corners"
+      ],
+      "dry_run": false
+    },
+    "dry_run": {
+      "module_subset": [
+        "v12",
+        "cards"
+      ],
+      "dry_run": true
+    },
+    "module_debug_run": {
+      "module_subset": [],
+      "dry_run": true
+    }
+  }
+}

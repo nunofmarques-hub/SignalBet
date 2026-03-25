@@ -1,0 +1,51 @@
+{
+  "bank_policy_version": "bank_policy.v1.6",
+  "module": "bankroll_risk_manager",
+  "status": "staging",
+  "contract_reference": "Contrato_Transversal_Integracao_SignalBet_v1_1_Operacional",
+  "input_contract": "selector_pick.v1.1",
+  "output_contract": "bank_decision.v1.1",
+  "principles": [
+    "A banca nao refaz analise profunda do mercado.",
+    "A banca decide executabilidade, stake, exposicao e disciplina.",
+    "Quando houver duvida material, reduzir stake ou bloquear.",
+    "Uma fixture aprovada fecha o jogo para novas entradas, salvo revisao futura formal."
+  ],
+  "state_modes": [
+    "Normal",
+    "Alerta",
+    "Defesa",
+    "Protecao_Maxima"
+  ],
+  "priority_to_stake_base_u": {
+    "Best": 1.25,
+    "Top": 1.0,
+    "Actionable": 0.75,
+    "Watchlist": 0.5,
+    "Reject": 0.0
+  },
+  "limits": {
+    "daily_exposure_max_u": 5.0,
+    "module_daily_exposure_max_u": 3.0,
+    "min_effective_stake_u": 0.25,
+    "odds_window": {
+      "min": 1.2,
+      "max": 2.4
+    },
+    "one_approved_pick_per_fixture": true
+  },
+  "portfolio_group_policy": {
+    "Best": "core",
+    "Top": "core",
+    "Actionable": "satellite",
+    "Watchlist": "optional",
+    "Reject": "optional"
+  },
+  "default_reduction_factors": {
+    "REDUCE_HIGH_RISK": 0.75,
+    "REDUCE_DAY_EXPOSURE": 0.85,
+    "REDUCE_MODULE_EXPOSURE": 0.85,
+    "REDUCE_BANK_ALERT": 0.85,
+    "REDUCE_PARTIAL_CORRELATION": 0.8
+  }
+}

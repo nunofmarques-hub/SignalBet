@@ -1,0 +1,45 @@
+{
+  "bankroll_version": "1.0.0",
+  "max_total_units": 10.0,
+  "approved_count": 4,
+  "rejected_count": 1,
+  "total_allocated_units": 10.0,
+  "execution_payload": [
+    {
+      "match_id": 1208600,
+      "market": "btts_yes",
+      "stake_units": 3.0,
+      "risk_level": "medium",
+      "approved": true
+    },
+    {
+      "match_id": 1208494,
+      "market": "under_3_5",
+      "stake_units": 2.5,
+      "risk_level": "medium",
+      "approved": true
+    },
+    {
+      "match_id": 1208702,
+      "market": "over_corners",
+      "stake_units": 2.0,
+      "risk_level": "medium",
+      "approved": true
+    },
+    {
+      "match_id": 1208501,
+      "market": "over_1_5_game",
+      "stake_units": 1.5,
+      "risk_level": "medium",
+      "approved": true
+    },
+    {
+      "match_id": 1208494,
+      "market": "over_cards",
+      "stake_units": 1.0,
+      "risk_level": "low",
+      "approved": false
+    }
+  ],
+  "result": "green"
+}

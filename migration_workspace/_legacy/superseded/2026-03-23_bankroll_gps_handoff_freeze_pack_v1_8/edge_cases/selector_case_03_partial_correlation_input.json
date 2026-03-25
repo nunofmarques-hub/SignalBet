@@ -1,0 +1,29 @@
+{
+  "selector_schema_version": "selector_pick.v1.1",
+  "pick_id": "corners_20260323_012",
+  "module_id": "corners",
+  "module_version": "corners.0.9.2",
+  "event_id": 120102,
+  "match_label": "Osasuna vs Girona",
+  "market_family": "corners",
+  "market": "match_corners_under",
+  "selection": "Under 10.5 Corners",
+  "line": 10.5,
+  "odds": 1.91,
+  "global_score": 76,
+  "confidence_norm": 4,
+  "risk_norm": 3,
+  "edge_norm": "acceptable",
+  "priority_tier": "Actionable",
+  "conflict_flags": [],
+  "correlation_flags": [
+    "PARTIAL_CLUSTER_LOAD"
+  ],
+  "executive_rationale": "Pick operacional com carga de contexto.",
+  "selector_decision_note": "Shortlist alargada.",
+  "pool_status": "exported_to_bankroll",
+  "normalization_version": "norm.v1.1",
+  "rank_position": 2,
+  "shortlist_bucket": "support",
+  "selection_status": "selected"
+}

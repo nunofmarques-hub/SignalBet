@@ -1,0 +1,50 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "pick_id": "cards_878317_match_cards_over_Over_4.5_Cards_20260323T112650Z",
+  "created_at": "2026-03-23T11:26:50Z",
+  "module_id": "cards",
+  "module_version": "cards.1.0.0",
+  "event_id": 878317,
+  "match_label": "Osasuna vs Girona",
+  "competition": "La Liga",
+  "kickoff_datetime": "2026-03-22T20:00:00Z",
+  "market_family": "cards",
+  "market": "match_cards_over",
+  "selection": "Over 4.5 Cards",
+  "line": 4.5,
+  "odds": 1.91,
+  "eligibility": false,
+  "score_raw": 68.82,
+  "confidence_raw": 2,
+  "risk_raw": 2,
+  "edge_raw": "15.6%",
+  "rationale_summary": "Leitura disciplinar insuficiente para pick elegível no estado atual dos dados.",
+  "main_drivers": [
+    "match_cards_projection=5.2",
+    "match_tension=high",
+    "referee_bias=over_support",
+    "recent_intensity_signal=positive"
+  ],
+  "penalties": [
+    "score_below_threshold"
+  ],
+  "data_quality_flag": "clean",
+  "module_rank_internal": 1,
+  "expiry_context": "refresh_if_odds_move_5pct_or_referee_changes",
+  "module_specific_payload": {
+    "discipline_profile": "hot",
+    "match_cards_projection": 5.2,
+    "home_cards_projection": 2.7,
+    "away_cards_projection": 2.5,
+    "match_tension_flag": "high",
+    "competitive_pressure": "high",
+    "referee_used": true,
+    "referee_bias": "over_support",
+    "referee_confidence": "medium",
+    "home_away_asymmetry": "balanced",
+    "recent_intensity_signal": "positive_for_over",
+    "structural_bias": "over",
+    "signal_consistency": "medium",
+    "sample_depth_flag": "medium"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208725,
+    "referee": "Alejandro Muñiz",
+    "timezone": "UTC",
+    "date": "2025-03-02T13:00:00+00:00",
+    "timestamp": 1740920400,
+    "periods": {
+      "first": 1740920400,
+      "second": 1740924000
+    },
+    "venue": {
+      "id": 1464,
+      "name": "Estadio Municipal de Butarque",
+      "city": "Leganés"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 8
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 26",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 537,
+      "name": "Leganes",
+      "logo": "https://media.api-sports.io/football/teams/537.png",
+      "winner": true
+    },
+    "away": {
+      "id": 546,
+      "name": "Getafe",
+      "logo": "https://media.api-sports.io/football/teams/546.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

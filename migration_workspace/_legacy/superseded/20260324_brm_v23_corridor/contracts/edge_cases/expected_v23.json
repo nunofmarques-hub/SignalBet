@@ -1,0 +1,10 @@
+{
+  "ec01_approved.json": "APPROVED",
+  "ec02_reduced.json": "APPROVED_REDUCED",
+  "ec03_dup_block.json": "BLOCKED",
+  "ec04_reserve.json": "RESERVE",
+  "ec05_odds_block.json": "BLOCKED",
+  "ec06_invalid_block.json": "BLOCKED",
+  "ec07_reject_block.json": "BLOCKED",
+  "ec08_min_stake_block.json": "BLOCKED"
+}

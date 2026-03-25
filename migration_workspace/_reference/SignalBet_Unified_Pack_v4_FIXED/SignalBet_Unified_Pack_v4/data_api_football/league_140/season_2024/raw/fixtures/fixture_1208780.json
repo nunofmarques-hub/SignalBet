@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208780,
+    "referee": "Miguel Ortiz",
+    "timezone": "UTC",
+    "date": "2025-04-20T16:30:00+00:00",
+    "timestamp": 1745166600,
+    "periods": {
+      "first": 1745166600,
+      "second": 1745170200
+    },
+    "venue": {
+      "id": 1494,
+      "name": "Estadio Ramón Sánchez Pizjuán",
+      "city": "Sevilla"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 6
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 32",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 536,
+      "name": "Sevilla",
+      "logo": "https://media.api-sports.io/football/teams/536.png",
+      "winner": null
+    },
+    "away": {
+      "id": 542,
+      "name": "Alaves",
+      "logo": "https://media.api-sports.io/football/teams/542.png",
+      "winner": null
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 1
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

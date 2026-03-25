@@ -1,0 +1,26 @@
+{
+  "878320": {
+    "home_corner_kicks": 7,
+    "away_corner_kicks": 6,
+    "home_total_shots": 15,
+    "away_total_shots": 12,
+    "home_possession": 53,
+    "away_possession": 47
+  },
+  "878317": {
+    "home_corner_kicks": 5,
+    "away_corner_kicks": 5,
+    "home_total_shots": 11,
+    "away_total_shots": 14,
+    "home_possession": 42,
+    "away_possession": 58
+  },
+  "878312": {
+    "home_corner_kicks": 4,
+    "away_corner_kicks": 4,
+    "home_total_shots": 10,
+    "away_total_shots": 9,
+    "home_possession": 55,
+    "away_possession": 45
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "run_id": "RUN-20260325-130631",
+  "overall_status": "FAIL",
+  "checks": [
+    {
+      "check_id": "api_env_present",
+      "status": "PASS",
+      "message": "api.env.txt encontrado.",
+      "blocking": false
+    },
+    {
+      "check_id": "api_key_present",
+      "status": "PASS",
+      "message": "API key presente.",
+      "blocking": false
+    },
+    {
+      "check_id": "settings_file_present",
+      "status": "PASS",
+      "message": "settings/run request base encontrado.",
+      "blocking": true
+    },
+    {
+      "check_id": "python_available",
+      "status": "PASS",
+      "message": "Python 3.14 disponível.",
+      "blocking": true
+    },
+    {
+      "check_id": "project_root_valid",
+      "status": "PASS",
+      "message": "Project root válido.",
+      "blocking": true
+    },
+    {
+      "check_id": "required_folders_present",
+      "status": "PASS",
+      "message": "Pastas base encontradas.",
+      "blocking": true
+    },
+    {
+      "check_id": "write_permissions_ok",
+      "status": "PASS",
+      "message": "Permissão de escrita disponível.",
+      "blocking": false
+    },
+    {
+      "check_id": "data_api_root_present",
+      "status": "PASS",
+      "message": "data_api/ encontrada.",
+      "blocking": true
+    },
+    {
+      "check_id": "official_trunk_root_present",
+      "status": "PASS",
+      "message": "Data_API_Official_Trunk_v1 encontrado.",
+      "blocking": true
+    },
+    {
+      "check_id": "providers_dir_present",
+      "status": "FAIL",
+      "message": "providers/ em falta.",
+      "blocking": true
+    },
+    {
+      "check_id": "providers_registry_present",
+      "status": "FAIL",
+      "message": "Registry de providers em falta.",
+      "blocking": true
+    },
+    {
+      "check_id": "providers_files_present",
+      "status": "WARN",
+      "message": "Sem ficheiros JSON nos providers.",
+      "blocking": false
+    },
+    {
+      "check_id": "contracts_present",
+      "status": "FAIL",
+      "message": "Contracts oficiais em falta.",
+      "blocking": true
+    },
+    {
+      "check_id": "services_present",
+      "status": "WARN",
+      "message": "Services em falta.",
+      "blocking": false
+    },
+    {
+      "check_id": "latest_snapshot_available",
+      "status": "WARN",
+      "message": "Sem snapshot/cache utilizável.",
+      "blocking": false
+    },
+    {
+      "check_id": "module_manifest_present_v12",
+      "status": "PASS",
+      "message": "Manifest ok para v12.",
+      "blocking": false
+    },
+    {
+      "check_id": "module_contract_version_ok_v12",
+      "status": "PASS",
+      "message": "Contract version declarada para v12.",
+      "blocking": false
+    },
+    {
+      "check_id": "module_manifest_present_cards",
+      "status": "PASS",
+      "message": "Manifest ok para cards.",
+      "blocking": false
+    },
+    {
+      "check_id": "module_contract_version_ok_cards",
+      "status": "PASS",
+      "message": "Contract version declarada para cards.",
+      "blocking": false
+    },
+    {
+      "check_id": "module_manifest_present_btts",
+      "status": "PASS",
+      "message": "Manifest ok para btts.",
+      "blocking": false
+    },
+    {
+      "check_id": "module_contract_version_ok_btts",
+      "status": "PASS",
+      "message": "Contract version declarada para btts.",
+      "blocking": false
+    },
+    {
+      "check_id": "module_manifest_present_corners",
+      "status": "PASS",
+      "message": "Manifest ok para corners.",
+      "blocking": false
+    },
+    {
+      "check_id": "module_contract_version_ok_corners",
+      "status": "PASS",
+      "message": "Contract version declarada para corners.",
+      "blocking": false
+    },
+    {
+      "check_id": "gps_available",
+      "status": "PASS",
+      "message": "Flow GPS disponível em draft.",
+      "blocking": false
+    },
+    {
+      "check_id": "gps_project_hint",
+      "status": "WARN",
+      "message": "Sem hint físico de GPS no projeto.",
+      "blocking": false
+    },
+    {
+      "check_id": "bankroll_available",
+      "status": "PASS",
+      "message": "Flow Banca disponível em draft.",
+      "blocking": false
+    },
+    {
+      "check_id": "bank_project_hint",
+      "status": "WARN",
+      "message": "Sem hint físico de Banca no projeto.",
+      "blocking": false
+    },
+    {
+      "check_id": "execution_available",
+      "status": "PASS",
+      "message": "Bridge Execution disponível em draft.",
+      "blocking": false
+    },
+    {
+      "check_id": "execution_project_hint",
+      "status": "WARN",
+      "message": "Sem hint físico de Execution no projeto.",
+      "blocking": false
+    }
+  ]
+}

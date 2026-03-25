@@ -1,0 +1,67 @@
+{
+  "screen_status": "COMPLETED",
+  "run_id": "RUN-20260324-222055",
+  "system_health": "PASS",
+  "data_api_health": "PASS",
+  "project_mode": "demo",
+  "project_root": "/mnt/data/build_sbo_or6/sbo6/examples/project",
+  "module_overview": {
+    "eligible": [
+      "v12",
+      "cards",
+      "btts",
+      "corners"
+    ],
+    "run": [
+      "v12",
+      "cards"
+    ],
+    "skipped": [],
+    "failed": [
+      {
+        "module_id": "btts",
+        "reason": "output_missing"
+      },
+      {
+        "module_id": "corners",
+        "reason": "output_missing"
+      }
+    ],
+    "sources": {
+      "v12": {
+        "source_type": "v12",
+        "source_path": "/mnt/data/build_sbo_or6/sbo6/examples/project/integration_feeds/v12/latest.json"
+      },
+      "cards": {
+        "source_type": "cards",
+        "source_path": "/mnt/data/build_sbo_or6/sbo6/examples/project/integration_feeds/cards/latest.json"
+      },
+      "btts": {
+        "source_type": "missing",
+        "source_path": ""
+      },
+      "corners": {
+        "source_type": "missing",
+        "source_path": ""
+      }
+    }
+  },
+  "counts": {
+    "candidates_generated": 3,
+    "approved": 1,
+    "reduced": 2,
+    "blocked": 0
+  },
+  "pipeline": {
+    "gps_status": "PASS",
+    "bankroll_status": "PASS",
+    "execution_status": "SKIPPED"
+  },
+  "last_run_summary": "Validation run concluído. trunk=PASS; elegíveis=4; run=2; skipped=0; failed=2; cand=3; gps=PASS; banca=PASS; exec=SKIPPED; mode=demo.",
+  "cta_state": "ready",
+  "warnings": [
+    "Módulo btts falhou: output_missing.",
+    "Módulo corners falhou: output_missing."
+  ],
+  "errors": []
+}

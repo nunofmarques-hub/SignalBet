@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208737,
+    "referee": "Ricardo De Burgos",
+    "timezone": "UTC",
+    "date": "2025-03-16T20:00:00+00:00",
+    "timestamp": 1742155200,
+    "periods": {
+      "first": 1742155200,
+      "second": 1742158800
+    },
+    "venue": {
+      "id": 19217,
+      "name": "Riyadh Air Metropolitano",
+      "city": "Madrid"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 9
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 28",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 530,
+      "name": "Atletico Madrid",
+      "logo": "https://media.api-sports.io/football/teams/530.png",
+      "winner": false
+    },
+    "away": {
+      "id": 529,
+      "name": "Barcelona",
+      "logo": "https://media.api-sports.io/football/teams/529.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 2,
+    "away": 4
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 2,
+      "away": 4
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

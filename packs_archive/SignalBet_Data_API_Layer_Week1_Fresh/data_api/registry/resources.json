@@ -1,0 +1,36 @@
+[
+  {
+    "resource": "fixtures_catalog",
+    "stage": "future",
+    "storage": [
+      "raw",
+      "normalized"
+    ],
+    "priority": "P0"
+  },
+  {
+    "resource": "fixture_master",
+    "stage": "future",
+    "storage": [
+      "normalized"
+    ],
+    "priority": "P0"
+  },
+  {
+    "resource": "team_master",
+    "stage": "future",
+    "storage": [
+      "normalized"
+    ],
+    "priority": "P0"
+  },
+  {
+    "resource": "standings_snapshot",
+    "stage": "future",
+    "storage": [
+      "raw",
+      "normalized"
+    ],
+    "priority": "P0"
+  }
+]

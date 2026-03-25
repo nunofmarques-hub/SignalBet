@@ -1,0 +1,9 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "module_id": "v12",
+  "module_specific_payload": {
+    "motor_id": "MATCH_UNDER_ENGINE",
+    "market_variant": "MATCH_UNDER_35",
+    "provider_name": "Data_API_Official_Trunk_v1"
+  }
+}

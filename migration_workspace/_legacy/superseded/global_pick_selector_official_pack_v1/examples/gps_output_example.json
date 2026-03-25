@@ -1,0 +1,31 @@
+{
+  "gps_version": "1.0.0",
+  "generated_from_modules": [
+    "v12",
+    "btts",
+    "cards",
+    "corners"
+  ],
+  "shortlist": [
+    {
+      "match_id": 1208600,
+      "source_module": "btts",
+      "market": "btts_yes",
+      "score": 81,
+      "confidence": "alta",
+      "eligible": true,
+      "rank": 1,
+      "notes": "eventos e team stats favoráveis"
+    },
+    {
+      "match_id": 1208494,
+      "source_module": "v12",
+      "market": "under_3_5",
+      "score": 78,
+      "confidence": "alta",
+      "eligible": true,
+      "rank": 2,
+      "notes": "perfil conservador de jogo"
+    }
+  ]
+}

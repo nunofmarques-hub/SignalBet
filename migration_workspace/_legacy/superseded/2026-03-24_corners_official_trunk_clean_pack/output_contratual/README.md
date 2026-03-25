@@ -1,0 +1,1 @@
+1 forte=candidate, 1 médio=watchlist, 1 rejeitado=rejected.\n

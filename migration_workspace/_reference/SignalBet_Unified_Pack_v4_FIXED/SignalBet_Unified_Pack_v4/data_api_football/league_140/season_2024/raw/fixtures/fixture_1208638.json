@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208638,
+    "referee": "César Soto",
+    "timezone": "UTC",
+    "date": "2024-12-15T13:00:00+00:00",
+    "timestamp": 1734267600,
+    "periods": {
+      "first": 1734267600,
+      "second": 1734271200
+    },
+    "venue": {
+      "id": 19217,
+      "name": "Riyadh Air Metropolitano",
+      "city": "Madrid"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 4
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 17",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 530,
+      "name": "Atletico Madrid",
+      "logo": "https://media.api-sports.io/football/teams/530.png",
+      "winner": true
+    },
+    "away": {
+      "id": 546,
+      "name": "Getafe",
+      "logo": "https://media.api-sports.io/football/teams/546.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

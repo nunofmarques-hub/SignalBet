@@ -1,0 +1,18 @@
+{
+  "pick_id": "btts_20260324_007",
+  "module_id": "btts",
+  "module_version": "btts.0.8.1",
+  "event_id": 991104,
+  "match_label": "PSV vs Twente",
+  "market_family": "btts",
+  "market": "btts_yes",
+  "odds": 1.7,
+  "global_score": 80,
+  "confidence_norm": 4,
+  "risk_norm": 2,
+  "edge_norm": "strong",
+  "priority_tier": "Top",
+  "executive_rationale": "Missing selection field on purpose.",
+  "pool_status": "exported_to_bankroll",
+  "normalization_version": "norm.v1.1"
+}

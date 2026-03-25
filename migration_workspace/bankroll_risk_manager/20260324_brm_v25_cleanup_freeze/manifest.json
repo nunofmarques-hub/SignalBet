@@ -1,0 +1,14 @@
+{
+  "pack_name": "brm_v25_cleanup_freeze",
+  "module_name": "bankroll_risk_manager",
+  "pack_version": "v25",
+  "status": "staging",
+  "entrypoint": "run_smoke.py",
+  "provider_type": "upstream_contract",
+  "provider_name": "gps_v6",
+  "provider_object": "contracts/gps_to_bank_v24.json",
+  "contract_version": "v1.1",
+  "official_active_line": "v24",
+  "official_execution_payload": "contracts/bank_to_exec_v24.json",
+  "notes": "Cleanup/freeze pack with environment hygiene enforced; no __pycache__ or .pyc files."
+}

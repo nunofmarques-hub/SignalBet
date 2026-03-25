@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208545,
+    "referee": "Alejandro Hernández",
+    "timezone": "UTC",
+    "date": "2024-09-21T16:30:00+00:00",
+    "timestamp": 1726936200,
+    "periods": {
+      "first": 1726936200,
+      "second": 1726939800
+    },
+    "venue": {
+      "id": 1497,
+      "name": "Estadio de Mestalla",
+      "city": "Valencia"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 10
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 6",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 532,
+      "name": "Valencia",
+      "logo": "https://media.api-sports.io/football/teams/532.png",
+      "winner": true
+    },
+    "away": {
+      "id": 547,
+      "name": "Girona",
+      "logo": "https://media.api-sports.io/football/teams/547.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 2,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 2,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

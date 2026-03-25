@@ -1,0 +1,37 @@
+{
+  "screen_status": "COMPLETED",
+  "run_id": "RUN-20260324T215751Z-64BEB2",
+  "system_health": "PASS",
+  "data_api_health": "PASS",
+  "module_overview": {
+    "eligible": [
+      "v12",
+      "cards",
+      "btts",
+      "corners"
+    ],
+    "run": [
+      "v12",
+      "cards"
+    ],
+    "skipped": [],
+    "failed": [
+      {
+        "module_id": "btts",
+        "reason": "output_missing"
+      },
+      {
+        "module_id": "corners",
+        "reason": "output_missing"
+      }
+    ]
+  },
+  "last_run_summary": "Validation run concluído. trunk=PASS; elegíveis=4; run=2; skipped=0; failed=2; cand=3; gps=PASS; banca=PASS; exec=SKIPPED.",
+  "candidates_generated": 3,
+  "cta_state": "ready",
+  "warnings": [
+    "Módulo btts falhou: output_missing.",
+    "Módulo corners falhou: output_missing."
+  ],
+  "errors": []
+}

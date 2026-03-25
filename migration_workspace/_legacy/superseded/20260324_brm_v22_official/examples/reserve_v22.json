@@ -1,0 +1,23 @@
+{
+  "decision_id": "bank_20260324_003",
+  "pick_id": "btts_20260324_003",
+  "module_origin": "btts",
+  "decision_status": "RESERVE",
+  "execution_ready": false,
+  "stake_base": 0.5,
+  "stake_suggested": 0.5,
+  "stake_approved": 0.0,
+  "stake_pct_bankroll": null,
+  "bank_state_mode": "Alerta",
+  "portfolio_group": "optional",
+  "exposure_bucket": "day_medium",
+  "execution_order": null,
+  "approved_odds_window": null,
+  "rules_triggered": [],
+  "block_reason_code": null,
+  "block_reason_text": null,
+  "bankroll_before": 500.0,
+  "daily_exposure_before": 3.0,
+  "daily_exposure_after_if_accepted": 3.0,
+  "bankroll_note": "Mantida em reserva por prioridade Watchlist e contexto prudencial."
+}

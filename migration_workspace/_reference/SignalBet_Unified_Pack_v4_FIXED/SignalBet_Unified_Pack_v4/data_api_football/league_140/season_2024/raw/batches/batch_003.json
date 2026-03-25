@@ -1,0 +1,15 @@
+{
+  "get": "fixtures",
+  "parameters": {
+    "ids": "1208533-1212914-1208536-1208538-1208532-1208535-1208534-1208530-1208537-1208550-1208513-1208552-1208542-1208546-1208547-1208545-1212915-1208541-1208539-1208544"
+  },
+  "errors": {
+    "plan": "Free plans do not have access to the Ids parameter."
+  },
+  "results": 0,
+  "paging": {
+    "current": 1,
+    "total": 1
+  },
+  "response": []
+}

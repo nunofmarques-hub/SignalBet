@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208602,
+    "referee": "Miguel Ortiz",
+    "timezone": "UTC",
+    "date": "2024-11-10T13:00:00+00:00",
+    "timestamp": 1731243600,
+    "periods": {
+      "first": 1731243600,
+      "second": 1731247200
+    },
+    "venue": {
+      "id": 1489,
+      "name": "Estadio Benito Villamarín",
+      "city": "Sevilla"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 8
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 13",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 543,
+      "name": "Real Betis",
+      "logo": "https://media.api-sports.io/football/teams/543.png",
+      "winner": null
+    },
+    "away": {
+      "id": 538,
+      "name": "Celta Vigo",
+      "logo": "https://media.api-sports.io/football/teams/538.png",
+      "winner": null
+    }
+  },
+  "goals": {
+    "home": 2,
+    "away": 2
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 1
+    },
+    "fulltime": {
+      "home": 2,
+      "away": 2
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

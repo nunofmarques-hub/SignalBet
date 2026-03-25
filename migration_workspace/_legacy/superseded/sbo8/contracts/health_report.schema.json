@@ -1,0 +1,14 @@
+{
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "overall_status": {
+      "type": "string"
+    },
+    "checks": {
+      "type": "array"
+    }
+  }
+}

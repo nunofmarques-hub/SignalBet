@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208833,
+    "referee": "Juan Martínez",
+    "timezone": "UTC",
+    "date": "2025-05-24T19:00:00+00:00",
+    "timestamp": 1748113200,
+    "periods": {
+      "first": 1748113200,
+      "second": 1748116800
+    },
+    "venue": {
+      "id": 20422,
+      "name": "Estadio Coliseum",
+      "city": "Getafe"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 7
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 38",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 546,
+      "name": "Getafe",
+      "logo": "https://media.api-sports.io/football/teams/546.png",
+      "winner": false
+    },
+    "away": {
+      "id": 538,
+      "name": "Celta Vigo",
+      "logo": "https://media.api-sports.io/football/teams/538.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 2
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 1
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 2
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "payload_name": "execution_fixture_payload",
+  "version": "1.0.0",
+  "official_provider": {
+    "provider_name": "fixtures_provider.py",
+    "service_name": "get_fixtures_by_league_season()",
+    "provider_object": "fixtures_catalog",
+    "official_path_template": "data_api/storage/raw/league_<league_id>/season_<season>/catalog/fixtures_catalog_status_FT_AET_PEN.json"
+  },
+  "required_fields": [
+    "fixture_id",
+    "fixture_ref",
+    "league_id",
+    "season",
+    "event_date",
+    "status_short",
+    "status_long",
+    "is_finished",
+    "home_team_id",
+    "home_team_name",
+    "away_team_id",
+    "away_team_name",
+    "home_goals",
+    "away_goals",
+    "score_fulltime_home",
+    "score_fulltime_away",
+    "score_halftime_home",
+    "score_halftime_away",
+    "settlement_context",
+    "source"
+  ],
+  "notes": [
+    "event_id equivalente suportado nesta v1: fixture_id",
+    "payload fixture-centric suficiente para settlement/contexto base da Execution"
+  ]
+}

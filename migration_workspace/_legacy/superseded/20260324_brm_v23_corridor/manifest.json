@@ -1,0 +1,13 @@
+{
+  "pack_name": "brm_v23_corridor_pack",
+  "module_name": "bankroll_risk_manager",
+  "pack_version": "v2.3",
+  "status": "staging",
+  "entrypoint": "src/flow_demo.py",
+  "provider_type": "upstream_contract_batch",
+  "provider_name": "global_pick_selector",
+  "provider_object": "gps_shortlist_batch.v1 -> bank_decision.v1.1 -> execution_intake_candidate.v1",
+  "contract_version": "SignalBet_Contrato_v1.1",
+  "downstream_target": "execution_tracking",
+  "smoke_test": "python run_smoke.py"
+}

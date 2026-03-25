@@ -1,0 +1,42 @@
+{
+  "fixture": {
+    "event_id": 910001,
+    "match_label": "Porto vs Braga",
+    "competition": "Primeira Liga",
+    "kickoff_datetime": "2026-03-28T20:30:00Z"
+  },
+  "teams": {
+    "home": "Porto",
+    "away": "Braga"
+  },
+  "competition_context": {
+    "match_tension_flag": "high",
+    "competitive_pressure": "high",
+    "home_away_asymmetry": "balanced"
+  },
+  "discipline_context": {
+    "home_profile": {
+      "cards_avg": 2.7,
+      "fouls_avg": 14.2
+    },
+    "away_profile": {
+      "cards_avg": 2.5,
+      "fouls_avg": 15.1
+    },
+    "referee_profile": {
+      "known": true,
+      "cards_avg": 5.8
+    },
+    "recent_intensity_signal": "positive_for_over"
+  },
+  "market_context": {
+    "market": "match_cards_over",
+    "selection": "over",
+    "line": 4.5,
+    "odds": 1.88
+  },
+  "data_quality": {
+    "data_quality_flag": "clean",
+    "sample_depth_flag": "high"
+  }
+}

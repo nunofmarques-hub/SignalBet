@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RunRequest",
+  "type": "object",
+  "required": [
+    "run_profile",
+    "initiated_by",
+    "dry_run",
+    "data_snapshot_tag"
+  ],
+  "properties": {
+    "run_profile": {
+      "type": "string",
+      "enum": [
+        "daily_run",
+        "validation_run",
+        "dry_run",
+        "module_debug_run"
+      ]
+    },
+    "initiated_by": {
+      "type": "string"
+    },
+    "forced_modules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "dry_run": {
+      "type": "boolean"
+    },
+    "data_snapshot_tag": {
+      "type": "string"
+    },
+    "correlation_id": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

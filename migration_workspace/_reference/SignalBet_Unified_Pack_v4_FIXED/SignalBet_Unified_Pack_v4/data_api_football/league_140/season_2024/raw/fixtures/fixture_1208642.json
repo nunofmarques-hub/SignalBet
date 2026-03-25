@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208642,
+    "referee": "Guillermo Cuadra",
+    "timezone": "UTC",
+    "date": "2024-12-15T17:30:00+00:00",
+    "timestamp": 1734283800,
+    "periods": {
+      "first": 1734283800,
+      "second": 1734287400
+    },
+    "venue": {
+      "id": 1498,
+      "name": "Estadio de la Cerámica",
+      "city": "Villarreal"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 8
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 17",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 533,
+      "name": "Villarreal",
+      "logo": "https://media.api-sports.io/football/teams/533.png",
+      "winner": false
+    },
+    "away": {
+      "id": 543,
+      "name": "Real Betis",
+      "logo": "https://media.api-sports.io/football/teams/543.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 2
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 1
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 2
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "module_id": "v12",
+  "status": "PASS",
+  "warnings": [],
+  "errors": [],
+  "candidates": [
+    {
+      "pick_id": "V12-001",
+      "market": "home_team_over_1_5",
+      "fixture": "PSV vs NEC",
+      "confidence": 0.82
+    },
+    {
+      "pick_id": "V12-002",
+      "market": "under_3_5",
+      "fixture": "Roma vs Lecce",
+      "confidence": 0.77
+    }
+  ]
+}

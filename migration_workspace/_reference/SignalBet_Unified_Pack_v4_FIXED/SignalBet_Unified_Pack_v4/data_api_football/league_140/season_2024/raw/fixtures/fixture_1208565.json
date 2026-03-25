@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208565,
+    "referee": "Alejandro Muñiz",
+    "timezone": "UTC",
+    "date": "2024-09-28T14:15:00+00:00",
+    "timestamp": 1727532900,
+    "periods": {
+      "first": 1727532900,
+      "second": 1727536500
+    },
+    "venue": {
+      "id": 1488,
+      "name": "Estadio de Vallecas",
+      "city": "Madrid"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 5
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 8",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 728,
+      "name": "Rayo Vallecano",
+      "logo": "https://media.api-sports.io/football/teams/728.png",
+      "winner": null
+    },
+    "away": {
+      "id": 537,
+      "name": "Leganes",
+      "logo": "https://media.api-sports.io/football/teams/537.png",
+      "winner": null
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

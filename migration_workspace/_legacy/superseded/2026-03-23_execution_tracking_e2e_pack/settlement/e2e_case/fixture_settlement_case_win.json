@@ -1,0 +1,18 @@
+{
+  "schema_version": "execution-settlement-hook.v1",
+  "source_system": "DATA_API_LAYER",
+  "event_id": "878317",
+  "fixture_status": "FT",
+  "home_team": "Benfica",
+  "away_team": "Braga",
+  "score": {
+    "home": 2,
+    "away": 1
+  },
+  "market_result_context": {
+    "goals_home_team": 2,
+    "goals_away_team": 1,
+    "goals_total": 3
+  },
+  "settlement_timestamp": "2026-03-23T21:02:13Z"
+}

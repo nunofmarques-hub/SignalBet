@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208733,
+    "referee": "Juan Pulido",
+    "timezone": "UTC",
+    "date": "2025-03-08T17:30:00+00:00",
+    "timestamp": 1741455000,
+    "periods": {
+      "first": 1741455000,
+      "second": 1741458600
+    },
+    "venue": {
+      "id": 1497,
+      "name": "Estadio de Mestalla",
+      "city": "Valencia"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 7
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 27",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 532,
+      "name": "Valencia",
+      "logo": "https://media.api-sports.io/football/teams/532.png",
+      "winner": true
+    },
+    "away": {
+      "id": 720,
+      "name": "Valladolid",
+      "logo": "https://media.api-sports.io/football/teams/720.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 2,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 1
+    },
+    "fulltime": {
+      "home": 2,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

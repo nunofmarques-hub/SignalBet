@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208802,
+    "referee": "Miguel Ortiz",
+    "timezone": "UTC",
+    "date": "2025-05-11T19:00:00+00:00",
+    "timestamp": 1746990000,
+    "periods": {
+      "first": 1746990000,
+      "second": 1746993600
+    },
+    "venue": {
+      "id": 1489,
+      "name": "Estadio Benito Villamarín",
+      "city": "Sevilla"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 7
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 35",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 543,
+      "name": "Real Betis",
+      "logo": "https://media.api-sports.io/football/teams/543.png",
+      "winner": null
+    },
+    "away": {
+      "id": 727,
+      "name": "Osasuna",
+      "logo": "https://media.api-sports.io/football/teams/727.png",
+      "winner": null
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

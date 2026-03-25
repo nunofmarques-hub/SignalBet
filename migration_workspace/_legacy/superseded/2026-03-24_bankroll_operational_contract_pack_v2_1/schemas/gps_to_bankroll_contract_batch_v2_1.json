@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "gps_to_bankroll_contract_batch_v2_1",
+  "type": "object",
+  "required": [
+    "selector_schema_version",
+    "batch_id",
+    "generated_at",
+    "pool_status",
+    "picks"
+  ],
+  "properties": {
+    "selector_schema_version": {
+      "type": "string",
+      "const": "selector_pick_batch.v1.1"
+    },
+    "batch_id": {
+      "type": "string"
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "pool_status": {
+      "type": "string",
+      "const": "exported_to_bankroll"
+    },
+    "picks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/pick"
+      }
+    }
+  },
+  "$defs": {
+    "pick": {
+      "type": "object",
+      "required": [
+        "pick_id",
+        "module_id",
+        "module_version",
+        "event_id",
+        "match_label",
+        "market_family",
+        "market",
+        "selection",
+        "odds",
+        "global_score",
+        "confidence_norm",
+        "risk_norm",
+        "edge_norm",
+        "priority_tier",
+        "executive_rationale",
+        "pool_status",
+        "normalization_version"
+      ],
+      "properties": {
+        "pick_id": {
+          "type": "string"
+        },
+        "module_id": {
+          "type": "string",
+          "enum": [
+            "v12",
+            "corners",
+            "btts",
+            "cards"
+          ]
+        },
+        "module_version": {
+          "type": "string"
+        },
+        "event_id": {
+          "type": "integer"
+        },
+        "match_label": {
+          "type": "string"
+        },
+        "market_family": {
+          "type": "string",
+          "enum": [
+            "goals",
+            "btts",
+            "corners",
+            "cards"
+          ]
+        },
+        "market": {
+          "type": "string"
+        },
+        "selection": {
+          "type": "string"
+        },
+        "line": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "odds": {
+          "type": "number",
+          "minimum": 1.01
+        },
+        "global_score": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "confidence_norm": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "risk_norm": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "edge_norm": {
+          "type": "string",
+          "enum": [
+            "weak",
+            "acceptable",
+            "strong",
+            "very_strong"
+          ]
+        },
+        "priority_tier": {
+          "type": "string",
+          "enum": [
+            "Best",
+            "Top",
+            "Actionable",
+            "Watchlist",
+            "Reject"
+          ]
+        },
+        "conflict_flags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "correlation_flags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "executive_rationale": {
+          "type": "string"
+        },
+        "selector_decision_note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pool_status": {
+          "type": "string",
+          "const": "exported_to_bankroll"
+        },
+        "normalization_version": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

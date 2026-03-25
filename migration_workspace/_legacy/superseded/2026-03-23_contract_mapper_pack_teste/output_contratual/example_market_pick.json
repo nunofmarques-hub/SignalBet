@@ -1,0 +1,55 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "pick_id": "corners_878320_over_9_5",
+  "created_at": "2026-03-23T20:00:00+00:00",
+  "module_id": "corners",
+  "module_version": "corners.v2_logicfix",
+  "event_id": 878320,
+  "match_label": "Espanyol vs Almeria",
+  "competition": "La Liga",
+  "kickoff_datetime": null,
+  "market_family": "corners",
+  "market": "match_corners_over",
+  "selection": "Over 9.5 Corners",
+  "line": 9.5,
+  "odds": null,
+  "eligibility": true,
+  "score_raw": 100.0,
+  "confidence_raw": "Alta",
+  "risk_raw": "Baixo",
+  "edge_raw": null,
+  "rationale_summary": "Jogo com perfil volume alto para cantos. O sinal principal aparece em over 9.5 cantos jogo com força muito forte.",
+  "main_drivers": [
+    "produção combinada acima do padrão",
+    "perfil de concessão favorável",
+    "contexto de jogo favorável a volume"
+  ],
+  "penalties": [],
+  "data_quality_flag": "clean",
+  "module_rank_internal": 1,
+  "expiry_context": "pre_match_same_day",
+  "module_specific_payload": {
+    "corner_projection": 15.17,
+    "match_corner_bias": "Over",
+    "tempo_profile": "Volume Alto",
+    "team_scores": {
+      "home": 76.86,
+      "away": 54.94
+    },
+    "line_grid": [
+      {
+        "market": "Over 9.5 cantos",
+        "score": 100.0,
+        "confidence": "Alta",
+        "risk": "Baixo",
+        "eligible": true
+      }
+    ],
+    "alerts": [],
+    "context_flags": {
+      "contradictory_read": false,
+      "borderline_market": false,
+      "low_data_quality": false
+    }
+  }
+}

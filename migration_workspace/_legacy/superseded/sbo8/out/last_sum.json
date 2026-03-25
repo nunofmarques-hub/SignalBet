@@ -1,0 +1,169 @@
+{
+  "run_id": "RUN-20260325-000716",
+  "run_profile": "validation_run",
+  "started_at": "2026-03-25T00:07:16.640419+00:00",
+  "finished_at": "2026-03-25T00:07:16.656039Z",
+  "initiated_by": "ui_button",
+  "preflight_status": "PASS",
+  "official_trunk_status": "PASS",
+  "project_root": "/mnt/data/build_or8/sbo8/examples/project",
+  "project_mode": "demo",
+  "run_mode": "demo",
+  "checked_paths": [
+    "project_root_txt:/mnt/data/build_or8/sbo8/# colocar aqui o project_root real, se quiseres",
+    "pack_parent:/mnt",
+    "demo:/mnt/data/build_or8/sbo8/examples/project"
+  ],
+  "strict_real_project": false,
+  "strict_real_feeds": false,
+  "modules_eligible": [
+    "v12",
+    "cards",
+    "btts",
+    "corners"
+  ],
+  "modules_run": [
+    "v12",
+    "cards"
+  ],
+  "modules_skipped": [],
+  "modules_failed": [
+    {
+      "module_id": "btts",
+      "reason": "output_missing"
+    },
+    {
+      "module_id": "corners",
+      "reason": "output_missing"
+    }
+  ],
+  "module_feed_sources": {
+    "v12": {
+      "mode": "demo",
+      "type": "direct:integration_feeds/v12",
+      "path": "/mnt/data/build_or8/sbo8/examples/project/integration_feeds/v12/latest.json",
+      "status": "PASS"
+    },
+    "cards": {
+      "mode": "demo",
+      "type": "direct:integration_feeds/cards",
+      "path": "/mnt/data/build_or8/sbo8/examples/project/integration_feeds/cards/latest.json",
+      "status": "PASS"
+    },
+    "btts": {
+      "mode": "missing",
+      "type": "missing",
+      "path": "",
+      "status": "FAIL"
+    },
+    "corners": {
+      "mode": "missing",
+      "type": "missing",
+      "path": "",
+      "status": "FAIL"
+    }
+  },
+  "module_feed_stats": {
+    "project": 0,
+    "demo": 2,
+    "external": 0,
+    "missing": 2
+  },
+  "project_feed_coverage_ratio": 0.0,
+  "candidates_generated": 3,
+  "gps_status": "PASS",
+  "bankroll_status": "PASS",
+  "execution_status": "SKIPPED",
+  "approved_count": 1,
+  "reduced_count": 2,
+  "blocked_count": 0,
+  "warnings": [
+    "Modo demo ativo: ligação ao project_root físico real não provada.",
+    "Sem feeds reais de módulo detetados."
+  ],
+  "errors": [],
+  "pipeline_steps": [
+    {
+      "step": "config_check",
+      "status": "PASS"
+    },
+    {
+      "step": "environment_check",
+      "status": "PASS"
+    },
+    {
+      "step": "data_api_readiness_check",
+      "status": "PASS"
+    },
+    {
+      "step": "module_discovery",
+      "status": "PASS",
+      "meta": {
+        "eligible_count": 4,
+        "skipped_count": 0
+      }
+    },
+    {
+      "step": "run_market_modules",
+      "status": "PASS",
+      "meta": {
+        "modules_run": [
+          "v12",
+          "cards"
+        ],
+        "modules_failed": [
+          {
+            "module_id": "btts",
+            "reason": "output_missing"
+          },
+          {
+            "module_id": "corners",
+            "reason": "output_missing"
+          }
+        ],
+        "feed_stats": {
+          "project": 0,
+          "demo": 2,
+          "external": 0,
+          "missing": 2
+        }
+      }
+    },
+    {
+      "step": "collect_candidates",
+      "status": "PASS",
+      "meta": {
+        "candidate_count": 3
+      }
+    },
+    {
+      "step": "run_global_pick_selector",
+      "status": "PASS",
+      "meta": {
+        "selected_count": 3
+      }
+    },
+    {
+      "step": "run_bankroll_manager",
+      "status": "PASS",
+      "meta": {
+        "approved": 1,
+        "reduced": 2,
+        "blocked": 0
+      }
+    },
+    {
+      "step": "register_execution",
+      "status": "SKIPPED"
+    },
+    {
+      "step": "build_run_summary",
+      "status": "PASS"
+    },
+    {
+      "step": "return_ui_status",
+      "status": "PASS"
+    }
+  ],
+  "final_summary": "validation_run concluído em modo demo. Elegíveis=4, corridos=2, failed=2, candidatos=3, aprovadas=1, coverage_real=0.0%."
+}

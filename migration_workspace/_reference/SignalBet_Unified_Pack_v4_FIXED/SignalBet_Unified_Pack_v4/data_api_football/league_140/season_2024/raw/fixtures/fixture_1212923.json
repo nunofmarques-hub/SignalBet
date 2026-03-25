@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1212923,
+    "referee": "Alejandro Hernández",
+    "timezone": "UTC",
+    "date": "2024-11-23T17:30:00+00:00",
+    "timestamp": 1732383000,
+    "periods": {
+      "first": 1732383000,
+      "second": 1732386600
+    },
+    "venue": {
+      "id": 1478,
+      "name": "Estadi Municipal de Montilivi",
+      "city": "Girona"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 2
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 14",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 547,
+      "name": "Girona",
+      "logo": "https://media.api-sports.io/football/teams/547.png",
+      "winner": true
+    },
+    "away": {
+      "id": 540,
+      "name": "Espanyol",
+      "logo": "https://media.api-sports.io/football/teams/540.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 4,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 4,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 4,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "event_id": 910003,
+  "match_label": "Arouca vs Estoril",
+  "competition": "Primeira Liga",
+  "kickoff_datetime": "2026-03-23T15:30:00Z",
+  "source_tag": "data_api/exports/cards/910003.json",
+  "market_context": {
+    "market": "match_cards_under",
+    "selection": "Under 5.5 Cards",
+    "line": 5.5,
+    "odds": 1.76
+  },
+  "discipline_context": {
+    "match_cards_projection": 5.4,
+    "home_cards_projection": 2.7,
+    "away_cards_projection": 2.7,
+    "discipline_profile": "warm",
+    "match_tension_flag": "medium",
+    "competitive_pressure": "medium",
+    "signal_consistency": "low",
+    "home_away_asymmetry": "balanced",
+    "sample_depth_flag": "low"
+  },
+  "referee_context": {
+    "used": true,
+    "bias": "neutral",
+    "confidence": "low"
+  },
+  "quality_context": {
+    "data_quality_flag": "clean"
+  }
+}

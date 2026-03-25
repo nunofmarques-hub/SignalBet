@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208830,
+    "referee": "Guillermo Cuadra",
+    "timezone": "UTC",
+    "date": "2025-05-24T19:00:00+00:00",
+    "timestamp": 1748113200,
+    "periods": {
+      "first": 1748113200,
+      "second": 1748116800
+    },
+    "venue": {
+      "id": 1470,
+      "name": "Estadio de Mendizorroza",
+      "city": "Vitoria-Gasteiz"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 9
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 38",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 542,
+      "name": "Alaves",
+      "logo": "https://media.api-sports.io/football/teams/542.png",
+      "winner": null
+    },
+    "away": {
+      "id": 727,
+      "name": "Osasuna",
+      "logo": "https://media.api-sports.io/football/teams/727.png",
+      "winner": null
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "screen_status": {
+      "type": "string"
+    },
+    "module_overview": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208661,
+    "referee": "Gil Manzano",
+    "timezone": "UTC",
+    "date": "2024-12-03T18:00:00+00:00",
+    "timestamp": 1733248800,
+    "periods": {
+      "first": 1733248800,
+      "second": 1733252400
+    },
+    "venue": {
+      "id": 19940,
+      "name": "Estadi Mallorca Son Moix",
+      "city": "Palma de Mallorca"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 4
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 19",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 798,
+      "name": "Mallorca",
+      "logo": "https://media.api-sports.io/football/teams/798.png",
+      "winner": false
+    },
+    "away": {
+      "id": 529,
+      "name": "Barcelona",
+      "logo": "https://media.api-sports.io/football/teams/529.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 5
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 1
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 5
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

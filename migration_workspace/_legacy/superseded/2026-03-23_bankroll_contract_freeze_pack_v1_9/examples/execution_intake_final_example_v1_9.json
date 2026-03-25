@@ -1,0 +1,22 @@
+{
+  "execution_intake_schema_version": "execution_intake_final.v1.9",
+  "source_decision_batch_id": "bank_batch_2026_03_23_001",
+  "intake_timestamp": "2026-03-23T20:18:00Z",
+  "pick_id": "v12_20260323_001",
+  "event_id": 991100,
+  "match_label": "Roma vs Lecce",
+  "market_family": "goals",
+  "market": "match_under",
+  "selection": "Under 3.5 Goals",
+  "line": 3.5,
+  "odds_snapshot": 1.62,
+  "global_score": 88,
+  "priority_tier": "Best",
+  "decision_status": "APPROVED",
+  "stake_approved": 1.25,
+  "stake_pct_bankroll": 2.0,
+  "execution_order": 1,
+  "approved_odds_window": "1.58-1.66",
+  "rules_triggered": [],
+  "execution_note": "Candidate final pronto para intake da Execution."
+}

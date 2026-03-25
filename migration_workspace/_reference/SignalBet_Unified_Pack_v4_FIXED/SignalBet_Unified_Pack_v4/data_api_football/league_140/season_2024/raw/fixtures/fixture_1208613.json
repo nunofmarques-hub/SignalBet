@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208613,
+    "referee": "José Munuera",
+    "timezone": "UTC",
+    "date": "2024-11-24T13:00:00+00:00",
+    "timestamp": 1732453200,
+    "periods": {
+      "first": 1732453200,
+      "second": 1732456800
+    },
+    "venue": {
+      "id": 1486,
+      "name": "Estadio El Sadar",
+      "city": "Iruñea"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 7
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 14",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 727,
+      "name": "Osasuna",
+      "logo": "https://media.api-sports.io/football/teams/727.png",
+      "winner": null
+    },
+    "away": {
+      "id": 533,
+      "name": "Villarreal",
+      "logo": "https://media.api-sports.io/football/teams/533.png",
+      "winner": null
+    }
+  },
+  "goals": {
+    "home": 2,
+    "away": 2
+  },
+  "score": {
+    "halftime": {
+      "home": 2,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 2,
+      "away": 2
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

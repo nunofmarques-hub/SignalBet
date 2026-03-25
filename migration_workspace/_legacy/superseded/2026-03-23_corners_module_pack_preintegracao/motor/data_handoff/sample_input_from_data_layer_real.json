@@ -1,0 +1,58 @@
+{
+  "schema_version": "corners_input.v1",
+  "fixture_context": {
+    "fixture_id": 878320,
+    "competition": "La Liga",
+    "season": 2022,
+    "kickoff_datetime": "2026-03-23T20:00:00Z",
+    "home_team": {"team_id": 543, "name": "Espanyol"},
+    "away_team": {"team_id": 548, "name": "Almeria"}
+  },
+  "home_team_window": {
+    "sample_size": 5,
+    "corners_for_avg": 6.2,
+    "corners_against_avg": 5.4,
+    "corners_for_home_away_avg": 6.7,
+    "corners_against_home_away_avg": 5.1,
+    "hit_rate_over_4_5": 0.80,
+    "hit_rate_over_5_5": 0.60,
+    "conceded_rate_over_4_5": 0.60,
+    "conceded_rate_over_5_5": 0.40,
+    "recent_corners_for": [7,6,8,5,5],
+    "recent_corners_against": [5,6,4,7,5],
+    "crossing_volume": 74.0,
+    "final_third_pressure": 79.0,
+    "shot_block_route": 42.0,
+    "defensive_width_tolerance": 58.0,
+    "low_block_tendency": 38.0,
+    "opponent_adjustment_quality": 64.0
+  },
+  "away_team_window": {
+    "sample_size": 5,
+    "corners_for_avg": 5.1,
+    "corners_against_avg": 6.4,
+    "corners_for_home_away_avg": 4.8,
+    "corners_against_home_away_avg": 6.8,
+    "hit_rate_over_4_5": 0.60,
+    "hit_rate_over_5_5": 0.40,
+    "conceded_rate_over_4_5": 0.80,
+    "conceded_rate_over_5_5": 0.60,
+    "recent_corners_for": [4,6,5,5,6],
+    "recent_corners_against": [7,6,8,5,6],
+    "crossing_volume": 63.0,
+    "final_third_pressure": 68.0,
+    "shot_block_route": 39.0,
+    "defensive_width_tolerance": 71.0,
+    "low_block_tendency": 44.0,
+    "opponent_adjustment_quality": 59.0
+  },
+  "match_context": {
+    "expected_pace_shape": 71.0,
+    "tactical_asymmetry": 52.0,
+    "expected_game_state_volatility": 63.0,
+    "likely_rotation": false,
+    "low_data_quality": false,
+    "weather_disruption": false,
+    "unstable_tactical_profile": false
+  }
+}

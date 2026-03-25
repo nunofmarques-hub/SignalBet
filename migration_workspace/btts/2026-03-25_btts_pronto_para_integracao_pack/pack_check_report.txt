@@ -1,0 +1,20 @@
+PACK CHECK REPORT
+generated_at=2026-03-25T11:27:34.161807+00:00
+module=btts
+status=pronto_para_integracao
+official_active_line=true
+runtime_note=trunk OK | runner OK | output OK | source_profile=official_trunk_direct
+
+FILES:
+- README.md | sha256_16=0d3b058d63646905
+- docs/HANDOFF_BTTS.md | sha256_16=a36e54a1dccb58f9
+- docs/RUNTIME_CLOSURE_NOTE.md | sha256_16=49187de6afd11b7c
+- manifest.json | sha256_16=658b21ddd5685334
+- sample_output/market_pick_v1_1_btts.json | sha256_16=139760b65fd90fcd
+- src/btts/__init__.py | sha256_16=e3b0c44298fc1c14
+- src/btts/loaders/__init__.py | sha256_16=e3b0c44298fc1c14
+- src/btts/loaders/official_trunk_loader.py | sha256_16=f8cb6885f13a1204
+- src/btts/providers/__init__.py | sha256_16=e3b0c44298fc1c14
+- src/btts/providers/direct_official_trunk_provider.py | sha256_16=96e540bf2eec09c0
+- src/btts/run_minimal_flow.py | sha256_16=b84050c061f4b7ce
+- support/fallback/fallback_official_trunk_input_btts.json | sha256_16=5a9e1b0b74d775be

@@ -1,0 +1,35 @@
+PACK CHECK REPORT — Cards Ready for Integration Pack
+
+Resultado: APTO PARA INTEGRAÇÃO
+
+Checklist
+- README.md: OK
+- manifest.json: OK
+- run_smoke.py: OK
+- pack_check_report.txt: OK
+- provider oficial explícito: OK
+- objeto consumido explícito: OK
+- contrato v1.1 referido: OK
+- pipeline curto: OK
+- testes curtos: OK (2 passed)
+- smoke test básico: OK
+- smoke test live real: OK
+- eligibility true: OK
+- pick_id gerado: OK
+- output market_pick.v1.1 estabilizado: OK
+- artefactos de cache: OK (nenhum __pycache__, .pytest_cache, .pyc)
+
+Estado formal
+- estado atual do pack: pronto_para_integracao
+- target_state: pronto_para_integracao
+- bloqueios remanescentes: nenhum validado nesta promoção
+
+Validação final confirmada
+- official_live_provider confirmado como fonte única real
+- consumo real do trunk físico confirmado
+- output final vivo confirmado
+- pack hygiene completo
+
+Notas
+- provider oficial via get_fixtures_by_league_season + get_fixture_events
+- linha oficial congelada para integração em modules/cards/

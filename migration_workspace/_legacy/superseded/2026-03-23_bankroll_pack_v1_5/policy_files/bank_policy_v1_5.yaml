@@ -1,0 +1,41 @@
+policy_version: bank_policy.v1.5
+module_id: bankroll_risk_manager
+contract_reference: Contrato_Transversal_Integracao_SignalBet_v1.1_Operacional
+input_schema: selector_pick.v1.1
+output_schema: bank_decision.v1.1
+bank_state_modes:
+  - Normal
+  - Alerta
+  - Defesa
+  - Protecao_Maxima
+portfolio_groups:
+  - core
+  - satellite
+  - optional
+limits:
+  max_daily_exposure_u: 5.0
+  max_module_exposure_u: 3.0
+  min_effective_stake_u: 0.25
+  max_stake_per_pick_u: 1.50
+odds_window:
+  min: 1.20
+  max: 2.40
+fixture_policy:
+  unique_fixture_lock: true
+priority_tier_to_stake_base:
+  Best: 1.25
+  Top: 1.00
+  Actionable: 0.75
+  Watchlist: 0.50
+  Reject: 0.00
+reduction_multipliers:
+  REDUCE_HIGH_RISK: 0.75
+  REDUCE_DAY_EXPOSURE: 0.85
+  REDUCE_MODULE_EXPOSURE: 0.85
+  REDUCE_BANK_ALERT: 0.90
+  REDUCE_PARTIAL_CORRELATION: 0.80
+protection_mode_policy:
+  block_non_premium: true
+  allow_only_priority_tiers:
+    - Best
+    - Top

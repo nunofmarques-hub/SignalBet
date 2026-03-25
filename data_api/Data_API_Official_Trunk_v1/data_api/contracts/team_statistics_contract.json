@@ -1,0 +1,11 @@
+{
+  "version": "v1.1",
+  "resource": "team_statistics",
+  "required_fields": [
+    "league.id",
+    "team.id",
+    "fixtures.played.total",
+    "goals.for.total.total",
+    "goals.against.total.total"
+  ]
+}

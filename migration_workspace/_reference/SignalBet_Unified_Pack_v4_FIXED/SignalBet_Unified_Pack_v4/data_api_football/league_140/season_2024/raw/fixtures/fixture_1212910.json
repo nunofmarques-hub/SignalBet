@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1212910,
+    "referee": "Pablo González",
+    "timezone": "UTC",
+    "date": "2024-08-19T17:00:00+00:00",
+    "timestamp": 1724086800,
+    "periods": {
+      "first": 1724086800,
+      "second": 1724090400
+    },
+    "venue": {
+      "id": 1492,
+      "name": "Estadio Municipal José Zorrilla",
+      "city": "Valladolid"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": null
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 1",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 720,
+      "name": "Valladolid",
+      "logo": "https://media.api-sports.io/football/teams/720.png",
+      "winner": true
+    },
+    "away": {
+      "id": 540,
+      "name": "Espanyol",
+      "logo": "https://media.api-sports.io/football/teams/540.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

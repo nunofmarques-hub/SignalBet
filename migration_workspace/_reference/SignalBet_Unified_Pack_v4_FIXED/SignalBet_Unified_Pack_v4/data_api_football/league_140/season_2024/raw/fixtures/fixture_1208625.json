@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208625,
+    "referee": "Francisco Hernández",
+    "timezone": "UTC",
+    "date": "2024-12-01T20:00:00+00:00",
+    "timestamp": 1733083200,
+    "periods": {
+      "first": 1733083200,
+      "second": 1733086800
+    },
+    "venue": {
+      "id": 1491,
+      "name": "Reale Arena",
+      "city": "Donostia-San Sebastián"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 4
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 15",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 548,
+      "name": "Real Sociedad",
+      "logo": "https://media.api-sports.io/football/teams/548.png",
+      "winner": true
+    },
+    "away": {
+      "id": 543,
+      "name": "Real Betis",
+      "logo": "https://media.api-sports.io/football/teams/543.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 2,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 2,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 2,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

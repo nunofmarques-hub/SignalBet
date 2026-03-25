@@ -1,0 +1,10 @@
+{
+  "version": "v1.1",
+  "resource": "fixture_events",
+  "required_fields": [
+    "time.elapsed",
+    "team.id",
+    "type",
+    "detail"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "run_profile": "validation_run_real",
+  "initiated_by": "ui_button",
+  "dry_run": true,
+  "require_real_project_root": true,
+  "require_real_module_feeds": true,
+  "forced_modules": []
+}

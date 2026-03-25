@@ -1,0 +1,9 @@
+{
+  "module_id": "btts",
+  "status": "SKIPPED",
+  "warnings": [
+    "disabled_by_registry"
+  ],
+  "errors": [],
+  "candidates": []
+}

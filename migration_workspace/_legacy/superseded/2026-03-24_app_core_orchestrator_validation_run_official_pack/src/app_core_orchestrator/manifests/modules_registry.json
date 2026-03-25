@@ -1,0 +1,52 @@
+{
+  "modules": [
+    {
+      "module_id": "v12",
+      "enabled": true,
+      "entrypoint": "examples/module_outputs/v12_output.json",
+      "required_contract_version": "v1.1",
+      "required_data_sources": [
+        "Data_API_Official_Trunk_v1"
+      ],
+      "run_order": 10,
+      "blocking_on_failure": false,
+      "maturity_level": "core"
+    },
+    {
+      "module_id": "cards",
+      "enabled": true,
+      "entrypoint": "examples/module_outputs/cards_output.json",
+      "required_contract_version": "v1.1",
+      "required_data_sources": [
+        "Data_API_Official_Trunk_v1"
+      ],
+      "run_order": 20,
+      "blocking_on_failure": false,
+      "maturity_level": "advanced"
+    },
+    {
+      "module_id": "btts",
+      "enabled": false,
+      "entrypoint": "examples/module_outputs/btts_output.json",
+      "required_contract_version": "v1.1",
+      "required_data_sources": [
+        "Data_API_Official_Trunk_v1"
+      ],
+      "run_order": 30,
+      "blocking_on_failure": false,
+      "maturity_level": "staging"
+    },
+    {
+      "module_id": "corners",
+      "enabled": false,
+      "entrypoint": "examples/module_outputs/corners_output.json",
+      "required_contract_version": "v1.1",
+      "required_data_sources": [
+        "Data_API_Official_Trunk_v1"
+      ],
+      "run_order": 40,
+      "blocking_on_failure": false,
+      "maturity_level": "staging"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "pack_name": "cards_ready_for_integration_pack",
+  "module_name": "cards",
+  "pack_version": "1.2.0",
+  "status": "pronto_para_integracao",
+  "target_status": "pronto_para_integracao",
+  "entrypoint": "run_demo.py",
+  "provider_type": "official_live_provider",
+  "provider_name": "Data_API_Official_Trunk_v1",
+  "provider_object": [
+    "data_api.services.fixtures_service.get_fixtures_by_league_season",
+    "data_api.services.events_service.get_fixture_events"
+  ],
+  "contract_version": "market_pick.v1.1",
+  "integration_ready_confirmed": true,
+  "live_runtime_validation": {
+    "trunk_import": "OK",
+    "smoke_basic": "OK",
+    "smoke_live": "OK",
+    "eligibility": true,
+    "pick_id_generated": true
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "module_id": "v12",
+  "module_specific_payload": {
+    "motor_id": "MATCH_OVER_ENGINE",
+    "market_variant": "MATCH_OVER_15",
+    "provider_name": "Data_API_Official_Trunk_v1"
+  }
+}

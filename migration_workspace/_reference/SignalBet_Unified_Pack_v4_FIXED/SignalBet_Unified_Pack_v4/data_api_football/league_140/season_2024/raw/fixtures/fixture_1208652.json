@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208652,
+    "referee": "Alejandro Muñiz",
+    "timezone": "UTC",
+    "date": "2024-12-22T17:30:00+00:00",
+    "timestamp": 1734888600,
+    "periods": {
+      "first": 1734888600,
+      "second": 1734892200
+    },
+    "venue": {
+      "id": 1464,
+      "name": "Estadio Municipal de Butarque",
+      "city": "Leganés"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 9
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 18",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 537,
+      "name": "Leganes",
+      "logo": "https://media.api-sports.io/football/teams/537.png",
+      "winner": false
+    },
+    "away": {
+      "id": 533,
+      "name": "Villarreal",
+      "logo": "https://media.api-sports.io/football/teams/533.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 2,
+    "away": 5
+  },
+  "score": {
+    "halftime": {
+      "home": 2,
+      "away": 2
+    },
+    "fulltime": {
+      "home": 2,
+      "away": 5
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

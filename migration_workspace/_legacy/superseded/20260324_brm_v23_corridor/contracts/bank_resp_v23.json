@@ -1,0 +1,151 @@
+{
+  "title": "bank_resp_v23",
+  "type": "object",
+  "required": [
+    "response_schema_version",
+    "bank_policy_version",
+    "decision_batch_id",
+    "decision_timestamp",
+    "decisions"
+  ],
+  "properties": {
+    "response_schema_version": {
+      "type": "string",
+      "const": "bankroll_response_batch.v1"
+    },
+    "bank_policy_version": {
+      "type": "string"
+    },
+    "decision_batch_id": {
+      "type": "string"
+    },
+    "decision_timestamp": {
+      "type": "string"
+    },
+    "decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "bank_schema_version",
+          "decision_id",
+          "pick_id",
+          "module_origin",
+          "decision_status",
+          "stake_base",
+          "stake_suggested",
+          "stake_approved",
+          "bank_state_mode",
+          "portfolio_group",
+          "execution_ready",
+          "rules_triggered",
+          "decision_timestamp"
+        ],
+        "properties": {
+          "bank_schema_version": {
+            "type": "string",
+            "const": "bank_decision.v1.1"
+          },
+          "decision_id": {
+            "type": "string"
+          },
+          "pick_id": {
+            "type": "string"
+          },
+          "module_origin": {
+            "type": "string"
+          },
+          "decision_status": {
+            "type": "string",
+            "enum": [
+              "APPROVED",
+              "APPROVED_REDUCED",
+              "BLOCKED",
+              "RESERVE"
+            ]
+          },
+          "stake_base": {
+            "type": "number"
+          },
+          "stake_suggested": {
+            "type": "number"
+          },
+          "stake_approved": {
+            "type": "number"
+          },
+          "stake_pct_bankroll": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "bank_state_mode": {
+            "type": "string",
+            "enum": [
+              "Normal",
+              "Alerta",
+              "Defesa",
+              "Protecao_Maxima"
+            ]
+          },
+          "portfolio_group": {
+            "type": "string",
+            "enum": [
+              "core",
+              "satellite",
+              "optional"
+            ]
+          },
+          "exposure_bucket": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "execution_order": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "approved_odds_window": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "execution_ready": {
+            "type": "boolean"
+          },
+          "rules_triggered": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "block_reason_code": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "block_reason_text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "decision_timestamp": {
+            "type": "string"
+          },
+          "bankroll_note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

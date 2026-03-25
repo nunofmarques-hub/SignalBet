@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208691,
+    "referee": "José Munuera",
+    "timezone": "UTC",
+    "date": "2025-02-02T13:00:00+00:00",
+    "timestamp": 1738501200,
+    "periods": {
+      "first": 1738501200,
+      "second": 1738504800
+    },
+    "venue": {
+      "id": 19939,
+      "name": "Estadi Olímpic Lluís Companys",
+      "city": "Barcelona"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 5
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 22",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 529,
+      "name": "Barcelona",
+      "logo": "https://media.api-sports.io/football/teams/529.png",
+      "winner": true
+    },
+    "away": {
+      "id": 542,
+      "name": "Alaves",
+      "logo": "https://media.api-sports.io/football/teams/542.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

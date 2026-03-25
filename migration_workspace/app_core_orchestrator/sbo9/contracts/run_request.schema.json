@@ -1,0 +1,38 @@
+{
+  "type": "object",
+  "required": [
+    "run_profile"
+  ],
+  "properties": {
+    "run_profile": {
+      "type": "string",
+      "enum": [
+        "validation_run",
+        "validation_run_real",
+        "validation_run_proof",
+        "daily_run"
+      ]
+    },
+    "initiated_by": {
+      "type": "string"
+    },
+    "project_root": {
+      "type": "string"
+    },
+    "forced_modules": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "dry_run": {
+      "type": "boolean"
+    },
+    "require_real_project_root": {
+      "type": "boolean"
+    },
+    "require_real_module_feeds": {
+      "type": "boolean"
+    }
+  }
+}

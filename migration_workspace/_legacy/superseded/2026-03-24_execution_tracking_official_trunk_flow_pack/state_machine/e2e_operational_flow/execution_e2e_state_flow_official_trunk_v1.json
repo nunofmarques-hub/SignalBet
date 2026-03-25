@@ -1,0 +1,48 @@
+{
+  "execution_id": "exec_20260324_roma_lecce_001",
+  "decision_id": "bank_20260323_201",
+  "pick_id": "v12_20260323_011",
+  "event_id": 120101,
+  "flow": [
+    {
+      "from_state": null,
+      "to_state": "RECEIVED",
+      "timestamp": "2026-03-23T18:06:05+00:00"
+    },
+    {
+      "from_state": "RECEIVED",
+      "to_state": "VALIDATION_PENDING",
+      "timestamp": "2026-03-23T18:06:05+00:00"
+    },
+    {
+      "from_state": "VALIDATION_PENDING",
+      "to_state": "VALIDATED",
+      "timestamp": "2026-03-23T18:06:06+00:00"
+    },
+    {
+      "from_state": "VALIDATED",
+      "to_state": "READY_TO_EXECUTE",
+      "timestamp": "2026-03-23T18:06:07+00:00"
+    },
+    {
+      "from_state": "READY_TO_EXECUTE",
+      "to_state": "EXECUTION_PENDING",
+      "timestamp": "2026-03-23T18:06:08+00:00"
+    },
+    {
+      "from_state": "EXECUTION_PENDING",
+      "to_state": "EXECUTED",
+      "timestamp": "2026-03-23T18:06:15+00:00"
+    },
+    {
+      "from_state": "EXECUTED",
+      "to_state": "AWAITING_SETTLEMENT",
+      "timestamp": "2026-03-23T18:06:16+00:00"
+    },
+    {
+      "from_state": "AWAITING_SETTLEMENT",
+      "to_state": "SETTLED",
+      "timestamp": "2026-03-23T21:40:00+00:00"
+    }
+  ]
+}

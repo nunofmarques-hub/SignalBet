@@ -1,0 +1,17 @@
+PACK CHECK REPORT
+=================
+module: v12
+pack: 2026-03-25_v12_pronto_para_integracao_pack
+status: pronto_para_integracao
+
+Checklist
+- README.md: OK
+- manifest.json: OK
+- provider oficial default efetivo: OK
+- fallback apenas diagnostic_only: OK
+- smoke básico: GREEN
+- smoke live: GREEN
+- outputs núcleo estáveis: OK
+- output market_pick.v1.1 estável: OK
+- __pycache__ limpo: OK
+- uma única linha final oficial ativa: OK

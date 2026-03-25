@@ -1,0 +1,12 @@
+{
+  "providers": [
+    {
+      "provider_id": "fixtures_provider",
+      "status": "active"
+    },
+    {
+      "provider_id": "statistics_provider",
+      "status": "active"
+    }
+  ]
+}

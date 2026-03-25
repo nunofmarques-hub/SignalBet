@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208579,
+    "referee": "Javier Alberola",
+    "timezone": "UTC",
+    "date": "2024-10-20T12:00:00+00:00",
+    "timestamp": 1729425600,
+    "periods": {
+      "first": 1729425600,
+      "second": 1729429200
+    },
+    "venue": {
+      "id": 19940,
+      "name": "Estadi Mallorca Son Moix",
+      "city": "Palma de Mallorca"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 7
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 10",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 798,
+      "name": "Mallorca",
+      "logo": "https://media.api-sports.io/football/teams/798.png",
+      "winner": true
+    },
+    "away": {
+      "id": 728,
+      "name": "Rayo Vallecano",
+      "logo": "https://media.api-sports.io/football/teams/728.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

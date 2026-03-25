@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208743,
+    "referee": "Alejandro Hernández",
+    "timezone": "UTC",
+    "date": "2025-03-16T17:30:00+00:00",
+    "timestamp": 1742146200,
+    "periods": {
+      "first": 1742146200,
+      "second": 1742149800
+    },
+    "venue": {
+      "id": 1486,
+      "name": "Estadio El Sadar",
+      "city": "Iruñea"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 6
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 28",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 727,
+      "name": "Osasuna",
+      "logo": "https://media.api-sports.io/football/teams/727.png",
+      "winner": false
+    },
+    "away": {
+      "id": 546,
+      "name": "Getafe",
+      "logo": "https://media.api-sports.io/football/teams/546.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 2
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 2
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

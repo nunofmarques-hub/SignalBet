@@ -1,0 +1,11 @@
+{
+  "pack_name": "2026-03-24_ui_frontend_signalbet_v6",
+  "module_name": "ui_frontend",
+  "pack_version": "6.0",
+  "status": "staging",
+  "entrypoint": "src/index.html",
+  "provider_type": "official_trunk_aligned_mock",
+  "provider_name": "Data_API_Official_Trunk_v1",
+  "provider_object": "contract_aligned_ui_mock_payloads",
+  "contract_version": "v1.1"
+}

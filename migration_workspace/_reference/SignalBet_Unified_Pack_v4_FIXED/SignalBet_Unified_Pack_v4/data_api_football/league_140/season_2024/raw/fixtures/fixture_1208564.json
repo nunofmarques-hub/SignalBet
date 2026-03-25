@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208564,
+    "referee": "Isidro Díaz de Mera",
+    "timezone": "UTC",
+    "date": "2024-09-28T12:00:00+00:00",
+    "timestamp": 1727524800,
+    "periods": {
+      "first": 1727524800,
+      "second": 1727528400
+    },
+    "venue": {
+      "id": 20422,
+      "name": "Estadio Coliseum",
+      "city": "Getafe"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 6
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 8",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 546,
+      "name": "Getafe",
+      "logo": "https://media.api-sports.io/football/teams/546.png",
+      "winner": true
+    },
+    "away": {
+      "id": 542,
+      "name": "Alaves",
+      "logo": "https://media.api-sports.io/football/teams/542.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 2,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 2,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

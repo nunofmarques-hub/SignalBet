@@ -1,0 +1,13 @@
+{
+  "pack_name": "20260324_brm_v24_gps6_freeze",
+  "module_name": "bankroll_risk_manager",
+  "pack_version": "v2.4",
+  "status": "staging",
+  "entrypoint": "src/flow_demo.py",
+  "provider_type": "upstream_contract_batch",
+  "provider_name": "global_pick_selector_v6",
+  "provider_object": "gps_shortlist_batch.v1 -> bankroll_response_batch.v1 -> execution_intake_batch.v1",
+  "contract_version": "SignalBet_Contrato_v1.1",
+  "downstream_target": "execution_tracking",
+  "smoke_test": "python run_smoke.py"
+}

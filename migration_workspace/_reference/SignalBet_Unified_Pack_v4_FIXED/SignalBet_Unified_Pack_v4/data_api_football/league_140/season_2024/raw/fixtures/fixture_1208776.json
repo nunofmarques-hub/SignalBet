@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208776,
+    "referee": "Víctor García",
+    "timezone": "UTC",
+    "date": "2025-04-19T19:00:00+00:00",
+    "timestamp": 1745089200,
+    "periods": {
+      "first": 1745089200,
+      "second": 1745092800
+    },
+    "venue": {
+      "id": 1481,
+      "name": "Estadio de Gran Canaria",
+      "city": "Las Palmas de Gran Canaria"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 8
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 32",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 534,
+      "name": "Las Palmas",
+      "logo": "https://media.api-sports.io/football/teams/534.png",
+      "winner": true
+    },
+    "away": {
+      "id": 530,
+      "name": "Atletico Madrid",
+      "logo": "https://media.api-sports.io/football/teams/530.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

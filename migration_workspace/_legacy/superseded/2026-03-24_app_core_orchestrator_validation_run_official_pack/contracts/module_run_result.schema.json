@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "required": [
+    "module_id",
+    "status",
+    "candidates"
+  ],
+  "properties": {
+    "module_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "candidates": {
+      "type": "array"
+    }
+  }
+}

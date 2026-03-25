@@ -1,0 +1,126 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "bank_to_exec_v24_target",
+  "description": "Execution target contract derived from official coordination note. Requires physical BRM v24 pack for final freeze.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "source_system",
+    "decision_id",
+    "pick_id",
+    "event_id",
+    "module_origin",
+    "match_label",
+    "market_family",
+    "market",
+    "selection",
+    "decision_status",
+    "stake_approved",
+    "execution_order",
+    "approved_odds_window",
+    "odds_snapshot",
+    "decision_timestamp"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "bank_to_exec_v24"
+    },
+    "source_system": {
+      "type": "string",
+      "const": "BANKROLL_RISK_MANAGER"
+    },
+    "decision_id": {
+      "type": "string"
+    },
+    "pick_id": {
+      "type": "string"
+    },
+    "event_id": {
+      "type": [
+        "integer",
+        "string"
+      ]
+    },
+    "module_origin": {
+      "type": "string"
+    },
+    "match_label": {
+      "type": "string"
+    },
+    "market_family": {
+      "type": "string"
+    },
+    "market": {
+      "type": "string"
+    },
+    "selection": {
+      "type": "string"
+    },
+    "line": {
+      "type": [
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "decision_status": {
+      "type": "string",
+      "enum": [
+        "APPROVED",
+        "APPROVED_REDUCED"
+      ]
+    },
+    "stake_approved": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "stake_pct_bankroll": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "execution_order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "approved_odds_window": {
+      "type": "string"
+    },
+    "odds_snapshot": {
+      "type": "number"
+    },
+    "rules_triggered": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "execution_note": {
+      "type": "string"
+    },
+    "portfolio_group": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "decision_timestamp": {
+      "type": "string"
+    },
+    "selector_run_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_batch_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

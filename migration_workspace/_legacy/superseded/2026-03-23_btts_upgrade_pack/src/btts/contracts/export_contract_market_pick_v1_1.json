@@ -1,0 +1,40 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "required_fields": [
+    "schema_version",
+    "pick_id",
+    "created_at",
+    "module_id",
+    "module_version",
+    "event_id",
+    "match_label",
+    "competition",
+    "market_family",
+    "market",
+    "selection",
+    "odds",
+    "eligibility",
+    "score_raw",
+    "confidence_raw",
+    "risk_raw",
+    "rationale_summary",
+    "data_quality_flag"
+  ],
+  "recommended_fields": [
+    "kickoff_datetime",
+    "line",
+    "edge_raw",
+    "main_drivers",
+    "penalties",
+    "module_rank_internal",
+    "expiry_context",
+    "module_specific_payload"
+  ],
+  "module_specific_payload_keys": [
+    "btts_direction",
+    "scoring_support",
+    "concession_support",
+    "tsi_bilateral",
+    "input_context"
+  ]
+}

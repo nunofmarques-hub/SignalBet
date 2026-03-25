@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208762,
+    "referee": "Alejandro Quintero",
+    "timezone": "UTC",
+    "date": "2025-04-06T16:30:00+00:00",
+    "timestamp": 1743957000,
+    "periods": {
+      "first": 1743957000,
+      "second": 1743960600
+    },
+    "venue": {
+      "id": 1492,
+      "name": "Estadio Municipal José Zorrilla",
+      "city": "Valladolid"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 3
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 30",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 720,
+      "name": "Valladolid",
+      "logo": "https://media.api-sports.io/football/teams/720.png",
+      "winner": false
+    },
+    "away": {
+      "id": 546,
+      "name": "Getafe",
+      "logo": "https://media.api-sports.io/football/teams/546.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 0,
+    "away": 4
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 3
+    },
+    "fulltime": {
+      "home": 0,
+      "away": 4
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

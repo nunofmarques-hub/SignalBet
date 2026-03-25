@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "execution_intake_candidate_v1_8",
+  "type": "object",
+  "required": [
+    "execution_intake_schema_version",
+    "source_batch_id",
+    "intake_timestamp",
+    "pick_id",
+    "event_id",
+    "match_label",
+    "market_family",
+    "market",
+    "selection",
+    "odds_snapshot",
+    "global_score",
+    "priority_tier",
+    "decision_status",
+    "stake_approved",
+    "execution_order",
+    "approved_odds_window",
+    "execution_note"
+  ],
+  "properties": {
+    "execution_intake_schema_version": {
+      "type": "string",
+      "const": "execution_intake_candidate.v1.8"
+    },
+    "source_batch_id": {
+      "type": "string"
+    },
+    "intake_timestamp": {
+      "type": "string"
+    },
+    "pick_id": {
+      "type": "string"
+    },
+    "event_id": {
+      "type": [
+        "integer",
+        "string"
+      ]
+    },
+    "match_label": {
+      "type": "string"
+    },
+    "market_family": {
+      "type": "string",
+      "enum": [
+        "goals",
+        "btts",
+        "corners",
+        "cards"
+      ]
+    },
+    "market": {
+      "type": "string"
+    },
+    "selection": {
+      "type": "string"
+    },
+    "line": {
+      "type": [
+        "number",
+        "integer",
+        "null"
+      ]
+    },
+    "odds_snapshot": {
+      "type": "number"
+    },
+    "global_score": {
+      "type": "integer"
+    },
+    "priority_tier": {
+      "type": "string",
+      "enum": [
+        "Best",
+        "Top",
+        "Actionable",
+        "Watchlist",
+        "Reject"
+      ]
+    },
+    "decision_status": {
+      "type": "string",
+      "enum": [
+        "APPROVED",
+        "APPROVED_REDUCED"
+      ]
+    },
+    "stake_approved": {
+      "type": "number",
+      "exclusiveMinimum": 0
+    },
+    "stake_pct_bankroll": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "execution_order": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "approved_odds_window": {
+      "type": "string"
+    },
+    "rules_triggered": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "execution_note": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

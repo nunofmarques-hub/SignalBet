@@ -1,0 +1,12 @@
+{
+  "England|Premier League": {"league_id": 39, "season": 2025},
+  "Spain|La Liga": {"league_id": 140, "season": 2025},
+  "Italy|Serie A": {"league_id": 135, "season": 2025},
+  "Germany|Bundesliga": {"league_id": 78, "season": 2025},
+  "France|Ligue 1": {"league_id": 61, "season": 2025},
+  "Portugal|Primeira Liga": {"league_id": 94, "season": 2025},
+  "Netherlands|Eredivisie": {"league_id": 88, "season": 2025},
+  "Belgium|Jupiler Pro League": {"league_id": 144, "season": 2025},
+  "Switzerland|Super League": {"league_id": 207, "season": 2025},
+  "Austria|Bundesliga": {"league_id": 218, "season": 2025}
+}

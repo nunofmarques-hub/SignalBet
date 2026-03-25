@@ -1,0 +1,24 @@
+{
+  "bank_schema_version": "bank_decision.v1.1",
+  "decision_id": "bank_20260324_204",
+  "pick_id": "cards_20260324_003",
+  "module_origin": "cards",
+  "decision_status": "RESERVE",
+  "stake_base": 0.5,
+  "stake_suggested": 0.5,
+  "stake_approved": 0.0,
+  "stake_pct_bankroll": null,
+  "bank_state_mode": "Defesa",
+  "portfolio_group": "optional",
+  "exposure_bucket": "prudential_hold",
+  "execution_order": null,
+  "approved_odds_window": null,
+  "execution_ready": false,
+  "rules_triggered": [
+    "REDUCE_BANK_ALERT"
+  ],
+  "block_reason_code": null,
+  "block_reason_text": null,
+  "decision_timestamp": "2026-03-24T18:12:00Z",
+  "bankroll_note": "Mantida em reserva prudencial; não segue para execução."
+}

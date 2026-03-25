@@ -1,0 +1,6 @@
+Pack Check Report — UI Frontend SignalBet v5
+Status: OK
+Required files present: README.md, manifest.json, run_smoke, src, docs, examples, contracts, data
+Entry point: src/index.html
+Provider: mock_data aligned to contract v1.1
+Notes: uses SVG logo approximation aligned to Radar Focus direction; not master asset.

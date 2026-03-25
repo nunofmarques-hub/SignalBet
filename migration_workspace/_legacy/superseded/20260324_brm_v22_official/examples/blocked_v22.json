@@ -1,0 +1,25 @@
+{
+  "decision_id": "bank_20260324_004",
+  "pick_id": "cards_20260324_004",
+  "module_origin": "cards",
+  "decision_status": "BLOCKED",
+  "execution_ready": false,
+  "stake_base": 0.75,
+  "stake_suggested": 0.75,
+  "stake_approved": 0.0,
+  "stake_pct_bankroll": null,
+  "bank_state_mode": "Normal",
+  "portfolio_group": "optional",
+  "exposure_bucket": "day_low",
+  "execution_order": null,
+  "approved_odds_window": null,
+  "rules_triggered": [
+    "BLOCK_ODD_RANGE"
+  ],
+  "block_reason_code": "BLOCK_ODD_RANGE",
+  "block_reason_text": "Odd fora da janela operacional da banca.",
+  "bankroll_before": 500.0,
+  "daily_exposure_before": 1.25,
+  "daily_exposure_after_if_accepted": 1.25,
+  "bankroll_note": "Bloqueio formal por risco operacional de preço."
+}

@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208714,
+    "referee": "Adrián Cordero",
+    "timezone": "UTC",
+    "date": "2025-02-22T20:00:00+00:00",
+    "timestamp": 1740254400,
+    "periods": {
+      "first": 1740254400,
+      "second": 1740258000
+    },
+    "venue": {
+      "id": 1481,
+      "name": "Estadio de Gran Canaria",
+      "city": "Las Palmas de Gran Canaria"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 9
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 25",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 534,
+      "name": "Las Palmas",
+      "logo": "https://media.api-sports.io/football/teams/534.png",
+      "winner": false
+    },
+    "away": {
+      "id": 529,
+      "name": "Barcelona",
+      "logo": "https://media.api-sports.io/football/teams/529.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 0,
+    "away": 2
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 0,
+      "away": 2
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

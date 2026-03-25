@@ -1,0 +1,28 @@
+{
+  "selector_schema_version": "selector_pick.v1.1",
+  "pick_id": "btts_20260323_002",
+  "module_id": "btts",
+  "module_version": "btts.0.9.8",
+  "event_id": 991100,
+  "match_label": "Roma vs Lecce",
+  "market_family": "btts",
+  "market": "btts_no",
+  "selection": "BTTS No",
+  "line": null,
+  "odds": 1.7,
+  "global_score": 79,
+  "confidence_norm": 4,
+  "risk_norm": 2,
+  "edge_norm": "acceptable",
+  "priority_tier": "Actionable",
+  "conflict_flags": [
+    "FIXTURE_ALREADY_PRESENT"
+  ],
+  "correlation_flags": [],
+  "executive_rationale": "Boa pick mas choca com fixture já ocupada por pick mais forte.",
+  "selector_decision_note": "Enviar para gate final da banca.",
+  "pool_status": "exported_to_bankroll",
+  "normalization_version": "norm.v1.1",
+  "rank_position": 3,
+  "shortlist_bucket": "optional"
+}

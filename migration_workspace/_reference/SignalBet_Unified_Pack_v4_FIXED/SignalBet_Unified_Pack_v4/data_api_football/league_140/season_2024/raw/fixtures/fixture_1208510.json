@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208510,
+    "referee": "Gil Manzano",
+    "timezone": "UTC",
+    "date": "2024-08-24T17:00:00+00:00",
+    "timestamp": 1724518800,
+    "periods": {
+      "first": 1724518800,
+      "second": 1724522400
+    },
+    "venue": {
+      "id": 19939,
+      "name": "Estadi Olímpic Lluís Companys",
+      "city": "Barcelona"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": null
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 2",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 529,
+      "name": "Barcelona",
+      "logo": "https://media.api-sports.io/football/teams/529.png",
+      "winner": true
+    },
+    "away": {
+      "id": 531,
+      "name": "Athletic Club",
+      "logo": "https://media.api-sports.io/football/teams/531.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 2,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 1
+    },
+    "fulltime": {
+      "home": 2,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

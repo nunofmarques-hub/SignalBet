@@ -1,0 +1,120 @@
+{
+  "fixtures_tested": 5,
+  "tested": [
+    {
+      "fixture_id": 1208494,
+      "statistics_fields_found": [
+        "Shots on Goal",
+        "Shots off Goal",
+        "Total Shots",
+        "Blocked Shots",
+        "Shots insidebox",
+        "Shots outsidebox",
+        "Fouls",
+        "Corner Kicks",
+        "Offsides",
+        "Ball Possession",
+        "Yellow Cards",
+        "Red Cards",
+        "Goalkeeper Saves",
+        "Total passes",
+        "Passes accurate",
+        "Passes %",
+        "expected_goals",
+        "goals_prevented"
+      ]
+    },
+    {
+      "fixture_id": 1208495,
+      "statistics_fields_found": [
+        "Shots on Goal",
+        "Shots off Goal",
+        "Total Shots",
+        "Blocked Shots",
+        "Shots insidebox",
+        "Shots outsidebox",
+        "Fouls",
+        "Corner Kicks",
+        "Offsides",
+        "Ball Possession",
+        "Yellow Cards",
+        "Red Cards",
+        "Goalkeeper Saves",
+        "Total passes",
+        "Passes accurate",
+        "Passes %",
+        "expected_goals",
+        "goals_prevented"
+      ]
+    },
+    {
+      "fixture_id": 1208501,
+      "statistics_fields_found": [
+        "Shots on Goal",
+        "Shots off Goal",
+        "Total Shots",
+        "Blocked Shots",
+        "Shots insidebox",
+        "Shots outsidebox",
+        "Fouls",
+        "Corner Kicks",
+        "Offsides",
+        "Ball Possession",
+        "Yellow Cards",
+        "Red Cards",
+        "Goalkeeper Saves",
+        "Total passes",
+        "Passes accurate",
+        "Passes %",
+        "expected_goals",
+        "goals_prevented"
+      ]
+    },
+    {
+      "fixture_id": 1208497,
+      "statistics_fields_found": [
+        "Shots on Goal",
+        "Shots off Goal",
+        "Total Shots",
+        "Blocked Shots",
+        "Shots insidebox",
+        "Shots outsidebox",
+        "Fouls",
+        "Corner Kicks",
+        "Offsides",
+        "Ball Possession",
+        "Yellow Cards",
+        "Red Cards",
+        "Goalkeeper Saves",
+        "Total passes",
+        "Passes accurate",
+        "Passes %",
+        "expected_goals",
+        "goals_prevented"
+      ]
+    },
+    {
+      "fixture_id": 1208502,
+      "statistics_fields_found": [
+        "Shots on Goal",
+        "Shots off Goal",
+        "Total Shots",
+        "Blocked Shots",
+        "Shots insidebox",
+        "Shots outsidebox",
+        "Fouls",
+        "Corner Kicks",
+        "Offsides",
+        "Ball Possession",
+        "Yellow Cards",
+        "Red Cards",
+        "Goalkeeper Saves",
+        "Total passes",
+        "Passes accurate",
+        "Passes %",
+        "expected_goals",
+        "goals_prevented"
+      ]
+    }
+  ]
+}

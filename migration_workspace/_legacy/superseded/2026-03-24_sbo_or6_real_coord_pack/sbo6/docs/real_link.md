@@ -1,0 +1,1 @@
+Para ligar ao tronco físico real: usar SIGNALBET_PROJECT_ROOT ou examples/req/project_root.txt. O pack tentará feeds em integration_feeds/, runtime/mod_out/, mod_out/, migration_workspace/<modulo>/ e modules/<modulo>/examples|out.

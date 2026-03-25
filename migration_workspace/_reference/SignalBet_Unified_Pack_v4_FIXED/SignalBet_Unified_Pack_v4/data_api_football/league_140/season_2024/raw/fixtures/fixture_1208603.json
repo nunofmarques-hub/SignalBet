@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208603,
+    "referee": "Juan Martínez",
+    "timezone": "UTC",
+    "date": "2024-11-10T17:30:00+00:00",
+    "timestamp": 1731259800,
+    "periods": {
+      "first": 1731259800,
+      "second": 1731263400
+    },
+    "venue": {
+      "id": 20422,
+      "name": "Estadio Coliseum",
+      "city": "Getafe"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 5
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 13",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 546,
+      "name": "Getafe",
+      "logo": "https://media.api-sports.io/football/teams/546.png",
+      "winner": false
+    },
+    "away": {
+      "id": 547,
+      "name": "Girona",
+      "logo": "https://media.api-sports.io/football/teams/547.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 0,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 1
+    },
+    "fulltime": {
+      "home": 0,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

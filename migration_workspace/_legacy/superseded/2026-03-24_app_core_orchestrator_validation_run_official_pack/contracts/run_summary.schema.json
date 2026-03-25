@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "required": [
+    "run_id",
+    "run_profile",
+    "preflight_status",
+    "data_api_status",
+    "final_summary"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "run_profile": {
+      "type": "string"
+    },
+    "preflight_status": {
+      "type": "string"
+    },
+    "data_api_status": {
+      "type": "string"
+    },
+    "final_summary": {
+      "type": "string"
+    }
+  }
+}

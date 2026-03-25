@@ -1,0 +1,20 @@
+{
+  "schema_version": "execution-analytics.v1",
+  "execution_id": "EXEC-20260324-0001",
+  "decision_id": "DEC-20260324-0001",
+  "pick_id": "v12_20260323_011",
+  "module_origin": "v12",
+  "market_family": "goals",
+  "market": "under_3_5",
+  "decision_status": "APPROVED",
+  "execution_status": "SETTLED",
+  "settlement_status": "WIN",
+  "approved_odds_window": "1.58-1.66",
+  "executed_odds": 1.62,
+  "stake_approved": 1.25,
+  "stake_executed": 1.25,
+  "result_profit_loss": 0.775,
+  "return_amount": 2.025,
+  "executed_at": "2026-03-24T20:17:00Z",
+  "settled_at": "2026-03-24T22:15:00Z"
+}

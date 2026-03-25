@@ -1,0 +1,20 @@
+{
+  "selector_schema_version": "selector_pick.v1.1",
+  "pick_id": "v12_20260323_105",
+  "module_id": "v12",
+  "module_version": "v12.0.4",
+  "event_id": 12005,
+  "match_label": "Lazio vs Torino",
+  "market_family": "goals",
+  "market": "match_under",
+  "selection": "Under 3.5 Goals",
+  "line": 3.5,
+  "global_score": 77,
+  "confidence_norm": 4,
+  "risk_norm": 2,
+  "edge_norm": "acceptable",
+  "priority_tier": "Actionable",
+  "executive_rationale": "Falta o campo odds para testar input inválido.",
+  "pool_status": "exported_to_bankroll",
+  "normalization_version": "norm.v1.1"
+}

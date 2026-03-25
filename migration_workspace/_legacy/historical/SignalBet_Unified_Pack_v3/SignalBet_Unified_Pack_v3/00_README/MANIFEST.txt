@@ -1,0 +1,15 @@
+Included files:
+- 10_PIPELINE_BASE/signalbet_fixtures_pipeline.py
+- 10_PIPELINE_BASE/START_SIGNALBET_FIXTURES_PIPELINE.cmd
+- 10_PIPELINE_BASE/README_signalbet_fixtures_pipeline.md
+- 20_CORNERS/build_true_corners_master_2024.py
+- 30_BTTS/signalbet_btts_data_collector.py
+- 30_BTTS/START_SIGNALBET_BTTS_DATA.cmd
+- 30_BTTS/README_signalbet_btts_data_collector.md
+- 90_DOCS_REFERENCIA/Corners_Engine_Documento_Tecnico_Base.pdf
+- 90_DOCS_REFERENCIA/ABC_PRO_BTTS_Quadro_Implementacao.pdf
+- 90_DOCS_REFERENCIA/ABC_PRO_BTTS_Grelha_Matematica_e_Implementacao.pdf
+- 90_DOCS_REFERENCIA/ABC_PRO_Matriz_Mestra_Motores.pdf
+- 90_DOCS_REFERENCIA/Sistema_ABC_PRO_Migracao_e_Indicadores.pdf
+- 90_DOCS_REFERENCIA/ABC_PRO_Guideline_v12_e_Futuro.docx
+- 90_DOCS_REFERENCIA/ABC_PRO_Registo_Projeto_v11_5_ate_v12.docx

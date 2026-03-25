@@ -1,0 +1,3 @@
+Pack modular v12 preparado para migration_workspace.
+Não colocar diretamente em modules/.
+Objetivo atual: validação contratual e integração futura com Opportunity Pool.

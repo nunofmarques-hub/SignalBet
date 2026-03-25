@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208514,
+    "referee": "Francisco Hernández",
+    "timezone": "UTC",
+    "date": "2024-08-29T17:00:00+00:00",
+    "timestamp": 1724950800,
+    "periods": {
+      "first": 1724950800,
+      "second": 1724954400
+    },
+    "venue": {
+      "id": 1478,
+      "name": "Estadi Municipal de Montilivi",
+      "city": "Girona"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": null
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 3",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 547,
+      "name": "Girona",
+      "logo": "https://media.api-sports.io/football/teams/547.png",
+      "winner": true
+    },
+    "away": {
+      "id": 727,
+      "name": "Osasuna",
+      "logo": "https://media.api-sports.io/football/teams/727.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 4,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 4,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

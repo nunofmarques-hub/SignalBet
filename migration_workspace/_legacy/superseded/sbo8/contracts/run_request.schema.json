@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "required": ["run_profile"],
+  "properties": {
+    "run_profile": {"type": "string"},
+    "initiated_by": {"type": "string"},
+    "project_root": {"type": "string"},
+    "forced_modules": {"type": "array", "items": {"type": "string"}},
+    "dry_run": {"type": "boolean"},
+    "require_real_project_root": {"type": "boolean"},
+    "require_real_module_feeds": {"type": "boolean"},
+    "data_snapshot_tag": {"type": "string"},
+    "correlation_id": {"type": "string"}
+  }
+}

@@ -1,0 +1,7 @@
+PACK CHECK REPORT
+status=OK
+zip_hygiene=OK
+pycache_removed=OK
+smoke_returncode=0
+proof_returncode=0
+notes=Proof mode prepared. Real physical project root not available in this conversation.

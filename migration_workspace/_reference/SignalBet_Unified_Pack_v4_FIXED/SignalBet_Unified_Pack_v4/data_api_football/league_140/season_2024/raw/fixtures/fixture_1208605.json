@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208605,
+    "referee": "Adrián Cordero",
+    "timezone": "UTC",
+    "date": "2024-11-10T17:30:00+00:00",
+    "timestamp": 1731259800,
+    "periods": {
+      "first": 1731259800,
+      "second": 1731263400
+    },
+    "venue": {
+      "id": 1492,
+      "name": "Estadio Municipal José Zorrilla",
+      "city": "Valladolid"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 6
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 13",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 720,
+      "name": "Valladolid",
+      "logo": "https://media.api-sports.io/football/teams/720.png",
+      "winner": null
+    },
+    "away": {
+      "id": 531,
+      "name": "Athletic Club",
+      "logo": "https://media.api-sports.io/football/teams/531.png",
+      "winner": null
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

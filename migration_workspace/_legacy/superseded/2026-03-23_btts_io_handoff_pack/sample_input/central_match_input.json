@@ -1,0 +1,81 @@
+{
+  "event_id": 878317,
+  "kickoff_datetime": "2026-03-23T20:00:00Z",
+  "competition": {
+    "league_id": 140,
+    "season": 2024,
+    "name": "La Liga"
+  },
+  "match": {
+    "home_team_id": 538,
+    "home_team_name": "Celta Vigo",
+    "away_team_id": 529,
+    "away_team_name": "Barcelona"
+  },
+  "market_context": {
+    "btts_yes_odds": 1.83,
+    "home_odds": 4.2,
+    "draw_odds": 4.0,
+    "away_odds": 1.75
+  },
+  "league_snapshot": {
+    "btts_rate": 0.54,
+    "btts_stability": 0.67,
+    "scoreline_dispersion": 0.61,
+    "odds_coherence_btts": 0.58
+  },
+  "home_snapshot": {
+    "goals_for_90": 1.58,
+    "goals_against_90": 1.34,
+    "score_rate_1plus": 0.79,
+    "concede_rate_1plus": 0.74,
+    "clean_sheet_inverse_rate": 0.71,
+    "shots_on_target_90": 4.7,
+    "shots_on_target_against_90": 4.2,
+    "recent_goals_for_3": 1.67,
+    "recent_goals_for_5": 1.6,
+    "recent_score_rate_1plus": 0.8,
+    "recent_sot": 4.9,
+    "first_goal_minute_avg": 32,
+    "first_goal_u30_rate": 0.58,
+    "halftime_0_0_rate": 0.18,
+    "response_after_conceding": 0.46,
+    "btts_rate_proxy": 0.61,
+    "bos_score_lite": 72.0,
+    "bvs_score_lite": 66.0,
+    "ami_score_lite": 70.0,
+    "tsi_score_lite": 62.0
+  },
+  "away_snapshot": {
+    "goals_for_90": 2.15,
+    "goals_against_90": 1.05,
+    "score_rate_1plus": 0.89,
+    "concede_rate_1plus": 0.61,
+    "clean_sheet_inverse_rate": 0.56,
+    "shots_on_target_90": 6.1,
+    "shots_on_target_against_90": 3.6,
+    "recent_goals_for_3": 2.33,
+    "recent_goals_for_5": 2.1,
+    "recent_score_rate_1plus": 1.0,
+    "recent_sot": 6.4,
+    "first_goal_minute_avg": 27,
+    "first_goal_u30_rate": 0.66,
+    "halftime_0_0_rate": 0.11,
+    "response_after_conceding": 0.38,
+    "btts_rate_proxy": 0.57,
+    "bos_score_lite": 82.0,
+    "bvs_score_lite": 58.0,
+    "ami_score_lite": 77.0,
+    "tsi_score_lite": 67.0
+  },
+  "data_quality": {
+    "flag": "partial",
+    "missing_fields": [
+      "xg_gap_proxy_lite"
+    ],
+    "sources": [
+      "btts_match_master_2024.json",
+      "btts_team_profiles_overall_2024.json"
+    ]
+  }
+}

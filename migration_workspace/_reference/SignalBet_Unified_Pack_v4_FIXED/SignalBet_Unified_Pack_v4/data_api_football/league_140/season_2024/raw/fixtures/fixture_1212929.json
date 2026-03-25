@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1212929,
+    "referee": "Ricardo De Burgos",
+    "timezone": "UTC",
+    "date": "2025-01-17T20:00:00+00:00",
+    "timestamp": 1737144000,
+    "periods": {
+      "first": 1737144000,
+      "second": 1737147600
+    },
+    "venue": {
+      "id": 1474,
+      "name": "RCDE Stadium",
+      "city": "Cornella de Llobregat"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 8
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 20",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 540,
+      "name": "Espanyol",
+      "logo": "https://media.api-sports.io/football/teams/540.png",
+      "winner": true
+    },
+    "away": {
+      "id": 720,
+      "name": "Valladolid",
+      "logo": "https://media.api-sports.io/football/teams/720.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 2,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 2,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

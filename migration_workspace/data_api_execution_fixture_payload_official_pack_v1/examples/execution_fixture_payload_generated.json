@@ -1,0 +1,37 @@
+{
+  "payload_name": "execution_fixture_payload",
+  "version": "1.0.0",
+  "fixture_id": 1208494,
+  "fixture_ref": "league_140_season_2024_fixture_1208494",
+  "league_id": 140,
+  "season": 2024,
+  "event_date": "2024-08-15T17:00:00+00:00",
+  "status_short": "FT",
+  "status_long": "Match Finished",
+  "is_finished": true,
+  "home_team_id": 531,
+  "home_team_name": "Athletic Club",
+  "away_team_id": 546,
+  "away_team_name": "Getafe",
+  "home_goals": 1,
+  "away_goals": 1,
+  "score_fulltime_home": 1,
+  "score_fulltime_away": 1,
+  "score_halftime_home": 1,
+  "score_halftime_away": 0,
+  "settlement_context": {
+    "winner_team_id": null,
+    "is_draw": true,
+    "total_goals": 2,
+    "both_teams_scored": true,
+    "went_extra_time": false,
+    "went_penalties": false
+  },
+  "source": {
+    "provider_name": "fixtures_provider.py",
+    "service_name": "get_fixtures_by_league_season()",
+    "provider_object": "fixtures_catalog",
+    "official_path": "data_api/storage/raw/league_140/season_2024/catalog/fixtures_catalog_status_FT_AET_PEN.json"
+  },
+  "trunk_root": "U:\\Users\\genuser\\Desktop\\SignalBet\\data_api\\Data_API_Official_Trunk_v1"
+}

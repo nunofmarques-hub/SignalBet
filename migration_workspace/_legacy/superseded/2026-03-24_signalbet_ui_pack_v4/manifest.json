@@ -1,0 +1,11 @@
+{
+  "pack_name": "SignalBet_UI_Frontend_Pack_v4",
+  "module_name": "ui_frontend",
+  "pack_version": "v4",
+  "status": "staging",
+  "entrypoint": "src/index.html",
+  "provider_type": "mock_data",
+  "provider_name": "local_mock_payloads_aligned_to_contract_v1_1",
+  "provider_object": "data/mock-data.js",
+  "contract_version": "v1.1"
+}

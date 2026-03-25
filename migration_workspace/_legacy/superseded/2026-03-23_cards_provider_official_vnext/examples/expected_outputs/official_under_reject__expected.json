@@ -1,0 +1,51 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "pick_id": "cards_910003_match_cards_under_55_rejected",
+  "created_at": "2026-03-23T18:02:36Z",
+  "module_id": "cards",
+  "module_version": "cards.1.2.0",
+  "event_id": 910003,
+  "match_label": "Arouca vs Estoril",
+  "competition": "Primeira Liga",
+  "kickoff_datetime": "2026-03-23T15:30:00Z",
+  "market_family": "cards",
+  "market": "match_cards_under",
+  "selection": "Under 5.5 Cards",
+  "line": 5.5,
+  "odds": 1.76,
+  "eligibility": false,
+  "score_raw": 57,
+  "confidence_raw": 1,
+  "risk_raw": 3,
+  "edge_raw": "-0.10",
+  "rationale_summary": "Leitura disciplinar warm com tensão medium e pressão competitiva medium; projeção 5.4 para linha 5.5.",
+  "main_drivers": [
+    "projection=5.4",
+    "discipline_profile=warm",
+    "match_tension=medium",
+    "competitive_pressure=medium",
+    "referee_bias=neutral"
+  ],
+  "penalties": [
+    "low_sample_depth",
+    "low_signal_consistency"
+  ],
+  "data_quality_flag": "clean",
+  "module_rank_internal": 999,
+  "expiry_context": "refresh_if_line_or_referee_changes",
+  "module_specific_payload": {
+    "discipline_profile": "warm",
+    "match_cards_projection": 5.4,
+    "home_cards_projection": 2.7,
+    "away_cards_projection": 2.7,
+    "match_tension_flag": "medium",
+    "competitive_pressure": "medium",
+    "referee_used": true,
+    "referee_bias": "neutral",
+    "referee_confidence": "low",
+    "home_away_asymmetry": "balanced",
+    "signal_consistency": "low",
+    "sample_depth_flag": "low",
+    "source_tag": "data_api/exports/cards/910003.json"
+  }
+}

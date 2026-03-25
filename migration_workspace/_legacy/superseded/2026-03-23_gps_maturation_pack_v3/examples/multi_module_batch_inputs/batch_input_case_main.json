@@ -1,0 +1,162 @@
+{
+  "batch_schema_version": "gps_multi_module_batch.v1",
+  "generated_at": "2026-03-23T21:47:51+00:00",
+  "picks": [
+    {
+      "schema_version": "market_pick.v1.1",
+      "pick_id": "v12_20260323_001",
+      "created_at": "2026-03-23T21:47:51+00:00",
+      "module_id": "v12",
+      "module_version": "v12.0.3",
+      "event_id": 120001,
+      "match_label": "Roma vs Lecce",
+      "competition": "Serie A",
+      "kickoff_datetime": "2026-03-23T21:47:51+00:00",
+      "market_family": "goals",
+      "market": "under_3_5",
+      "selection": "Under 3.5 Goals",
+      "line": 3.5,
+      "odds": 1.62,
+      "eligibility": true,
+      "score_raw": 86,
+      "confidence_raw": "Alta",
+      "risk_raw": "Baixo",
+      "edge_raw": "7.1%",
+      "rationale_summary": "Jogo com perfil controlado, baixa propensão estrutural a explosão de golos e linha ainda operacional.",
+      "main_drivers": [
+        "total_goal_profile=under",
+        "game_state_stability=good"
+      ],
+      "penalties": [
+        "late_goal_risk"
+      ],
+      "module_rank_internal": 1,
+      "expiry_context": "refresh_if_odds_move_5pct",
+      "data_quality_flag": "clean"
+    },
+    {
+      "schema_version": "market_pick.v1.1",
+      "pick_id": "corners_20260323_004",
+      "created_at": "2026-03-23T21:47:51+00:00",
+      "module_id": "corners",
+      "module_version": "corners.0.9.2",
+      "event_id": 120002,
+      "match_label": "Osasuna vs Girona",
+      "competition": "La Liga",
+      "kickoff_datetime": "2026-03-23T21:47:51+00:00",
+      "market_family": "corners",
+      "market": "match_corners_under",
+      "selection": "Under 10.5 Corners",
+      "line": 10.5,
+      "odds": 1.91,
+      "eligibility": true,
+      "score_raw": 78,
+      "confidence_raw": 4,
+      "risk_raw": 2,
+      "edge_raw": "5.2%",
+      "rationale_summary": "Jogo de ritmo controlado com perfil under de cantos e boa consistência amostral.",
+      "main_drivers": [
+        "corner_projection=9.4",
+        "tempo_profile=slow"
+      ],
+      "penalties": [
+        "sample_depth_medium"
+      ],
+      "module_rank_internal": 1,
+      "expiry_context": "refresh_if_odds_move_5pct",
+      "data_quality_flag": "clean"
+    },
+    {
+      "schema_version": "market_pick.v1.1",
+      "pick_id": "btts_20260323_002",
+      "created_at": "2026-03-23T21:47:51+00:00",
+      "module_id": "btts",
+      "module_version": "btts.0.8.1",
+      "event_id": 120003,
+      "match_label": "Fiorentina vs Atalanta",
+      "competition": "Serie A",
+      "kickoff_datetime": "2026-03-23T21:47:51+00:00",
+      "market_family": "btts",
+      "market": "btts_yes",
+      "selection": "BTTS Yes",
+      "line": null,
+      "odds": 1.83,
+      "eligibility": true,
+      "score_raw": 7.4,
+      "confidence_raw": "Média",
+      "risk_raw": "Moderado",
+      "edge_raw": "6.8%",
+      "rationale_summary": "Duas equipas com suporte ofensivo e concessão consistente, contexto favorável a ambos marcam.",
+      "main_drivers": [
+        "scoring_support=good",
+        "concession_support=good"
+      ],
+      "penalties": [
+        "proxy_dependence_medium"
+      ],
+      "module_rank_internal": 2,
+      "expiry_context": "refresh_if_odds_move_4pct",
+      "data_quality_flag": "partial"
+    },
+    {
+      "schema_version": "market_pick.v1.1",
+      "pick_id": "v12_20260323_case03",
+      "created_at": "2026-03-23T21:47:51+00:00",
+      "module_id": "v12",
+      "module_version": "v12.0.3",
+      "event_id": 120003,
+      "match_label": "Fiorentina vs Atalanta",
+      "competition": "Serie A",
+      "kickoff_datetime": "2026-03-23T21:47:51+00:00",
+      "market_family": "goals",
+      "market": "over_2_5",
+      "selection": "Over 2.5 Goals",
+      "line": 2.5,
+      "odds": 1.77,
+      "eligibility": true,
+      "score_raw": 79,
+      "confidence_raw": "Alta",
+      "risk_raw": "Moderado",
+      "edge_raw": "6.1%",
+      "rationale_summary": "Contexto favorável a jogo aberto com suporte para over moderado.",
+      "main_drivers": [
+        "tempo_profile=positive",
+        "goal_support=good"
+      ],
+      "penalties": [],
+      "module_rank_internal": 1,
+      "expiry_context": "refresh_if_odds_move_5pct",
+      "data_quality_flag": "clean"
+    },
+    {
+      "schema_version": "market_pick.v1.1",
+      "pick_id": "cards_20260323_001",
+      "created_at": "2026-03-23T21:47:51+00:00",
+      "module_id": "cards",
+      "module_version": "cards.0.6.0",
+      "event_id": 120004,
+      "match_label": "Porto vs Braga",
+      "competition": "Liga Portugal",
+      "kickoff_datetime": "2026-03-23T21:47:51+00:00",
+      "market_family": "cards",
+      "market": "match_cards_over",
+      "selection": "Over 4.5 Cards",
+      "line": 4.5,
+      "odds": 1.74,
+      "eligibility": true,
+      "score_raw": 81,
+      "confidence_raw": "Alta",
+      "risk_raw": "Baixo",
+      "edge_raw": "5.0%",
+      "rationale_summary": "Jogo com intensidade e contexto disciplinar favorável a over de cartões.",
+      "main_drivers": [
+        "intensity=high",
+        "ref_profile=active"
+      ],
+      "penalties": [],
+      "module_rank_internal": 1,
+      "expiry_context": "refresh_if_odds_move_5pct",
+      "data_quality_flag": "clean"
+    }
+  ]
+}

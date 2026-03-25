@@ -1,0 +1,19 @@
+PACK CHECK REPORT
+
+Pack: 2026-03-24_app_core_orchestrator_validation_run_official_pack
+Module: app_core_orchestrator
+Date: 2026-03-24
+
+[OK] README.md presente
+[OK] manifest.json presente
+[OK] src/ presente
+[OK] docs/ presente
+[OK] examples/ presente
+[OK] run_smoke.py presente
+[OK] provider oficial declarado
+[OK] smoke test executado
+[OK] output mínimo gerado
+[OK] sem ficheiros de cache
+[OK] paths relativos confirmados
+
+Resultado final: APTO PARA ZIP

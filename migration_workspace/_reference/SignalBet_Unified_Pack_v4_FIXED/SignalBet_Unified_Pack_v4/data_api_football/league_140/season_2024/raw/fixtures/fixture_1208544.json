@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208544,
+    "referee": "Mateo Busquets",
+    "timezone": "UTC",
+    "date": "2024-09-22T16:30:00+00:00",
+    "timestamp": 1727022600,
+    "periods": {
+      "first": 1727022600,
+      "second": 1727026200
+    },
+    "venue": {
+      "id": 1498,
+      "name": "Estadio de la Cerámica",
+      "city": "Villarreal"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 4
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 6",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 533,
+      "name": "Villarreal",
+      "logo": "https://media.api-sports.io/football/teams/533.png",
+      "winner": false
+    },
+    "away": {
+      "id": 529,
+      "name": "Barcelona",
+      "logo": "https://media.api-sports.io/football/teams/529.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 5
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 2
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 5
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

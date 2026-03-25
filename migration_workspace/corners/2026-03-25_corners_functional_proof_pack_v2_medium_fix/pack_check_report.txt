@@ -1,0 +1,13 @@
+PACK CHECK REPORT
+
+Pack: 2026-03-25_corners_functional_proof_pack_v2_medium_fix
+Module: corners
+
+[OK] ajuste cirúrgico aplicado ao caso médio
+[OK] forte preservado como candidate
+[OK] médio recuperado para watchlist
+[OK] rejeitado preservado como rejected
+
+- case_1_forte: candidate | Forte | Over 10.5 Corners | score=76.07
+- case_2_media: watchlist | Observação | Over 9.5 Corners | score=57.26
+- case_3_rejeitada: rejected | Rejeitar | Over 8.5 Corners | score=11.54

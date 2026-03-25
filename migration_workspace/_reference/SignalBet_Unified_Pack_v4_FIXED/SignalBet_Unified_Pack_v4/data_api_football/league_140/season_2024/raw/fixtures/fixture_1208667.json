@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208667,
+    "referee": "Miguel Ortiz",
+    "timezone": "UTC",
+    "date": "2025-01-19T13:00:00+00:00",
+    "timestamp": 1737291600,
+    "periods": {
+      "first": 1737291600,
+      "second": 1737295200
+    },
+    "venue": {
+      "id": null,
+      "name": "Estadio Abanca-Balaídos",
+      "city": "Vigo"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 6
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 20",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 538,
+      "name": "Celta Vigo",
+      "logo": "https://media.api-sports.io/football/teams/538.png",
+      "winner": false
+    },
+    "away": {
+      "id": 531,
+      "name": "Athletic Club",
+      "logo": "https://media.api-sports.io/football/teams/531.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 2
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 2
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "pick_id": "btts_1208494_yes",
+  "created_at": "2026-03-24T12:00:00Z",
+  "module_id": "btts",
+  "module_version": "btts_engine.v1.1",
+  "event_id": 1208494,
+  "match_label": "Athletic Club vs Getafe",
+  "competition": "La Liga",
+  "kickoff_datetime": "2024-08-15T17:00:00+00:00",
+  "market_family": "btts",
+  "market": "match_btts",
+  "selection": "BTTS Yes",
+  "line": null,
+  "odds": 1.83,
+  "eligibility": true,
+  "score_raw": 66.71,
+  "confidence_raw": 3,
+  "risk_raw": 2,
+  "edge_raw": "acceptable",
+  "rationale_summary": "Bilateralidade ofensiva suficiente, concessão útil dos dois lados e timing favorável sem bloqueio estrutural forte.",
+  "main_drivers": [
+    "bos_strong",
+    "bvs_supportive",
+    "fgt_positive",
+    "tsi_stable_enough"
+  ],
+  "penalties": [],
+  "data_quality_flag": "partial",
+  "module_rank_internal": 1,
+  "expiry_context": "refresh_if_odds_move_5pct",
+  "module_specific_payload": {
+    "btts_direction": "yes",
+    "input_context": {
+      "provider": "Data_API_Official_Trunk_v1",
+      "provider_version": "official_trunk.v1",
+      "source_profile": "official_trunk_direct",
+      "data_quality_flag": "partial",
+      "missing_fields": [
+        "xgf_90",
+        "xga_90"
+      ],
+      "trunk_reads": {
+        "fixtures": true,
+        "standings": true,
+        "events": true,
+        "home_team_statistics": true,
+        "away_team_statistics": false
+      }
+    }
+  }
+}

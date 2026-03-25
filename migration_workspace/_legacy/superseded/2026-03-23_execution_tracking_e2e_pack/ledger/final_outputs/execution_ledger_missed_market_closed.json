@@ -1,0 +1,20 @@
+{
+  "schema_version": "execution-ledger.v1",
+  "execution_id": "EXEC-20260323-00043",
+  "decision_id": "DEC-20260323-0043",
+  "pick_id": "PICK-BTTS-878318",
+  "event_id": "878318",
+  "execution_status": "MISSED",
+  "settlement_status": "UNSETTLED",
+  "status_changed_at": "2026-03-23T18:55:21Z",
+  "execution_attempted": true,
+  "executed_at": null,
+  "executed_odds": null,
+  "stake_executed": 0.0,
+  "settled_at": null,
+  "result_profit_loss": 0.0,
+  "return_amount": 0.0,
+  "execution_reason_code": "MARKET_CLOSED",
+  "execution_reason_text": "Market no longer available at execution time",
+  "tracking_note": "Missed during live execution window"
+}

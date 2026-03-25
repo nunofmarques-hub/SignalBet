@@ -1,0 +1,18 @@
+{
+  "daily_run": {
+    "description": "Corre o fluxo completo do dia",
+    "priority": "alta"
+  },
+  "validation_run": {
+    "description": "Corre checks e subset de módulos",
+    "priority": "media"
+  },
+  "dry_run": {
+    "description": "Simula pipeline sem execution real",
+    "priority": "media"
+  },
+  "module_debug_run": {
+    "description": "Corre apenas módulos selecionados",
+    "priority": "baixa"
+  }
+}

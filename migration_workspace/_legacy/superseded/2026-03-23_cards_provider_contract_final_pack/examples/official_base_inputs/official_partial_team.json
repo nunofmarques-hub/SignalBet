@@ -1,0 +1,32 @@
+{
+  "event_id": 910002,
+  "match_label": "Benfica vs Arouca",
+  "competition": "Liga Portugal",
+  "kickoff_datetime": "2026-03-23T18:00:00Z",
+  "source_tag": "data_api/exports/cards/official_partial_team.json",
+  "market_context": {
+    "market": "team_cards_over_away",
+    "selection": "Arouca Over 2.5 Cards",
+    "line": 2.5,
+    "odds": 1.95
+  },
+  "discipline_context": {
+    "match_cards_projection": 2.7,
+    "home_cards_projection": 1.8,
+    "away_cards_projection": 2.7,
+    "discipline_profile": "warm",
+    "match_tension_flag": "medium",
+    "competitive_pressure": "medium",
+    "signal_consistency": "medium",
+    "sample_depth_flag": "medium",
+    "home_away_asymmetry": "away_pressure"
+  },
+  "referee_context": {
+    "used": false,
+    "bias": "unknown",
+    "confidence": "low"
+  },
+  "quality_context": {
+    "data_quality_flag": "clean"
+  }
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "match_id": 1208494,
+    "source_module": "cards",
+    "market": "over_cards",
+    "score": 64,
+    "confidence": "media",
+    "eligible": true,
+    "notes": "presença de card events e perfil físico"
+  }
+]

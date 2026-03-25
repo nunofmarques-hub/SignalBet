@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208813,
+    "referee": "Víctor García",
+    "timezone": "UTC",
+    "date": "2025-05-13T18:00:00+00:00",
+    "timestamp": 1747159200,
+    "periods": {
+      "first": 1747159200,
+      "second": 1747162800
+    },
+    "venue": {
+      "id": 1491,
+      "name": "Reale Arena",
+      "city": "Donostia-San Sebastián"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 7
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 36",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 548,
+      "name": "Real Sociedad",
+      "logo": "https://media.api-sports.io/football/teams/548.png",
+      "winner": false
+    },
+    "away": {
+      "id": 538,
+      "name": "Celta Vigo",
+      "logo": "https://media.api-sports.io/football/teams/538.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 0,
+    "away": 1
+  },
+  "score": {
+    "halftime": {
+      "home": 0,
+      "away": 1
+    },
+    "fulltime": {
+      "home": 0,
+      "away": 1
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208618,
+    "referee": "Mateo Busquets",
+    "timezone": "UTC",
+    "date": "2024-11-24T15:15:00+00:00",
+    "timestamp": 1732461300,
+    "periods": {
+      "first": 1732461300,
+      "second": 1732464900
+    },
+    "venue": {
+      "id": 1494,
+      "name": "Estadio Ramón Sánchez Pizjuán",
+      "city": "Sevilla"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 4
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 14",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 536,
+      "name": "Sevilla",
+      "logo": "https://media.api-sports.io/football/teams/536.png",
+      "winner": true
+    },
+    "away": {
+      "id": 728,
+      "name": "Rayo Vallecano",
+      "logo": "https://media.api-sports.io/football/teams/728.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

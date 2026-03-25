@@ -1,0 +1,41 @@
+{
+  "schema_version": "execution-intake.v1",
+  "source_system": "GLOBAL_PICK_SELECTOR",
+  "decision_id": "DEC-20260323-0101",
+  "pick_id": "PICK-20260323-0101",
+  "global_pick_id": "GP-20260323-0014",
+  "event_id": "878317",
+  "module_origin": "OVER15_TEAM",
+  "module_version": "v12.0",
+  "sport": "football",
+  "competition_id": "140",
+  "market_family": "GOALS",
+  "market": "OVER_1_5_TEAM",
+  "selection": "HOME_TEAM_OVER_1_5",
+  "match_label": "Team A vs Team B",
+  "line": 1.5,
+  "decision_status": "APPROVED",
+  "stake_approved": 5.0,
+  "stake_pct_bankroll": 0.025,
+  "approved_odds_window": {
+    "min_odds": 1.28,
+    "max_odds": 1.36
+  },
+  "portfolio_group": "CORE",
+  "execution_order": 1,
+  "rules_triggered": [
+    "MAX_EXPOSURE_OK",
+    "CORRELATION_OK"
+  ],
+  "bankroll_note": "Approved as primary single",
+  "global_score": 87,
+  "priority_tier": "A",
+  "confidence_norm": 84,
+  "risk_norm": 28,
+  "edge_norm": 73,
+  "selector_flags": [
+    "CLEAN_CONTEXT"
+  ],
+  "executive_rationale": "Top-ranked approved opportunity",
+  "decision_timestamp": "2026-03-23T19:42:10Z"
+}

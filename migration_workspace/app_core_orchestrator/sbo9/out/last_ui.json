@@ -1,0 +1,201 @@
+{
+  "screen_status": "BLOCKED",
+  "run_id": "RUN-20260325-130631",
+  "system_health": "FAIL",
+  "data_api_health": "FAIL",
+  "project_mode": "request",
+  "run_mode": "realish",
+  "target_intent": "real_proof",
+  "project_root": "U:\\Users\\genuser\\Desktop\\SignalBet",
+  "button_context": {
+    "label": "Pôr tudo a correr",
+    "cta_state": "blocked",
+    "pipeline_ready": false,
+    "real_project_attached": true,
+    "real_module_feeds_detected": true,
+    "project_feed_coverage_ratio": 0.5,
+    "execution_mode": "SKIPPED",
+    "readiness_level": "blocked"
+  },
+  "module_overview": {
+    "eligible": [
+      "v12",
+      "cards",
+      "btts",
+      "corners"
+    ],
+    "run": [],
+    "skipped": [],
+    "failed": [
+      {
+        "module_id": "v12",
+        "reason": "output_invalid"
+      },
+      {
+        "module_id": "cards",
+        "reason": "output_missing"
+      },
+      {
+        "module_id": "btts",
+        "reason": "output_missing"
+      },
+      {
+        "module_id": "corners",
+        "reason": "output_invalid"
+      }
+    ],
+    "sources": {
+      "v12": {
+        "mode": "project",
+        "type": "recursive:migration_workspace\\v12",
+        "path": "U:\\Users\\genuser\\Desktop\\SignalBet\\migration_workspace\\v12\\2026-03-25_v12_pronto_para_integracao_pack\\examples\\smoke_output_match_over_15.json",
+        "status": "FAIL"
+      },
+      "cards": {
+        "mode": "missing",
+        "type": "missing",
+        "path": "",
+        "status": "FAIL"
+      },
+      "btts": {
+        "mode": "missing",
+        "type": "missing",
+        "path": "",
+        "status": "FAIL"
+      },
+      "corners": {
+        "mode": "project",
+        "type": "recursive:migration_workspace\\corners",
+        "path": "U:\\Users\\genuser\\Desktop\\SignalBet\\migration_workspace\\corners\\2026-03-25_corners_functional_proof_pack_v2_medium_fix\\examples\\sample_output_case_1_candidate.json",
+        "status": "FAIL"
+      }
+    },
+    "feed_stats": {
+      "project": 2,
+      "demo": 0,
+      "external": 0,
+      "missing": 2
+    }
+  },
+  "counts": {
+    "candidates_generated": 0,
+    "approved": 0,
+    "reduced": 0,
+    "blocked": 0
+  },
+  "pipeline": {
+    "gps_status": "PASS",
+    "bankroll_status": "PASS",
+    "execution_status": "SKIPPED"
+  },
+  "pipeline_steps": [
+    {
+      "step": "config_check",
+      "status": "PASS"
+    },
+    {
+      "step": "environment_check",
+      "status": "PASS"
+    },
+    {
+      "step": "data_api_readiness_check",
+      "status": "FAIL"
+    },
+    {
+      "step": "module_discovery",
+      "status": "PASS",
+      "meta": {
+        "eligible_count": 4,
+        "skipped_count": 0
+      }
+    },
+    {
+      "step": "run_market_modules",
+      "status": "WARN",
+      "meta": {
+        "modules_run": [],
+        "modules_failed": [
+          {
+            "module_id": "v12",
+            "reason": "output_invalid"
+          },
+          {
+            "module_id": "cards",
+            "reason": "output_missing"
+          },
+          {
+            "module_id": "btts",
+            "reason": "output_missing"
+          },
+          {
+            "module_id": "corners",
+            "reason": "output_invalid"
+          }
+        ],
+        "feed_stats": {
+          "project": 2,
+          "demo": 0,
+          "external": 0,
+          "missing": 2
+        }
+      }
+    },
+    {
+      "step": "collect_candidates",
+      "status": "PASS",
+      "meta": {
+        "candidate_count": 0
+      }
+    },
+    {
+      "step": "run_global_pick_selector",
+      "status": "PASS",
+      "meta": {
+        "selected_count": 0
+      }
+    },
+    {
+      "step": "run_bankroll_manager",
+      "status": "PASS",
+      "meta": {
+        "approved": 0,
+        "reduced": 0,
+        "blocked": 0
+      }
+    },
+    {
+      "step": "register_execution",
+      "status": "SKIPPED"
+    },
+    {
+      "step": "build_run_summary",
+      "status": "FAIL"
+    },
+    {
+      "step": "return_ui_status",
+      "status": "FAIL"
+    }
+  ],
+  "last_run_summary": "validation_run_proof concluído em modo realish. readiness=blocked. Elegíveis=4, corridos=0, failed=4, candidatos=0, aprovadas=0, coverage_real=50.0%.",
+  "integration_state": {
+    "demo_vs_real": "real",
+    "coverage_real_feeds": 0.5,
+    "strict_real_project": true,
+    "strict_real_feeds": true,
+    "readiness_level": "blocked"
+  },
+  "cta_state": "blocked",
+  "warnings": [
+    "Sem ficheiros JSON nos providers.",
+    "Services em falta.",
+    "Sem snapshot/cache utilizável.",
+    "Sem hint físico de GPS no projeto.",
+    "Sem hint físico de Banca no projeto.",
+    "Sem hint físico de Execution no projeto."
+  ],
+  "errors": [
+    "providers/ em falta.",
+    "Registry de providers em falta.",
+    "Contracts oficiais em falta."
+  ]
+}

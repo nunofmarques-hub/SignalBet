@@ -1,0 +1,23 @@
+{
+  "pick_id": "btts_20260324_003",
+  "module_id": "btts",
+  "module_version": "btts.0.8.1",
+  "event_id": 991102,
+  "match_label": "Ajax vs Utrecht",
+  "market_family": "btts",
+  "market": "btts_yes",
+  "selection": "BTTS Yes",
+  "line": null,
+  "odds": 1.74,
+  "global_score": 72,
+  "confidence_norm": 3,
+  "risk_norm": 3,
+  "edge_norm": "acceptable",
+  "priority_tier": "Watchlist",
+  "conflict_flags": [],
+  "correlation_flags": [],
+  "executive_rationale": "Pick aceitável mas não prioritária no contexto prudencial.",
+  "selector_decision_note": "Reserve under prudential protection mode.",
+  "pool_status": "exported_to_bankroll",
+  "normalization_version": "norm.v1.1"
+}

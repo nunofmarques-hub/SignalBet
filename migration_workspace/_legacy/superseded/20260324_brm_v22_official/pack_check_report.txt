@@ -1,0 +1,18 @@
+PACK CHECK REPORT
+
+Pack: 20260324_brm_v22_official
+Result: PASS
+
+[OK] README.md presente
+[OK] manifest.json presente
+[OK] run_smoke.py presente
+[OK] src presente
+[OK] docs presente
+[OK] examples presente
+[OK] contracts presente
+[OK] manifest campos mínimos
+[OK] schema batch GPS
+[OK] schema batch banca
+[OK] schema execution
+[OK] exemplos finais dos 4 estados
+[OK] edge cases >= 10

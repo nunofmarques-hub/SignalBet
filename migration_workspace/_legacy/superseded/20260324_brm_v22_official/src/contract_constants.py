@@ -1,0 +1,5 @@
+MODULES = ["v12", "corners", "btts", "cards"]
+MARKET_FAMILIES = ["goals", "btts", "corners", "cards"]
+PRIORITY_TIERS = ["Best", "Top", "Actionable", "Watchlist", "Reject"]
+EDGE_NORM = ["weak", "acceptable", "strong", "very_strong"]
+DECISION_STATUS = ["APPROVED", "APPROVED_REDUCED", "BLOCKED", "RESERVE"]

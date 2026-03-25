@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208761,
+    "referee": "Ricardo De Burgos",
+    "timezone": "UTC",
+    "date": "2025-04-05T16:30:00+00:00",
+    "timestamp": 1743870600,
+    "periods": {
+      "first": 1743870600,
+      "second": 1743874200
+    },
+    "venue": {
+      "id": 19940,
+      "name": "Estadi Mallorca Son Moix",
+      "city": "Palma de Mallorca"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 5
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 30",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 798,
+      "name": "Mallorca",
+      "logo": "https://media.api-sports.io/football/teams/798.png",
+      "winner": false
+    },
+    "away": {
+      "id": 538,
+      "name": "Celta Vigo",
+      "logo": "https://media.api-sports.io/football/teams/538.png",
+      "winner": true
+    }
+  },
+  "goals": {
+    "home": 1,
+    "away": 2
+  },
+  "score": {
+    "halftime": {
+      "home": 1,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 1,
+      "away": 2
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

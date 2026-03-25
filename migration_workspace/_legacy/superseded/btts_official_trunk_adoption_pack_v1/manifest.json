@@ -1,0 +1,16 @@
+{
+  "pack_name": "btts_official_trunk_adoption_pack_v1",
+  "module_name": "btts",
+  "pack_version": "1.0.0",
+  "status": "staging",
+  "entrypoint": "run_smoke.cmd",
+  "provider_type": "official_trunk_service",
+  "provider_name": "Data_API_Official_Trunk_v1",
+  "provider_object": [
+    "get_fixtures_by_league_season",
+    "get_standings_snapshot",
+    "get_fixture_events",
+    "get_team_statistics"
+  ],
+  "contract_version": "v1.1"
+}

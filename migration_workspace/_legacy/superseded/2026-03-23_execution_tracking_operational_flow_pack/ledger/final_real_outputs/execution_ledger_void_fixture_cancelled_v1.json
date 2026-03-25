@@ -1,0 +1,23 @@
+{
+  "schema_version": "execution-ledger.v1",
+  "execution_id": "exec_20260323_roma_lecce_003",
+  "decision_id": "bank_20260323_201",
+  "pick_id": "v12_20260323_011",
+  "event_id": 120101,
+  "execution_status": "VOID",
+  "settlement_status": "VOID",
+  "status_changed_at": "2026-03-23T21:10:00+00:00",
+  "execution_attempted": true,
+  "executed_at": "2026-03-23T18:07:14+00:00",
+  "executed_odds": 1.62,
+  "stake_executed": 1.25,
+  "settled_at": "2026-03-23T21:10:00+00:00",
+  "result_profit_loss": 0.0,
+  "return_amount": 1.25,
+  "execution_reason_code": "FIXTURE_CANCELLED",
+  "execution_reason_text": "Fixture cancelled after execution.",
+  "slippage_vs_reference": 0.0,
+  "odds_within_window": true,
+  "tracking_note": "Void after fixture cancellation.",
+  "manual_review_flag": false
+}

@@ -1,0 +1,70 @@
+{
+  "fixture": {
+    "id": 1208608,
+    "referee": "Mario Melero",
+    "timezone": "UTC",
+    "date": "2024-11-09T13:00:00+00:00",
+    "timestamp": 1731157200,
+    "periods": {
+      "first": 1731157200,
+      "second": 1731160800
+    },
+    "venue": {
+      "id": 1456,
+      "name": "Estadio Santiago Bernabéu",
+      "city": "Madrid"
+    },
+    "status": {
+      "long": "Match Finished",
+      "short": "FT",
+      "elapsed": 90,
+      "extra": 4
+    }
+  },
+  "league": {
+    "id": 140,
+    "name": "La Liga",
+    "country": "Spain",
+    "logo": "https://media.api-sports.io/football/leagues/140.png",
+    "flag": "https://media.api-sports.io/flags/es.svg",
+    "season": 2024,
+    "round": "Regular Season - 13",
+    "standings": true
+  },
+  "teams": {
+    "home": {
+      "id": 541,
+      "name": "Real Madrid",
+      "logo": "https://media.api-sports.io/football/teams/541.png",
+      "winner": true
+    },
+    "away": {
+      "id": 727,
+      "name": "Osasuna",
+      "logo": "https://media.api-sports.io/football/teams/727.png",
+      "winner": false
+    }
+  },
+  "goals": {
+    "home": 4,
+    "away": 0
+  },
+  "score": {
+    "halftime": {
+      "home": 2,
+      "away": 0
+    },
+    "fulltime": {
+      "home": 4,
+      "away": 0
+    },
+    "extratime": {
+      "home": null,
+      "away": null
+    },
+    "penalty": {
+      "home": null,
+      "away": null
+    }
+  }
+}

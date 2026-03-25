@@ -1,0 +1,13 @@
+{
+  "runModel": {
+    "status": "running",
+    "title": "Corrida em progresso",
+    "progress": 58,
+    "summary": {
+      "opportunities": 28,
+      "eligible": 17,
+      "approved": 6,
+      "pending_execution": 3
+    }
+  }
+}

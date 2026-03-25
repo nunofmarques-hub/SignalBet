@@ -1,0 +1,60 @@
+{
+  "c01_app.json": {
+    "expected_status": "APPROVED",
+    "expected_codes": []
+  },
+  "c02_red.json": {
+    "expected_status": "APPROVED_REDUCED",
+    "expected_codes": [
+      "REDUCE_HIGH_RISK",
+      "REDUCE_PARTIAL_CORRELATION",
+      "REDUCE_BANK_ALERT"
+    ]
+  },
+  "c03_dup_block.json": {
+    "expected_status": "BLOCKED",
+    "expected_codes": [
+      "BLOCK_DUPLICATE_FIXTURE"
+    ]
+  },
+  "c04_odds_block.json": {
+    "expected_status": "BLOCKED",
+    "expected_codes": [
+      "BLOCK_ODD_RANGE"
+    ]
+  },
+  "c05_invalid_block.json": {
+    "expected_status": "BLOCKED",
+    "expected_codes": [
+      "BLOCK_INVALID_INPUT"
+    ]
+  },
+  "c06_reserve.json": {
+    "expected_status": "RESERVE",
+    "expected_codes": []
+  },
+  "c07_mod_block.json": {
+    "expected_status": "BLOCKED",
+    "expected_codes": [
+      "BLOCK_MODULE_LIMIT"
+    ]
+  },
+  "c08_min_block.json": {
+    "expected_status": "BLOCKED",
+    "expected_codes": [
+      "BLOCK_MIN_STAKE"
+    ]
+  },
+  "c09_reject_block.json": {
+    "expected_status": "BLOCKED",
+    "expected_codes": [
+      "BLOCK_REJECT_PRIORITY"
+    ]
+  },
+  "c10_daily_limit_block.json": {
+    "expected_status": "BLOCKED",
+    "expected_codes": [
+      "BLOCK_DAILY_LIMIT"
+    ]
+  }
+}

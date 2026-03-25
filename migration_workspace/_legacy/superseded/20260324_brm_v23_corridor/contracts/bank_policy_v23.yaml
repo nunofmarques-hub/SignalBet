@@ -1,0 +1,25 @@
+version: bank_policy.v23
+bank_state_modes:
+  - Normal
+  - Alerta
+  - Defesa
+  - Protecao_Maxima
+limits:
+  min_effective_stake_u: 0.25
+  max_pick_stake_u: 1.50
+  max_daily_exposure_u: 5.00
+  max_module_exposure_u: 3.00
+  odds_window:
+    min: 1.20
+    max: 2.40
+routing:
+  approved_statuses_to_execution:
+    - APPROVED
+    - APPROVED_REDUCED
+  non_execution_statuses:
+    - BLOCKED
+    - RESERVE
+notes:
+  - Banca consome batch final do GPS.
+  - Banca não lê API externa diretamente.
+  - Fixture única permanece política base.

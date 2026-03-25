@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Logs
+*.log
+logs/
+runtime_logs/
+
+# Test / cache
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+
+# VS Code / IDEs
+.vscode/
+.idea/
+
+# Local outputs / temp artifacts
+out/
+output/
+outputs/
+tmp/
+temp/
+scratch/
+debug/
+
+# Archives / packs
+*.zip
+*.7z
+*.rar
+*.tar.gz
+
+# Binary / model / data noise
+*.sqlite
+*.db
+*.pkl
+*.joblib
+
+# Node (if frontend stack grows later)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Windows odd files
+ehthumbs.db
+Icon?

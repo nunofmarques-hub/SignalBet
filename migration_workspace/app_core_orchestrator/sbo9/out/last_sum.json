@@ -1,8 +1,8 @@
 {
-  "run_id": "RUN-20260325-213402",
+  "run_id": "RUN-20260326-145705",
   "run_profile": "validation_run_proof",
-  "started_at": "2026-03-25T21:34:02.236157+00:00",
-  "finished_at": "2026-03-25T21:34:02.296676Z",
+  "started_at": "2026-03-26T14:57:05.326710+00:00",
+  "finished_at": "2026-03-26T14:57:05.343766Z",
   "initiated_by": "cli_real_proof",
   "target_intent": "real_proof",
   "preflight_status": "PASS",

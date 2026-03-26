@@ -1,0 +1,32 @@
+{
+  "schema_version": "analytics_audit_reporting.run_summary.v1",
+  "run_id": "gps_run_2026-03-24_main",
+  "generated_at": "2026-03-26T16:13:55.650709+00:00",
+  "orchestrator_context": {
+    "pack": "sbo9",
+    "status_note": "discovery freeze / proof real prepared",
+    "source_files": [
+      "orchestrator_README.md",
+      "orchestrator_STATUS.md"
+    ]
+  },
+  "modules_run": [
+    "cards",
+    "corners",
+    "v12"
+  ],
+  "modules_failed": [],
+  "candidates_seen": 4,
+  "sent_to_bank": 4,
+  "sent_to_execution": 2,
+  "decision_breakdown": {
+    "approved": 1,
+    "approved_reduced": 1,
+    "blocked": 1,
+    "reserve": 1
+  },
+  "warnings": [
+    "Pack de consolidação baseado em fontes reais exportadas do repositório oficial.",
+    "O contexto de run do Orchestrator nesta iteração vem de README/STATUS e não de um artefacto runtime dedicado."
+  ]
+}

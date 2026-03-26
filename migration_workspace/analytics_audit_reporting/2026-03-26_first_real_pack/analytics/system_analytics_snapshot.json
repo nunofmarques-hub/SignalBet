@@ -1,0 +1,37 @@
+{
+  "schema_version": "analytics_audit_reporting.system_analytics_snapshot.v1",
+  "period": "sample_from_real_project_sources",
+  "generated_at": "2026-03-26T16:13:55.650753+00:00",
+  "sources_used": {
+    "gps": "examples/source_inputs/gps_bankroll_export_case_main.json",
+    "bank": "examples/source_inputs/bank_resp_batch_v24.json",
+    "bank_exec": "examples/source_inputs/exec_payload_v24.json",
+    "execution_analytics": "examples/source_inputs/execution_analytics.json",
+    "execution_ledger": "examples/source_inputs/execution_ledger.json"
+  },
+  "total_candidates": 4,
+  "by_module": {
+    "v12": 2,
+    "cards": 1,
+    "corners": 1
+  },
+  "by_status": {
+    "approved": 1,
+    "approved_reduced": 1,
+    "blocked": 1,
+    "reserve": 1
+  },
+  "approvals": 1,
+  "reductions": 1,
+  "blocked": 1,
+  "reserve": 1,
+  "executed": 2,
+  "settled": 1,
+  "execution_fact_sample": {
+    "pick_id": "v12_20260323_011",
+    "module_origin": "v12",
+    "execution_status": "SETTLED",
+    "settlement_status": "WIN",
+    "result_profit_loss": 0.775
+  }
+}

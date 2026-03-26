@@ -1,0 +1,54 @@
+{
+  "schema_version": "analytics_audit_reporting.run_summary.v1_1",
+  "generated_at": "2026-03-26T17:55:00.916595+00:00",
+  "run_id": "RUN-20260326-151430",
+  "selector_run_id": "gps_run_2026-03-24_main",
+  "orchestrator_runtime_context": {
+    "run_profile": "validation_run_proof",
+    "target_intent": "real_proof",
+    "readiness_level": "real_ready",
+    "preflight_status": "PASS",
+    "official_trunk_status": "PASS",
+    "project_feed_coverage_ratio": 1.0,
+    "health_overall_status": "PASS",
+    "cta_state": "ready_live",
+    "ui_screen_status": "COMPLETED",
+    "proof_note": "Runtime-like orchestrator context imported from sbo9/out files confirmed in main."
+  },
+  "modules_run": [
+    "v12",
+    "cards",
+    "btts",
+    "corners"
+  ],
+  "modules_failed": [],
+  "candidates_seen_gps_export": 4,
+  "candidates_generated_orchestrator": 8,
+  "sent_to_bank": 4,
+  "sent_to_execution": 2,
+  "decision_breakdown": {
+    "approved": 1,
+    "approved_reduced": 1,
+    "blocked": 1,
+    "reserve": 1
+  },
+  "pipeline_status": {
+    "gps_status": "PASS",
+    "bankroll_status": "PASS",
+    "execution_status": "SKIPPED"
+  },
+  "ownership": {
+    "raw_producers": [
+      "Orchestrator",
+      "Execution"
+    ],
+    "consolidated_by": "Analytics / Audit / Reporting",
+    "primary_consumers": [
+      "operação interna",
+      "PM"
+    ]
+  },
+  "limitations": [
+    "Run summary consolidado a partir de artefactos de out do Orchestrator, não de interface dedicada desta frente."
+  ]
+}

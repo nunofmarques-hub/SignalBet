@@ -1,0 +1,58 @@
+{
+  "schema_version": "analytics_audit_reporting.system_analytics_snapshot.v1_1",
+  "generated_at": "2026-03-26T17:55:00.916595+00:00",
+  "period": "sample_from_real_project_sources_iter2",
+  "sources_used": {
+    "gps": "examples/source_inputs/gps_bankroll_export_case_main.json",
+    "bank": "examples/source_inputs/bank_resp_batch_v24.json",
+    "bank_exec": "examples/source_inputs/exec_payload_v24.json",
+    "execution_analytics": "examples/source_inputs/execution_analytics.json",
+    "execution_ledger": "examples/source_inputs/execution_ledger.json",
+    "orchestrator_last_sum": "examples/source_inputs/orchestrator_last_sum.json",
+    "orchestrator_last_ui": "examples/source_inputs/orchestrator_last_ui.json"
+  },
+  "total_candidates": 4,
+  "by_module": {
+    "v12": 2,
+    "cards": 1,
+    "corners": 1
+  },
+  "by_status": {
+    "approved": 1,
+    "approved_reduced": 1,
+    "blocked": 1,
+    "reserve": 1
+  },
+  "by_origin": {
+    "gps_export_picks": 4,
+    "bank_decisions": 4,
+    "execution_candidates": 2,
+    "orchestrator_modules_run": 4
+  },
+  "approvals": 1,
+  "reductions": 1,
+  "blocked": 1,
+  "reserve": 1,
+  "executed": 2,
+  "settled": 1,
+  "orchestrator_counts": {
+    "candidates_generated": 8,
+    "approved": 1,
+    "reduced": 0,
+    "blocked": 4
+  },
+  "ownership": {
+    "raw_producers": [
+      "Execution",
+      "Banca",
+      "GPS",
+      "Orchestrator"
+    ],
+    "consolidated_by": "Analytics / Audit / Reporting",
+    "primary_consumers": [
+      "operação interna",
+      "QA",
+      "governance"
+    ]
+  }
+}

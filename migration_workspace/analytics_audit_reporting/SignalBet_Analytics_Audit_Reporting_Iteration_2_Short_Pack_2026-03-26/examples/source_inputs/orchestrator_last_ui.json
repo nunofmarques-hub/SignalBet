@@ -1,0 +1,63 @@
+{
+  "screen_status": "COMPLETED",
+  "run_id": "RUN-20260326-151430",
+  "system_health": "PASS",
+  "data_api_health": "PASS",
+  "project_mode": "request",
+  "run_mode": "realish",
+  "target_intent": "real_proof",
+  "button_context": {
+    "label": "Pôr tudo a correr",
+    "cta_state": "ready_live",
+    "pipeline_ready": true,
+    "real_project_attached": true,
+    "real_module_feeds_detected": true,
+    "project_feed_coverage_ratio": 1.0,
+    "execution_mode": "SKIPPED",
+    "readiness_level": "real_ready"
+  },
+  "module_overview": {
+    "eligible": [
+      "v12",
+      "cards",
+      "btts",
+      "corners"
+    ],
+    "run": [
+      "v12",
+      "cards",
+      "btts",
+      "corners"
+    ],
+    "skipped": [],
+    "failed": [],
+    "feed_stats": {
+      "project": 4,
+      "demo": 0,
+      "external": 0,
+      "missing": 0
+    }
+  },
+  "counts": {
+    "candidates_generated": 8,
+    "approved": 1,
+    "reduced": 0,
+    "blocked": 4
+  },
+  "pipeline": {
+    "gps_status": "PASS",
+    "bankroll_status": "PASS",
+    "execution_status": "SKIPPED"
+  },
+  "last_run_summary": "validation_run_proof concluído em modo realish.\nreadiness=real_ready. Elegíveis=4, corridos=4, failed=0, candidatos=8, aprovadas=1, coverage_real=100.0%.",
+  "integration_state": {
+    "demo_vs_real": "real",
+    "coverage_real_feeds": 1.0,
+    "strict_real_project": true,
+    "strict_real_feeds": true,
+    "readiness_level": "real_ready"
+  },
+  "cta_state": "ready_live",
+  "warnings": [],
+  "errors": []
+}

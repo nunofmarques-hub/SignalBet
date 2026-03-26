@@ -1,0 +1,6 @@
+SMOKE_OK_ITER2
+analytics/run_summary.json
+analytics/system_analytics_snapshot.json
+audit/audit_trace_sample.json
+audit/audit_trace_case_2.json
+reporting/daily_reporting_summary.md

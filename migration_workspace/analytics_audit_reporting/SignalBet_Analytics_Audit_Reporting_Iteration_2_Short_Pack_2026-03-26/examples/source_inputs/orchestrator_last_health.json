@@ -1,0 +1,76 @@
+{
+  "run_id": "RUN-20260326-151430",
+  "overall_status": "PASS",
+  "checks": [
+    {
+      "check_id": "api_env_present",
+      "status": "PASS",
+      "blocking": false
+    },
+    {
+      "check_id": "api_key_present",
+      "status": "PASS",
+      "blocking": false
+    },
+    {
+      "check_id": "settings_file_present",
+      "status": "PASS",
+      "blocking": true
+    },
+    {
+      "check_id": "python_available",
+      "status": "PASS",
+      "blocking": true
+    },
+    {
+      "check_id": "project_root_valid",
+      "status": "PASS",
+      "blocking": true
+    },
+    {
+      "check_id": "required_folders_present",
+      "status": "PASS",
+      "blocking": true
+    },
+    {
+      "check_id": "write_permissions_ok",
+      "status": "PASS",
+      "blocking": false
+    },
+    {
+      "check_id": "data_api_root_present",
+      "status": "PASS",
+      "blocking": true
+    },
+    {
+      "check_id": "official_trunk_root_present",
+      "status": "PASS",
+      "blocking": true
+    },
+    {
+      "check_id": "providers_registry_present",
+      "status": "PASS",
+      "blocking": true
+    },
+    {
+      "check_id": "contracts_present",
+      "status": "PASS",
+      "blocking": true
+    },
+    {
+      "check_id": "gps_project_hint",
+      "status": "PASS",
+      "blocking": false
+    },
+    {
+      "check_id": "bank_project_hint",
+      "status": "PASS",
+      "blocking": false
+    },
+    {
+      "check_id": "execution_project_hint",
+      "status": "PASS",
+      "blocking": false
+    }
+  ]
+}

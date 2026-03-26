@@ -1,0 +1,32 @@
+{
+  "pack_name": "SignalBet_Analytics_Audit_Reporting_Iteration_2_Short_Pack_2026-03-26",
+  "module_name": "analytics_audit_reporting",
+  "pack_version": "v1.1.0",
+  "status": "staging_forte_inicial",
+  "entrypoint": "run_smoke.py",
+  "provider_type": "consolidation_from_real_project_sources",
+  "provider_name": "SignalBet main corridor sources + orchestrator out runtime context",
+  "provider_object": "gps + bank + execution + orchestrator outputs",
+  "contract_version": "v1.1_operacional",
+  "required_outputs": [
+    "analytics/system_analytics_snapshot.json",
+    "analytics/run_summary.json",
+    "audit/audit_trace_sample.json",
+    "reporting/daily_reporting_summary.md"
+  ],
+  "additional_outputs": [
+    "audit/audit_trace_case_2.json"
+  ],
+  "source_paths": {
+    "gps": "migration_workspace/global_pick_selector/2026-03-24_global_pick_selector_integration_critical_pack_v6_final/examples/bankroll_export_outputs/bankroll_export_case_main.json",
+    "bank": "migration_workspace/bankroll_risk_manager/20260324_brm_v25_cleanup_freeze/examples/bank_resp_batch_v24.json",
+    "bank_exec": "migration_workspace/bankroll_risk_manager/20260324_brm_v25_cleanup_freeze/examples/exec_payload_v24.json",
+    "execution_analytics": "migration_workspace/execution_tracking/2026-03-24_execution_tracking_corridor_minimum_ready_pack/tests/smoke_outputs/analytics.json",
+    "execution_audit": "migration_workspace/execution_tracking/2026-03-24_execution_tracking_corridor_minimum_ready_pack/tests/smoke_outputs/audit.json",
+    "execution_ledger": "migration_workspace/execution_tracking/2026-03-24_execution_tracking_corridor_minimum_ready_pack/tests/smoke_outputs/ledger.json",
+    "orchestrator_last_sum": "migration_workspace/app_core_orchestrator/sbo9/out/last_sum.json",
+    "orchestrator_last_health": "migration_workspace/app_core_orchestrator/sbo9/out/last_health.json",
+    "orchestrator_last_ui": "migration_workspace/app_core_orchestrator/sbo9/out/last_ui.json",
+    "orchestrator_proof_stdout": "migration_workspace/app_core_orchestrator/sbo9/out/proof_stdout.json"
+  }
+}

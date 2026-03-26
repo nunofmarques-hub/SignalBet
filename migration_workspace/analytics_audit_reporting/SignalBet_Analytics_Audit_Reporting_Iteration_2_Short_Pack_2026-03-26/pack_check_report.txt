@@ -1,0 +1,7 @@
+PACK_CHECK_REPORT
+status=OK
+iteration=2_short
+required_structure=README.md, manifest.json, analytics/, audit/, reporting/, examples/, run_smoke.py
+outputs=analytics/system_analytics_snapshot.json; analytics/run_summary.json; audit/audit_trace_sample.json; audit/audit_trace_case_2.json; reporting/daily_reporting_summary.md
+smoke=SMOKE_OK_ITER2
+note=Ownership por output explicitado. Orchestrator reforçado com contexto runtime de sbo9/out.

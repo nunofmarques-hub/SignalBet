@@ -1,0 +1,12 @@
+{
+  "pack_name": "UI_Frontend_SignalBet_TwentyFirst_Staging_Pack_2026-03-26",
+  "module_name": "ui_frontend",
+  "pack_version": "v21",
+  "status": "staging",
+  "entrypoint": "src/index.html",
+  "provider_type": "ui_runtime_bridge",
+  "provider_name": "runtimeBridgeService",
+  "provider_object": "protected_read_bridge_with_controlled_tests",
+  "contract_version": "v1.1",
+  "repo_alignment": "migration_workspace/ui_frontend/2026-03-26_signalbet_ui_pack_v21"
+}

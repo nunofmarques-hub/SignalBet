@@ -1,0 +1,41 @@
+{
+  "schema_version": "analytics_audit_reporting.audit_trace_case_2.v1_1",
+  "trace_id": "trace_case_002",
+  "case_type": "blocked_non_execution_case",
+  "pick_id": "btts_003",
+  "event_id": 991100,
+  "match_label": "Roma vs Lecce",
+  "gps_event": {
+    "pick_id": null,
+    "module_id": "btts",
+    "global_score": null,
+    "selection_status": null
+  },
+  "bank_event": {
+    "decision_id": "brm_dec_003",
+    "decision_status": "BLOCKED",
+    "stake_approved": 0.0,
+    "rules_triggered": [
+      "BLOCK_DUPLICATE_FIXTURE"
+    ]
+  },
+  "execution_event": null,
+  "run_context": {
+    "run_id": "RUN-20260326-151430",
+    "run_mode": "realish",
+    "pipeline_execution_status": "SKIPPED"
+  },
+  "final_status": "blocked_pre_execution",
+  "ownership": {
+    "raw_producers": [
+      "GPS",
+      "Banca",
+      "Orchestrator"
+    ],
+    "consolidated_by": "Analytics / Audit / Reporting",
+    "primary_consumers": [
+      "governance",
+      "revisão operacional"
+    ]
+  }
+}

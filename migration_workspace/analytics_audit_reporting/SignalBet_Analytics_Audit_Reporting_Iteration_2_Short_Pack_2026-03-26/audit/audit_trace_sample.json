@@ -1,0 +1,44 @@
+{
+  "schema_version": "analytics_audit_reporting.audit_trace_sample.v1_1",
+  "trace_id": "trace_sample_001",
+  "case_type": "execution_backed_fact",
+  "pick_id": "v12_001",
+  "event_id": 991100,
+  "match_label": "Roma vs Lecce",
+  "gps_event": {
+    "pick_id": "v12_20260324_001",
+    "module_id": "v12",
+    "global_score": 82,
+    "selection_status": "selected"
+  },
+  "bank_event": {
+    "decision_id": "brm_dec_001",
+    "decision_status": "APPROVED",
+    "stake_approved": 1.25
+  },
+  "execution_event": {
+    "execution_id": "EXEC-20260324-0001",
+    "execution_status": "SETTLED",
+    "settlement_status": "WIN",
+    "executed_odds": 1.62
+  },
+  "run_context": {
+    "run_id": "RUN-20260326-151430",
+    "readiness_level": "real_ready",
+    "cta_state": "ready_live"
+  },
+  "final_status": "WIN",
+  "ownership": {
+    "raw_producers": [
+      "GPS",
+      "Banca",
+      "Execution",
+      "Orchestrator"
+    ],
+    "consolidated_by": "Analytics / Audit / Reporting",
+    "primary_consumers": [
+      "governance",
+      "revisão operacional"
+    ]
+  }
+}

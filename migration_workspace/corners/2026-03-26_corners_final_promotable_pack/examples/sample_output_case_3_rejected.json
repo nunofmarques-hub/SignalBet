@@ -1,0 +1,26 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "module_id": "corners",
+  "module_version": "final",
+  "event_id": 878312,
+  "match_label": "Real Betis vs Valencia",
+  "competition": "La Liga",
+  "market_family": "corners",
+  "market": "match_corners_over",
+  "selection": "Over 8.5 Corners",
+  "line": 8.5,
+  "eligibility": false,
+  "score_raw": 11.54,
+  "confidence_raw": "Baixa",
+  "risk_raw": "Alto",
+  "rationale_summary": "Projeção 8.11, linha 8.5, score 11.54, confiança Baixa, risco Alto.",
+  "main_drivers": [
+    "produção combinada acima do padrão"
+  ],
+  "data_quality_flag": "invalid",
+  "module_specific_payload": {
+    "corner_projection": 8.11,
+    "candidate_status": "rejected",
+    "band": "Rejeitar"
+  }
+}

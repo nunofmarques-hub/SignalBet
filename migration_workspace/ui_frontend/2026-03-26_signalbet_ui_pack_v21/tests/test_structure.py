@@ -1,0 +1,1 @@
+print("TEST_STRUCTURE_OK_UI_V21")

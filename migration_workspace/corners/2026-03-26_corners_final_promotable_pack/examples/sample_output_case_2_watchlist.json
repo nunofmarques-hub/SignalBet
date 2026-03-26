@@ -1,0 +1,26 @@
+{
+  "schema_version": "market_pick.v1.1",
+  "module_id": "corners",
+  "module_version": "final",
+  "event_id": 878317,
+  "match_label": "Celta Vigo vs Barcelona",
+  "competition": "La Liga",
+  "market_family": "corners",
+  "market": "match_corners_over",
+  "selection": "Over 9.5 Corners",
+  "line": 9.5,
+  "eligibility": true,
+  "score_raw": 57.26,
+  "confidence_raw": "Baixa",
+  "risk_raw": "Médio",
+  "rationale_summary": "Projeção 9.88, linha 9.5, score 57.26, confiança Baixa, risco Médio.",
+  "main_drivers": [
+    "produção combinada acima do padrão"
+  ],
+  "data_quality_flag": "clean",
+  "module_specific_payload": {
+    "corner_projection": 9.88,
+    "candidate_status": "watchlist",
+    "band": "Observação"
+  }
+}

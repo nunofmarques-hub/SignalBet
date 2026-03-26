@@ -1,0 +1,50 @@
+{
+  "run_id": "RUN-20260326-151430",
+  "run_profile": "validation_run_proof",
+  "started_at": "2026-03-26T15:14:30.507992+00:00",
+  "finished_at": "2026-03-26T15:14:30.518536Z",
+  "initiated_by": "cli_real_proof",
+  "target_intent": "real_proof",
+  "preflight_status": "PASS",
+  "official_trunk_status": "PASS",
+  "project_root": "U:\\Users\\genuser\\Desktop\\SignalBet",
+  "project_mode": "request",
+  "run_mode": "realish",
+  "checked_paths": [
+    "request:U:\\Users\\genuser\\Desktop\\SignalBet"
+  ],
+  "strict_real_project": true,
+  "strict_real_feeds": true,
+  "readiness_level": "real_ready",
+  "modules_eligible": [
+    "v12",
+    "cards",
+    "btts",
+    "corners"
+  ],
+  "modules_run": [
+    "v12",
+    "cards",
+    "btts",
+    "corners"
+  ],
+  "modules_skipped": [],
+  "modules_failed": [],
+  "module_feed_stats": {
+    "project": 4,
+    "demo": 0,
+    "external": 0,
+    "missing": 0
+  },
+  "project_feed_coverage_ratio": 1.0,
+  "candidates_generated": 8,
+  "gps_status": "PASS",
+  "bankroll_status": "PASS",
+  "execution_status": "SKIPPED",
+  "approved_count": 1,
+  "reduced_count": 0,
+  "blocked_count": 4,
+  "warnings": [],
+  "errors": [],
+  "final_summary": "validation_run_proof concluído em modo realish.\nreadiness=real_ready. Elegíveis=4, corridos=4, failed=0, candidatos=8, aprovadas=1, coverage_real=100.0%."
+}

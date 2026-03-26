@@ -1,0 +1,1 @@
+export function createExecutionViewModel(data){ return { items:data.execution, pending:data.execution.filter(x=>x.execution_status==='PENDING').length, live:data.execution.filter(x=>x.execution_status==='LIVE').length, settled:data.execution.filter(x=>x.execution_status==='SETTLED').length }; }

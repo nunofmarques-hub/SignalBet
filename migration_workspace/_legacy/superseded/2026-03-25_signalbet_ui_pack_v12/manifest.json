@@ -1,0 +1,11 @@
+{
+  "pack_name": "UI_Frontend_SignalBet_v12_Controlled_Runtime_Bridge_Pack",
+  "module_name": "ui_frontend",
+  "pack_version": "v12",
+  "status": "staging",
+  "entrypoint": "src/index.html",
+  "provider_type": "mock+placeholder_runtime_bridge",
+  "provider_name": "providerRegistry",
+  "provider_object": "runtimeSourceRegistry",
+  "contract_version": "v1.1"
+}

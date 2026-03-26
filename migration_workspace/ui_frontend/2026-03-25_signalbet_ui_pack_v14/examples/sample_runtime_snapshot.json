@@ -1,0 +1,68 @@
+{
+  "cta_state": "ready",
+  "readiness_level": "medium",
+  "project_feed_coverage_ratio": 0.74,
+  "pipeline_state": "running",
+  "current_stage": "gps",
+  "summary": {
+    "modules_available": 4,
+    "modules_ready": 3,
+    "opportunities": 11,
+    "approved": 4,
+    "execution_open": 1
+  },
+  "module_overview": [
+    {
+      "module": "Cards",
+      "status": "ready",
+      "coverage": 0.88,
+      "count": 4
+    },
+    {
+      "module": "v12",
+      "status": "ready",
+      "coverage": 0.91,
+      "count": 4
+    },
+    {
+      "module": "BTTS",
+      "status": "partial",
+      "coverage": 0.62,
+      "count": 2
+    },
+    {
+      "module": "Corners",
+      "status": "partial",
+      "coverage": 0.55,
+      "count": 1
+    }
+  ],
+  "pipeline_steps": [
+    {
+      "name": "Data/API",
+      "status": "ready"
+    },
+    {
+      "name": "Modules",
+      "status": "running"
+    },
+    {
+      "name": "GPS",
+      "status": "pending"
+    },
+    {
+      "name": "Bankroll",
+      "status": "pending"
+    },
+    {
+      "name": "Execution",
+      "status": "pending"
+    }
+  ],
+  "issues": [
+    "BTTS partial feed coverage",
+    "Corners degraded coverage"
+  ],
+  "final_result": "partial",
+  "run_id": "run_2026_03_25_demo"
+}

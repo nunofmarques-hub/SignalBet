@@ -1,0 +1,13 @@
+{
+  "homeViewModel": {
+    "ctaLabel": "P\u00f4r tudo a correr",
+    "readinessLabel": "Ready",
+    "coverage": "86%",
+    "pipelineState": "idle"
+  },
+  "pipelinePanel": {
+    "steps": 5,
+    "warnings": 1,
+    "finalResult": null
+  }
+}

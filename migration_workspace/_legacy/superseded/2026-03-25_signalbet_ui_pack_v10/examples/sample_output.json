@@ -1,0 +1,15 @@
+{
+  "home_blocks": [
+    "hero",
+    "kpi",
+    "readiness",
+    "issues"
+  ],
+  "pages": [
+    "home",
+    "pool",
+    "bankroll",
+    "execution",
+    "history"
+  ]
+}

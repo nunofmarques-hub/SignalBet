@@ -1,6 +1,6 @@
 {
-  "run_id": "RUN-20260325-130631",
-  "overall_status": "FAIL",
+  "run_id": "RUN-20260325-213402",
+  "overall_status": "PASS",
   "checks": [
     {
       "check_id": "api_env_present",
@@ -58,38 +58,38 @@
     },
     {
       "check_id": "providers_dir_present",
-      "status": "FAIL",
-      "message": "providers/ em falta.",
+      "status": "PASS",
+      "message": "providers/ presente.",
       "blocking": true
     },
     {
       "check_id": "providers_registry_present",
-      "status": "FAIL",
-      "message": "Registry de providers em falta.",
+      "status": "PASS",
+      "message": "Registry de providers encontrado.",
       "blocking": true
     },
     {
       "check_id": "providers_files_present",
-      "status": "WARN",
-      "message": "Sem ficheiros JSON nos providers.",
+      "status": "PASS",
+      "message": "Ficheiros de provider presentes.",
       "blocking": false
     },
     {
       "check_id": "contracts_present",
-      "status": "FAIL",
-      "message": "Contracts oficiais em falta.",
+      "status": "PASS",
+      "message": "Contracts oficiais presentes.",
       "blocking": true
     },
     {
       "check_id": "services_present",
-      "status": "WARN",
-      "message": "Services em falta.",
+      "status": "PASS",
+      "message": "Services presentes.",
       "blocking": false
     },
     {
       "check_id": "latest_snapshot_available",
-      "status": "WARN",
-      "message": "Sem snapshot/cache utilizável.",
+      "status": "PASS",
+      "message": "Snapshot/cache utilizável encontrado.",
       "blocking": false
     },
     {

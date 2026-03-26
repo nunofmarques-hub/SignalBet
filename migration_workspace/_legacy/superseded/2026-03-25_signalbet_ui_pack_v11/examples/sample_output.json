@@ -1,0 +1,5 @@
+{
+  "buttonContext": {"enabled": true, "label": "Pôr tudo a correr"},
+  "pipelineState": "idle",
+  "readinessLevel": "high"
+}

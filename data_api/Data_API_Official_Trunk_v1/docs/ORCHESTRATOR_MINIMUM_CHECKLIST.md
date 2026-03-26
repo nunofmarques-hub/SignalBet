@@ -1,0 +1,10 @@
+- providers
+- registry
+- contracts
+- fixtures catalog
+- fixture_ids
+- standings
+- sample events
+- sample statistics
+- sample team_statistics
+- hints GPS/Banca/Execution

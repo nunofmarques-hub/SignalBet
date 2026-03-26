@@ -1,0 +1,36 @@
+{
+  "version": "1.0.0",
+  "checker_target": "OR9u2",
+  "providers": [
+    {
+      "name": "api_football_provider.py",
+      "role": "base_external_provider",
+      "status": "official"
+    },
+    {
+      "name": "fixtures_provider.py",
+      "role": "fixtures_catalog_provider",
+      "status": "official"
+    },
+    {
+      "name": "standings_provider.py",
+      "role": "standings_snapshot_provider",
+      "status": "official"
+    },
+    {
+      "name": "events_provider.py",
+      "role": "fixture_events_provider",
+      "status": "official"
+    },
+    {
+      "name": "fixture_statistics_provider.py",
+      "role": "fixture_statistics_provider",
+      "status": "official"
+    },
+    {
+      "name": "team_statistics_provider.py",
+      "role": "team_statistics_provider",
+      "status": "official"
+    }
+  ]
+}

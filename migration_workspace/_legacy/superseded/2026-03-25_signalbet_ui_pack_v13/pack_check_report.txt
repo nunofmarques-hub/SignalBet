@@ -1,0 +1,17 @@
+Pack Check Report — UI Frontend SignalBet v13
+
+[OK] README.md presente
+[OK] manifest.json presente
+[OK] run_smoke.sh presente
+[OK] run_smoke.bat presente
+[OK] src/ presente
+[OK] docs/ presente
+[OK] examples/ presente
+[OK] tests/ presente
+[OK] contracts/ presente
+[OK] assets/logo-signalbet-radar-focus.svg presente
+[OK] app shell navegável presente
+[OK] runtimeBridgeService.js presente
+[OK] source modes contract_mock / orchestrator_mock / placeholder_live presentes
+[OK] smoke estrutural previsto
+[INFO] ligação live real ainda não implementada por decisão de staging

@@ -1,0 +1,1 @@
+export function createBankrollViewModel(data){ return { items:data.bankroll, counts:{ approved:data.bankroll.filter(x=>x.decision_status==='APPROVED').length, reduced:data.bankroll.filter(x=>x.decision_status==='REDUCED').length, blocked:data.bankroll.filter(x=>x.decision_status==='BLOCKED').length } }; }

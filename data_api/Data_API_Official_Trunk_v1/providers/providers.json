@@ -1,0 +1,11 @@
+{
+  "registry_version": "1.0",
+  "providers": [
+    "api_football_provider",
+    "fixtures_provider",
+    "standings_provider",
+    "events_provider",
+    "fixture_statistics_provider",
+    "team_statistics_provider"
+  ]
+}

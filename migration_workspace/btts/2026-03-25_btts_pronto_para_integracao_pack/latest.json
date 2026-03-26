@@ -1,0 +1,79 @@
+{
+  "module_id": "btts",
+  "module_version": "btts_engine.v1.1",
+  "schema_version": "module_feed.v1",
+  "status": "PASS",
+  "generated_at": "2026-03-25T15:26:23.613412+00:00",
+  "source_profile": "official_trunk_direct",
+  "source_line": "BTTS pronto_para_integracao official active line",
+  "provider_name": "Data_API_Official_Trunk_v1",
+  "contract_version": "market_pick.v1.1",
+  "feed_path": "integration_feeds/btts/latest.json",
+  "notes": "Feed real oficial do BTTS para consumo pelo Orchestrator, Opportunity Pool e GPS.",
+  "candidates": [
+    {
+      "schema_version": "market_pick.v1.1",
+      "pick_id": "btts_878317_yes",
+      "created_at": "2026-03-25T15:26:23.613431+00:00",
+      "module_id": "btts",
+      "module_version": "btts_engine.v1.1",
+      "event_id": 878317,
+      "fixture_id": 878317,
+      "match_label": "Celta Vigo vs Barcelona",
+      "competition": "La Liga",
+      "kickoff_datetime": "2026-03-23T20:00:00Z",
+      "market_family": "btts",
+      "market": "BTTS",
+      "selection": "Yes",
+      "line": null,
+      "odds": 1.83,
+      "eligibility": true,
+      "score_raw": 66.71,
+      "confidence_raw": 3,
+      "risk_raw": 2,
+      "edge_raw": "acceptable",
+      "rationale_summary": "Bilateralidade ofensiva suficiente, concessão útil dos dois lados e timing favorável sem bloqueio estrutural forte.",
+      "main_drivers": [
+        "bos_strong",
+        "bvs_supportive",
+        "fgt_positive",
+        "tsi_stable_enough"
+      ],
+      "penalties": [],
+      "data_quality_flag": "partial",
+      "module_rank_internal": 1,
+      "expiry_context": "refresh_if_odds_move_5pct",
+      "pick_status_at_source": "eligible",
+      "data_sources_used": [
+        "Data_API_Official_Trunk_v1",
+        "direct_official_trunk_provider",
+        "official_trunk_loader"
+      ],
+      "module_context": {
+        "source_profile": "official_trunk_direct",
+        "provider_name": "Data_API_Official_Trunk_v1",
+        "runtime_validated": true,
+        "official_active_line": true
+      },
+      "module_specific_payload": {
+        "btts_direction": "yes",
+        "scoring_support": {
+          "bos": 70.0,
+          "ami_bilateral": 63.0,
+          "xg_gap_aggregated": 58.0
+        },
+        "concession_support": {
+          "bvs": 69.0,
+          "fgt_btts": 68.0,
+          "sbi": 61.0
+        },
+        "tsi_bilateral": 64.0,
+        "input_context": {
+          "provider": "Data_API_Official_Trunk_v1",
+          "provider_version": "official_trunk.v1",
+          "source_profile": "official_trunk_direct"
+        }
+      }
+    }
+  ]
+}

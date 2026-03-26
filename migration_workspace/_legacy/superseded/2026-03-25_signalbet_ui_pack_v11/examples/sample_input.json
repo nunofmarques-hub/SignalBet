@@ -1,0 +1,7 @@
+{
+  "cta_state": "ready",
+  "readiness_level": "high",
+  "project_feed_coverage_ratio": 0.86,
+  "pipeline_state": "idle",
+  "current_stage": "precheck"
+}

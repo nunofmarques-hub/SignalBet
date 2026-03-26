@@ -1,0 +1,1 @@
+export function heroCard(h){ return `<div class="screen-section"><div class="chip live">${h.title}</div><h2>${h.fixture}</h2><p class="muted">${h.market}</p><div>${['Score '+h.score,'Conf '+h.confidence,'Edge '+h.edge,'Risk '+h.risk].map(t=>`<span class="chip">${t}</span>`).join('')}</div></div>`; }

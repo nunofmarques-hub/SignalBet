@@ -1,3 +1,4 @@
+
 from __future__ import annotations
 from pathlib import Path
 from app_orch.util.io import read_json
@@ -21,29 +22,61 @@ def discover(pack_root: str, profile: str, forced_modules=None):
     return eligible, skipped
 
 
-def _candidate_paths(project_root: Path, module_id: str):
-    names = [f'{module_id}_output.json', 'latest.json', 'module_output.json', 'output.json']
+def _official_candidates(project_root: Path, module_id: str):
+    base = project_root / 'integration_feeds' / module_id
+    ordered = [
+        base / 'latest.json',
+        base / f'{module_id}_output.json',
+        base / 'module_output.json',
+        base / 'output.json',
+    ]
+    return [(p, f'official:{p.relative_to(project_root)}') for p in ordered]
+
+
+def _direct_fallback_candidates(project_root: Path, module_id: str):
     bases = [
-        project_root / 'integration_feeds' / module_id,
         project_root / 'runtime' / 'mod_out' / module_id,
         project_root / 'mod_out' / module_id,
         project_root / 'migration_workspace' / module_id,
-        project_root / 'modules' / module_id / 'examples',
         project_root / 'modules' / module_id / 'out',
+        project_root / 'modules' / module_id / 'examples',
     ]
+    names = ['latest.json', f'{module_id}_output.json', 'module_output.json', 'output.json']
     out = []
     for b in bases:
         for n in names:
-            out.append((b / n, f'direct:{b.relative_to(project_root)}' if b.is_absolute() else 'direct'))
-        if b.exists():
-            for p in sorted(b.rglob('*.json')):
-                if any(k in p.name.lower() for k in ['candidate', 'output', 'latest']):
-                    out.append((p, f'recursive:{b.relative_to(project_root)}'))
+            out.append((b / n, f'fallback:{b.relative_to(project_root)}'))
     return out
 
 
+def _recursive_fallback_candidates(project_root: Path, module_id: str):
+    # examples/ is intentionally last and recursive scans are only tried after every direct path.
+    bases = [
+        project_root / 'runtime' / 'mod_out' / module_id,
+        project_root / 'mod_out' / module_id,
+        project_root / 'migration_workspace' / module_id,
+        project_root / 'modules' / module_id / 'out',
+        project_root / 'modules' / module_id / 'examples',
+    ]
+    out = []
+    for b in bases:
+        if b.exists():
+            for p in sorted(b.rglob('*.json')):
+                if any(k in p.name.lower() for k in ['candidate', 'output', 'latest']):
+                    out.append((p, f'fallback_recursive:{b.relative_to(project_root)}'))
+    return out
+
+
+def _candidate_paths(project_root: Path, module_id: str):
+    return (
+        _official_candidates(project_root, module_id)
+        + _direct_fallback_candidates(project_root, module_id)
+        + _recursive_fallback_candidates(project_root, module_id)
+    )
+
+
 def _source_mode(project_root: Path, found: Path):
-    root_str = str(project_root).replace('\\', '/').lower()
+    root_str = str(project_root).replace("\\", "/").lower()
     if '/examples/project' in root_str or root_str.endswith('/examples/project'):
         return 'demo'
     try:
@@ -71,8 +104,8 @@ def run_modules(project_root: str, modules: list[dict]):
             results.append({
                 'module_id': mid,
                 'status': 'FAIL',
-                'warnings': ['Feed não encontrado.'],
-                'errors': ['module_output_missing'],
+                'warnings': ['Feed oficial não encontrado nos paths candidatos.'],
+                'errors': ['output_missing'],
                 'candidates_count': 0,
                 'candidates': [],
                 'source_type': 'missing',
@@ -88,8 +121,8 @@ def run_modules(project_root: str, modules: list[dict]):
             results.append({
                 'module_id': mid,
                 'status': 'FAIL',
-                'warnings': ['Payload inválido.'],
-                'errors': ['module_output_invalid'],
+                'warnings': ['Feed encontrado, mas payload estruturalmente inválido.'],
+                'errors': ['output_invalid'],
                 'candidates_count': 0,
                 'candidates': [],
                 'source_type': src,

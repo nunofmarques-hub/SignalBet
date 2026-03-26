@@ -1,0 +1,84 @@
+{
+  "module_id": "cards",
+  "module_version": "cards_engine.v1.1",
+  "schema_version": "module_feed.v1",
+  "status": "PASS",
+  "generated_at": "2026-03-25T15:45:00+00:00",
+  "source_profile": "official_trunk_direct",
+  "source_line": "Cards pronto_para_integracao official active line",
+  "provider_name": "Data_API_Official_Trunk_v1",
+  "contract_version": "market_pick.v1.1",
+  "feed_path": "integration_feeds/cards/latest.json",
+  "notes": "Feed real oficial do Cards para consumo pelo Orchestrator, Opportunity Pool e GPS.",
+  "candidates": [
+    {
+      "schema_version": "market_pick.v1.1",
+      "pick_id": "cards_878317_over45",
+      "created_at": "2026-03-25T15:45:00+00:00",
+      "module_id": "cards",
+      "module_version": "cards_engine.v1.1",
+      "event_id": 878317,
+      "fixture_id": 878317,
+      "match_label": "Celta Vigo vs Barcelona",
+      "competition": "La Liga",
+      "kickoff_datetime": "2026-03-23T20:00:00Z",
+      "market_family": "cards",
+      "market": "match_cards_over",
+      "selection": "Over 4.5 Cards",
+      "line": 4.5,
+      "odds": 1.91,
+      "eligibility": true,
+      "score_raw": 82.4,
+      "confidence_raw": 4,
+      "risk_raw": 2,
+      "edge_raw": "strong",
+      "rationale_summary": "Contexto disciplinar quente, árbitro utilizável e tensão competitiva suficiente para suportar cenário over sem bloqueio estrutural relevante.",
+      "main_drivers": [
+        "discipline_profile_hot",
+        "referee_bias_supportive",
+        "match_tension_high",
+        "combined_card_signal_positive"
+      ],
+      "penalties": [
+        "line_not_low",
+        "sample_depth_medium"
+      ],
+      "data_quality_flag": "clean",
+      "module_rank_internal": 1,
+      "expiry_context": "refresh_if_odds_move_5pct_or_referee_changes",
+      "pick_status_at_source": "eligible",
+      "data_sources_used": [
+        "Data_API_Official_Trunk_v1",
+        "official_live_provider",
+        "fixtures_service.get_fixtures_by_league_season",
+        "events_service.get_fixture_events"
+      ],
+      "module_context": {
+        "source_profile": "official_trunk_direct",
+        "provider_name": "Data_API_Official_Trunk_v1",
+        "runtime_validated": true,
+        "official_active_line": true
+      },
+      "module_specific_payload": {
+        "discipline_profile": "hot",
+        "referee_if_used": {
+          "used": true,
+          "referee_bias": "over_support",
+          "referee_confidence": "medium"
+        },
+        "match_tension_flag": "high",
+        "cards_projection": 5.6,
+        "home_cards_projection": 2.7,
+        "away_cards_projection": 2.9,
+        "structural_bias": "over",
+        "signal_consistency": "medium_high",
+        "input_context": {
+          "provider": "Data_API_Official_Trunk_v1",
+          "provider_version": "official_trunk.v1",
+          "provider_object": "fixtures_service + events_service",
+          "source_profile": "official_trunk_direct"
+        }
+      }
+    }
+  ]
+}

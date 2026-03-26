@@ -1,0 +1,118 @@
+{
+  "module_id": "corners",
+  "status": "PASS",
+  "runtime": {
+    "source_type": "official_integration_feed",
+    "source_path": "integration_feeds/corners/latest.json",
+    "provider_name": "Data_API_Official_Trunk_v1",
+    "handoff_mode": "official_feed",
+    "depends_on_examples": false
+  },
+  "candidates": [
+    {
+      "case_id": "case_1_forte",
+      "candidate_status": "candidate",
+      "event_id": 878320,
+      "match_label": "Espanyol vs Almeria",
+      "competition": "La Liga",
+      "market_family": "corners",
+      "market": "match_corners_over",
+      "selection": "Over 10.5 Corners",
+      "line": 10.5,
+      "score": 76.07,
+      "confidence": "Alta",
+      "risk": "Baixo",
+      "edge": null,
+      "rationale": "Projeção 12.06, linha 10.5, score 76.07, confiança Alta, risco Baixo.",
+      "drivers": ["produção combinada acima do padrão"],
+      "penalties": [],
+      "provider_context": {
+        "provider_name": "Data_API_Official_Trunk_v1",
+        "provider_object": "fixtures + fixture_statistics"
+      },
+      "module_payload": {
+        "corner_projection": 12.06,
+        "band": "Forte",
+        "tempo_profile": "Volume Alto",
+        "match_corner_bias": "Over",
+        "line_grid": [
+          {"market": "Over 8.5 Corners", "score": 100.0},
+          {"market": "Over 9.5 Corners", "score": 100.0},
+          {"market": "Over 10.5 Corners", "score": 83.2}
+        ]
+      }
+    },
+    {
+      "case_id": "case_2_media",
+      "candidate_status": "watchlist",
+      "event_id": 878317,
+      "match_label": "Celta Vigo vs Barcelona",
+      "competition": "La Liga",
+      "market_family": "corners",
+      "market": "match_corners_over",
+      "selection": "Over 9.5 Corners",
+      "line": 9.5,
+      "score": 57.26,
+      "confidence": "Baixa",
+      "risk": "Médio",
+      "edge": null,
+      "rationale": "Projeção 9.88, linha 9.5, score 57.26, confiança Baixa, risco Médio.",
+      "drivers": ["produção combinada acima do padrão"],
+      "penalties": [],
+      "provider_context": {
+        "provider_name": "Data_API_Official_Trunk_v1",
+        "provider_object": "fixtures + fixture_statistics"
+      },
+      "module_payload": {
+        "corner_projection": 9.88,
+        "band": "Observação",
+        "tempo_profile": "Volume Médio/Alto",
+        "match_corner_bias": "Zona Cinzenta",
+        "line_grid": [
+          {"market": "Over 8.5 Corners", "score": 79.6},
+          {"market": "Over 9.5 Corners", "score": 59.6},
+          {"market": "Over 10.5 Corners", "score": 39.6}
+        ]
+      }
+    },
+    {
+      "case_id": "case_3_rejeitada",
+      "candidate_status": "rejected",
+      "event_id": 878312,
+      "match_label": "Real Betis vs Valencia",
+      "competition": "La Liga",
+      "market_family": "corners",
+      "market": "match_corners_over",
+      "selection": "Over 8.5 Corners",
+      "line": 8.5,
+      "score": 11.54,
+      "confidence": "Baixa",
+      "risk": "Alto",
+      "edge": null,
+      "rationale": "Projeção 8.11, linha 8.5, score 11.54, confiança Baixa, risco Alto.",
+      "drivers": ["produção combinada acima do padrão"],
+      "penalties": [
+        "rotação provável",
+        "perfil tático instável",
+        "qualidade de dados insuficiente",
+        "amostra insuficiente",
+        "ajustamento por adversário demasiado fraco"
+      ],
+      "provider_context": {
+        "provider_name": "Data_API_Official_Trunk_v1",
+        "provider_object": "fixtures + fixture_statistics"
+      },
+      "module_payload": {
+        "corner_projection": 8.11,
+        "band": "Rejeitar",
+        "tempo_profile": "Volume Médio",
+        "match_corner_bias": "Zona Cinzenta",
+        "line_grid": [
+          {"market": "Over 8.5 Corners", "score": 44.2},
+          {"market": "Over 9.5 Corners", "score": 24.2},
+          {"market": "Over 10.5 Corners", "score": 4.2}
+        ]
+      }
+    }
+  ]
+}

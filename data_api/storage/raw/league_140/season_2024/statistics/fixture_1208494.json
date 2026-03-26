@@ -1,0 +1,46 @@
+{
+  "response": [
+    {
+      "team": {
+        "id": 531
+      },
+      "statistics": [
+        {
+          "type": "Corner Kicks",
+          "value": 7
+        },
+        {
+          "type": "Total Shots",
+          "value": 14
+        },
+        {
+          "type": "Blocked Shots",
+          "value": 3
+        },
+        {
+          "type": "Ball Possession",
+          "value": "62%"
+        },
+        {
+          "type": "Passes %",
+          "value": "84%"
+        }
+      ]
+    },
+    {
+      "team": {
+        "id": 546
+      },
+      "statistics": [
+        {
+          "type": "Corner Kicks",
+          "value": 4
+        },
+        {
+          "type": "Total Shots",
+          "value": 8
+        }
+      ]
+    }
+  ]
+}

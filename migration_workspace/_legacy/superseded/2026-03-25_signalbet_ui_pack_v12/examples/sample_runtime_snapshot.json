@@ -1,0 +1,65 @@
+{
+  "run_id": "run_2026_03_25_001",
+  "cta_state": "ready",
+  "readiness_level": "high",
+  "project_feed_coverage_ratio": 0.86,
+  "pipeline_state": "idle",
+  "current_stage": "preflight",
+  "final_result": null,
+  "summary": {
+    "opportunities": 18,
+    "eligible": 9,
+    "approved": 4,
+    "sent_to_execution": 3
+  },
+  "module_overview": [
+    {
+      "module": "v12",
+      "status": "ready",
+      "count": 5
+    },
+    {
+      "module": "cards",
+      "status": "ready",
+      "count": 3
+    },
+    {
+      "module": "btts",
+      "status": "ready",
+      "count": 4
+    },
+    {
+      "module": "corners",
+      "status": "degraded",
+      "count": 2
+    }
+  ],
+  "pipeline_steps": [
+    {
+      "step": "data_api",
+      "status": "ready"
+    },
+    {
+      "step": "modules",
+      "status": "ready"
+    },
+    {
+      "step": "gps",
+      "status": "ready"
+    },
+    {
+      "step": "bankroll",
+      "status": "ready"
+    },
+    {
+      "step": "execution",
+      "status": "ready"
+    }
+  ],
+  "issues": [
+    {
+      "severity": "warning",
+      "message": "Corners feed coverage partial"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0",
+  "checker_target": "OR9u2",
+  "providers": [
+    "api_football_provider.py",
+    "fixtures_provider.py",
+    "standings_provider.py",
+    "events_provider.py",
+    "fixture_statistics_provider.py",
+    "team_statistics_provider.py"
+  ],
+  "notes": [
+    "Compatibilidade literal com o checker do OR9u2.",
+    "Ficheiro colocado com o nome exato `providers.json`."
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "feed_schema_version": "module_feed.v1.0",
+  "generated_at": "2026-03-25T15:51:59.033265+00:00",
+  "module_id": "v12",
+  "module_version": "v12.10",
+  "status": "PASS",
+  "provider_context": {
+    "provider_name": "Data_API_Official_Trunk_v1",
+    "provider_source": "official_default",
+    "runtime_status": "GREEN",
+    "trunk_imports": "OK",
+    "smoke_basic": "GREEN",
+    "smoke_live": "GREEN"
+  },
+  "runtime_context": {
+    "environment": "physical_runtime",
+    "scenario": "league_140_season_2024_ids_with_real_coverage",
+    "outputs_generated": 3
+  },
+  "candidates": [
+    {
+      "pick_id": "v12_878317_team_over_15",
+      "fixture_id": 878317,
+      "match_label": "Mallorca vs Las Palmas",
+      "competition": "La Liga",
+      "kickoff_datetime": "2026-03-25T19:45:00Z",
+      "market_family": "goals",
+      "market": "team_goals_over",
+      "market_variant": "TEAM_OVER_15",
+      "selection": "Mallorca Over 1.5",
+      "line": 1.5,
+      "eligibility": true,
+      "odds": 1.85,
+      "score_raw": 62.3,
+      "confidence_raw": 4,
+      "risk_raw": 2,
+      "edge_raw": "6.4%",
+      "rationale_summary": "Output gerado pela v12 com consumo Data_API_Official_Trunk_v1 (official_default).",
+      "main_drivers": [
+        "provider=Data_API_Official_Trunk_v1",
+        "source=official_default",
+        "variant=TEAM_OVER_15"
+      ],
+      "penalties": [],
+      "data_quality_flag": "clean",
+      "module_specific_payload": {
+        "motor_id": "TEAM_OVER_ENGINE",
+        "motor_family": "team_over",
+        "market_variant": "TEAM_OVER_15",
+        "goal_profile": "offensive_directed",
+        "model_window": "season_plus_last5",
+        "current_core_status": "active_core"
+      }
+    },
+    {
+      "pick_id": "v12_878317_match_over_15",
+      "fixture_id": 878317,
+      "match_label": "Mallorca vs Las Palmas",
+      "competition": "La Liga",
+      "kickoff_datetime": "2026-03-25T19:45:00Z",
+      "market_family": "goals",
+      "market": "match_goals_over",
+      "market_variant": "MATCH_OVER_15",
+      "selection": "Over 1.5",
+      "line": 1.5,
+      "eligibility": true,
+      "odds": 1.85,
+      "score_raw": 71.5,
+      "confidence_raw": 3,
+      "risk_raw": 2,
+      "edge_raw": "4.7%",
+      "rationale_summary": "Output gerado pela v12 com consumo Data_API_Official_Trunk_v1 (official_default).",
+      "main_drivers": [
+        "provider=Data_API_Official_Trunk_v1",
+        "source=official_default",
+        "variant=MATCH_OVER_15"
+      ],
+      "penalties": [],
+      "data_quality_flag": "clean",
+      "module_specific_payload": {
+        "motor_id": "MATCH_OVER_ENGINE",
+        "motor_family": "match_over",
+        "market_variant": "MATCH_OVER_15",
+        "goal_profile": "offensive_global",
+        "model_window": "season_plus_last5",
+        "current_core_status": "active_core"
+      }
+    },
+    {
+      "pick_id": "v12_878317_match_under_35",
+      "fixture_id": 878317,
+      "match_label": "Mallorca vs Las Palmas",
+      "competition": "La Liga",
+      "kickoff_datetime": "2026-03-25T19:45:00Z",
+      "market_family": "goals",
+      "market": "match_goals_under",
+      "market_variant": "MATCH_UNDER_35",
+      "selection": "Under 3.5",
+      "line": 3.5,
+      "eligibility": true,
+      "odds": 1.85,
+      "score_raw": 49.7,
+      "confidence_raw": 3,
+      "risk_raw": 2,
+      "edge_raw": "5.1%",
+      "rationale_summary": "Output gerado pela v12 com consumo Data_API_Official_Trunk_v1 (official_default).",
+      "main_drivers": [
+        "provider=Data_API_Official_Trunk_v1",
+        "source=official_default",
+        "variant=MATCH_UNDER_35"
+      ],
+      "penalties": [],
+      "data_quality_flag": "clean",
+      "module_specific_payload": {
+        "motor_id": "MATCH_UNDER_ENGINE",
+        "motor_family": "match_under",
+        "market_variant": "MATCH_UNDER_35",
+        "goal_profile": "conservative_under",
+        "model_window": "season_plus_last5",
+        "current_core_status": "active_core"
+      }
+    }
+  ]
+}

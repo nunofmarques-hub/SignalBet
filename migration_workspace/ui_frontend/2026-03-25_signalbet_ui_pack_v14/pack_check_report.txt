@@ -1,0 +1,17 @@
+Pack check report — UI v14
+
+Status: PASS
+Checks:
+- README present
+- manifest present
+- src present
+- docs present
+- examples present
+- contracts present
+- smoke scripts present
+- runtimeBridgeService hardened
+- real_read_protected provider path present
+- manual protected real snapshot import supported
+Known limitation:
+- No live orchestrator connection in this pack
+- Real read requires operator-supplied JSON snapshot

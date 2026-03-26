@@ -1,0 +1,11 @@
+PACK CHECK REPORT — UI v15
+
+[OK] README.md
+[OK] manifest.json
+[OK] src/
+[OK] docs/
+[OK] examples/
+[OK] run_smoke.sh
+[OK] run_smoke.bat
+[OK] hygiene básica cumprida
+[OK] docs específicas da bridge incluídas

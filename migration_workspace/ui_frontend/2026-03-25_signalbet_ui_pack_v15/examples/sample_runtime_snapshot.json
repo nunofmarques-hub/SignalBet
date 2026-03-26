@@ -1,0 +1,33 @@
+{
+  "source_mode": "real_read_protected",
+  "cta_state": "ready",
+  "readiness_level": "medium",
+  "project_feed_coverage_ratio": 0.67,
+  "pipeline_state": "partial_ready",
+  "current_stage": "module_checks",
+  "summary": {
+    "opportunities": 11,
+    "eligible": 6,
+    "approved": 3,
+    "executed": 1
+  },
+  "module_overview": [
+    {
+      "name": "v12",
+      "status": "ready",
+      "items": 4
+    }
+  ],
+  "pipeline_steps": [
+    {
+      "step": "data_api",
+      "status": "ready"
+    }
+  ],
+  "issues": [
+    {
+      "level": "warning",
+      "message": "BTTS partial feed coverage"
+    }
+  ]
+}

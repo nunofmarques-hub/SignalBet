@@ -1,0 +1,15 @@
+{
+  "front_id": "bankroll",
+  "line_status": "official",
+  "official_line": "20260324_brm_v25_cleanup_freeze",
+  "upstream": [
+    "global_pick_selector"
+  ],
+  "downstream": [
+    "execution_tracking"
+  ],
+  "payload_hint": "contracts/bank_to_exec_v24.json",
+  "runtime_role": "bankroll_and_risk_manager",
+  "readiness_note": "stable_frozen; linha oficial ativa da Banca",
+  "source_of_truth": "manifest.json + contracts/bank_to_exec_v24.json + docs/contracts do pack"
+}

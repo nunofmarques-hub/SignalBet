@@ -1,5 +1,5 @@
 {
-  "run_id": "RUN-20260326-145705",
+  "run_id": "RUN-20260326-151430",
   "overall_status": "PASS",
   "checks": [
     {
@@ -148,8 +148,8 @@
     },
     {
       "check_id": "gps_project_hint",
-      "status": "WARN",
-      "message": "Sem hint físico de GPS no projeto.",
+      "status": "PASS",
+      "message": "Hint de GPS encontrado no projeto.",
       "blocking": false
     },
     {
@@ -160,8 +160,8 @@
     },
     {
       "check_id": "bank_project_hint",
-      "status": "WARN",
-      "message": "Sem hint físico de Banca no projeto.",
+      "status": "PASS",
+      "message": "Hint de Banca encontrado no projeto.",
       "blocking": false
     },
     {
@@ -172,8 +172,8 @@
     },
     {
       "check_id": "execution_project_hint",
-      "status": "WARN",
-      "message": "Sem hint físico de Execution no projeto.",
+      "status": "PASS",
+      "message": "Hint de Execution encontrado no projeto.",
       "blocking": false
     }
   ]

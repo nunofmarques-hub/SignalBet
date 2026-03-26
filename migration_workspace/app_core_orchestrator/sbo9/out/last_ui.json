@@ -1,6 +1,6 @@
 {
   "screen_status": "COMPLETED",
-  "run_id": "RUN-20260326-145705",
+  "run_id": "RUN-20260326-151430",
   "system_health": "PASS",
   "data_api_health": "PASS",
   "project_mode": "request",
@@ -161,10 +161,6 @@
     "readiness_level": "real_ready"
   },
   "cta_state": "ready_live",
-  "warnings": [
-    "Sem hint físico de GPS no projeto.",
-    "Sem hint físico de Banca no projeto.",
-    "Sem hint físico de Execution no projeto."
-  ],
+  "warnings": [],
   "errors": []
 }

@@ -1,0 +1,1 @@
+PACK_CHECK_REPORT\nstatus=ok\npack=v19\nstructure=tested\nsmoke=passed\n

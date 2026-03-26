@@ -1,0 +1,17 @@
+{
+  "front_id": "execution",
+  "line_status": "official",
+  "official_line": "2026-03-24_execution_tracking_corridor_minimum_ready_pack",
+  "upstream": [
+    "bankroll_risk_manager"
+  ],
+  "downstream": [
+    "ledger",
+    "analytics",
+    "audit"
+  ],
+  "payload_hint": "contracts/bank_to_exec_v24.json",
+  "runtime_role": "execution_tracking_layer",
+  "readiness_note": "staging_forte_closed; corredor Banca → Execution provado",
+  "source_of_truth": "manifest.json + intake oficial bank_to_exec_v24 + output ledger/analytics/audit"
+}

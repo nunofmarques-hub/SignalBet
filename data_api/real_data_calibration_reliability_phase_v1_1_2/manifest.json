@@ -1,0 +1,12 @@
+{
+  "pack_name": "real_data_calibration_reliability_phase_v1_1_2",
+  "module_name": "real_data_calibration_reliability_phase",
+  "pack_version": "1.1.2",
+  "status": "staging",
+  "entrypoint": "src/real_data_calibration_runner.py",
+  "provider_type": "official_provider_via_trunk_adapter",
+  "provider_name": "fixtures_provider.py",
+  "provider_object": "get_fixtures_by_league_season",
+  "primary_consumer": "orchestrator",
+  "contract_version": "v1.1"
+}

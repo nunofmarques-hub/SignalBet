@@ -1,0 +1,11 @@
+PACK CHECK REPORT
+
+status: OK
+checks:
+- README.md present
+- manifest.json present
+- src/ present
+- docs/ present
+- contracts present
+- run_smoke.py present
+- runtime_outputs generated

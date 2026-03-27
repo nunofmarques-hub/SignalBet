@@ -1,0 +1,11 @@
+{
+  "pack_name": "coverage_increase_order_v1",
+  "module_name": "data_api_coverage_repair",
+  "pack_version": "1.0.0",
+  "status": "audit_ready",
+  "entrypoint": "src/audit_fixture_catalog_coverage.py",
+  "provider_type": "official_trunk_audit",
+  "provider_name": "fixtures_service_catalog",
+  "provider_object": "get_fixtures_by_league_season",
+  "contract_version": "1.1"
+}

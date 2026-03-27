@@ -1,0 +1,13 @@
+{
+  "ui_safe_status": "baseline_valid",
+  "provider_observed": "fixtures_provider.py",
+  "baseline_scenario": "league_140 / season_2024 / status FT-AET-PEN",
+  "snapshot_status": "fresh",
+  "final_status": "green",
+  "readiness_level": "real_ready",
+  "cta_state": "ready_live",
+  "warnings": [],
+  "blockers": [],
+  "source_mode": "demo",
+  "protected_read": true
+}

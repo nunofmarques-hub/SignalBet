@@ -1,0 +1,15 @@
+PACK CHECK REPORT
+
+status: OK
+checks:
+- README.md present
+- manifest.json present
+- src/ present
+- docs/ present
+- contracts present
+- run_smoke.py present
+- runtime_outputs generated
+- cmd for real project test present
+notes:
+- OR11 reads baseline natively from trunk structure
+- no artificial baseline_state.json required

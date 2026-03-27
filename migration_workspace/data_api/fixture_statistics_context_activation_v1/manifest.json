@@ -1,0 +1,14 @@
+{
+  "pack_name": "fixture_statistics_context_activation_v1",
+  "module_name": "data_api",
+  "pack_version": "1.0.0",
+  "status": "activation_pack",
+  "entrypoint": "src/fixture_statistics_context_runner.py",
+  "provider_type": "official_service",
+  "provider_name": "statistics_service.py",
+  "provider_object": "get_fixture_statistics",
+  "contract_version": "v1.1",
+  "primary_consumer": "orchestrator",
+  "baseline_dependency": "fixtures_service.py:get_fixtures_by_league_season",
+  "non_blocking": true
+}

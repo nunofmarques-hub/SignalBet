@@ -1,0 +1,432 @@
+{
+  "output_name": "fixture_statistics_context_protected_output",
+  "version": "1.0.0",
+  "primary_consumer": "orchestrator",
+  "baseline_source": "fixtures_service.py:get_fixtures_by_league_season",
+  "statistics_source": "statistics_service.py:get_fixture_statistics",
+  "scenario": {
+    "league_id": 140,
+    "season": 2024,
+    "status": "FT-AET-PEN"
+  },
+  "items": [
+    {
+      "fixture_id": 1208494,
+      "event_date": "2024-08-15T17:00:00+00:00",
+      "status_short": "FT",
+      "status_long": "Match Finished",
+      "home_team_id": 531,
+      "home_team_name": "Athletic Club",
+      "away_team_id": 546,
+      "away_team_name": "Getafe",
+      "statistics_status": "available",
+      "fallback_used": false,
+      "statistics_context": [
+        {
+          "team_id": 531,
+          "metrics": {
+            "Corner Kicks": 7,
+            "Total Shots": 14,
+            "Ball Possession": "62%",
+            "Passes %": "84%"
+          }
+        },
+        {
+          "team_id": 546,
+          "metrics": {
+            "Corner Kicks": 4,
+            "Total Shots": 8
+          }
+        }
+      ]
+    },
+    {
+      "fixture_id": 1208495,
+      "event_date": "2024-08-15T19:30:00+00:00",
+      "status_short": "FT",
+      "status_long": "Match Finished",
+      "home_team_id": 543,
+      "home_team_name": "Real Betis",
+      "away_team_id": 547,
+      "away_team_name": "Girona",
+      "statistics_status": "available",
+      "fallback_used": false,
+      "statistics_context": [
+        {
+          "team_id": 543,
+          "metrics": {
+            "Shots on Goal": 4,
+            "Total Shots": 19,
+            "Fouls": 11,
+            "Corner Kicks": 4,
+            "Ball Possession": "39%",
+            "Yellow Cards": 2,
+            "Red Cards": null,
+            "Passes %": "82%"
+          }
+        },
+        {
+          "team_id": 547,
+          "metrics": {
+            "Shots on Goal": 2,
+            "Total Shots": 13,
+            "Fouls": 7,
+            "Corner Kicks": 4,
+            "Ball Possession": "61%",
+            "Yellow Cards": 0,
+            "Red Cards": null,
+            "Passes %": "88%"
+          }
+        }
+      ]
+    },
+    {
+      "fixture_id": 1208496,
+      "event_date": "2024-08-18T19:30:00+00:00",
+      "status_short": "FT",
+      "status_long": "Match Finished",
+      "home_team_id": 798,
+      "home_team_name": "Mallorca",
+      "away_team_id": 541,
+      "away_team_name": "Real Madrid",
+      "statistics_status": "available",
+      "fallback_used": false,
+      "statistics_context": [
+        {
+          "team_id": 798,
+          "metrics": {
+            "Shots on Goal": 5,
+            "Total Shots": 12,
+            "Fouls": 11,
+            "Corner Kicks": 8,
+            "Ball Possession": "34%",
+            "Yellow Cards": 1,
+            "Red Cards": 0,
+            "Passes %": "83%"
+          }
+        },
+        {
+          "team_id": 541,
+          "metrics": {
+            "Shots on Goal": 5,
+            "Total Shots": 13,
+            "Fouls": 6,
+            "Corner Kicks": 7,
+            "Ball Possession": "66%",
+            "Yellow Cards": 0,
+            "Red Cards": 1,
+            "Passes %": "90%"
+          }
+        }
+      ]
+    },
+    {
+      "fixture_id": 1208497,
+      "event_date": "2024-08-16T19:30:00+00:00",
+      "status_short": "FT",
+      "status_long": "Match Finished",
+      "home_team_id": 534,
+      "home_team_name": "Las Palmas",
+      "away_team_id": 536,
+      "away_team_name": "Sevilla",
+      "statistics_status": "available",
+      "fallback_used": false,
+      "statistics_context": [
+        {
+          "team_id": 534,
+          "metrics": {
+            "Shots on Goal": 5,
+            "Total Shots": 15,
+            "Fouls": 14,
+            "Corner Kicks": 6,
+            "Ball Possession": "48%",
+            "Yellow Cards": 2,
+            "Red Cards": null,
+            "Passes %": "80%"
+          }
+        },
+        {
+          "team_id": 536,
+          "metrics": {
+            "Shots on Goal": 5,
+            "Total Shots": 18,
+            "Fouls": 15,
+            "Corner Kicks": 3,
+            "Ball Possession": "52%",
+            "Yellow Cards": 2,
+            "Red Cards": null,
+            "Passes %": "82%"
+          }
+        }
+      ]
+    },
+    {
+      "fixture_id": 1208498,
+      "event_date": "2024-08-19T19:30:00+00:00",
+      "status_short": "FT",
+      "status_long": "Match Finished",
+      "home_team_id": 533,
+      "home_team_name": "Villarreal",
+      "away_team_id": 530,
+      "away_team_name": "Atletico Madrid",
+      "statistics_status": "available",
+      "fallback_used": false,
+      "statistics_context": [
+        {
+          "team_id": 533,
+          "metrics": {
+            "Shots on Goal": 3,
+            "Total Shots": 9,
+            "Fouls": 7,
+            "Corner Kicks": 2,
+            "Ball Possession": "45%",
+            "Yellow Cards": 1,
+            "Red Cards": null,
+            "Passes %": "88%"
+          }
+        },
+        {
+          "team_id": 530,
+          "metrics": {
+            "Shots on Goal": 4,
+            "Total Shots": 9,
+            "Fouls": 12,
+            "Corner Kicks": 3,
+            "Ball Possession": "55%",
+            "Yellow Cards": 3,
+            "Red Cards": null,
+            "Passes %": "88%"
+          }
+        }
+      ]
+    },
+    {
+      "fixture_id": 1208499,
+      "event_date": "2024-08-17T19:30:00+00:00",
+      "status_short": "FT",
+      "status_long": "Match Finished",
+      "home_team_id": 532,
+      "home_team_name": "Valencia",
+      "away_team_id": 529,
+      "away_team_name": "Barcelona",
+      "statistics_status": "available",
+      "fallback_used": false,
+      "statistics_context": [
+        {
+          "team_id": 532,
+          "metrics": {
+            "Shots on Goal": 2,
+            "Total Shots": 6,
+            "Fouls": 11,
+            "Corner Kicks": 3,
+            "Ball Possession": "36%",
+            "Yellow Cards": 2,
+            "Red Cards": null,
+            "Passes %": "77%"
+          }
+        },
+        {
+          "team_id": 529,
+          "metrics": {
+            "Shots on Goal": 6,
+            "Total Shots": 18,
+            "Fouls": 13,
+            "Corner Kicks": 8,
+            "Ball Possession": "64%",
+            "Yellow Cards": 3,
+            "Red Cards": null,
+            "Passes %": "86%"
+          }
+        }
+      ]
+    },
+    {
+      "fixture_id": 1208500,
+      "event_date": "2024-08-18T17:00:00+00:00",
+      "status_short": "FT",
+      "status_long": "Match Finished",
+      "home_team_id": 548,
+      "home_team_name": "Real Sociedad",
+      "away_team_id": 728,
+      "away_team_name": "Rayo Vallecano",
+      "statistics_status": "available",
+      "fallback_used": false,
+      "statistics_context": [
+        {
+          "team_id": 548,
+          "metrics": {
+            "Shots on Goal": 4,
+            "Total Shots": 11,
+            "Fouls": 14,
+            "Corner Kicks": 10,
+            "Ball Possession": "66%",
+            "Yellow Cards": 2,
+            "Red Cards": null,
+            "Passes %": "81%"
+          }
+        },
+        {
+          "team_id": 728,
+          "metrics": {
+            "Shots on Goal": 5,
+            "Total Shots": 12,
+            "Fouls": 21,
+            "Corner Kicks": 5,
+            "Ball Possession": "34%",
+            "Yellow Cards": 4,
+            "Red Cards": null,
+            "Passes %": "64%"
+          }
+        }
+      ]
+    },
+    {
+      "fixture_id": 1208501,
+      "event_date": "2024-08-16T17:00:00+00:00",
+      "status_short": "FT",
+      "status_long": "Match Finished",
+      "home_team_id": 538,
+      "home_team_name": "Celta Vigo",
+      "away_team_id": 542,
+      "away_team_name": "Alaves",
+      "statistics_status": "available",
+      "fallback_used": false,
+      "statistics_context": [
+        {
+          "team_id": 538,
+          "metrics": {
+            "Shots on Goal": 4,
+            "Total Shots": 6,
+            "Fouls": 8,
+            "Corner Kicks": 3,
+            "Ball Possession": "64%",
+            "Yellow Cards": 2,
+            "Red Cards": null,
+            "Passes %": "85%"
+          }
+        },
+        {
+          "team_id": 542,
+          "metrics": {
+            "Shots on Goal": 2,
+            "Total Shots": 10,
+            "Fouls": 23,
+            "Corner Kicks": 3,
+            "Ball Possession": "36%",
+            "Yellow Cards": 2,
+            "Red Cards": null,
+            "Passes %": "73%"
+          }
+        }
+      ]
+    },
+    {
+      "fixture_id": 1208502,
+      "event_date": "2024-08-17T17:00:00+00:00",
+      "status_short": "FT",
+      "status_long": "Match Finished",
+      "home_team_id": 727,
+      "home_team_name": "Osasuna",
+      "away_team_id": 537,
+      "away_team_name": "Leganes",
+      "statistics_status": "available",
+      "fallback_used": false,
+      "statistics_context": [
+        {
+          "team_id": 727,
+          "metrics": {
+            "Shots on Goal": 6,
+            "Total Shots": 16,
+            "Fouls": 14,
+            "Corner Kicks": 6,
+            "Ball Possession": "61%",
+            "Yellow Cards": 3,
+            "Red Cards": null,
+            "Passes %": "76%"
+          }
+        },
+        {
+          "team_id": 537,
+          "metrics": {
+            "Shots on Goal": 4,
+            "Total Shots": 10,
+            "Fouls": 12,
+            "Corner Kicks": 4,
+            "Ball Possession": "39%",
+            "Yellow Cards": 2,
+            "Red Cards": null,
+            "Passes %": "64%"
+          }
+        }
+      ]
+    },
+    {
+      "fixture_id": 1212910,
+      "event_date": "2024-08-19T17:00:00+00:00",
+      "status_short": "FT",
+      "status_long": "Match Finished",
+      "home_team_id": 720,
+      "home_team_name": "Valladolid",
+      "away_team_id": 540,
+      "away_team_name": "Espanyol",
+      "statistics_status": "available",
+      "fallback_used": false,
+      "statistics_context": [
+        {
+          "team_id": 720,
+          "metrics": {
+            "Shots on Goal": 1,
+            "Total Shots": 12,
+            "Fouls": 15,
+            "Corner Kicks": 3,
+            "Ball Possession": "45%",
+            "Yellow Cards": 2,
+            "Red Cards": null,
+            "Passes %": "82%"
+          }
+        },
+        {
+          "team_id": 540,
+          "metrics": {
+            "Shots on Goal": 2,
+            "Total Shots": 10,
+            "Fouls": 8,
+            "Corner Kicks": 2,
+            "Ball Possession": "55%",
+            "Yellow Cards": 2,
+            "Red Cards": null,
+            "Passes %": "81%"
+          }
+        }
+      ]
+    }
+  ],
+  "discovery_report": {
+    "mode": "services_registry",
+    "checked_registry_paths": [
+      "/mnt/data/fixture_statistics_context_activation_v1/_trunk/Data_API_Official_Trunk_v1/data_api/services/services_registry.json"
+    ],
+    "checked_service_paths": [
+      "/mnt/data/fixture_statistics_context_activation_v1/_trunk/Data_API_Official_Trunk_v1/data_api/services/fixtures_service.py",
+      "/mnt/data/fixture_statistics_context_activation_v1/_trunk/Data_API_Official_Trunk_v1/data_api/services/statistics_service.py"
+    ],
+    "chosen_fixtures_service_path": "/mnt/data/fixture_statistics_context_activation_v1/_trunk/Data_API_Official_Trunk_v1/data_api/services/fixtures_service.py",
+    "chosen_statistics_service_path": "/mnt/data/fixture_statistics_context_activation_v1/_trunk/Data_API_Official_Trunk_v1/data_api/services/statistics_service.py"
+  },
+  "summary": {
+    "phase": "fixture_statistics_context_activation_v1",
+    "timestamp": "2026-03-27T18:55:59.167173+00:00",
+    "trunk_root": "/mnt/data/fixture_statistics_context_activation_v1/_trunk/Data_API_Official_Trunk_v1",
+    "scenario": {
+      "league_id": 140,
+      "season": 2024,
+      "status": "FT-AET-PEN"
+    },
+    "baseline_fixtures_count": 10,
+    "statistics_available_count": 10,
+    "statistics_missing_count": 0,
+    "orchestrator_consumer_status": "usable",
+    "non_blocking_preserved": true,
+    "result": "green"
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "response": [
+    {
+      "fixture": {
+        "id": 1208494,
+        "date": "2024-08-15T17:00:00+00:00",
+        "status": {
+          "short": "FT",
+          "long": "Match Finished"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 531,
+          "name": "Athletic Club"
+        },
+        "away": {
+          "id": 546,
+          "name": "Getafe"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "score": {
+        "halftime": {
+          "home": 1,
+          "away": 0
+        },
+        "fulltime": {
+          "home": 1,
+          "away": 1
+        }
+      }
+    },
+    {
+      "fixture": {
+        "id": 1208495,
+        "date": "2024-08-15T19:30:00+00:00",
+        "status": {
+          "short": "FT",
+          "long": "Match Finished"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 543,
+          "name": "Real Betis"
+        },
+        "away": {
+          "id": 547,
+          "name": "Girona"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "score": {
+        "fulltime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "_catalog_regenerated_from_storage": true
+    },
+    {
+      "fixture": {
+        "id": 1208496,
+        "date": "2024-08-18T19:30:00+00:00",
+        "status": {
+          "short": "FT",
+          "long": "Match Finished"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 798,
+          "name": "Mallorca"
+        },
+        "away": {
+          "id": 541,
+          "name": "Real Madrid"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "score": {
+        "fulltime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "_catalog_regenerated_from_storage": true
+    },
+    {
+      "fixture": {
+        "id": 1208497,
+        "date": "2024-08-16T19:30:00+00:00",
+        "status": {
+          "short": "FT",
+          "long": "Match Finished"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 534,
+          "name": "Las Palmas"
+        },
+        "away": {
+          "id": 536,
+          "name": "Sevilla"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 2
+      },
+      "score": {
+        "fulltime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "_catalog_regenerated_from_storage": true
+    },
+    {
+      "fixture": {
+        "id": 1208498,
+        "date": "2024-08-19T19:30:00+00:00",
+        "status": {
+          "short": "FT",
+          "long": "Match Finished"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 533,
+          "name": "Villarreal"
+        },
+        "away": {
+          "id": 530,
+          "name": "Atletico Madrid"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 2
+      },
+      "score": {
+        "fulltime": {
+          "home": 2,
+          "away": 2
+        }
+      },
+      "_catalog_regenerated_from_storage": true
+    },
+    {
+      "fixture": {
+        "id": 1208499,
+        "date": "2024-08-17T19:30:00+00:00",
+        "status": {
+          "short": "FT",
+          "long": "Match Finished"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 532,
+          "name": "Valencia"
+        },
+        "away": {
+          "id": 529,
+          "name": "Barcelona"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 2
+      },
+      "score": {
+        "fulltime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "_catalog_regenerated_from_storage": true
+    },
+    {
+      "fixture": {
+        "id": 1208500,
+        "date": "2024-08-18T17:00:00+00:00",
+        "status": {
+          "short": "FT",
+          "long": "Match Finished"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 548,
+          "name": "Real Sociedad"
+        },
+        "away": {
+          "id": 728,
+          "name": "Rayo Vallecano"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 2
+      },
+      "score": {
+        "fulltime": {
+          "home": 1,
+          "away": 2
+        }
+      },
+      "_catalog_regenerated_from_storage": true
+    },
+    {
+      "fixture": {
+        "id": 1208501,
+        "date": "2024-08-16T17:00:00+00:00",
+        "status": {
+          "short": "FT",
+          "long": "Match Finished"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 538,
+          "name": "Celta Vigo"
+        },
+        "away": {
+          "id": 542,
+          "name": "Alaves"
+        }
+      },
+      "goals": {
+        "home": 2,
+        "away": 1
+      },
+      "score": {
+        "fulltime": {
+          "home": 2,
+          "away": 1
+        }
+      },
+      "_catalog_regenerated_from_storage": true
+    },
+    {
+      "fixture": {
+        "id": 1208502,
+        "date": "2024-08-17T17:00:00+00:00",
+        "status": {
+          "short": "FT",
+          "long": "Match Finished"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 727,
+          "name": "Osasuna"
+        },
+        "away": {
+          "id": 537,
+          "name": "Leganes"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 1
+      },
+      "score": {
+        "fulltime": {
+          "home": 1,
+          "away": 1
+        }
+      },
+      "_catalog_regenerated_from_storage": true
+    },
+    {
+      "fixture": {
+        "id": 1212910,
+        "date": "2024-08-19T17:00:00+00:00",
+        "status": {
+          "short": "FT",
+          "long": "Match Finished"
+        }
+      },
+      "teams": {
+        "home": {
+          "id": 720,
+          "name": "Valladolid"
+        },
+        "away": {
+          "id": 540,
+          "name": "Espanyol"
+        }
+      },
+      "goals": {
+        "home": 1,
+        "away": 0
+      },
+      "score": {
+        "fulltime": {
+          "home": 1,
+          "away": 0
+        }
+      },
+      "_catalog_regenerated_from_storage": true
+    }
+  ]
+}

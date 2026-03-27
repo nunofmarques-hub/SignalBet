@@ -15,4 +15,5 @@ def run(project_root: str | None = None, baseline_path: str | None = None, out_d
     (out / "baseline_operational_summary.json").write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")
     (out / "ui_button_payload.json").write_text(json.dumps(ui["button_payload"], indent=2, ensure_ascii=False), encoding="utf-8")
     (out / "ui_panel_payload.json").write_text(json.dumps(ui["panel_payload"], indent=2, ensure_ascii=False), encoding="utf-8")
+    (out / "ui_runtime_snapshot.json").write_text(json.dumps(ui["runtime_snapshot"], indent=2, ensure_ascii=False), encoding="utf-8")
     return {"summary": summary, **ui}

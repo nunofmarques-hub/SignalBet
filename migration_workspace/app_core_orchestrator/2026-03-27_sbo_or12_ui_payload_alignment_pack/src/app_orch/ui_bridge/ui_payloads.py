@@ -1,3 +1,10 @@
+def _readiness(summary: dict) -> str:
+    if summary["readiness_level"] == "real_ready":
+        return "ready"
+    if summary["readiness_level"] == "degraded":
+        return "restricted"
+    return "blocked"
+
 def build_ui_payloads(summary: dict) -> dict:
     requested_mode = "real_read_protected"
     observed_mode = "orchestrator_real_protected" if summary["source_mode"] == "project" else "orchestrator_demo_protected"
@@ -25,16 +32,18 @@ def build_ui_payloads(summary: dict) -> dict:
         bridge_decision_reason = "baseline not usable"
 
     button_payload = {
+        "readiness": _readiness(summary),
         "requested_mode": requested_mode,
         "observed_mode": observed_mode,
         "fallback_used": fallback_used,
         "bridge_status": bridge_status,
         "bridge_scope": bridge_scope,
-        "stability_status": summary["stability_status"],
+        "stability_status": summary.get("stability_status", "stable"),
         "source_transition": source_transition,
         "bridge_decision_reason": bridge_decision_reason,
         "readiness_level": summary["readiness_level"],
         "cta_state": summary["cta_state"],
+        "final_status": summary["final_status"],
     }
 
     panel_payload = {
@@ -43,9 +52,25 @@ def build_ui_payloads(summary: dict) -> dict:
         "baseline_scenario": summary["baseline_scenario"],
         "snapshot_name": summary["snapshot_name"],
         "snapshot_status": summary["snapshot_status"],
-        "final_status": summary["final_status"],
         "warnings": summary["warnings"],
         "blockers": summary["blockers"],
+        "source_mode": summary["source_mode"],
         "protected_read": True,
     }
-    return {"button_payload": button_payload, "panel_payload": panel_payload}
+
+    runtime_snapshot = {
+        "readiness": button_payload["readiness"],
+        "readiness_level": summary["readiness_level"],
+        "cta_state": summary["cta_state"],
+        "source_mode": summary["source_mode"],
+        "observed_mode": observed_mode,
+        "bridge_status": bridge_status,
+        "snapshot_name": summary["snapshot_name"],
+        "final_status": summary["final_status"],
+    }
+
+    return {
+        "button_payload": button_payload,
+        "panel_payload": panel_payload,
+        "runtime_snapshot": runtime_snapshot,
+    }

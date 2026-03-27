@@ -1,9 +1,0 @@
-{
-  "schema_version": "market_pick.v1.1",
-  "module_id": "cards",
-  "market_family": "cards",
-  "market": "match_cards_over",
-  "selection": "Over 3.5 Cards",
-  "eligibility": true,
-  "provider_name": "Data_API_Official_Trunk_v1"
-}

@@ -1,6 +1,0 @@
-OR9u2 discovery freeze update
-- latest.json first: OK
-- direct fallback paths after official feeds: OK
-- recursive fallback only after all direct paths: OK
-- examples late fallback: OK
-- pycache removed: OK

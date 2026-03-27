@@ -1,1 +1,0 @@
-# sem dependências externas obrigatórias para o smoke test

@@ -1,6 +1,0 @@
-{
-  "services": [
-    "get_fixtures_by_league_season",
-    "get_fixture_statistics"
-  ]
-}

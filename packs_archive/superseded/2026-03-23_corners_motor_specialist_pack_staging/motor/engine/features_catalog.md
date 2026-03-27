@@ -1,1 +1,0 @@
-# Features mínimas: cantos for/against, total cantos, média recente, splits casa/fora, remates, remates enquadrados, pressão ofensiva, posse/proxies, frequência de overs, favorito/underdog e estado competitivo.

@@ -1,1 +1,0 @@
-# SMOKE_TEST\n\n## objetivo\nProvar que o módulo BTTS lê um sample input oficial, executa o fluxo mínimo e gera output formal `market_pick.v1.1`.\n\n## comando sugerido\n```bash\npython -m src.btts.run_minimal_flow\n```\n

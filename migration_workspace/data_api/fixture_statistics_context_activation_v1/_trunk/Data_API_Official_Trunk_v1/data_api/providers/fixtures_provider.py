@@ -1,1 +1,0 @@
-# fixtures_provider.py

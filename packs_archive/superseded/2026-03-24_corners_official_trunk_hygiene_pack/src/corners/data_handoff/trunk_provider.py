@@ -1,2 +1,0 @@
-from data_api.services.fixtures_service import get_fixtures_by_league_season
-from data_api.services.statistics_service import get_fixture_statistics

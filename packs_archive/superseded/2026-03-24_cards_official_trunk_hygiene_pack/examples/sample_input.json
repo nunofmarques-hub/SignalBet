@@ -1,9 +1,0 @@
-{
-  "provider_name": "Data_API_Official_Trunk_v1",
-  "provider_object": "fixtures + fixture_events",
-  "services": [
-    "data_api.services.fixtures_service.get_fixtures_by_league_season",
-    "data_api.services.events_service.get_fixture_events"
-  ],
-  "note": "O pipeline principal não usa mirror local. Este ficheiro documenta apenas o contrato esperado do input oficial."
-}

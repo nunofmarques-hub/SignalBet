@@ -1,9 +1,0 @@
-{
-  "official_reference": "Data_API_Official_Trunk_v1",
-  "required_paths": [
-    "data_api/Data_API_Official_Trunk_v1/README.md",
-    "data_api/Data_API_Official_Trunk_v1/providers",
-    "data_api/Data_API_Official_Trunk_v1/contracts",
-    "data_api/Data_API_Official_Trunk_v1/storage"
-  ]
-}

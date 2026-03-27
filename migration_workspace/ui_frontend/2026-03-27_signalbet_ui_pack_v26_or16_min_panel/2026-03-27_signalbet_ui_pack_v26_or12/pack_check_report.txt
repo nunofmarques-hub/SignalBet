@@ -1,0 +1,8 @@
+PACK CHECK REPORT
+status=OK
+line=UI v26
+execution=OR16 minimal panel reinforcement
+button_unchanged=yes
+panel_human_summary_added=yes
+runtime_source=../runtime_outputs/ui_runtime_snapshot.json
+protected_perimeter_preserved=yes

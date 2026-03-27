@@ -1,8 +1,0 @@
-{
-  "run_profile": "daily_run",
-  "initiated_by": "ui_button",
-  "forced_modules": [],
-  "dry_run": false,
-  "data_snapshot_tag": "latest",
-  "correlation_id": "AUTO"
-}

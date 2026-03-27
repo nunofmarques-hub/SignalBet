@@ -1,1 +1,0 @@
-Pack de consumo oficial da base central para o módulo Cards. Foco: provider explícito, output estável e pipeline curto.

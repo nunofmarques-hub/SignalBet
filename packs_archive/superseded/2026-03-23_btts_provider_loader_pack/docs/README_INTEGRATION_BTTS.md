@@ -1,1 +1,0 @@
-# README de Integração BTTS\n\n## input esperado\n`sample_input/official_data_api_input.json`\n\n## provider oficial\n`src/btts/providers/official_data_api_provider.py`\n\n## loader oficial\n`src/btts/loaders/official_data_api_loader.py`\n\n## fluxo\nProvider -> Loader -> Engine -> Exporter -> `market_pick.v1.1`\n\n## output\n`sample_output/market_pick_v1_1_btts.json`\n

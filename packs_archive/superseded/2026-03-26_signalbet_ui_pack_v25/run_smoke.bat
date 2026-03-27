@@ -1,3 +1,0 @@
-@echo off
-echo TEST_STRUCTURE_OK_UI_V25
-echo SMOKE_OK_UI_V25

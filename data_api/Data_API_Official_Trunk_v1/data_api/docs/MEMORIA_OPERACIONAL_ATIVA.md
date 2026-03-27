@@ -1,27 +1,44 @@
-# Memória Operacional Ativa — Data/API Layer
+# MEMORIA_OPERACIONAL_ATIVA
 
-## Frente
-Correção de cobertura física do trunk para desbloqueio da calibração real.
+## frente
+Data/API Layer
 
-## Bloqueio identificado
-O catálogo oficial `fixtures_catalog_status_FT_AET_PEN.json` expunha apenas 1 fixture, apesar de existirem múltiplos ficheiros físicos em `events/` e `statistics/` para o mesmo cenário.
+## estado anterior da frente
+Linha oficial funcional e validada, mas topo da `data_api/` ainda com competição visual entre trunk ativo, packs de fase já absorvidos, apoio útil e auxiliares temporários.
 
-## Fixtures em falta / estado observado
-- `1208501`: existia em storage e estava ausente do catálogo.
-- `1208600`: ausente do storage fornecido.
-- `1208702`: ausente do storage fornecido.
+## ruído identificado
+- packs de live activation e calibração ainda visíveis como se fossem linhas ativas
+- packs de statistics context já absorvidos ainda a competir com o trunk oficial
+- `compat/` sem separação clara face à linha oficial
+- `_temporary_aux/` ainda no topo ativo
+- `__pycache__`, `.pyc` e logs redundantes espalhados
 
-## Ação tomada
-- Regenerado o catálogo oficial com base nos fixtures fisicamente presentes em `events/` + `statistics/`.
-- Atualizado `fixture_ids.json` para refletir os fixtures realmente suportados pelo catálogo regenerado.
-- Emitido `coverage_fix_report.json` com o antes/depois da cobertura.
+## decisão de limpeza aplicada
+- manter `Data_API_Official_Trunk_v1/` como linha oficial ativa inequívoca
+- mover apoio vivo para `_support_live/`
+- mover packs absorvidos e auxiliares temporários para `_archive_superseded/`
+- remover lixo técnico (`__pycache__`, `.pyc`, logs redundantes)
+- adicionar índice curto no topo da frente para leitura futura
 
-## Estado do catálogo
-- Antes: 1 fixture no catálogo oficial.
-- Depois: 10 fixtures no catálogo oficial.
+## o que foi mantido ativo
+- `Data_API_Official_Trunk_v1/`
 
-## Próximo rerun previsto
-Executar novamente `real_data_calibration_reliability_phase_v1_1_3` sobre este trunk corrigido.
+## o que foi mantido como apoio vivo
+- `_support_live/compat/`
 
-## Nota
-`1208600` e `1208702` continuam pendentes de backfill físico, porque não existem no storage incluído neste trunk. O bloqueio de calibração, no entanto, fica operacionalmente desbloqueado pela regeneração do catálogo já suportado por storage real.
+## o que foi movido para arquivo ou removido
+- `_temporary_aux/` -> `_archive_superseded/_temporary_aux/`
+- `coverage_increase_order_v1/` -> `_archive_superseded/coverage_increase_order_v1/`
+- `fixture_statistics_context_activation_v1/` -> `_archive_superseded/fixture_statistics_context_activation_v1/`
+- `fixture_statistics_context_to_trunk_official_v1/` -> `_archive_superseded/fixture_statistics_context_to_trunk_official_v1/`
+- `live_data_activation_phase1_real_fixtures_snapshot_pack_v1/` -> `_archive_superseded/live_data_activation_phase1_real_fixtures_snapshot_pack_v1/`
+- `real_data_calibration_reliability_phase_v1_1_1/` -> `_archive_superseded/real_data_calibration_reliability_phase_v1_1_1/`
+- `real_data_calibration_reliability_phase_v1_1_2/` -> `_archive_superseded/real_data_calibration_reliability_phase_v1_1_2/`
+- `real_data_calibration_reliability_phase_v1_1_3/` -> `_archive_superseded/real_data_calibration_reliability_phase_v1_1_3/`
+- `__pycache__/`, `.pyc` e logs redundantes removidos
+
+## estado final da frente
+Topo da `data_api/` limpo, trunk oficial visualmente inequívoco, apoio vivo separado, histórico fora da linha ativa e frente mais legível para consumo futuro por outras frentes e módulos.
+
+## próximo passo recomendado
+Usar `Data_API_Official_Trunk_v1/` como única linha viva da frente e só reabrir novas iterações Data/API quando houver novo objetivo funcional explícito do corredor central.

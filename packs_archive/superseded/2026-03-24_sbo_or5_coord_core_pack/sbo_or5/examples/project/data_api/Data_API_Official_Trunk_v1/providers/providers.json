@@ -1,6 +1,0 @@
-{
-  "providers": [
-    "fixtures_provider",
-    "stats_provider"
-  ]
-}

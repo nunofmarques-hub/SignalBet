@@ -1,1 +1,0 @@
-Esta pasta recebe 1 forte=candidate, 1 médio=watchlist e 1 rejeitado=rejected.\n

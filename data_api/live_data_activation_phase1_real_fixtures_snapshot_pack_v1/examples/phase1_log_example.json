@@ -1,8 +1,0 @@
-{
-  "timestamp": "2026-03-27T10:00:00Z",
-  "provider": "fixtures_provider.py",
-  "fixtures_count": 1,
-  "snapshot_status": "fresh",
-  "fallback_used": false,
-  "final_status": "green"
-}

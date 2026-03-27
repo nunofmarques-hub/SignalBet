@@ -1,1 +1,0 @@
-Destino atual: migration_workspace/corners/2026-03-24_corners_official_trunk_clean_pack/\nDestino final: modules/corners/\n

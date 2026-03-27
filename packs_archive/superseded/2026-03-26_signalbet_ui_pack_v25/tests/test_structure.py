@@ -1,2 +1,0 @@
-print('TEST_STRUCTURE_OK_UI_V25')
-print('SMOKE_OK_UI_V25')

@@ -1,9 +1,0 @@
-Pack check report
-- README.md: OK
-- manifest.json: OK
-- src/: OK
-- docs/: OK
-- examples/: OK
-- run_smoke.*: OK
-- structure hygiene: OK
-- caches/pyc/logs: none detected

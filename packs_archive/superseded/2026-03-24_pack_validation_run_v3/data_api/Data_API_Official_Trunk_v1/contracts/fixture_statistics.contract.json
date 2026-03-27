@@ -1,8 +1,0 @@
-{
-  "contract_version": "1.1",
-  "required_fields": [
-    "fixture_id",
-    "team",
-    "statistics"
-  ]
-}

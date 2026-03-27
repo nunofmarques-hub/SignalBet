@@ -1,8 +1,0 @@
-{
-  "run_profile": "validation_run",
-  "initiated_by": "ui_button",
-  "forced_modules": [],
-  "dry_run": true,
-  "data_snapshot_tag": "latest",
-  "correlation_id": "DEMO-VALIDATION-001"
-}

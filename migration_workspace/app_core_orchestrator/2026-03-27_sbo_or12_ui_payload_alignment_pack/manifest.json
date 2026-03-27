@@ -1,0 +1,11 @@
+{
+  "pack_name": "2026-03-27_sbo_or12_ui_payload_alignment_pack",
+  "module_name": "app_core_orchestrator",
+  "pack_version": "12.0.0",
+  "status": "staging_forte",
+  "entrypoint": "src/app_orch/run_baseline_control.py",
+  "provider_type": "data_api_official_trunk",
+  "provider_name": "fixtures_provider",
+  "provider_object": "native_trunk_baseline_state_ui_aligned",
+  "contract_version": "1.2"
+}

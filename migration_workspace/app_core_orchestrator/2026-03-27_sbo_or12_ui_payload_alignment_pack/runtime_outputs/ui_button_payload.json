@@ -1,0 +1,12 @@
+{
+  "requested_mode": "real_read_protected",
+  "observed_mode": "orchestrator_real_protected",
+  "fallback_used": false,
+  "bridge_status": "protected_real_ready",
+  "bridge_scope": "baseline_control_flow",
+  "stability_status": "stable",
+  "source_transition": "requested_protected_to_project",
+  "bridge_decision_reason": "native trunk baseline available and valid",
+  "readiness_level": "real_ready",
+  "cta_state": "ready_live"
+}

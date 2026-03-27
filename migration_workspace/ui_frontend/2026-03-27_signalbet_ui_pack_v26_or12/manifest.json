@@ -1,0 +1,11 @@
+{
+  "pack_name": "UI_Frontend_SignalBet_TwentySixth_OR12_Protected_Integration_Pack_2026-03-27",
+  "module_name": "ui_frontend",
+  "pack_version": "v26",
+  "status": "staging",
+  "entrypoint": "src/index.html",
+  "provider_type": "protected_orchestrator_payload",
+  "provider_name": "runtimeBridgeService",
+  "provider_object": "or12_protected_payload_reader_v26",
+  "contract_version": "v1.1"
+}

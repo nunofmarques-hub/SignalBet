@@ -1,0 +1,11 @@
+{
+  "protected_real": [
+    "requested_mode",
+    "observed_mode",
+    "bridge_status"
+  ],
+  "mock": [
+    "orchestrator_mock",
+    "contract_mock"
+  ]
+}

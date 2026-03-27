@@ -1,0 +1,7 @@
+{
+  "requested_mode": "real_read_protected",
+  "observed_mode": "orchestrator_mock",
+  "fallback_used": true,
+  "bridge_status": "controlled_fallback",
+  "stability_status": "consolidating"
+}

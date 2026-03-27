@@ -1,0 +1,15 @@
+{
+  "pack_name": "real_data_calibration_reliability_phase_v1",
+  "module_name": "real_data_calibration_reliability_phase",
+  "pack_version": "1.0.0",
+  "status": "staging",
+  "entrypoint": "run_calibration.cmd",
+  "provider_type": "official_trunk_service",
+  "provider_name": "Data_API_Official_Trunk_v1",
+  "provider_object": [
+    "get_fixtures_by_league_season",
+    "fixtures_catalog"
+  ],
+  "contract_version": "v1.1",
+  "primary_consumer": "orchestrator"
+}

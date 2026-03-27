@@ -1,0 +1,23 @@
+{
+  "snapshot_name": "fixtures_calibration_snapshot",
+  "version": "1.0.0",
+  "provider": "fixtures_provider.py",
+  "service": "get_fixtures_by_league_season()",
+  "primary_consumer": "orchestrator",
+  "league_id": 140,
+  "season": 2024,
+  "fixtures_count": 1,
+  "fixtures": [
+    {
+      "fixture_id": 1208494,
+      "event_date": "2024-08-15T17:00:00+00:00",
+      "status_short": "FT",
+      "status_long": "Match Finished",
+      "home_team_id": 531,
+      "home_team_name": "Athletic Club",
+      "away_team_id": 546,
+      "away_team_name": "Getafe"
+    }
+  ],
+  "snapshot_status": "fresh"
+}

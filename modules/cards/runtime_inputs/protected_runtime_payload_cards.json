@@ -1,0 +1,72 @@
+{
+  "fixture_id": 1208499,
+  "league_id": 140,
+  "season": 2024,
+  "home_team_id": 532,
+  "away_team_id": 529,
+  "source_mode": "project",
+  "observed_mode": "orchestrator_real_protected",
+  "readiness_level": "real_ready",
+  "provider_name": "fixtures_provider.py",
+  "provider_source": "Data_API_Official_Trunk_v1 / orchestrator_protected_corridor",
+  "input_profile": "cards_first_short_real_trial",
+  "fixture_context": {
+    "date_utc": "2024-08-17T19:30:00+00:00",
+    "status_short": "FT",
+    "status_long": "Match Finished",
+    "home_team_name": "Valencia",
+    "away_team_name": "Barcelona",
+    "home_yellow_cards_fixture": 2,
+    "away_yellow_cards_fixture": 3,
+    "home_red_cards_fixture": null,
+    "away_red_cards_fixture": null,
+    "referee": null,
+    "snapshot_name": "storage_snapshot_manifest",
+    "baseline_scenario": "league_140 / season_2024 / status FT-AET-PEN"
+  },
+  "team_context": {
+    "home": {
+      "team_id": 532,
+      "team_name": "Valencia",
+      "fixtures_played_total": 38,
+      "cards_yellow_total": 85,
+      "cards_red_total": 1,
+      "goals_for_avg_total": 1.2,
+      "goals_against_avg_total": 1.4
+    },
+    "away": {
+      "team_id": 529,
+      "team_name": "Barcelona",
+      "fixtures_played_total": 38,
+      "cards_yellow_total": 63,
+      "cards_red_total": 3,
+      "goals_for_avg_total": 2.7,
+      "goals_against_avg_total": 1.0
+    }
+  },
+  "cards_core_minimum": {
+    "fixture_cards_context": {
+      "home_yellow_cards_fixture": 2,
+      "away_yellow_cards_fixture": 3,
+      "home_red_cards_fixture": null,
+      "away_red_cards_fixture": null,
+      "total_fouls_home": 11,
+      "total_fouls_away": 13,
+      "ball_possession_home": 0.36,
+      "ball_possession_away": 0.64
+    },
+    "team_cards_context": {
+      "home_yellow_cards_per_game": 2.2368,
+      "away_yellow_cards_per_game": 1.6579,
+      "home_red_cards_per_game": 0.0263,
+      "away_red_cards_per_game": 0.0789
+    },
+    "protected_match_context": {
+      "provider_name": "fixtures_provider.py",
+      "provider_source": "Data_API_Official_Trunk_v1 / orchestrator_protected_corridor",
+      "input_profile": "cards_first_short_real_trial",
+      "snapshot_name": "storage_snapshot_manifest",
+      "baseline_scenario": "league_140 / season_2024 / status FT-AET-PEN"
+    }
+  }
+}

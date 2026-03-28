@@ -1,0 +1,78 @@
+{
+  "fixture_id": 1208499,
+  "league_id": 140,
+  "season": 2024,
+  "home_team_id": 532,
+  "away_team_id": 529,
+  "source_mode": "project",
+  "observed_mode": "orchestrator_real_protected",
+  "readiness_level": "real_ready",
+  "provider_name": "fixtures_provider.py",
+  "provider_source": "Data_API_Official_Trunk_v1 / orchestrator_protected_corridor",
+  "input_profile": "v12_first_short_real_trial",
+  "fixture_context": {
+    "date_utc": "2024-08-17T19:30:00+00:00",
+    "status_short": "FT",
+    "status_long": "Match Finished",
+    "home_team_name": "Valencia",
+    "away_team_name": "Barcelona",
+    "fulltime_goals_home": 1,
+    "fulltime_goals_away": 2,
+    "snapshot_name": "storage_snapshot_manifest",
+    "baseline_scenario": "league_140 / season_2024 / status FT-AET-PEN"
+  },
+  "team_context": {
+    "home": {
+      "team_id": 532,
+      "team_name": "Valencia",
+      "fixtures_played_total": 38,
+      "goals_for_avg_total": 1.2,
+      "goals_against_avg_total": 1.4,
+      "team_over_1_5_scored_rate": 0.2895,
+      "team_under_3_5_scored_rate": 0.9737
+    },
+    "away": {
+      "team_id": 529,
+      "team_name": "Barcelona",
+      "fixtures_played_total": 38,
+      "goals_for_avg_total": 2.7,
+      "goals_against_avg_total": 1.0,
+      "team_over_1_5_scored_rate": 0.7105,
+      "team_under_3_5_scored_rate": 0.6579
+    }
+  },
+  "stats_block": {
+    "fixture_statistics": {
+      "home": {
+        "shots_on_goal": 2,
+        "total_shots": 6,
+        "corner_kicks": 3,
+        "ball_possession": 0.36,
+        "expected_goals": 1.01
+      },
+      "away": {
+        "shots_on_goal": 6,
+        "total_shots": 18,
+        "corner_kicks": 8,
+        "ball_possession": 0.64,
+        "expected_goals": 3.22
+      }
+    },
+    "v12_core_minimum": {
+      "over_1_5_team_context": {
+        "home_team_over_1_5_scored_rate": 0.2895,
+        "away_team_over_1_5_scored_rate": 0.7105
+      },
+      "over_1_5_match_context": {
+        "combined_goals_for_avg_total": 3.9,
+        "combined_expected_goals_fixture": 4.23,
+        "combined_shots_on_goal_fixture": 8
+      },
+      "under_3_5_match_context": {
+        "home_under_3_5_scored_rate": 0.9737,
+        "away_under_3_5_scored_rate": 0.6579,
+        "combined_goals_against_avg_total": 2.4
+      }
+    }
+  }
+}

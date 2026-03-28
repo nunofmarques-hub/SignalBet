@@ -1,0 +1,74 @@
+{
+  "fixture_id": 1208499,
+  "league_id": 140,
+  "season": 2024,
+  "home_team_id": 532,
+  "away_team_id": 529,
+  "source_mode": "project",
+  "observed_mode": "orchestrator_real_protected",
+  "readiness_level": "real_ready",
+  "provider_name": "fixtures_provider.py",
+  "provider_source": "Data_API_Official_Trunk_v1 / orchestrator_protected_corridor",
+  "input_profile": "corners_first_short_real_trial",
+  "fixture_context": {
+    "date_utc": "2024-08-17T19:30:00+00:00",
+    "status_short": "FT",
+    "status_long": "Match Finished",
+    "home_team_name": "Valencia",
+    "away_team_name": "Barcelona",
+    "home_corner_kicks_fixture": 3,
+    "away_corner_kicks_fixture": 8,
+    "snapshot_name": "storage_snapshot_manifest",
+    "baseline_scenario": "league_140 / season_2024 / status FT-AET-PEN"
+  },
+  "team_context": {
+    "home": {
+      "team_id": 532,
+      "team_name": "Valencia",
+      "fixtures_played_total": 38,
+      "goals_for_avg_total": 1.2,
+      "goals_against_avg_total": 1.4
+    },
+    "away": {
+      "team_id": 529,
+      "team_name": "Barcelona",
+      "fixtures_played_total": 38,
+      "goals_for_avg_total": 2.7,
+      "goals_against_avg_total": 1.0
+    }
+  },
+  "corners_core_minimum": {
+    "fixture_corners_context": {
+      "home_corner_kicks_fixture": 3,
+      "away_corner_kicks_fixture": 8,
+      "total_corner_kicks_fixture": 11
+    },
+    "forcing_context": {
+      "home_total_shots_fixture": 6,
+      "away_total_shots_fixture": 18,
+      "home_shots_on_goal_fixture": 2,
+      "away_shots_on_goal_fixture": 6,
+      "home_blocked_shots_fixture": 1,
+      "away_blocked_shots_fixture": 6
+    },
+    "conceding_context": {
+      "home_conceded_shots_fixture_proxy": 18,
+      "away_conceded_shots_fixture_proxy": 6,
+      "home_conceded_shots_on_goal_proxy": 6,
+      "away_conceded_shots_on_goal_proxy": 2
+    },
+    "pressure_context": {
+      "ball_possession_home": 0.36,
+      "ball_possession_away": 0.64,
+      "home_attack_pressure_proxy": 9,
+      "away_attack_pressure_proxy": 30
+    },
+    "protected_match_context": {
+      "provider_name": "fixtures_provider.py",
+      "provider_source": "Data_API_Official_Trunk_v1 / orchestrator_protected_corridor",
+      "input_profile": "corners_first_short_real_trial",
+      "snapshot_name": "storage_snapshot_manifest",
+      "baseline_scenario": "league_140 / season_2024 / status FT-AET-PEN"
+    }
+  }
+}

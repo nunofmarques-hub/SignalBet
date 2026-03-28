@@ -1,0 +1,212 @@
+[
+  {
+    "scenario": "cenario_controlado",
+    "base_state": {
+      "OU_Base_Score": 52,
+      "lambda_match": 2.23,
+      "profile": "controlled"
+    },
+    "results": {
+      "over_1_5": {
+        "market_code": "over_1_5",
+        "lambda_match": 2.23,
+        "probability": 0.653,
+        "fair_odds": 1.53,
+        "market_odds": 1.42,
+        "edge": -0.072,
+        "candidate_status": "rejected",
+        "risk_flags": [
+          "ruído baixo"
+        ]
+      },
+      "over_2_5": {
+        "market_code": "over_2_5",
+        "lambda_match": 2.23,
+        "probability": 0.385,
+        "fair_odds": 2.6,
+        "market_odds": 2.22,
+        "edge": -0.146,
+        "candidate_status": "rejected",
+        "risk_flags": [
+          "ruído baixo"
+        ]
+      },
+      "under_3_5": {
+        "market_code": "under_3_5",
+        "lambda_match": 2.23,
+        "probability": 0.813,
+        "fair_odds": 1.23,
+        "market_odds": 1.29,
+        "edge": 0.049,
+        "candidate_status": "candidate",
+        "risk_flags": [
+          "ruído baixo"
+        ]
+      },
+      "under_2_5": {
+        "market_code": "under_2_5",
+        "lambda_match": 2.23,
+        "probability": 0.615,
+        "fair_odds": 1.63,
+        "market_odds": 2.66,
+        "edge": 0.632,
+        "candidate_status": "watchlist",
+        "risk_flags": [
+          "ruído baixo"
+        ]
+      },
+      "over_3_5": {
+        "market_code": "over_3_5",
+        "lambda_match": 2.23,
+        "probability": 0.187,
+        "fair_odds": 5.36,
+        "market_odds": 3.65,
+        "edge": -0.319,
+        "candidate_status": "rejected",
+        "risk_flags": [
+          "ruído baixo"
+        ]
+      }
+    }
+  },
+  {
+    "scenario": "cenario_intermedio_2_3",
+    "base_state": {
+      "OU_Base_Score": 64,
+      "lambda_match": 2.65,
+      "profile": "corridor_2_3"
+    },
+    "results": {
+      "over_1_5": {
+        "market_code": "over_1_5",
+        "lambda_match": 2.65,
+        "probability": 0.742,
+        "fair_odds": 1.35,
+        "market_odds": 1.36,
+        "edge": 0.007,
+        "candidate_status": "rejected",
+        "risk_flags": [
+          "ruído moderado"
+        ]
+      },
+      "over_2_5": {
+        "market_code": "over_2_5",
+        "lambda_match": 2.65,
+        "probability": 0.494,
+        "fair_odds": 2.02,
+        "market_odds": 2.03,
+        "edge": 0.005,
+        "candidate_status": "rejected",
+        "risk_flags": [
+          "ruído moderado"
+        ]
+      },
+      "under_3_5": {
+        "market_code": "under_3_5",
+        "lambda_match": 2.65,
+        "probability": 0.725,
+        "fair_odds": 1.38,
+        "market_odds": 1.49,
+        "edge": 0.08,
+        "candidate_status": "candidate",
+        "risk_flags": [
+          "ruído moderado"
+        ]
+      },
+      "under_2_5": {
+        "market_code": "under_2_5",
+        "lambda_match": 2.65,
+        "probability": 0.506,
+        "fair_odds": 1.98,
+        "market_odds": 2.54,
+        "edge": 0.283,
+        "candidate_status": "rejected",
+        "risk_flags": [
+          "ruído moderado"
+        ]
+      },
+      "over_3_5": {
+        "market_code": "over_3_5",
+        "lambda_match": 2.65,
+        "probability": 0.275,
+        "fair_odds": 3.64,
+        "market_odds": 3.1,
+        "edge": -0.148,
+        "candidate_status": "rejected",
+        "risk_flags": [
+          "ruído moderado"
+        ]
+      }
+    }
+  },
+  {
+    "scenario": "cenario_explosivo",
+    "base_state": {
+      "OU_Base_Score": 77,
+      "lambda_match": 3.09,
+      "profile": "offensive"
+    },
+    "results": {
+      "over_1_5": {
+        "market_code": "over_1_5",
+        "lambda_match": 3.09,
+        "probability": 0.814,
+        "fair_odds": 1.23,
+        "market_odds": 1.24,
+        "edge": 0.008,
+        "candidate_status": "candidate",
+        "risk_flags": [
+          "ruído baixo"
+        ]
+      },
+      "over_2_5": {
+        "market_code": "over_2_5",
+        "lambda_match": 3.09,
+        "probability": 0.597,
+        "fair_odds": 1.68,
+        "market_odds": 1.74,
+        "edge": 0.036,
+        "candidate_status": "candidate",
+        "risk_flags": [
+          "ruído baixo"
+        ]
+      },
+      "under_3_5": {
+        "market_code": "under_3_5",
+        "lambda_match": 3.09,
+        "probability": 0.627,
+        "fair_odds": 1.59,
+        "market_odds": 1.66,
+        "edge": 0.044,
+        "candidate_status": "rejected",
+        "risk_flags": [
+          "ruído baixo"
+        ]
+      },
+      "under_2_5": {
+        "market_code": "under_2_5",
+        "lambda_match": 3.09,
+        "probability": 0.403,
+        "fair_odds": 2.48,
+        "market_odds": 3.05,
+        "edge": 0.23,
+        "candidate_status": "rejected",
+        "risk_flags": [
+          "ruído baixo"
+        ]
+      },
+      "over_3_5": {
+        "market_code": "over_3_5",
+        "lambda_match": 3.09,
+        "probability": 0.373,
+        "fair_odds": 2.68,
+        "market_odds": 2.68,
+        "edge": 0.0,
+        "candidate_status": "watchlist",
+        "risk_flags": [
+          "ruído baixo"
+        ]
+      }
+    }
+  }
+]

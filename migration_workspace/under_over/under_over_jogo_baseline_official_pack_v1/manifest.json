@@ -1,0 +1,35 @@
+{
+  "pack_name": "under_over_jogo_baseline_official_pack_v1",
+  "front_name": "under_over_jogo",
+  "official_line_name": "under_over_jogo_offline_baseline_v1",
+  "current_status": "baseline_offline_congelada",
+  "owner": "PM / coordenacao do projeto",
+  "upstream_oficial": "v12 como referencia de disciplina",
+  "downstream_oficial": "nenhum nesta fase",
+  "provider_type": "offline_theoretical",
+  "provider_name": "internal_offline_family_model",
+  "provider_object": "lambda_match_family_model",
+  "contract_version": "baseline_offline_v1",
+  "frozen_items": [
+    "familia_multi_linha_expandida",
+    "hierarquia_de_linhas",
+    "linhas_operacionais_iniciais",
+    "papel_de_over_3_5",
+    "fluxo_offline_base",
+    "coerencia_familiar",
+    "corredor_intermedio_conservador",
+    "limites_atuais_da_frente"
+  ],
+  "corridor_rule": {
+    "scenario": "intermedio_2_3_atual",
+    "over_1_5": "rejected",
+    "over_2_5": "rejected",
+    "reading": "corredor_conservador_por_regra_do_modelo_atual"
+  },
+  "runtime_state": "sem_integracao_real",
+  "v12_relation": "v12_mantem_se_como_linha_operacional_valida",
+  "next_step_gate": [
+    "prototipo_tecnico_offline_se_autorizado",
+    "aproximacao_controlada_ao_corredor_protegido_so_com_decisao_formal"
+  ]
+}

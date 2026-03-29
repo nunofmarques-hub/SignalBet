@@ -1,14 +1,6 @@
-CORNERS SHADOW RUN READINESS PACK V2 - CHECK REPORT
-
-STATUS: OK
-
-Checks:
-- README.md present
-- manifest.json present
-- run_smoke.py present
-- docs/CORNERS_SHADOW_RUN_READINESS_NOTE.md present
-- docs/CORNERS_ACTIVE_MEMORY.md present
-- docs/CORNERS_SWAP_CLEAN_NOTE.md present
-- examples/corners_shadow_run_readiness_summary.json present
-- runtime_inputs/README.md present
-- structural compatibility for clean swap: restored
+pack_check_report.txt
+status=OK
+entrypoint=run_smoke.py
+entrypoint_command=python run_smoke.py
+runtime_inputs=present
+logging_closure=applied

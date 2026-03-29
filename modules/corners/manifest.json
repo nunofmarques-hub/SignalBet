@@ -1,9 +1,10 @@
 {
-  "pack_name": "Corners_Shadow_Run_Readiness_Pack_2026-03-29_v2",
+  "pack_name": "Corners_Shadow_Run_Readiness_Pack_2026-03-29_v3",
   "module_name": "corners",
-  "pack_version": "shadow_run_readiness_v2_swap_clean",
+  "pack_version": "shadow_run_readiness_v3_logging_closed",
   "status": "integrado",
   "entrypoint": "run_smoke.py",
+  "entrypoint_command": "python run_smoke.py",
   "upstream_official": "Orchestrator / App Core",
   "provider_type": "protected_corridor",
   "provider_name": "orchestrator_real_protected",
@@ -11,7 +12,6 @@
   "contract_version": "v1.1",
   "official_line": true,
   "shadow_run_readiness": "ready",
-  "notes": "Pack curto da camada Corners para a ronda de avaliação de readiness do corredor completo.",
-  "structural_compatibility": "runtime_inputs_restored_for_clean_swap",
-  "runtime_inputs_status": "present_for_clean_swap"
+  "logging_status": "step_cmd_explicit",
+  "structural_compatibility": "runtime_inputs_present_for_clean_swap"
 }

@@ -75,7 +75,7 @@ REM Modulos integrados
 set V12_CMD=python "%MODULES_ROOT%\v12\motor\smoke_test.py"
 set CARDS_CMD=python "%MODULES_ROOT%\cards\run_smoke.py"
 set BTTS_CMD=python "%MODULES_ROOT%\btts\src\btts\run_minimal_flow.py"
-set CORNERS_CMD=python "%MODULES_ROOT%\corners\run_smoke.py"
+set CARDS_CMD=python "%MODULES_ROOT%\cards\run_smoke.py"
 
 REM Camadas centrais
 set GPS_CMD=python "%MODULES_ROOT%\gps\run_smoke.py"

@@ -1,14 +1,11 @@
-from pathlib import Path
-import sys
+from bootstrap_runtime import configure_paths
 
-BASE = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(BASE / "src"))
-sys.path.insert(0, str(BASE))
+BASE = configure_paths(__file__)
 
 from providers.official_live_provider import OfficialLiveProvider
 from providers.mappers import map_bundle_to_engine_input
-from src.cards_module.core.orchestrator import build_output
-from src.cards_module.core.output_validator import validate_output
+from cards_module.core.orchestrator import build_output
+from cards_module.core.output_validator import validate_output
 
 
 def test_short_pipeline_contract_smoke():

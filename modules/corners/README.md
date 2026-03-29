@@ -1,38 +1,32 @@
-# 2026-03-26_corners_final_promotable_pack
+# Corners_Shadow_Run_Readiness_Pack_2026-03-29
 
 ## objetivo do pack
-Fechar o módulo Corners como linha final única, limpa e promovível, sem nova evolução analítica.
+Fechar a contribuição da frente Corners para a ronda de avaliação de readiness do corredor completo para shadow run controlado ponta a ponta.
 
 ## estado do pack
-pronto_para_integracao
+integrado
 
 ## módulo
 corners
 
-## linha oficial ativa
-Esta é a única linha oficial ativa do Corners para promoção disciplinada.
+## papel atual no corredor
+Fornecedor integrado do corredor protegido, com consumo real curto já provado via Orchestrator e sem bypass arquitetural.
 
-## provider oficial
-- `Data_API_Official_Trunk_v1`
-
-## serviços oficiais consumidos
-- `get_fixtures_by_league_season()`
-- `get_fixture_statistics()`
+## upstream oficial
+- `Orchestrator / App Core`
+- `Data/API Layer` por camada protegida
 
 ## ponto de entrada
 - `run_smoke.py`
 
-## outputs de exemplo
-- `examples/sample_output_case_1_candidate.json`
-- `examples/sample_output_case_2_watchlist.json`
-- `examples/sample_output_case_3_rejected.json`
-- `examples/summary.json`
+## entregáveis principais
+- `docs/CORNERS_SHADOW_RUN_READINESS_NOTE.md`
+- `docs/CORNERS_ACTIVE_MEMORY.md`
+- `examples/corners_shadow_run_readiness_summary.json`
 
-## fecho funcional preservado
-- forte = `candidate`
-- médio = `watchlist`
-- rejeitado = `rejected`
+## leitura curta da camada
+O Corners já não está em preparação de aproximação.
+Nesta fase deve ser lido como módulo integrado, apto a entrar na avaliação do corredor completo para shadow run controlado, mantendo output contratual e consumo protegido.
 
-## nota de linha
-Este pack não abre nova frente analítica.
-O salto aqui é apenas de fecho, limpeza, promoção e disciplina de handoff.
+## correção de swap limpo
+Esta revisão repõe `runtime_inputs/` no pack para alinhar a estrutura com a linha atual de `modules/corners` e evitar ambiguidade no swap.

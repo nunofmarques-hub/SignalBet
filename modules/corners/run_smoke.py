@@ -1,6 +1,5 @@
-from pathlib import Path
 import json
+from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
-summary = json.loads((ROOT / "examples" / "summary.json").read_text(encoding="utf-8"))
-print(json.dumps(summary, ensure_ascii=False, indent=2))
+p = Path(__file__).parent / "examples" / "corners_shadow_run_readiness_summary.json"
+print(p.read_text(encoding="utf-8"))

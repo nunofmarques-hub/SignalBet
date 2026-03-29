@@ -1,35 +1,17 @@
-PACK CHECK REPORT — Cards Ready for Integration Pack
+PACK CHECK REPORT — Cards Final Polish Pack
 
-Resultado: APTO PARA INTEGRAÇÃO
-
-Checklist
-- README.md: OK
-- manifest.json: OK
-- run_smoke.py: OK
-- pack_check_report.txt: OK
-- provider oficial explícito: OK
-- objeto consumido explícito: OK
-- contrato v1.1 referido: OK
-- pipeline curto: OK
-- testes curtos: OK (2 passed)
-- smoke test básico: OK
-- smoke test live real: OK
-- eligibility true: OK
-- pick_id gerado: OK
-- output market_pick.v1.1 estabilizado: OK
-- artefactos de cache: OK (nenhum __pycache__, .pytest_cache, .pyc)
-
-Estado formal
-- estado atual do pack: pronto_para_integracao
-- target_state: pronto_para_integracao
-- bloqueios remanescentes: nenhum validado nesta promoção
-
-Validação final confirmada
-- official_live_provider confirmado como fonte única real
-- consumo real do trunk físico confirmado
-- output final vivo confirmado
-- pack hygiene completo
-
-Notas
-- provider oficial via get_fixtures_by_league_season + get_fixture_events
-- linha oficial congelada para integração em modules/cards/
+status_atual: staging
+target_status: pronto_para_integracao
+runner_oficial_desta_fase: run_smoke.py
+demo_local_nao_oficial: run_demo.py
+provider_oficial: providers/official_live_provider.py
+objeto_consumido:
+- data_api.services.fixtures_service.get_fixtures_by_league_season
+- data_api.services.events_service.get_fixture_events
+runtime_layout_hardened: yes
+package_layout_estavel: yes
+imports_previsiveis: yes
+contract_smoke_result: {"mode": "contract-smoke", "errors": [], "eligibility": true}
+pytest_short_pipeline: 2 passed
+artefactos_de_cache: ausentes
+decisao: Cards polido e pronto para run final de confirmação

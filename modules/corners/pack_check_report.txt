@@ -1,24 +1,14 @@
-PACK CHECK REPORT
+CORNERS SHADOW RUN READINESS PACK V2 - CHECK REPORT
 
-Pack: 2026-03-26_corners_final_promotable_pack
-Module: corners
-Status target: pronto_para_integracao
+STATUS: OK
 
-[OK] README.md presente
-[OK] manifest.json presente
-[OK] run_smoke.py presente
-[OK] src/ presente
-[OK] docs/ presente
-[OK] examples/ presente
-[OK] contracts/ presente
-[OK] linha oficial única
-[OK] trio funcional preservado
-[OK] provider oficial declarado
-[OK] pack limpo sem redundâncias relevantes
-
-Resumo:
-- case_1_forte: candidate | Forte | score=76.07
-- case_2_media: watchlist | Observação | score=57.26
-- case_3_rejeitada: rejected | Rejeitar | score=11.54
-
-Resultado final: PACK PROMOVÍVEL
+Checks:
+- README.md present
+- manifest.json present
+- run_smoke.py present
+- docs/CORNERS_SHADOW_RUN_READINESS_NOTE.md present
+- docs/CORNERS_ACTIVE_MEMORY.md present
+- docs/CORNERS_SWAP_CLEAN_NOTE.md present
+- examples/corners_shadow_run_readiness_summary.json present
+- runtime_inputs/README.md present
+- structural compatibility for clean swap: restored

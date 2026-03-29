@@ -1,0 +1,21 @@
+{
+  "module_name": "corners",
+  "current_status": "integrado",
+  "shadow_run_readiness": "ready",
+  "upstream_official": "Orchestrator / App Core",
+  "provider_name": "orchestrator_real_protected",
+  "observed_mode": "orchestrator_real_protected",
+  "protected_blocks_available": [
+    "fixture_corners_context",
+    "forcing_context",
+    "conceding_context",
+    "pressure_context",
+    "protected_match_context"
+  ],
+  "architectural_bypass": false,
+  "direct_trunk": false,
+  "direct_provider": false,
+  "corridor_role": "integrated_supplier",
+  "blocking_issue": null,
+  "recommended_next_step": "include_in_end_to_end_shadow_run_readiness_evaluation"
+}

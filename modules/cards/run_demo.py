@@ -2,22 +2,20 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
-import sys
 from pathlib import Path
 
-BASE = Path(__file__).resolve().parent
-sys.path.insert(0, str(BASE / "src"))
-sys.path.insert(0, str(BASE))
+from bootstrap_runtime import configure_paths
+
+BASE = configure_paths(__file__)
 
 from providers.official_live_provider import OfficialLiveProvider, OfficialLiveProviderError
 from providers.mappers import map_bundle_to_engine_input
-from src.cards_module.core.orchestrator import build_output
-from src.cards_module.core.output_validator import validate_output
+from cards_module.core.orchestrator import build_output
+from cards_module.core.output_validator import validate_output
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description="Demo/local do Cards. Não é o runner oficial do corredor nesta fase.")
     parser.add_argument("--league", type=int, default=140)
     parser.add_argument("--season", type=int, default=2024)
     parser.add_argument("--fixture-index", type=int, default=0)

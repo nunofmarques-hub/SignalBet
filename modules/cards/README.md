@@ -1,10 +1,10 @@
-# Cards Ready for Integration Pack
+# Cards Final Polish Pack
 
 ## objetivo do pack
-Congelar a linha oficial do módulo Cards já pronta para integração, após confirmação de live real com o trunk físico, provider oficial único, pipeline curto validado e output contratual estabilizado.
+Polimento final curto do módulo Cards sem reabrir lógica analítica, fixando `run_smoke.py` como runner oficial desta fase, endurecendo o layout de runtime/package e clarificando smoke vs demo vs corredor.
 
 ## estado do pack
-pronto_para_integracao
+staging
 
 ## target_state
 pronto_para_integracao
@@ -12,15 +12,16 @@ pronto_para_integracao
 ## dependências
 - Python 3.11+
 - estrutura do projeto com `data_api/`
-- `Data_API_Official_Trunk_v1` montado no ambiente
+- `Data_API_Official_Trunk_v1` montado no ambiente para `--mode live`
 - contrato de integração SignalBet v1.1
 
 ## ponto de entrada
-- `run_demo.py`
-- `run_smoke.py`
+- oficial desta fase: `run_smoke.py`
+- demo/local: `run_demo.py`
 
 ## ponto de saída
-- `out/*.json`
+- stdout do runner oficial
+- `out/*.json` quando usado `run_demo.py`
 - `pack_check_report.txt`
 
 ## referência ao contrato v1.1
@@ -41,13 +42,5 @@ Fonte única oficial:
 - `get_fixtures_by_league_season`
 - `get_fixture_events`
 
-## validação final confirmada
-Resultado do live test real sobre o trunk físico:
-- `TRUNK_IMPORT_OK`
-- smoke básico: `OK`
-- smoke live: `OK`
-- `eligibility = true`
-- `pick_id` gerado com sucesso
-
-## decisão oficial
-Este pack fica congelado como linha oficial do módulo Cards em estado `pronto_para_integracao`.
+## nota de runtime
+Nesta ronda, `run_smoke.py` é o runner oficial do módulo para confirmação técnica local/contratual. `run_demo.py` permanece apenas como demo/local e não deve ser usado como entrypoint oficial do corredor.

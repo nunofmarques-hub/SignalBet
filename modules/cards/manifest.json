@@ -1,10 +1,10 @@
 {
-  "pack_name": "cards_ready_for_integration_pack",
+  "pack_name": "cards_final_polish_pack",
   "module_name": "cards",
-  "pack_version": "1.2.0",
-  "status": "pronto_para_integracao",
+  "pack_version": "1.3.0",
+  "status": "staging",
   "target_status": "pronto_para_integracao",
-  "entrypoint": "run_demo.py",
+  "entrypoint": "run_smoke.py",
   "provider_type": "official_live_provider",
   "provider_name": "Data_API_Official_Trunk_v1",
   "provider_object": [
@@ -19,5 +19,13 @@
     "smoke_live": "OK",
     "eligibility": true,
     "pick_id_generated": true
+  },
+  "official_phase_runner": "run_smoke.py",
+  "demo_runner": "run_demo.py",
+  "runtime_layout_hardened": true,
+  "package_layout": {
+    "providers_package": true,
+    "cards_module_package": true,
+    "bootstrap_runtime": "bootstrap_runtime.py"
   }
 }

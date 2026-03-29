@@ -1,0 +1,34 @@
+{
+  "main_baseline": {
+    "flow_id": "fixtures",
+    "flow_role": "primary_baseline",
+    "provider_observed": "fixtures_provider.py",
+    "scenario": "league_140 / season_2024 / status FT-AET-PEN",
+    "snapshot_name": "storage_snapshot_manifest",
+    "snapshot_status": "fresh",
+    "final_status": "green"
+  },
+  "complementary_flow": {
+    "flow_id": "statistics_context",
+    "flow_role": "complementary_non_blocking",
+    "available": true,
+    "non_blocking": true,
+    "final_status": "green",
+    "observed_path": "demo"
+  },
+  "central_run": {
+    "source_mode": "demo",
+    "observed_mode": "orchestrator_demo_protected",
+    "bridge_status": "protected_real_ready",
+    "readiness_level": "real_ready",
+    "cta_state": "ready_live",
+    "final_status": "green",
+    "warnings": [],
+    "blockers": [],
+    "central_health": "healthy_enriched",
+    "baseline_availability": "available",
+    "complementary_availability": "available",
+    "complementary_mode": "non_blocking_enrichment",
+    "corridor_summary": "baseline=green; complement=green; central=green"
+  }
+}

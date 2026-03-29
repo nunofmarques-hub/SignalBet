@@ -1,0 +1,16 @@
+{
+  "module_name": "orchestrator",
+  "generated_at": "2026-03-30T10:40:00Z",
+  "fixture_id": 223458,
+  "league_id": 140,
+  "season": 2025,
+  "home_team_id": 12,
+  "away_team_id": 22,
+  "provider_name": "official_protected_payload",
+  "provider_source": "orchestrator",
+  "input_profile": "protected_min_v1",
+  "protected_match_context": {
+    "lambda_league": 2.45,
+    "GPI_M": 69
+  }
+}

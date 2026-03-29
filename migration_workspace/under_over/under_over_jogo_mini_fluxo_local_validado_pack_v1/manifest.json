@@ -1,0 +1,14 @@
+{
+  "pack_name": "under_over_jogo_mini_fluxo_local_validado_pack_v1",
+  "front_name": "under_over_jogo",
+  "current_status": "staging_forte_offline_bem_disciplinado",
+  "owner": "PM / coordenacao do projeto",
+  "proofs_included": [
+    "mini_fluxo_ponta_a_ponta_local",
+    "ready_degraded_hard_fail",
+    "adapter_local",
+    "output_final_emitido"
+  ],
+  "integration_state": "sem_integracao_real",
+  "v12_relation": "v12_mantem_se_como_linha_operacional_valida"
+}

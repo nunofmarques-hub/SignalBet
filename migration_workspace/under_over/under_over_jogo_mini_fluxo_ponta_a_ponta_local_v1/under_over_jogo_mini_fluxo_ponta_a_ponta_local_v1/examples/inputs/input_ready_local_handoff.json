@@ -1,0 +1,41 @@
+{
+  "module_name": "orchestrator",
+  "generated_at": "2026-03-30T10:30:00Z",
+  "fixture_id": 223456,
+  "league_id": 140,
+  "season": 2025,
+  "home_team_id": 10,
+  "away_team_id": 20,
+  "readiness_level": "protected_ready",
+  "provider_name": "official_protected_payload",
+  "provider_source": "orchestrator",
+  "input_profile": "protected_min_v1",
+  "runtime_profile": "mock_local_handoff",
+  "protected_match_context": {
+    "lambda_league": 2.55,
+    "GPI_M": 82,
+    "DRI_M": 31,
+    "OPI_M": 78,
+    "NRI_M": 76,
+    "AttackAdj": 0.8,
+    "DefenseAdj": 0.1,
+    "PaceAdj": 0.55,
+    "RiskAdj": 0.08
+  },
+  "risk_flags": [
+    "ruído baixo"
+  ],
+  "market_odds": {
+    "over_1_5": 1.24,
+    "over_2_5": 1.74,
+    "under_3_5": 1.66,
+    "under_2_5": 3.05,
+    "over_3_5": 2.68
+  },
+  "coefficients": {
+    "a": 0.55,
+    "b": 0.25,
+    "c": 0.25,
+    "d": 0.1
+  }
+}

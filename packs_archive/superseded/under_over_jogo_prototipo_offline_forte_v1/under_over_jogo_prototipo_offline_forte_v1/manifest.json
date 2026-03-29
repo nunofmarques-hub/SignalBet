@@ -1,0 +1,25 @@
+{
+  "pack_name": "under_over_jogo_prototipo_offline_forte_v1",
+  "front_name": "under_over_jogo",
+  "official_working_line_name": "under_over_jogo_offline_baseline_v1",
+  "current_status": "prototipo_offline_forte",
+  "owner": "PM / coordenacao do projeto",
+  "runner_name": "src/run_under_over_jogo_offline.py",
+  "runner_classification": "runner_offline_forte",
+  "contract_version": "local_offline_contract_v1",
+  "included_scenarios": [
+    "cenario_controlado",
+    "cenario_intermedio_2_3",
+    "cenario_explosivo"
+  ],
+  "markets_in_scope": [
+    "over_1_5",
+    "over_2_5",
+    "under_3_5",
+    "under_2_5",
+    "over_3_5"
+  ],
+  "output_format": "json_parseable_versioned",
+  "integration_state": "sem_integracao_real",
+  "v12_relation": "v12_mantem_se_como_linha_operacional_valida"
+}

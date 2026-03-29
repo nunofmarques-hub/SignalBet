@@ -1,0 +1,17 @@
+{
+  "pack_name": "under_over_jogo_aproximacao_controlada_mockada_v1",
+  "front_name": "under_over_jogo",
+  "current_status": "staging_forte_offline_bem_disciplinado",
+  "owner": "PM / coordenacao do projeto",
+  "objective": "aproximacao_controlada_mockada_ao_corredor_protegido",
+  "runner_name": "src/run_mock_adapter_under_over_jogo.py",
+  "runner_classification": "adapter_local_mockado",
+  "cases_included": [
+    "ready",
+    "degraded_run",
+    "hard_fail"
+  ],
+  "contract_version": "mock_adapter_contract_v1",
+  "integration_state": "sem_integracao_real",
+  "v12_relation": "v12_mantem_se_como_linha_operacional_valida"
+}

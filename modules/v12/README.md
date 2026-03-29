@@ -1,47 +1,47 @@
-# v12 — Linha Final Oficial
+# v12 — clean full swap pack
 
-## objetivo do pack
-Congelar a linha final oficial da v12 para promoção de `fechada em staging forte` para `pronto_para_integracao`, sem reabrir o módulo.
+Linha limpa da frente v12 preparada para troca integral da pasta do módulo.
 
-## estado do pack
-pronto_para_integracao
+## Objetivo desta linha
+Fechar o bloqueio residual de runtime ligado à derivação de `league_id` no bundle protegido, mantendo:
 
-## dependências
-- Python 3.11+
-- `data_api.services.fixtures_service.get_fixtures_by_league_season`
-- `data_api.services.standings_service.get_standings_snapshot`
-- `data_api.services.statistics_service.get_team_statistics`
-- `data_api.services.statistics_service.get_fixture_statistics`
+- consumo apenas por camada protegida / central
+- ausência de trunk direto no módulo
+- ausência de provider direto no módulo
+- foco apenas nos 3 motores maduros
+- falha auditável (`hard_fail`) em vez de erro bruto
 
-## ponto de entrada
-- `motor/smoke_test.py`
+## Núcleo ativo
+- Over 1.5 equipa
+- Over 1.5 jogo
+- Under 3.5
 
-## ponto de saída
-- `examples/smoke_output_team_over_15.json`
-- `examples/smoke_output_match_over_15.json`
-- `examples/smoke_output_match_under_35.json`
-- `examples/smoke_output_pool.ndjson`
-- `examples/smoke_summary.json`
+## Conteúdo principal
+- `motor/provider_bridge.py` — ponte endurecida de consumo protegido
+- `motor/input_adapter.py` — normalização do bundle protegido
+- `motor/smoke_test.py` — rerun isolado da v12
+- `runtime_inputs/protected_runtime_payload.json` — payload protegido de exemplo
+- `schemas/runtime_fix_contract.md` — contrato curto da normalização
+- `docs/runtime_fix_note.md` — nota curta do fecho residual
+- `examples/runtime_fix_summary.json` — resumo do rerun esperado
+- `MEMORIA_OPERACIONAL_ATIVA_V12.md` — memória ativa da frente
 
-## referência ao contrato v1.1
-O output formal do módulo é `market_pick.v1.1`.
+## Como usar
+Trocar a pasta atual `modules/v12/` por esta pasta `v12/` completa.
 
-## cenário live usado
-- trunk físico montado
-- imports reais do trunk: OK
-- smoke básico: GREEN
-- smoke live: GREEN
+Depois correr:
 
-## provider oficial usado
-- `PROVIDER_NAME = Data_API_Official_Trunk_v1`
-- `PROVIDER_SOURCE = official_default`
+```bash
+python motor/smoke_test.py
+```
 
-## outputs gerados com sucesso
-- `OUTPUTS_GENERATED = 3`
+ou
 
-## leitura da Data/API Layer
-A v12 lê preferencialmente do `Data_API_Official_Trunk_v1` via serviços oficiais.
-O fallback local existe apenas como `diagnostic_only`, nunca como caminho preferencial.
+```bash
+py motor/smoke_test.py
+```
 
-## nota de fecho
-A v12 fica promovida para `pronto_para_integracao`, mantendo a linha final oficial como única linha ativa do módulo.
+## Resultado esperado
+- deixa de falhar por ausência rígida de `league` / `league_id`
+- tenta derivação semântica de `league_id` em múltiplas posições do bundle
+- mantém `hard_fail` curto e auditável se o campo continuar realmente ausente

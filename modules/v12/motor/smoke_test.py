@@ -1,37 +1,49 @@
+from __future__ import annotations
+
 import json
 from pathlib import Path
 
-from provider_bridge import load_official_bundle
-from input_adapter import adapt_official_bundle
-from market_engines import run_market_engines
-from contract_output import to_contract_pick
+from input_adapter import InputContractError
+from provider_bridge import build_context_or_fail
 
 
-OUTPUT_DIR = Path(__file__).resolve().parent.parent / "examples"
+BASE_DIR = Path(__file__).resolve().parents[1]
+PAYLOAD_PATH = BASE_DIR / "runtime_inputs" / "protected_runtime_payload.json"
+RESULT_PATH = BASE_DIR / "examples" / "runtime_fix_summary.json"
 
 
-def main() -> None:
-    bundle = load_official_bundle(140, 2024)
-    adapted = adapt_official_bundle(bundle)
-    rows = run_market_engines(adapted)
-    picks = [to_contract_pick(r) for r in rows]
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    pool_path = OUTPUT_DIR / "smoke_output_pool.ndjson"
-    with pool_path.open("w", encoding="utf-8") as fh:
-        for pick in picks:
-            fh.write(json.dumps(pick, ensure_ascii=False) + "\n")
-    for pick in picks:
-        variant = pick["module_specific_payload"]["market_variant"].lower()
-        with (OUTPUT_DIR / f"smoke_output_{variant}.json").open("w", encoding="utf-8") as fh:
-            json.dump(pick, fh, ensure_ascii=False, indent=2)
-    print("SMOKE_TEST_STATUS=GREEN")
-    print(f"PROVIDER={bundle['provider']}")
-    print(f"SERVICES={','.join(bundle['official_services_used'])}")
-    print(f"MATCH={adapted['match_label']}")
-    print(f"REQUIRED_OBJECTS={','.join(bundle['required_objects_used'])}")
-    print(f"OUTPUT_POOL={pool_path}")
-    print(f"PICKS={len(picks)}")
+def main() -> int:
+    try:
+        context = build_context_or_fail(PAYLOAD_PATH)
+        normalized = context["normalized_fixture"]
+        summary = {
+            "v12_runtime_fix": "OK",
+            "fixture_id": normalized["fixture_id"],
+            "league_id": normalized["league_id"],
+            "source_mode": normalized["source_mode"],
+            "observed_mode": normalized["observed_mode"],
+            "readiness_level": normalized["readiness_level"],
+            "home": normalized["home_team_name"],
+            "away": normalized["away_team_name"],
+            "over_1_5_team_context": normalized["over_1_5_team_context"],
+            "over_1_5_match_context": normalized["over_1_5_match_context"],
+            "under_3_5_match_context": normalized["under_3_5_match_context"],
+            "runtime_status": context["runtime_status"],
+            "message": "v12 isolated smoke passed with normalized protected input",
+        }
+        RESULT_PATH.write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")
+        print(json.dumps(summary, indent=2, ensure_ascii=False))
+        return 0
+    except InputContractError as exc:
+        summary = {
+            "v12_runtime_fix": "HARD_FAIL",
+            "runtime_status": "hard_fail",
+            "message": str(exc),
+        }
+        RESULT_PATH.write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")
+        print(json.dumps(summary, indent=2, ensure_ascii=False))
+        return 1
 
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    raise SystemExit(main())

@@ -14,11 +14,11 @@
     "available": true,
     "non_blocking": true,
     "final_status": "green",
-    "observed_path": "U:\\Users\\genuser\\Desktop\\SignalBet\\data_api\\Data_API_Official_Trunk_v1\\data_api\\storage\\state\\league_140\\season_2024\\fixture_statistics_context_activation_v1.state.json"
+    "observed_path": "demo"
   },
   "central_run": {
-    "source_mode": "project",
-    "observed_mode": "orchestrator_real_protected",
+    "source_mode": "demo",
+    "observed_mode": "orchestrator_demo_protected",
     "bridge_status": "protected_real_ready",
     "readiness_level": "real_ready",
     "cta_state": "ready_live",

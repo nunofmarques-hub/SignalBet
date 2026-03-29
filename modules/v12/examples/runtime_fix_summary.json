@@ -1,0 +1,15 @@
+{
+  "v12_runtime_fix": "OK",
+  "fixture_id": 1208499,
+  "league_id": 140,
+  "source_mode": "project",
+  "observed_mode": "orchestrator_real_protected",
+  "readiness_level": "real_ready",
+  "home": "Valencia",
+  "away": "Barcelona",
+  "over_1_5_team_context": "OK",
+  "over_1_5_match_context": "OK",
+  "under_3_5_match_context": "OK",
+  "runtime_status": "full_read",
+  "message": "v12 isolated smoke passed with normalized protected input"
+}

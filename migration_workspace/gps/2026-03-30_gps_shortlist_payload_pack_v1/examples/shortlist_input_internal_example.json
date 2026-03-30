@@ -1,0 +1,26 @@
+[
+  {
+    "pick_id": "gps_001",
+    "module_name": "v12",
+    "fixture_id": 220001,
+    "match_label": "Roma vs Lecce",
+    "market_code": "under_3_5",
+    "selection_label": "Under 3.5 Goals",
+    "rank_position": 1,
+    "rationale_short": "Pick top com perfil estável e risco controlado.",
+    "global_score": 82,
+    "priority_tier": "Top"
+  },
+  {
+    "pick_id": "gps_002",
+    "module_name": "cards",
+    "fixture_id": 220004,
+    "match_label": "Porto vs Braga",
+    "market_code": "match_cards_over",
+    "selection_label": "Over 4.5 Cards",
+    "rank_position": 2,
+    "rationale_short": "Contexto disciplinar forte e elegibilidade consistente.",
+    "global_score": 79,
+    "priority_tier": "Actionable"
+  }
+]

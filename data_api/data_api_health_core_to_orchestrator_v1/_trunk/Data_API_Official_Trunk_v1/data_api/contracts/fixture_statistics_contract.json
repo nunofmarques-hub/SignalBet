@@ -1,0 +1,8 @@
+{
+  "version": "v1.1",
+  "required_fields": [
+    "team.id",
+    "statistics[].type",
+    "statistics[].value"
+  ]
+}

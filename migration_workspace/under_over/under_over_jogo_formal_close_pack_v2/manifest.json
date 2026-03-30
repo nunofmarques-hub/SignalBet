@@ -1,0 +1,14 @@
+{
+  "pack_name": "under_over_jogo_formal_close_pack_v2",
+  "front_name": "Under/Over Jogo",
+  "pack_version": "1.0",
+  "status": "formal_close",
+  "purpose": "fecho_formal_de_etapa",
+  "includes": [
+    "nota_de_fecho.md",
+    "memoria_operacional_final.md",
+    "resumo_estado_congelado.md",
+    "recomendacao_proximo_foco_1x2.md",
+    "pack_check_report.txt"
+  ]
+}

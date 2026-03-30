@@ -1,0 +1,31 @@
+{
+  "module_name": "1X2",
+  "module_version": "0.5",
+  "contract_version": "1.1",
+  "fixture_id": 100003,
+  "league_id": 135,
+  "season": 2024,
+  "market_family": "1x2",
+  "market_code": "1x2_or_double_chance_mock",
+  "selection_label": "REJECTED",
+  "p_home": 0.3041,
+  "p_draw": 0.4148,
+  "p_away": 0.2811,
+  "raw_module_score": 34,
+  "score_band": "avoid",
+  "eligibility": false,
+  "input_status": "ok",
+  "adaptation_status": "adapted_ok",
+  "run_status": "success",
+  "decision_status": "rejected_decision",
+  "candidate_status": "rejected",
+  "risk_flags": [
+    "market_warning_flag"
+  ],
+  "rationale_short": "Mercado com warning e base insuficiente para decisão disciplinada.",
+  "provider_name": "mock_orchestrator_protected_shape",
+  "provider_source": "mock_only",
+  "input_profile": "protected_mock_input",
+  "runtime_profile": "protected_mock",
+  "readiness_level": "mock_ready"
+}

@@ -1,0 +1,12 @@
+PACK CHECK REPORT — 1X2 Mock Protected Corridor Approach v0.5
+
+Status: OK
+Pack cleanliness: OK
+Pycache/pyc present: NO
+Runner: OK
+Contracts/docs: OK
+3 proof cases: OK
+
+case_01_candidate_home.json -> 1 / primary_decision / candidate | p_home=0.5601 p_draw=0.2832 p_away=0.1567 score=90
+case_02_degraded_1x.json -> 1X / degraded_decision / watchlist | p_home=0.444 p_draw=0.3561 p_away=0.1999 score=66
+case_03_rejected.json -> REJECTED / rejected_decision / rejected | p_home=0.3041 p_draw=0.4148 p_away=0.2811 score=34

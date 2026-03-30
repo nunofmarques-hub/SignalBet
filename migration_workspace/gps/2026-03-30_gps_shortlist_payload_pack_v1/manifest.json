@@ -1,0 +1,11 @@
+{
+  "pack_name": "2026-03-30_gps_shortlist_payload_pack_v1",
+  "module_name": "global_pick_selector",
+  "pack_version": "v1",
+  "status": "staging",
+  "entrypoint": "src/export_shortlist.py",
+  "provider_type": "indirect_via_modules",
+  "provider_name": "integrated corridor pipeline",
+  "provider_object": "gps shortlisted picks",
+  "contract_version": "app_phase_1_shortlist.v1"
+}

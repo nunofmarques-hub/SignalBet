@@ -1,0 +1,32 @@
+{
+  "required_top_level": [
+    "source_line",
+    "runtime_profile",
+    "readiness_level",
+    "protected_match_context",
+    "protected_market_context",
+    "protected_team_strength_context",
+    "protected_form_context",
+    "protected_risk_context"
+  ],
+  "hard_fail_when_missing": [
+    "fixture_id",
+    "league_id",
+    "season",
+    "home_team.id",
+    "away_team.id",
+    "odd_home",
+    "odd_draw",
+    "odd_away",
+    "home_attack_rating",
+    "home_defense_rating",
+    "away_attack_rating",
+    "away_defense_rating",
+    "home_form_points_last5",
+    "away_form_points_last5"
+  ],
+  "degraded_allowed": [
+    "injury_noise_flag",
+    "rotation_noise_flag"
+  ]
+}

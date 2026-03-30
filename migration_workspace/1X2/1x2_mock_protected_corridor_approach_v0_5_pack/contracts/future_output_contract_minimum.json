@@ -1,0 +1,45 @@
+{
+  "identity": [
+    "module_name",
+    "module_version",
+    "contract_version"
+  ],
+  "event_context": [
+    "fixture_id",
+    "league_id",
+    "season"
+  ],
+  "market": [
+    "market_family",
+    "market_code",
+    "selection_label"
+  ],
+  "probabilities": [
+    "p_home",
+    "p_draw",
+    "p_away"
+  ],
+  "decision": [
+    "raw_module_score",
+    "score_band",
+    "eligibility",
+    "decision_status",
+    "candidate_status"
+  ],
+  "runtime_semantics": [
+    "input_status",
+    "adaptation_status",
+    "run_status",
+    "runtime_profile",
+    "readiness_level"
+  ],
+  "explainability": [
+    "risk_flags",
+    "rationale_short"
+  ],
+  "provenance": [
+    "provider_name",
+    "provider_source",
+    "input_profile"
+  ]
+}

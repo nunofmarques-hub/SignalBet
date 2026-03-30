@@ -1,0 +1,9 @@
+{
+  "pack_name": "data_api_health_core_to_orchestrator_v1",
+  "front_name": "Data/API Layer",
+  "status": "ready_for_handoff",
+  "entrypoint": "run_extract_data_api_health.cmd",
+  "contract_version": "phase1_protected_payload_v1",
+  "consumer": "Orchestrator / App Core",
+  "output_component": "system_status.data_api_health_core"
+}

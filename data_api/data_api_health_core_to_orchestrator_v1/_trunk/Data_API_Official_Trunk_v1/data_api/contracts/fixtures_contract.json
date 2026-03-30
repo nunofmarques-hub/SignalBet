@@ -1,0 +1,19 @@
+{
+  "version": "v1.1",
+  "resource": "fixtures_catalog",
+  "required_fields": [
+    "fixture.id",
+    "fixture.date",
+    "fixture.status.short",
+    "fixture.status.long",
+    "teams.home.id",
+    "teams.home.name",
+    "teams.away.id",
+    "teams.away.name",
+    "goals.home",
+    "goals.away",
+    "score.fulltime.home",
+    "score.fulltime.away"
+  ],
+  "purpose": "mínimo oficial para compatibilidade estrutural e contexto de settlement"
+}

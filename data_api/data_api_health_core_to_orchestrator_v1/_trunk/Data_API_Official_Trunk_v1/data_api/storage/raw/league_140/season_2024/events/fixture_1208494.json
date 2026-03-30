@@ -1,0 +1,14 @@
+{
+  "response": [
+    {
+      "time": {
+        "elapsed": 22
+      },
+      "team": {
+        "id": 531
+      },
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ]
+}

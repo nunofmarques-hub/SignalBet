@@ -1,0 +1,38 @@
+{
+  "source_line": "OR_protected_mock",
+  "runtime_profile": "protected_mock",
+  "readiness_level": "mock_ready",
+  "protected_match_context": {
+    "fixture_id": 100002,
+    "league_id": 39,
+    "season": 2024,
+    "home_team": {
+      "id": 601,
+      "name": "Team C"
+    },
+    "away_team": {
+      "id": 602,
+      "name": "Team D"
+    }
+  },
+  "protected_market_context": {
+    "odd_home": 1.95,
+    "odd_draw": 3.05,
+    "odd_away": 4.7
+  },
+  "protected_team_strength_context": {
+    "home_attack_rating": 1.4,
+    "home_defense_rating": 1.01,
+    "away_attack_rating": 0.95,
+    "away_defense_rating": 1.18
+  },
+  "protected_form_context": {
+    "home_form_points_last5": 9,
+    "away_form_points_last5": 6
+  },
+  "protected_risk_context": {
+    "market_warning_flag": false,
+    "injury_noise_flag": false,
+    "rotation_noise_flag": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "pack_name": "1X2_Mock_Protected_Corridor_Approach_v0_5",
+  "front_name": "1X2",
+  "pack_version": "0.5",
+  "status": "staging_forte",
+  "entrypoint": "run_1x2_mock_protected_corridor.py",
+  "provider_type": "mock_protected_payload",
+  "provider_name": "mock_orchestrator_protected_shape",
+  "provider_object": "protected_match_context_mock",
+  "contract_version": "1.1",
+  "line_purpose": "controlled_mock_approach_to_protected_corridor",
+  "integration_mode": "mock_only_no_real_integration",
+  "semantics": {
+    "input_status": "estado da receção e completude do payload protegido mockado",
+    "adaptation_status": "estado da adaptação do payload protegido para input interno 1X2",
+    "run_status": "estado técnico da execução do runner",
+    "decision_status": "estado da decisão do módulo",
+    "candidate_status": "classificação operacional da pick"
+  },
+  "decision_policy": {
+    "primary_decision": "decisão seca 1/X/2 com base dominante",
+    "degraded_decision": "decisão degradada para dupla possibilidade",
+    "rejected_decision": "jogo rejeitado"
+  }
+}

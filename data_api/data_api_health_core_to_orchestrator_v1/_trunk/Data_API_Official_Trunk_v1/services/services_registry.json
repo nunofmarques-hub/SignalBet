@@ -1,0 +1,10 @@
+{
+  "services_version": "1.0",
+  "services": [
+    "fixtures_service",
+    "standings_service",
+    "events_service",
+    "fixture_statistics_service",
+    "team_statistics_service"
+  ]
+}

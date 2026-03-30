@@ -1,0 +1,22 @@
+{
+  "tracking_summary": [
+    {
+      "pick_id": "PICK-001",
+      "execution_status": "EXECUTED",
+      "ticket_status": "OPEN",
+      "settlement_status": "UNSETTLED",
+      "result": null,
+      "pnl": null,
+      "timestamp": "2026-03-30T10:15:00Z"
+    },
+    {
+      "pick_id": "PICK-002",
+      "execution_status": "SETTLED",
+      "ticket_status": "CLOSED",
+      "settlement_status": "WIN",
+      "result": "WIN",
+      "pnl": 1.55,
+      "timestamp": "2026-03-30T10:20:00Z"
+    }
+  ]
+}

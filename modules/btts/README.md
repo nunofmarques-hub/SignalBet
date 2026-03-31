@@ -1,27 +1,34 @@
 # README.md
 
 ## objetivo do pack
-Congelar a linha final oficial ativa do módulo BTTS e promover o estado para `pronto_para_integracao`.
+Manter a linha oficial ativa do módulo BTTS limpa e alinhada com a app phase 1, fechando a entrega curta de `game_cards` para consumo pelo Orchestrator.
 
 ## estado do pack
-pronto_para_integracao
+integrado
 
 ## dependências
 - Python 3.11+
 - `Data_API_Official_Trunk_v1`
-- Contrato transversal `market_pick.v1.1`
+- corredor central protegido via Orchestrator / App Core
+- contrato transversal do módulo preservado
 
 ## ponto de entrada
 `src/btts/run_minimal_flow.py`
 
-## ponto de saída
-`sample_output/market_pick_v1_1_btts.json`
+## ponto de saída desta ronda
+`latest.json`
 
-## referência ao contrato v1.1
-O output do módulo sai em `market_pick.v1.1` para a Opportunity Pool.
+## saída curta desta fase
+`game_cards` curtos do BTTS para a app phase 1.
+
+## regra desta ronda
+- sem odd justa
+- sem edge final
+- sem blocos internos do motor
+- sem payload rico
 
 ## linha oficial ativa
-O pack com correção de runtime path fica assumido como linha oficial ativa do BTTS.
+Esta linha fica limpa e alinhada com a leitura curta da app phase 1.
 
 ## destino final pretendido
 `modules/btts/`

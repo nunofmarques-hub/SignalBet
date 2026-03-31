@@ -1,14 +1,9 @@
 # RUNTIME_CLOSURE_NOTE
 
-- trunk OK
-- runner OK
-- output OK
-- source_profile = official_trunk_direct
+- corredor protegido: OK
+- leitura curta BTTS para app phase 1: OK
+- `game_card` BTTS: fechado
+- output final desta ronda: `latest.json`
 
-## runtime validado
-- trunk físico montado: OK
-- imports do trunk: OK
-- run_minimal_flow executado com sucesso
-- output final gerado: `market_pick_v1_1_btts.json`
-- Score = 66.71
-- Eligibility = True
+## nota
+A linha ativa fica limpa e focada na contribuição curta do BTTS para `game_cards`.

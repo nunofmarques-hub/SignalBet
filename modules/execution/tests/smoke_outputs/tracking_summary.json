@@ -1,7 +1,7 @@
 {
   "tracking_summary": [
     {
-      "pick_id": "PICK-001",
+      "pick_id": "PICK-2026-03-30-001",
       "execution_status": "EXECUTED",
       "ticket_status": "OPEN",
       "settlement_status": "UNSETTLED",
@@ -10,7 +10,7 @@
       "timestamp": "2026-03-30T10:15:00Z"
     },
     {
-      "pick_id": "PICK-002",
+      "pick_id": "PICK-2026-03-30-002",
       "execution_status": "SETTLED",
       "ticket_status": "CLOSED",
       "settlement_status": "WIN",

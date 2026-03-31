@@ -1,32 +1,10 @@
 {
-  "generated_cases": [
-    {
-      "case_id": "case_1_forte",
-      "score": 76.07,
-      "candidate_status": "candidate",
-      "band": "Forte",
-      "selection": "Over 10.5 Corners",
-      "confidence_raw": "Alta",
-      "risk_raw": "Baixo"
-    },
-    {
-      "case_id": "case_2_media",
-      "score": 57.26,
-      "candidate_status": "watchlist",
-      "band": "Observação",
-      "selection": "Over 9.5 Corners",
-      "confidence_raw": "Baixa",
-      "risk_raw": "Médio"
-    },
-    {
-      "case_id": "case_3_rejeitada",
-      "score": 11.54,
-      "candidate_status": "rejected",
-      "band": "Rejeitar",
-      "selection": "Over 8.5 Corners",
-      "confidence_raw": "Baixa",
-      "risk_raw": "Alto"
-    }
-  ],
-  "count": 3
+  "module_name": "corners",
+  "status": "integrado",
+  "entrypoint": "run_smoke.py",
+  "entrypoint_command": "python run_smoke.py",
+  "provider_name": "Orchestrator / App Core",
+  "consumption_mode": "protected",
+  "shadow_run_ready": true,
+  "game_card_ready": true
 }

@@ -1,0 +1,35 @@
+[
+  {
+    "pick_id": "gps_001",
+    "module_name": "v12",
+    "match_label": "Roma vs Lecce",
+    "market_code": "under_3_5",
+    "selection_label": "Under 3.5 Goals",
+    "rank_position": 1,
+    "rationale_short": "Perfil estável e risco controlado.",
+    "shortlist_level": "primary",
+    "global_score": 82
+  },
+  {
+    "pick_id": "gps_002",
+    "module_name": "cards",
+    "match_label": "Porto vs Braga",
+    "market_code": "match_cards_over",
+    "selection_label": "Over 4.5 Cards",
+    "rank_position": 2,
+    "rationale_short": "Contexto disciplinar forte e consistente.",
+    "shortlist_level": "secondary",
+    "global_score": 79
+  },
+  {
+    "pick_id": "gps_003",
+    "module_name": "corners",
+    "match_label": "Osasuna vs Girona",
+    "market_code": "match_corners_under",
+    "selection_label": "Under 10.5 Corners",
+    "rank_position": 3,
+    "rationale_short": "Ritmo controlado e projeção favorável.",
+    "shortlist_level": "watchlist",
+    "global_score": 75
+  }
+]

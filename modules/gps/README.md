@@ -1,31 +1,43 @@
-# Global Pick Selector — Integration Critical Pack v6
+# GPS Shortlist Product Pack v2
 
 ## objetivo do pack
-Consolidar o Global Pick Selector como camada central de comparação madura do sistema, com:
-- batch real multi-módulo
-- normalização robusta por módulo
-- ranking explícito e auditável
-- schema final congelado para a banca
-- ownership, flags e boundary claros
-- hygiene oficial completa de pack
+Fechar a leitura de produto do bloco `shortlist` da app phase 1, separando:
+- pick principal
+- pick secundária
+- watchlist
 
 ## estado do pack
 staging
 
 ## módulo/frente
-global_pick_selector
+gps / global_pick_selector
 
-## dependências
-- Python 3.11+
-- standard library apenas nesta versão
-- Contrato Transversal de Integração SignalBet v1.1 Operacional
-- módulos fornecedores ligados ao `Data_API_Official_Trunk_v1`
+## posição desta versão
+Esta versão substitui a leitura mais minimal da v1 para materialização do bloco de produto.
 
 ## ponto de entrada
-- `contracts/gps_multi_module_batch_v3.json`
-- `examples/multi_module_batch_inputs/batch_input_case_main.json`
-- `src/batch_runner.py`
+- shortlist ordenada já produzida pelo GPS
 
 ## ponto de saída
-- `contracts/bankroll_export_batch_frozen_v3.json`
-- `examples/bankroll_export_outputs/bankroll_export_case_main.json`
+- `contracts/gps_shortlist_product_v2.json`
+- `examples/shortlist_product_output_example.json`
+
+## campos mínimos visíveis
+- pick_id
+- module_name
+- match_label
+- market_code
+- selection_label
+- rank_position
+- rationale_short
+- shortlist_level
+
+## regra de produto
+- `primary` = pick principal
+- `secondary` = pick secundária
+- `watchlist` = watchlist
+- `rejected` fica fora do bloco principal
+
+## destino final pretendido
+- Orchestrator / App Core
+- UI / Frontend

@@ -1,28 +1,12 @@
-pack_name=2026-03-24_global_pick_selector_integration_critical_pack_v6_final
-base_origin=v6_official_base
-status=PASS_WITH_NOTES
-contract_version=v1.1
-provider_name=Data_API_Official_Trunk_v1
-smoke=OK
-upstream_modules=v12,BTTS,Cards,Corners
-shortlist_contract=bankroll_export_batch.frozen.v3
-hygiene_checks:
+pack_name=2026-03-30_gps_shortlist_product_pack_v2
+status=staging
+scope=app_phase_1_shortlist_product
+smoke=NOT_RUN_IN_EXPORT_ENV
+checks:
 - README.md present
 - manifest.json present
+- contract present
+- export_shortlist_product.py present
+- examples present
 - run_smoke.py present
-- pack_check_report.txt present
-- src/ present
-- docs/ present
-- examples/ present
-- tests/ present
-- contracts/ present
-- __pycache__ removed
-- .pyc removed
-- smoke test passed
-file_count=41
-smoke_output=SMOKE_OK
-notes:
-- pack treated as official handoff base for Banca
-- ranking auditável presente
-- schema GPS -> banca frozen v3
-- upstream via modules on Data_API_Official_Trunk_v1
+- shortlist_level included

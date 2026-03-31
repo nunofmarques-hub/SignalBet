@@ -1,9 +1,9 @@
 {
-  "pack_name": "cards_final_polish_pack",
+  "pack_name": "cards_game_card_active_line_pack",
   "module_name": "cards",
-  "pack_version": "1.3.0",
-  "status": "staging",
-  "target_status": "pronto_para_integracao",
+  "pack_version": "1.4.0",
+  "status": "integrado",
+  "target_status": "integrado",
   "entrypoint": "run_smoke.py",
   "provider_type": "official_live_provider",
   "provider_name": "Data_API_Official_Trunk_v1",
@@ -12,20 +12,11 @@
     "data_api.services.events_service.get_fixture_events"
   ],
   "contract_version": "market_pick.v1.1",
-  "integration_ready_confirmed": true,
-  "live_runtime_validation": {
-    "trunk_import": "OK",
-    "smoke_basic": "OK",
-    "smoke_live": "OK",
-    "eligibility": true,
-    "pick_id_generated": true
-  },
+  "feed_contract_version": "module_feed.v1",
   "official_phase_runner": "run_smoke.py",
   "demo_runner": "run_demo.py",
   "runtime_layout_hardened": true,
-  "package_layout": {
-    "providers_package": true,
-    "cards_module_package": true,
-    "bootstrap_runtime": "bootstrap_runtime.py"
-  }
+  "official_feed_path": "integration_feeds/cards/latest.json",
+  "game_card_phase1_locked": true,
+  "line_role": "linha ativa integrada do módulo Cards para handoff do bloco game_cards da app phase 1"
 }

@@ -1,6 +1,16 @@
-pack_check_report.txt
-status=OK
-entrypoint=run_smoke.py
-entrypoint_command=python run_smoke.py
-runtime_inputs=present
-logging_closure=applied
+PACK CHECK REPORT — Corners Active Clean Pack
+
+OK
+- README.md presente
+- manifest.json presente
+- src/ presente
+- examples/ presente
+- run_smoke.py presente
+- docs/ limpa e reduzida ao mínimo útil
+- runtime_inputs/ presente por compatibilidade estrutural limpa
+- entrypoint oficial confirmado: python run_smoke.py
+- estado do pack: integrado
+- linha ativa preparada para swap direto da linha atual
+
+Removido nesta revisão
+- docs redundantes / intermédias sem papel vivo de continuidade

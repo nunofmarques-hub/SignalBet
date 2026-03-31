@@ -1,13 +1,14 @@
 {
-  "pack_name": "2026-03-25_btts_pronto_para_integracao_pack",
+  "pack_name": "2026-03-31_btts_active_clean_game_card_phase1_pack",
   "module_name": "btts",
-  "pack_version": "1.0.0",
-  "status": "pronto_para_integracao",
+  "pack_version": "2.0.0",
+  "status": "integrado",
   "entrypoint": "src/btts/run_minimal_flow.py",
-  "provider_type": "official_trunk_direct",
-  "provider_name": "Data_API_Official_Trunk_v1",
-  "provider_object": "BTTSDirectOfficialTrunkProvider",
-  "contract_version": "market_pick.v1.1",
+  "provider_type": "protected_corridor",
+  "provider_name": "Orchestrator_App_Core",
+  "provider_object": "ProtectedPayloadForBTTS",
+  "contract_version": "game_card.phase1",
   "official_active_line": true,
-  "runtime_validated": true
+  "runtime_validated": true,
+  "app_phase1_game_card_closed": true
 }

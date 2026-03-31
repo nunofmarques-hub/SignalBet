@@ -1,39 +1,54 @@
-# Corners — memória operacional ativa
+# CORNERS_ACTIVE_MEMORY
 
 ## frente
-corners
+Corners
 
 ## estado atual
 integrado
 
-## papel atual
-Módulo analítico especialista de cantos integrado no corredor protegido.
+## leitura curta da linha
+O Corners fechou com sucesso a sua aproximação real curta ao corredor central protegido e passou a integrado. A linha atual deve ser lida como linha ativa limpa, pronta para continuidade disciplinada sem reabrir o motor.
 
-## ponto já fechado
-Aproximação real curta ao corredor central protegido fechada com sucesso.
+## o que ficou provado
+- consumo protegido real via Orchestrator
+- ausência de trunk direto no módulo
+- ausência de provider real direto paralelo
+- output contratual preservado
+- runner oficial com logging fechado
+- game_card curto fechado para `game_cards` da app phase 1
 
-## origem oficial do input nesta fase
-`Orchestrator / App Core` por payload protegido.
-
-## blocos úteis já provados
+## payload protegido validado
 - `fixture_corners_context`
 - `forcing_context`
 - `conceding_context`
 - `pressure_context`
 - `protected_match_context`
 
-## leitura atual da frente
-O Corners já não está em preparação de aproximação.
-Está apto para ser lido como fornecedor integrado do corredor completo.
+## runner oficial desta fase
+- script: `run_smoke.py`
+- comando: `python run_smoke.py`
 
-## readiness para shadow run
-ready
+## logging
+A ponta residual do `STEP CMD` vazio foi fechada ao congelar o comando explícito do runner no pack.
 
-## bloqueios reais desta frente
-Nenhum bloqueio arquitetural principal identificado nesta fase.
+## papel na app phase 1
+Fornecedor de `game_cards` curtos, comparáveis e estáveis para leitura especialista curta de cantos no payload protegido montado pelo Orchestrator.
 
-## reservas reais
-Reservas residuais apenas de coordenação do corredor completo, não da integração base do módulo.
+## shape mínima do game_card
+- `fixture_id`
+- `match_label`
+- `module_name`
+- `market_code`
+- `selection_label`
+- `raw_module_score`
+- `score_band`
+- `eligibility`
+- `candidate_status`
+- `rationale_short`
+- `risk_flags`
+
+## reserva curta
+Sem reserva estrutural relevante nesta fase. O Corners não deve ser exposto como painel rico de análise; o papel correto é leitura curta especialista.
 
 ## próximo passo
-Entrar na avaliação transversal de readiness do corredor completo para shadow run controlado ponta a ponta.
+Continuar apenas por continuidade disciplinada da linha ativa, sem reabrir arquitetura nem lógica analítica.

@@ -1,49 +1,66 @@
-# Bankroll & Risk Manager — v25 Cleanup Freeze Pack
+# Bankroll / Banca
 
 ## Objetivo do pack
-Limpar resíduos de ambiente, confirmar formalmente a linha v24 como linha oficial ativa da Banca e entregar o corredor GPS -> Banca -> Execution em formato de staging forte, pronto para downstream real.
+Linha oficial ativa da Banca / Bankroll & Risk Manager nesta fase, já limpa, estabilizada e pronta para substituir a linha anterior no módulo.
 
 ## Estado do pack
-staging
+oficial_ativa_limpa
 
-## Dependências
-- Global Pick Selector v6 como upstream oficial
-- Contrato Transversal de Integração SignalBet v1.1 Operacional
-- Execution / Tracking a consumir `bank_to_exec_v24`
-- Upstream indireto progressivamente alinhado com `Data_API_Official_Trunk_v1`
+## Linha oficial ativa
+v24, estabilizada pelo cleanup/freeze v25.
 
-## Ponto de entrada
-- `contracts/gps_to_bank_v24.json`
-- `examples/gps_batch_in_v24.json`
-- `run_smoke.py`
+## Upstream oficial
+GPS v6 clean pack.
 
-## Ponto de saída
-- `contracts/bank_resp_v24.json`
-- `contracts/bank_to_exec_v24.json`
-- `examples/bank_resp_batch_v24.json`
-- `examples/exec_payload_v24.json`
+## Downstream oficial
+Execution / Tracking.
 
-## Referência ao contrato v1.1
-Este pack assume o Contrato Transversal de Integração SignalBet v1.1 Operacional como referência oficial da fronteira GPS -> Banca -> Execution.
+## Payload final oficial
+`contracts/bank_to_exec_v24.json`
 
-## Como lê da Data/API Layer ou o que falta
-A Banca não consome a API externa diretamente. O seu upstream oficial é o GPS v6, que por sua vez consolida picks vindas de módulos progressivamente ligados ao `Data_API_Official_Trunk_v1`.
+## Runner oficial desta fase
+`run_smoke.py`
 
-## Ficheiros principais
+## O que fica congelado nesta linha
 - `contracts/gps_to_bank_v24.json`
 - `contracts/bank_resp_v24.json`
 - `contracts/bank_to_exec_v24.json`
 - `contracts/bank_rules_v24.yaml`
 - `contracts/bank_policy_v24.yaml`
-- `contracts/edge_cases/expected_v24.json`
-- `examples/approved_v24.json`
-- `examples/approved_reduced_v24.json`
-- `examples/blocked_v24.json`
-- `examples/reserve_v24.json`
-- `docs/closure_note_v25.md`
+- edge cases associados à linha v24
+- docs/contracts associados a esta linha
 
-## Destino final pretendido
-`modules/bankroll_risk_manager/`
+## Regra operacional congelada
+### Seguem para Execution
+- `APPROVED`
+- `APPROVED_REDUCED`
 
-## Nota de linha oficial ativa
-A linha oficial ativa da Banca fica confirmada nesta ronda como a linha v24, com `bank_to_exec_v24` mantido como payload final oficial para consumo da Execution.
+### Ficam apenas auditados na Banca
+- `BLOCKED`
+- `RESERVE`
+
+## App phase 1
+O bloco curto da app phase 1 vive em:
+- `contracts/app_phase1/banking_decisions_phase1_contract.json`
+- `contracts/app_phase1/banking_decisions_phase1_example.json`
+- `contracts/app_phase1/shortlist_enriched_with_banking_decisions_example.json`
+
+## Ficheiros principais
+- `run_smoke.py`
+- `manifest.json`
+- `contracts/`
+- `examples/`
+- `docs/`
+- `tests/`
+- `src/`
+
+## Dependências
+- GPS v6 clean pack como upstream oficial
+- Execution / Tracking para consumo do `bank_to_exec_v24`
+- Orchestrator / App Core para consumo do bloco curto da app phase 1
+
+## Notas de limpeza
+- removidos `__pycache__`
+- removidos `.pyc`
+- removidos ficheiros locais obsoletos ou redundantes desta linha
+- mantido apenas o necessário para a linha oficial ativa

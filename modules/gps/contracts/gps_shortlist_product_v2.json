@@ -1,0 +1,49 @@
+{
+  "title": "gps_shortlist_product_v2",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "pick_id",
+      "module_name",
+      "match_label",
+      "market_code",
+      "selection_label",
+      "rank_position",
+      "rationale_short",
+      "shortlist_level"
+    ],
+    "properties": {
+      "pick_id": {
+        "type": "string"
+      },
+      "module_name": {
+        "type": "string"
+      },
+      "match_label": {
+        "type": "string"
+      },
+      "market_code": {
+        "type": "string"
+      },
+      "selection_label": {
+        "type": "string"
+      },
+      "rank_position": {
+        "type": "integer"
+      },
+      "rationale_short": {
+        "type": "string"
+      },
+      "shortlist_level": {
+        "type": "string",
+        "enum": [
+          "primary",
+          "secondary",
+          "watchlist"
+        ]
+      }
+    },
+    "additionalProperties": false
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "type": "object",
+  "title": "Corners App Phase 1 Game Card",
+  "required": [
+    "fixture_id",
+    "match_label",
+    "module_name",
+    "market_code",
+    "selection_label",
+    "raw_module_score",
+    "score_band",
+    "eligibility",
+    "candidate_status",
+    "rationale_short",
+    "risk_flags"
+  ],
+  "properties": {
+    "fixture_id": {
+      "type": "integer"
+    },
+    "match_label": {
+      "type": "string"
+    },
+    "module_name": {
+      "type": "string",
+      "enum": [
+        "corners"
+      ]
+    },
+    "market_code": {
+      "type": "string"
+    },
+    "selection_label": {
+      "type": "string"
+    },
+    "raw_module_score": {
+      "type": "number"
+    },
+    "score_band": {
+      "type": "string"
+    },
+    "eligibility": {
+      "type": "boolean"
+    },
+    "candidate_status": {
+      "type": "string",
+      "enum": [
+        "candidate",
+        "watchlist",
+        "rejected"
+      ]
+    },
+    "rationale_short": {
+      "type": "string"
+    },
+    "risk_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

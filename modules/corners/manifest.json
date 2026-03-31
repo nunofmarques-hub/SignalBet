@@ -1,17 +1,14 @@
 {
-  "pack_name": "Corners_Shadow_Run_Readiness_Pack_2026-03-29_v3",
+  "pack_name": "2026-03-31_corners_active_clean_pack",
   "module_name": "corners",
-  "pack_version": "shadow_run_readiness_v3_logging_closed",
+  "pack_version": "active_clean",
   "status": "integrado",
   "entrypoint": "run_smoke.py",
   "entrypoint_command": "python run_smoke.py",
-  "upstream_official": "Orchestrator / App Core",
-  "provider_type": "protected_corridor",
-  "provider_name": "orchestrator_real_protected",
-  "provider_object": "fixture_corners_context + forcing_context + conceding_context + pressure_context + protected_match_context",
+  "provider_type": "protected_orchestrator_consumer",
+  "provider_name": "Orchestrator / App Core",
+  "provider_object": "protected payload for corners + official runtime compatibility",
   "contract_version": "v1.1",
   "official_line": true,
-  "shadow_run_readiness": "ready",
-  "logging_status": "step_cmd_explicit",
-  "structural_compatibility": "runtime_inputs_present_for_clean_swap"
+  "notes": "Linha ativa limpa do Corners para substituição direta da linha atual."
 }

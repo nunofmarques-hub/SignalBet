@@ -23,10 +23,17 @@
           "ticket_status": {"type": "string"},
           "settlement_status": {"type": "string"},
           "result": {
-            "type": ["string", "null"],
-            "enum": ["WIN", "LOSS", "PUSH", "VOID", "HALF_WIN", "HALF_LOSS", null]
+            "anyOf": [
+              {"type": "string", "enum": ["WIN", "LOSS", "PUSH", "VOID", "HALF_WIN", "HALF_LOSS"]},
+              {"type": "null"}
+            ]
           },
-          "pnl": {"type": ["number", "null"]},
+          "pnl": {
+            "anyOf": [
+              {"type": "number"},
+              {"type": "null"}
+            ]
+          },
           "timestamp": {"type": "string", "format": "date-time"}
         },
         "additionalProperties": false

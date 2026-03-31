@@ -1,0 +1,15 @@
+{
+  "fixture_id": 0,
+  "match_label": "Home Team vs Away Team",
+  "module_name": "BTTS",
+  "market_code": "BTTS_YES",
+  "selection_label": "BTTS Yes",
+  "raw_module_score": 0.0,
+  "score_band": "C",
+  "eligibility": true,
+  "candidate_status": "candidate",
+  "rationale_short": "Leitura curta e estável da oportunidade BTTS.",
+  "risk_flags": [
+    "sample_flag"
+  ]
+}

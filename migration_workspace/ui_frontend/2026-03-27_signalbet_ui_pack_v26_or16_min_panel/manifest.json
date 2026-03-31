@@ -1,11 +1,11 @@
 {
-  "pack_name": "SignalBet_UI_v26_OR16_Minimal_Panel_Reinforcement",
+  "pack_name": "SignalBet_UI_Active_Line_Clean_Detail_Pack_2026-03-31",
   "module_name": "ui_frontend",
-  "pack_version": "v26",
-  "status": "staging",
+  "pack_version": "v26-active-clean-detail",
+  "status": "linha_oficial_ativa",
   "entrypoint": "src/index.html",
-  "provider_type": "protected_orchestrator_payload",
-  "provider_name": "or16ProtectedRuntimeSnapshot",
-  "provider_object": "or16_protected_runtime_snapshot_v26",
+  "provider_type": "protected_payload_consumer",
+  "provider_name": "Orchestrator_App_Core",
+  "provider_object": "app_phase1_protected_payload",
   "contract_version": "v1.1"
 }

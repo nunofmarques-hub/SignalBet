@@ -1,14 +1,15 @@
 {
-  "pack_name": "brm_v25_cleanup_freeze",
-  "module_name": "bankroll_risk_manager",
-  "pack_version": "v25",
-  "status": "staging",
+  "pack_name": "bankroll_active_line_clean_v26",
+  "module_name": "bankroll",
+  "pack_version": "v26",
+  "status": "official_active_clean",
   "entrypoint": "run_smoke.py",
-  "provider_type": "upstream_contract",
-  "provider_name": "gps_v6",
+  "provider_type": "upstream_module",
+  "provider_name": "gps_v6_clean_pack",
   "provider_object": "contracts/gps_to_bank_v24.json",
-  "contract_version": "v1.1",
-  "official_active_line": "v24",
-  "official_execution_payload": "contracts/bank_to_exec_v24.json",
-  "notes": "Cleanup/freeze pack with environment hygiene enforced; no __pycache__ or .pyc files."
+  "contract_version": "v24",
+  "official_line_name": "v24_cleanup_v25",
+  "official_upstream": "GPS v6 clean pack",
+  "official_payload_execution": "contracts/bank_to_exec_v24.json",
+  "app_phase1_block": "contracts/app_phase1/banking_decisions_phase1_contract.json"
 }

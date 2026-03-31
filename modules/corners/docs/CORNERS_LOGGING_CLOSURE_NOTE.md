@@ -1,15 +1,20 @@
 # CORNERS_LOGGING_CLOSURE_NOTE
 
 ## causa real do STEP CMD vazio
-O step do Corners estava a usar o entrypoint oficial `run_smoke.py`, mas o runner/logging não tinha uma string de comando congelada para ecoar. O step existia e corria, mas o campo `STEP CMD` ficava vazio porque o comando não estava explicitado como valor de display.
+O step do Corners executava com `run_smoke.py`, mas o comando explícito não estava congelado para eco no log.
 
 ## correção aplicada
-Foi congelado o comando oficial desta fase como `python run_smoke.py` e esse comando passou a ficar declarado de forma explícita no pack (`manifest.json`, `README.md`, `pack_check_report.txt`) e na prova curta de log.
+Foi fixado o comando oficial desta fase como:
+`python run_smoke.py`
 
 ## entrypoint oficial confirmado
-- script oficial: `run_smoke.py`
-- comando oficial: `python run_smoke.py`
+- script: `run_smoke.py`
+- comando: `python run_smoke.py`
+
+## prova curta
+- `STEP START: Modulo Corners`
+- `STEP CMD  : python run_smoke.py`
+- `STEP OK   : Modulo Corners`
 
 ## impacto
-- logging corrigido
-- sem regressão no corredor
+logging corrigido, sem regressão funcional no corredor.

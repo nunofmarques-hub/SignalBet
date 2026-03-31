@@ -1,28 +1,33 @@
-# SignalBet UI v26 — OR16 minimal panel reinforcement
+# UI / Frontend — linha ativa limpa
 
 ## Estado
-staging
+Linha ativa limpa, preparada para substituir integralmente a pasta ativa da frente.
 
-## Upstream oficial
-OR16 / Orchestrator / App Core
+## O que foi feito
+- limpeza de redundâncias, docs transitórias e ficheiros ultrapassados
+- manutenção apenas dos artefactos úteis da linha ativa
+- atualização do `src/index.html` para materialização visual forte da home e do detalhe curto de jogo
+- preservação da regra de consumo: 1 payload protegido, vindo apenas do Orchestrator
 
-## Objetivo desta execução
-Aplicar apenas o encaixe mínimo aprovado no painel de estado da UI, usando o payload protegido do Orchestrator como única fonte.
+## Estrutura mantida
+- `src/index.html`
+- `src/styles/main.css`
+- `runtime_outputs/app_phase1_protected_payload.json`
+- `run_smoke.bat`
+- `run_smoke.sh`
+- `manifest.json`
+- `README.md`
+- `docs/`
+- `tests/`
 
-## O que foi implementado
-- manutenção do botão principal sem alterações
-- adição de 1 resumo operacional curto no painel de estado
-- leitura humana derivada de `central_health`, `baseline_availability`, `complementary_availability` e `corridor_summary`
-- sem exposição de campos técnicos em bruto ao utilizador
+## Limpeza aplicada
+Removidos da linha ativa:
+- `Antigos/`
+- docs v25/v26 já absorvidas
+- samples/mockups concorrentes
+- notas intermédias redundantes
+- contratos/notas já sem papel operacional atual
+- lixo documental fora da linha viva
 
-## Regra de resumo adotada
-- `healthy_enriched` + baseline disponível + complemento disponível -> **Corredor central saudável**
-- baseline disponível + complemento disponível -> **Baseline e complemento disponíveis**
-- apenas baseline disponível -> **Baseline disponível**
-- restante -> **Estado central em atualização**
-
-## Fonte ativa
-`../runtime_outputs/ui_runtime_snapshot.json`
-
-## Perímetro preservado
-A UI lê, interpreta e apresenta. Não liga ao trunk físico, não fala com provider real e não duplica lógica do Orchestrator.
+## Leitura final
+Esta pasta deve substituir integralmente a pasta ativa atual da frente UI.

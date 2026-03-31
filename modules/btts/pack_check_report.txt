@@ -1,16 +1,21 @@
 PACK CHECK REPORT
-generated_at=2026-03-25T11:27:34.161807+00:00
+generated_at=2026-03-31T21:45:00+00:00
 module=btts
-status=pronto_para_integracao
+status=integrado
 official_active_line=true
-runtime_note=trunk OK | runner OK | output OK | source_profile=official_trunk_direct
+focus=game_card_phase1_clean_line
 
 FILES:
-- README.md | sha256_16=0d3b058d63646905
-- docs/HANDOFF_BTTS.md | sha256_16=a36e54a1dccb58f9
-- docs/RUNTIME_CLOSURE_NOTE.md | sha256_16=49187de6afd11b7c
-- manifest.json | sha256_16=658b21ddd5685334
-- sample_output/market_pick_v1_1_btts.json | sha256_16=139760b65fd90fcd
+- README.md | sha256_16=434266aca66207a4
+- docs/BTTS_game_card_shape_phase1.json | sha256_16=da898cd8815a39c9
+- docs/HANDOFF_BTTS.md | sha256_16=bbf189569e7e962b
+- docs/RUNTIME_CLOSURE_NOTE.md | sha256_16=760aec51a8f39b4d
+- latest.json | sha256_16=c7e19060bb1a0885
+- manifest.json | sha256_16=b5c4a6c720887ba3
+- pack_check_report.txt | sha256_16=e6296f56b1fda3dd
+- runtime_inputs/Nota_Runtime_Emissao_BTTS_Protected_Runtime_Payload.md | sha256_16=ced9bc96b6a645cb
+- runtime_inputs/protected_runtime_payload_btts.json | sha256_16=d5b9a4ad438d6cd4
+- sample_output/BTTS_game_card_example_phase1.json | sha256_16=364a7ff866f1e3ff
 - src/btts/__init__.py | sha256_16=e3b0c44298fc1c14
 - src/btts/loaders/__init__.py | sha256_16=e3b0c44298fc1c14
 - src/btts/loaders/official_trunk_loader.py | sha256_16=f8cb6885f13a1204

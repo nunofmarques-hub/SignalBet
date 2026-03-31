@@ -1,11 +1,17 @@
 from pathlib import Path
 import json
 import sys
+
 ROOT = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT / "src"))
-from batch_runner import run_batch
-batch = json.loads((ROOT / "examples" / "multi_module_batch_inputs" / "batch_input_case_main.json").read_text(encoding="utf-8"))
-result = run_batch(batch, selector_run_id="gps_run_smoke", normalization_version="norm.v1.1")
-assert result["exported"]["batch_schema_version"] == "bankroll_export_batch.frozen.v3"
-assert result["exported"]["shortlist_size"] >= 1
+from export_shortlist_product import export_shortlist_product
+
+inp = json.loads((ROOT / "examples" / "shortlist_product_input_internal_example.json").read_text(encoding="utf-8"))
+out = export_shortlist_product(inp)
+
+assert isinstance(out, list)
+assert len(out) == 3
+assert out[0]["shortlist_level"] == "primary"
+assert out[1]["shortlist_level"] == "secondary"
+assert out[2]["shortlist_level"] == "watchlist"
 print("SMOKE_OK")

@@ -1,0 +1,46 @@
+{
+  "block_name": "banking_decisions",
+  "owner": "bankroll_risk_manager",
+  "phase": "app_phase_1",
+  "upstream": "GPS / linha da Banca",
+  "downstream": "Orchestrator / App Core",
+  "fields_minimum": [
+    "pick_id",
+    "decision_status",
+    "stake_approved",
+    "stake_suggested",
+    "stake_pct_bankroll",
+    "execution_ready",
+    "daily_exposure_after_if_accepted",
+    "decision_note_short"
+  ],
+  "visual_reading_rule": {
+    "actionable": [
+      "APPROVED",
+      "APPROVED_REDUCED"
+    ],
+    "non_actionable": [
+      "BLOCKED",
+      "RESERVE"
+    ]
+  },
+  "presentation_scope": {
+    "show": [
+      "decision_status",
+      "stake_approved",
+      "execution_ready",
+      "decision_note_short"
+    ],
+    "optional_support": [
+      "stake_suggested"
+    ],
+    "do_not_push": [
+      "policy_internal",
+      "detailed_rules",
+      "contracts_full",
+      "exposure_dashboard_rich",
+      "edge_cases",
+      "long_explanation"
+    ]
+  }
+}

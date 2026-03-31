@@ -1,8 +1,10 @@
-PACK CHECK REPORT
-status=OK
-line=UI v26
-execution=OR16 minimal panel reinforcement
-button_unchanged=yes
-panel_human_summary_added=yes
-runtime_source=../runtime_outputs/ui_runtime_snapshot.json
-protected_perimeter_preserved=yes
+SignalBet UI active line clean detail pack
+Status: OK
+Checklist:
+- active line cleaned
+- obsolete docs removed
+- home blocks preserved
+- detail screen materialized
+- shortlist to detail navigation implemented
+- protected payload preserved
+- styles included

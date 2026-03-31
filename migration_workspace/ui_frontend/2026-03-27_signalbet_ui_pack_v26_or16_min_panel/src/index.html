@@ -1,105 +1,588 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SignalBet UI v26</title>
+  <title>SignalBet — App Phase 1</title>
   <link rel="stylesheet" href="./styles/main.css">
+  <style>
+    .panel-subtitle { font-size: 0.92rem; opacity: 0.78; margin: 0.25rem 0 1rem; }
+    .empty-state, .loading-state, .soft-error-state {
+      padding: 0.9rem 1rem; border-radius: 12px; margin-top: 0.75rem;
+      font-size: 0.95rem; background: rgba(255,255,255,0.04);
+    }
+    .soft-error-state { background: rgba(255,255,255,0.07); }
+    .shortlist-list, .game-cards-list, .banking-list, .tracking-list {
+      display: grid; gap: 0.9rem; margin-top: 0.9rem;
+    }
+    .shortlist-item, .game-card-item, .banking-item, .tracking-item, .detail-panel {
+      border-radius: 14px; padding: 1rem 1rem 0.95rem;
+      background: rgba(255,255,255,0.035); border: 1px solid rgba(255,255,255,0.05);
+    }
+    .detail-screen {
+      margin-top: 1.2rem; border-radius: 16px; padding: 1.1rem;
+      background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06);
+    }
+    .detail-screen[hidden] { display: none; }
+    .detail-header {
+      display: flex; justify-content: space-between; gap: 1rem; align-items: flex-start;
+      margin-bottom: 1rem; flex-wrap: wrap;
+    }
+    .detail-title { font-size: 1.2rem; font-weight: 800; margin: 0; }
+    .detail-back {
+      border: 0; border-radius: 999px; padding: 0.5rem 0.9rem; cursor: pointer;
+      background: rgba(255,255,255,0.08); color: inherit;
+    }
+    .detail-grid { display: grid; gap: 1rem; }
+    .detail-panel-title { font-size: 1rem; font-weight: 700; margin-bottom: 0.35rem; }
+    .detail-panel-subtitle { font-size: 0.9rem; opacity: 0.72; margin-bottom: 0.8rem; }
+    .shortlist-item { cursor: pointer; }
+    .shortlist-item.is-active { border-color: rgba(255,255,255,0.18); background: rgba(255,255,255,0.06); }
+    .shortlist-item--principal { background: rgba(255,255,255,0.055); border-color: rgba(255,255,255,0.11); }
+    .shortlist-item--secondary { background: rgba(255,255,255,0.04); }
+    .shortlist-item--watchlist { opacity: 0.92; }
+    .game-card-item--eligible { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.09); }
+    .game-card-item--watchlist { background: rgba(255,255,255,0.04); }
+    .game-card-item--rejected { opacity: 0.86; }
+    .banking-item--approved { background: rgba(255,255,255,0.055); border-color: rgba(255,255,255,0.11); }
+    .banking-item--approved-reduced { background: rgba(255,255,255,0.045); }
+    .banking-item--reserve { background: rgba(255,255,255,0.04); }
+    .banking-item--blocked { opacity: 0.88; }
+    .tracking-item--pending { background: rgba(255,255,255,0.04); }
+    .tracking-item--settled { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.09); }
+    .row-flex, .shortlist-topline, .shortlist-meta, .shortlist-footer, .game-card-topline, .game-card-meta, .banking-topline, .banking-meta, .tracking-topline, .tracking-meta, .tracking-footer {
+      display: flex; flex-wrap: wrap; gap: 0.55rem; align-items: center;
+    }
+    .shortlist-topline, .game-card-topline, .banking-topline, .tracking-topline { margin-bottom: 0.6rem; }
+    .shortlist-meta, .game-card-meta, .banking-meta, .tracking-meta { margin-bottom: 0.55rem; opacity: 0.82; font-size: 0.95rem; }
+    .shortlist-match, .game-card-match, .banking-status-line, .tracking-ref, .detail-pick-title {
+      font-size: 1.05rem; font-weight: 700; margin-bottom: 0.3rem;
+    }
+    .shortlist-rationale, .game-card-rationale, .banking-note, .tracking-note, .detail-pick-note {
+      margin: 0.45rem 0 0.6rem; line-height: 1.35; opacity: 0.9;
+    }
+    .pill {
+      display: inline-flex; align-items: center; border-radius: 999px; padding: 0.22rem 0.58rem;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 0.02em; background: rgba(255,255,255,0.08);
+    }
+    .pill--principal { background: rgba(255,255,255,0.16); }
+    .pill--secondary { background: rgba(255,255,255,0.1); }
+    .pill--watchlist { background: rgba(255,255,255,0.06); }
+    .pill--approved { background: rgba(255,255,255,0.16); }
+    .pill--approved-reduced { background: rgba(255,255,255,0.11); }
+    .pill--reserve { background: rgba(255,255,255,0.08); }
+    .pill--blocked { background: rgba(255,255,255,0.05); opacity: 0.85; }
+    .pill--scoreband { background: rgba(255,255,255,0.12); }
+    .pill--eligible { background: rgba(255,255,255,0.12); }
+    .pill--watch { background: rgba(255,255,255,0.08); }
+    .pill--rejected { background: rgba(255,255,255,0.05); opacity: 0.85; }
+    .pill--exec-ready { background: rgba(255,255,255,0.12); }
+    .pill--exec-hold { background: rgba(255,255,255,0.06); }
+    .pill--settled { background: rgba(255,255,255,0.12); }
+    .pill--open { background: rgba(255,255,255,0.06); }
+    .muted { opacity: 0.72; }
+    .kv-grid { display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+    .risk-line { font-size: 0.92rem; opacity: 0.78; margin-top: 0.3rem; }
+  </style>
 </head>
 <body>
 <div class="app">
   <aside class="sidebar"><div class="brand">SignalBet</div></aside>
   <main class="main">
-    <h1>UI v26 — OR12 Protected Readout</h1>
+    <h1>App Phase 1</h1>
 
     <section class="cta-card">
-      <div class="section-title">Main CTA</div>
+      <div class="section-title">Estado geral</div>
+      <div class="panel-subtitle">Leitura rápida da prontidão atual da app.</div>
       <div class="cta-grid">
-        <div><span class="label">readiness</span><strong id="readiness">—</strong></div>
-        <div><span class="label">cta_state</span><strong id="cta_state">—</strong></div>
-        <div><span class="label">bridge_status</span><strong id="bridge_status_cta">—</strong></div>
-        <div><span class="label">final_status</span><strong id="final_status_cta">—</strong></div>
+        <div><span class="label">Prontidão</span><strong id="readiness_level_cta">—</strong></div>
+        <div><span class="label">Ação principal</span><strong id="cta_state">—</strong></div>
+        <div><span class="label">Ligação protegida</span><strong id="bridge_status_cta">—</strong></div>
+        <div><span class="label">Estado final</span><strong id="final_status_cta">—</strong></div>
       </div>
       <button class="primary-cta" id="runButton">Pôr tudo a correr</button>
     </section>
 
     <section class="panel">
-      <div class="section-title">Protected baseline status</div>
+      <div class="section-title">Estado do sistema</div>
+      <div class="panel-subtitle">Resumo humano do corredor central e da disponibilidade atual.</div>
       <div class="status-grid">
-        <div><span class="label">readiness_level</span><strong id="readiness_level">—</strong></div>
-        <div><span class="label">cta_state</span><strong id="cta_state_panel">—</strong></div>
-        <div><span class="label">source_mode</span><strong id="source_mode">—</strong></div>
-        <div><span class="label">observed_mode</span><strong id="observed_mode">—</strong></div>
-        <div><span class="label">bridge_status</span><strong id="bridge_status_panel">—</strong></div>
-        <div><span class="label">snapshot_name</span><strong id="snapshot_name">—</strong></div>
-        <div><span class="label">final_status</span><strong id="final_status_panel">—</strong></div>
+        <div><span class="label">Prontidão</span><strong id="readiness_level">—</strong></div>
+        <div><span class="label">Ação principal</span><strong id="cta_state_panel">—</strong></div>
+        <div><span class="label">Modo de origem</span><strong id="source_mode">—</strong></div>
+        <div><span class="label">Modo observado</span><strong id="observed_mode">—</strong></div>
+        <div><span class="label">Ligação protegida</span><strong id="bridge_status_panel">—</strong></div>
+        <div><span class="label">Snapshot</span><strong id="snapshot_name">—</strong></div>
+        <div><span class="label">Estado final</span><strong id="final_status_panel">—</strong></div>
       </div>
       <div class="status-summary" aria-live="polite">
-        <span class="label">central_summary</span><strong id="central_summary">—</strong>
+        <span class="label">Resumo</span><strong id="summary_human">—</strong>
+      </div>
+      <div class="loading-state" id="system_status_loading">A carregar estado do sistema…</div>
+      <div class="soft-error-state" id="system_status_error" hidden>Não foi possível ler o estado do sistema neste ambiente.</div>
+    </section>
+
+    <section class="panel" id="shortlist_section">
+      <div class="section-title">Shortlist principal</div>
+      <div class="panel-subtitle">Bloco principal de produto: picks priorizadas, leitura operacional curta e decisão visível.</div>
+      <div class="kv-grid">
+        <div><span class="label">Itens</span><strong id="shortlist_count">0</strong></div>
+        <div><span class="label">Principal</span><strong id="shortlist_primary_label">—</strong></div>
+        <div><span class="label">Primeira decisão</span><strong id="shortlist_first_decision">—</strong></div>
+      </div>
+      <div class="loading-state" id="shortlist_loading">A carregar shortlist…</div>
+      <div class="empty-state" id="shortlist_empty" hidden>Sem shortlist disponível neste momento.</div>
+      <div class="soft-error-state" id="shortlist_error" hidden>Não foi possível montar a shortlist neste ambiente.</div>
+      <div class="shortlist-list" id="shortlist_list" hidden></div>
+    </section>
+
+    <section class="detail-screen" id="detail_screen" hidden>
+      <div class="detail-header">
+        <div>
+          <div class="section-title">Detalhe curto de jogo</div>
+          <h2 class="detail-title" id="detail_match_label">—</h2>
+        </div>
+        <button class="detail-back" id="detail_back_button">Voltar à shortlist</button>
+      </div>
+
+      <div class="detail-grid">
+        <section class="detail-panel">
+          <div class="detail-panel-title">Pick principal</div>
+          <div class="detail-panel-subtitle">Leitura principal da pick ativa dentro do jogo.</div>
+          <div class="row-flex" id="detail_pick_badges"></div>
+          <div class="detail-pick-title" id="detail_pick_selection">—</div>
+          <div class="row-flex muted">
+            <span id="detail_pick_module">—</span>
+            <span>•</span>
+            <span id="detail_pick_shortlist_level">—</span>
+          </div>
+          <div class="detail-pick-note" id="detail_pick_rationale">—</div>
+          <div class="row-flex">
+            <span><strong>Decisão</strong> <span id="detail_pick_decision_status">—</span></span>
+            <span class="muted">•</span>
+            <span><strong>Stake</strong> <span id="detail_pick_stake">—</span></span>
+          </div>
+          <div class="empty-state" id="detail_pick_empty" hidden>Sem pick principal disponível neste detalhe.</div>
+        </section>
+
+        <section class="detail-panel">
+          <div class="detail-panel-title">Game cards do jogo</div>
+          <div class="detail-panel-subtitle">Cards curtos dos módulos maduros para o mesmo jogo.</div>
+          <div class="empty-state" id="detail_game_cards_empty" hidden>Sem card complementar disponível para este jogo.</div>
+          <div class="game-cards-list" id="detail_game_cards_list"></div>
+        </section>
+
+        <section class="detail-panel">
+          <div class="detail-panel-title">Banca curta</div>
+          <div class="detail-panel-subtitle">Leitura operacional da pick ativa.</div>
+          <div class="empty-state" id="detail_banking_empty" hidden>Sem decisão de banca fechada para esta pick.</div>
+          <div class="banking-list" id="detail_banking_list"></div>
+        </section>
+
+        <section class="detail-panel">
+          <div class="detail-panel-title">Tracking curto</div>
+          <div class="detail-panel-subtitle">Execução e settlement da pick ativa, sem peso de audit.</div>
+          <div class="empty-state" id="detail_tracking_empty" hidden>Sem tracking final disponível para esta pick.</div>
+          <div class="tracking-list" id="detail_tracking_list"></div>
+        </section>
       </div>
     </section>
 
-    <p class="note">UI boundary: read, interpret, present. No direct trunk/provider logic in the UI.</p>
+    <section class="panel">
+      <div class="section-title">Game cards</div>
+      <div class="panel-subtitle">Leitura curta por jogo, comparável entre módulos e pronta para produto.</div>
+      <div class="kv-grid">
+        <div><span class="label">Itens</span><strong id="game_cards_count">0</strong></div>
+        <div><span class="label">Primeiro módulo</span><strong id="game_cards_first_module">—</strong></div>
+        <div><span class="label">Primeira seleção</span><strong id="game_cards_first_selection">—</strong></div>
+        <div><span class="label">Primeira faixa</span><strong id="game_cards_first_score_band">—</strong></div>
+      </div>
+      <div class="loading-state" id="game_cards_loading">A carregar game cards…</div>
+      <div class="empty-state" id="game_cards_empty" hidden>Sem game cards disponíveis neste momento.</div>
+      <div class="soft-error-state" id="game_cards_error" hidden>Não foi possível montar os game cards neste ambiente.</div>
+      <div class="game-cards-list" id="game_cards_list" hidden></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">Decisão de banca</div>
+      <div class="panel-subtitle">Bloco curto, claro e acionável: decisão, stake e prontidão para execução.</div>
+      <div class="kv-grid">
+        <div><span class="label">Itens</span><strong id="banking_count">0</strong></div>
+        <div><span class="label">Primeira decisão</span><strong id="banking_first_decision_status">—</strong></div>
+        <div><span class="label">Stake aprovada</span><strong id="banking_first_stake_approved">—</strong></div>
+      </div>
+      <div class="loading-state" id="banking_loading">A carregar decisões de banca…</div>
+      <div class="empty-state" id="banking_empty" hidden>Sem decisões de banca disponíveis neste momento.</div>
+      <div class="soft-error-state" id="banking_error" hidden>Não foi possível montar o bloco de banca neste ambiente.</div>
+      <div class="banking-list" id="banking_list" hidden></div>
+    </section>
+
+    <section class="panel">
+      <div class="section-title">Tracking curto</div>
+      <div class="panel-subtitle">Fecho curto de execução e settlement, sem peso de audit nem analytics.</div>
+      <div class="kv-grid">
+        <div><span class="label">Itens</span><strong id="tracking_count">0</strong></div>
+        <div><span class="label">Primeira execução</span><strong id="tracking_first_execution_status">—</strong></div>
+        <div><span class="label">Primeiro settlement</span><strong id="tracking_first_settlement_status">—</strong></div>
+        <div><span class="label">Primeiro resultado</span><strong id="tracking_first_result">—</strong></div>
+      </div>
+      <div class="loading-state" id="tracking_loading">A carregar tracking…</div>
+      <div class="empty-state" id="tracking_empty" hidden>Sem tracking disponível neste momento.</div>
+      <div class="soft-error-state" id="tracking_error" hidden>Não foi possível montar o tracking neste ambiente.</div>
+      <div class="tracking-list" id="tracking_list" hidden></div>
+    </section>
+
+    <p class="note">Limite da UI: ler, interpretar e apresentar. Sem lógica direta de trunk ou provider.</p>
   </main>
 </div>
+
 <script>
-  async function loadSnapshot() {
-    const response = await fetch('../runtime_outputs/ui_runtime_snapshot.json');
+  function byId(id) { return document.getElementById(id); }
+  async function loadPayload() {
+    const response = await fetch('../runtime_outputs/app_phase1_protected_payload.json');
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return response.json();
   }
 
-  function setValue(id, value) {
-    document.getElementById(id).textContent = value ?? '—';
-  }
+  let appData = {
+    system_status: {},
+    shortlist: [],
+    game_cards: [],
+    banking_decisions: [],
+    tracking_summary: []
+  };
 
-  function applyCTAState(button, payload) {
-    const finalStatus = payload.final_status || 'unknown';
-    const ctaState = payload.cta_state || 'unknown';
+  function normalizeArray(value) { return Array.isArray(value) ? value : []; }
+  function setValue(id, value) {
+    const el = byId(id);
+    if (!el) return;
+    if (value === 0 || value === false) { el.textContent = value; return; }
+    el.textContent = value || '—';
+  }
+  function setCount(id, arr) { setValue(id, normalizeArray(arr).length); }
+  function toggle(id, shouldShow) { const el = byId(id); if (el) el.hidden = !shouldShow; }
+
+  function applyCTAState(button, systemStatus) {
+    const ctaState = systemStatus.cta_state || 'unknown';
+    const finalStatus = systemStatus.final_status || 'unknown';
     button.textContent = ctaState === 'ready_live' ? 'Pôr tudo a correr' : 'Aguardar baseline';
     button.disabled = ctaState !== 'ready_live';
     button.dataset.state = finalStatus;
   }
 
-  function buildCentralSummary(payload) {
-    const centralHealth = payload.central_health;
-    const baselineAvailability = payload.baseline_availability;
-    const complementaryAvailability = payload.complementary_availability;
-
-    if (centralHealth === 'healthy_enriched' && baselineAvailability === 'available' && complementaryAvailability === 'available') {
-      return 'Corredor central saudável';
-    }
-
-    if (baselineAvailability === 'available' && complementaryAvailability === 'available') {
-      return 'Baseline e complemento disponíveis';
-    }
-
-    if (baselineAvailability === 'available') {
-      return 'Baseline disponível';
-    }
-
-    return 'Estado central em atualização';
+  function levelMeta(item) {
+    const rank = Number(item.rank_position);
+    if (rank === 1) return { key: 'principal', label: 'Pick principal' };
+    if (rank === 2) return { key: 'secondary', label: 'Pick secundária' };
+    return { key: 'watchlist', label: 'Watchlist' };
+  }
+  function decisionMeta(status) {
+    const s = (status || '').toUpperCase();
+    if (s === 'APPROVED') return { cls: 'approved', label: 'approved' };
+    if (s === 'APPROVED_REDUCED') return { cls: 'approved-reduced', label: 'approved_reduced' };
+    if (s === 'RESERVE') return { cls: 'reserve', label: 'reserve' };
+    if (s === 'BLOCKED') return { cls: 'blocked', label: 'blocked' };
+    return { cls: '', label: 'sem decisão' };
+  }
+  function candidateMeta(status, eligibility) {
+    const s = (status || '').toLowerCase();
+    if (s === 'eligible' || eligibility === true) return { cls: 'eligible', label: 'elegível' };
+    if (s === 'watchlist') return { cls: 'watch', label: 'watchlist' };
+    if (s === 'rejected' || eligibility === false) return { cls: 'rejected', label: 'rejeitado' };
+    return { cls: 'watch', label: status || 'observação' };
+  }
+  function trackingMeta(settlementStatus, result) {
+    const settled = (settlementStatus || '').toLowerCase().includes('settled') || result;
+    return settled ? { cls: 'settled', label: 'fechado' } : { cls: 'open', label: 'em aberto' };
   }
 
-  loadSnapshot()
-    .then((payload) => {
-      setValue('readiness', payload.readiness);
-      setValue('cta_state', payload.cta_state);
-      setValue('bridge_status_cta', payload.bridge_status);
-      setValue('final_status_cta', payload.final_status);
+  function formatSelection(item) { return item.selection_label || item.market_code || 'Seleção não disponível'; }
+  function formatStake(value) { return (value === null || value === undefined || value === '') ? '' : `${value}`; }
+  function formatScore(value) { return (value === null || value === undefined || value === '') ? '—' : `${value}`; }
+  function formatRiskFlags(flags) { return (!Array.isArray(flags) || !flags.length) ? '' : flags.slice(0, 2).join(' • '); }
+  function formatResult(value) { return value == null || value === '' ? 'em aberto' : `${value}`; }
+  function formatPnl(value) { return value == null || value === '' ? 'por apurar' : `${value}`; }
+  function formatTimestamp(value) { return value || 'timestamp indisponível'; }
+  function detailKey(item) {
+    return item?.pick_id || `${item?.fixture_id || 'x'}::${item?.module_name || 'm'}::${item?.selection_label || item?.market_code || 's'}`;
+  }
 
-      setValue('readiness_level', payload.readiness_level);
-      setValue('cta_state_panel', payload.cta_state);
-      setValue('source_mode', payload.source_mode);
-      setValue('observed_mode', payload.observed_mode);
-      setValue('bridge_status_panel', payload.bridge_status);
-      setValue('snapshot_name', payload.snapshot_name);
-      setValue('final_status_panel', payload.final_status);
-      setValue('central_summary', buildCentralSummary(payload));
+  function buildShortlistItem(item, bank) {
+    const level = levelMeta(item);
+    const decision = decisionMeta(bank?.decision_status);
+    const stake = formatStake(bank?.stake_approved);
+    const note = bank?.decision_note_short || bank?.decision_note || '';
+    const wrapper = document.createElement('article');
+    wrapper.className = `shortlist-item shortlist-item--${level.key}`;
+    wrapper.dataset.pickId = item.pick_id || '';
+    wrapper.dataset.fixtureId = item.fixture_id || '';
+    wrapper.dataset.detailKey = detailKey(item);
+    wrapper.innerHTML = `
+      <div class="shortlist-topline">
+        <span class="pill pill--${level.key}">${level.label}</span>
+        <span class="pill pill--${decision.cls}">${decision.label}</span>
+      </div>
+      <div class="shortlist-match">${item.match_label || 'Jogo não disponível'}</div>
+      <div class="shortlist-meta">
+        <span>${item.module_name || 'módulo'}</span>
+        <span class="muted">•</span>
+        <span>${formatSelection(item)}</span>
+      </div>
+      <div class="shortlist-rationale">${item.rationale_short || 'Sem racional curto disponível.'}</div>
+      <div class="shortlist-footer">
+        ${stake ? `<span><strong>Stake</strong> ${stake}</span>` : ''}
+        ${note ? `<span class="muted">${note}</span>` : ''}
+      </div>`;
+    wrapper.addEventListener('click', () => openDetail(item));
+    return wrapper;
+  }
 
-      applyCTAState(document.getElementById('runButton'), payload);
+  function buildGameCard(item) {
+    const candidate = candidateMeta(item.candidate_status, item.eligibility);
+    const risk = formatRiskFlags(item.risk_flags);
+    const wrapper = document.createElement('article');
+    wrapper.className = `game-card-item game-card-item--${candidate.cls}`;
+    wrapper.innerHTML = `
+      <div class="game-card-topline">
+        <span class="pill pill--scoreband">${item.score_band || 'sem faixa'}</span>
+        <span class="pill pill--${candidate.cls}">${candidate.label}</span>
+      </div>
+      <div class="game-card-match">${item.match_label || 'Jogo não disponível'}</div>
+      <div class="game-card-meta">
+        <span>${item.module_name || 'módulo'}</span>
+        <span class="muted">•</span>
+        <span>${formatSelection(item)}</span>
+      </div>
+      <div class="row-flex">
+        <span><strong>Score</strong> ${formatScore(item.raw_module_score)}</span>
+        <span class="muted">•</span>
+        <span><strong>Elegibilidade</strong> ${item.eligibility === true ? 'sim' : item.eligibility === false ? 'não' : '—'}</span>
+      </div>
+      <div class="game-card-rationale">${item.rationale_short || 'Sem racional curto disponível.'}</div>
+      ${risk ? `<div class="risk-line"><strong>Risco</strong> ${risk}</div>` : ''}`;
+    return wrapper;
+  }
+
+  function buildBankingItem(item) {
+    const decision = decisionMeta(item.decision_status);
+    const approved = formatStake(item.stake_approved);
+    const suggested = formatStake(item.stake_suggested);
+    const executionReady = item.execution_ready === true;
+    const note = item.decision_note_short || item.decision_note || '';
+    const wrapper = document.createElement('article');
+    wrapper.className = `banking-item banking-item--${decision.cls}`;
+    wrapper.innerHTML = `
+      <div class="banking-topline">
+        <span class="pill pill--${decision.cls}">${decision.label}</span>
+        <span class="pill ${executionReady ? 'pill--exec-ready' : 'pill--exec-hold'}">${executionReady ? 'execução pronta' : 'execução em espera'}</span>
+      </div>
+      <div class="banking-status-line">${decision.label}</div>
+      <div class="banking-meta">
+        ${approved ? `<span><strong>Stake aprovada</strong> ${approved}</span>` : `<span><strong>Stake aprovada</strong> —</span>`}
+        ${suggested && suggested !== approved ? `<span class="muted">•</span><span><strong>Stake sugerida</strong> ${suggested}</span>` : ''}
+      </div>
+      <div class="banking-note">${note || 'Sem nota curta de decisão.'}</div>`;
+    return wrapper;
+  }
+
+  function buildTrackingItem(item) {
+    const meta = trackingMeta(item.settlement_status, item.result);
+    const wrapper = document.createElement('article');
+    wrapper.className = `tracking-item tracking-item--${meta.cls}`;
+    wrapper.innerHTML = `
+      <div class="tracking-topline">
+        <span class="pill pill--${meta.cls}">${meta.label}</span>
+        <span class="pill">${item.execution_status || 'execution'}</span>
+      </div>
+      <div class="tracking-ref">${item.pick_id || 'referência indisponível'}</div>
+      <div class="tracking-meta">
+        <span><strong>Settlement</strong> ${item.settlement_status || 'em aberto'}</span>
+        <span class="muted">•</span>
+        <span><strong>Resultado</strong> ${formatResult(item.result)}</span>
+      </div>
+      <div class="tracking-note"><strong>PnL</strong> ${formatPnl(item.pnl)}</div>
+      <div class="tracking-footer muted">${formatTimestamp(item.timestamp)}</div>`;
+    return wrapper;
+  }
+
+  function renderSystemStatus(systemStatus) {
+    setValue('readiness_level_cta', systemStatus.readiness_level);
+    setValue('cta_state', systemStatus.cta_state);
+    setValue('bridge_status_cta', systemStatus.bridge_status);
+    setValue('final_status_cta', systemStatus.final_status);
+    setValue('readiness_level', systemStatus.readiness_level);
+    setValue('cta_state_panel', systemStatus.cta_state);
+    setValue('source_mode', systemStatus.source_mode);
+    setValue('observed_mode', systemStatus.observed_mode);
+    setValue('bridge_status_panel', systemStatus.bridge_status);
+    setValue('snapshot_name', systemStatus.snapshot_name);
+    setValue('final_status_panel', systemStatus.final_status);
+    setValue('summary_human', systemStatus.summary_human || 'Resumo ainda não disponível.');
+    toggle('system_status_loading', false);
+    toggle('system_status_error', false);
+    applyCTAState(byId('runButton'), systemStatus);
+  }
+
+  function renderShortlist(shortlist, bankingDecisions) {
+    const items = normalizeArray(shortlist);
+    const banking = normalizeArray(bankingDecisions);
+    const bankByPick = new Map(banking.map(item => [item.pick_id, item]));
+    const list = byId('shortlist_list');
+    setCount('shortlist_count', items);
+    setValue('shortlist_primary_label', items.length ? levelMeta(items[0]).label : '—');
+    setValue('shortlist_first_decision', decisionMeta(bankByPick.get(items[0]?.pick_id)?.decision_status).label);
+    list.innerHTML = '';
+    toggle('shortlist_loading', false);
+    if (!items.length) { toggle('shortlist_empty', true); toggle('shortlist_error', false); toggle('shortlist_list', false); return; }
+    items.forEach(item => list.appendChild(buildShortlistItem(item, bankByPick.get(item.pick_id))));
+    toggle('shortlist_empty', false); toggle('shortlist_error', false); toggle('shortlist_list', true);
+  }
+
+  function renderGameCards(gameCards) {
+    const items = normalizeArray(gameCards).filter(item => (item.candidate_status || '').toLowerCase() !== 'rejected').slice(0, 4);
+    const allItems = normalizeArray(gameCards);
+    const first = items[0] || allItems[0] || {};
+    const list = byId('game_cards_list');
+    setCount('game_cards_count', items);
+    setValue('game_cards_first_module', first.module_name);
+    setValue('game_cards_first_selection', first.selection_label || first.market_code);
+    setValue('game_cards_first_score_band', first.score_band);
+    list.innerHTML = '';
+    toggle('game_cards_loading', false);
+    if (!items.length) { toggle('game_cards_empty', true); toggle('game_cards_error', false); toggle('game_cards_list', false); return; }
+    items.forEach(item => list.appendChild(buildGameCard(item)));
+    toggle('game_cards_empty', false); toggle('game_cards_error', false); toggle('game_cards_list', true);
+  }
+
+  function renderBanking(bankingDecisions) {
+    const items = normalizeArray(bankingDecisions).slice(0, 5);
+    const first = items[0] || {};
+    const list = byId('banking_list');
+    setCount('banking_count', items);
+    setValue('banking_first_decision_status', first.decision_status);
+    setValue('banking_first_stake_approved', first.stake_approved);
+    list.innerHTML = '';
+    toggle('banking_loading', false);
+    if (!items.length) { toggle('banking_empty', true); toggle('banking_error', false); toggle('banking_list', false); return; }
+    items.forEach(item => list.appendChild(buildBankingItem(item)));
+    toggle('banking_empty', false); toggle('banking_error', false); toggle('banking_list', true);
+  }
+
+  function renderTracking(trackingSummary) {
+    const items = normalizeArray(trackingSummary).slice(0, 5);
+    const first = items[0] || {};
+    const list = byId('tracking_list');
+    setCount('tracking_count', items);
+    setValue('tracking_first_execution_status', first.execution_status);
+    setValue('tracking_first_settlement_status', first.settlement_status);
+    setValue('tracking_first_result', formatResult(first.result));
+    list.innerHTML = '';
+    toggle('tracking_loading', false);
+    if (!items.length) { toggle('tracking_empty', true); toggle('tracking_error', false); toggle('tracking_list', false); return; }
+    items.forEach(item => list.appendChild(buildTrackingItem(item)));
+    toggle('tracking_empty', false); toggle('tracking_error', false); toggle('tracking_list', true);
+  }
+
+  function setActiveShortlist(item) {
+    document.querySelectorAll('.shortlist-item').forEach(el => {
+      el.classList.toggle('is-active', el.dataset.detailKey === detailKey(item));
+    });
+  }
+
+  function openDetail(item) {
+    const fixtureId = item.fixture_id;
+    const pickId = item.pick_id;
+    const gameCards = normalizeArray(appData.game_cards).filter(card => card.fixture_id === fixtureId);
+    const banking = normalizeArray(appData.banking_decisions).filter(entry => entry.pick_id === pickId);
+    const tracking = normalizeArray(appData.tracking_summary).filter(entry => entry.pick_id === pickId);
+
+    setActiveShortlist(item);
+    toggle('detail_screen', true);
+    byId('detail_screen').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    setValue('detail_match_label', item.match_label);
+    setValue('detail_pick_selection', formatSelection(item));
+    setValue('detail_pick_module', item.module_name);
+    setValue('detail_pick_shortlist_level', levelMeta(item).label);
+    setValue('detail_pick_rationale', item.rationale_short);
+
+    const bank = banking[0];
+    setValue('detail_pick_decision_status', bank?.decision_status || 'sem decisão');
+    setValue('detail_pick_stake', formatStake(bank?.stake_approved) || '—');
+    toggle('detail_pick_empty', false);
+
+    const badges = byId('detail_pick_badges');
+    badges.innerHTML = '';
+    const levelBadge = document.createElement('span');
+    levelBadge.className = `pill pill--${levelMeta(item).key}`;
+    levelBadge.textContent = levelMeta(item).label;
+    badges.appendChild(levelBadge);
+
+    const decision = decisionMeta(bank?.decision_status);
+    const decisionBadge = document.createElement('span');
+    decisionBadge.className = `pill pill--${decision.cls}`;
+    decisionBadge.textContent = decision.label;
+    badges.appendChild(decisionBadge);
+
+    const detailCards = byId('detail_game_cards_list');
+    detailCards.innerHTML = '';
+    if (!gameCards.length) {
+      toggle('detail_game_cards_empty', true);
+    } else {
+      toggle('detail_game_cards_empty', false);
+      gameCards.forEach(card => detailCards.appendChild(buildGameCard(card)));
+    }
+
+    const detailBanking = byId('detail_banking_list');
+    detailBanking.innerHTML = '';
+    if (!banking.length) {
+      toggle('detail_banking_empty', true);
+    } else {
+      toggle('detail_banking_empty', false);
+      banking.forEach(entry => detailBanking.appendChild(buildBankingItem(entry)));
+    }
+
+    const detailTracking = byId('detail_tracking_list');
+    detailTracking.innerHTML = '';
+    if (!tracking.length) {
+      toggle('detail_tracking_empty', true);
+    } else {
+      toggle('detail_tracking_empty', false);
+      tracking.forEach(entry => detailTracking.appendChild(buildTrackingItem(entry)));
+    }
+  }
+
+  function closeDetail() {
+    toggle('detail_screen', false);
+    document.querySelectorAll('.shortlist-item').forEach(el => el.classList.remove('is-active'));
+    byId('shortlist_section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  byId('detail_back_button').addEventListener('click', closeDetail);
+
+  loadPayload()
+    .then((d) => {
+      appData = {
+        system_status: d.system_status || {},
+        shortlist: normalizeArray(d.shortlist),
+        game_cards: normalizeArray(d.game_cards),
+        banking_decisions: normalizeArray(d.banking_decisions),
+        tracking_summary: normalizeArray(d.tracking_summary)
+      };
+      renderSystemStatus(appData.system_status);
+      renderShortlist(appData.shortlist, appData.banking_decisions);
+      renderGameCards(appData.game_cards);
+      renderBanking(appData.banking_decisions);
+      renderTracking(appData.tracking_summary);
     })
-    .catch(() => {
-      document.querySelector('.note').textContent = 'Protected payload unavailable in current sample environment.';
+    .catch((error) => {
+      toggle('system_status_loading', false); toggle('system_status_error', true);
+      toggle('shortlist_loading', false); toggle('shortlist_error', true);
+      toggle('game_cards_loading', false); toggle('game_cards_error', true);
+      toggle('banking_loading', false); toggle('banking_error', true);
+      toggle('tracking_loading', false); toggle('tracking_error', true);
+      document.querySelector('.note').textContent = 'App Phase 1 indisponível neste ambiente de amostra.';
+      console.error('Failed to load app phase 1 payload:', error);
     });
 </script>
 </body>

@@ -1,13 +1,31 @@
-# Corners_Shadow_Run_Readiness_Pack_2026-03-29_v3
+# 2026-03-31_corners_active_clean_pack
 
 ## objetivo do pack
-Fechar a ponta residual do logging do Corners no shadow run, congelando entrypoint oficial, comando explícito e prova curta em log.
+Substituir de forma limpa a linha ativa atual do módulo Corners, sem lixo intermédio, sem notas redundantes e com documentação mínima suficiente para continuidade operacional.
 
-## entrypoint oficial
-- `run_smoke.py`
+## estado do pack
+integrado
 
-## comando oficial desta fase
-- `python run_smoke.py`
+## módulo
+corners
 
-## causa do STEP CMD vazio
-O step do Corners estava registado com entrypoint lógico (`run_smoke.py`) mas sem string de comando congelada para eco no log do corredor. Resultado: `STEP START` e `STEP OK` apareciam, mas `STEP CMD` ficava vazio.
+## linha oficial ativa
+Esta é a linha oficial ativa limpa do Corners para swap direto da linha atual.
+
+## ponto de entrada oficial
+- script: `run_smoke.py`
+- comando: `python run_smoke.py`
+
+## consumo nesta fase
+- consumo protegido real via **Orchestrator / App Core**
+- sem trunk direto no módulo
+- sem provider real direto paralelo
+
+## outputs / prova mínima preservada
+- exemplos `candidate`, `watchlist` e `rejected`
+- `summary.json`
+- prova curta de logging do runner
+- `runtime_inputs/` mantido por compatibilidade estrutural limpa
+
+## nota de linha
+Esta linha não reabre o motor. O foco é continuidade limpa, swap seguro e preservação do estado oficial atual do Corners.

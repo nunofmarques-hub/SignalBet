@@ -1,11 +1,16 @@
 # HANDOFF_BTTS
 
-## Estado
-- estado_pack: pronto_para_integracao
-- provider_principal: direct_official_trunk_provider
-- fallback: apoio técnico isolado
-- output_estavel: sim
-- runtime_validado: sim
+## estado
+- estado_pack: integrado
+- papel_fase_1: fornecedor de `game_cards`
+- output_curto_estavel: sim
+- linha_oficial_ativa: sim
 
-## Fonte oficial
-`Data_API_Official_Trunk_v1`
+## o que segue ao Orchestrator
+- `latest.json` com `game_cards` curtos do BTTS
+
+## o que não segue nesta ronda
+- odd justa
+- edge final
+- blocos internos do motor
+- payload rico

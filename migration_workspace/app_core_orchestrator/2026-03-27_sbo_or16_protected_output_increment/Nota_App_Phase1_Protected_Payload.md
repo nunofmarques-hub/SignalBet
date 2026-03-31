@@ -10,13 +10,6 @@ O Orchestrator fecha nesta ronda 1 payload protegido único da app fase 1.
 - `banking_decisions`
 - `tracking_summary`
 
-## proveniência
-- `system_status` <- Orchestrator + Data/API
-- `shortlist` <- GPS
-- `game_cards` <- v12 / Cards / BTTS / Corners
-- `banking_decisions` <- Banca
-- `tracking_summary` <- Execution
-
 ## estado
 Payload parseável e coeso.
 Sem blocos concorrentes.

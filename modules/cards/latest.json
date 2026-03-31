@@ -1,0 +1,29 @@
+{
+  "schema_version": "module_feed.v1",
+  "module_id": "cards",
+  "status": "ok",
+  "generated_at": "2026-03-31T21:45:00Z",
+  "source_profile": "cards_game_card_phase1_active_line",
+  "provider_name": "cards_integrated_official_line",
+  "contract_version": "market_pick.v1.1",
+  "feed_path": "integration_feeds/cards/latest.json",
+  "notes": "Feed oficial ativo do Cards para o bloco game_cards da app phase 1. Leitura curta, estável e diretamente consumível pelo Orchestrator.",
+  "candidates": [
+    {
+      "fixture_id": 1208499,
+      "match_label": "Valencia vs Barcelona",
+      "module_name": "cards",
+      "market_code": "match_cards_over",
+      "selection_label": "Over 4.5 Cards",
+      "raw_module_score": 82,
+      "score_band": "strong",
+      "eligibility": true,
+      "candidate_status": "candidate",
+      "rationale_short": "Contexto competitivo intenso e perfil disciplinar favorável ao over de cartões.",
+      "risk_flags": [
+        "line_sensitive",
+        "referee_dependency_moderate"
+      ]
+    }
+  ]
+}

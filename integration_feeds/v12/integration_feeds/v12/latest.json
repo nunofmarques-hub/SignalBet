@@ -1,0 +1,66 @@
+{
+  "module_name": "v12",
+  "module_version": "2026-03-31",
+  "contract_version": "market_pick.v1.1",
+  "generated_at": "2026-03-31T18:00:00Z",
+  "runtime_profile": "phase1_game_cards_feed",
+  "provider_name": "Orchestrator / App Core",
+  "provider_source": "protected_central_corridor",
+  "input_profile": "protected_phase1_payload",
+  "observed_mode": "orchestrator_real_protected",
+  "readiness_level": "real_ready",
+  "source_line": "modules/v12",
+  "feed_status": "active",
+  "scope_limited_to": [
+    "over15_team",
+    "over15_match",
+    "under35"
+  ],
+  "game_cards": [
+    {
+      "fixture_id": 1208499,
+      "match_label": "Valencia vs Barcelona",
+      "module_name": "v12",
+      "market_code": "over15_team",
+      "selection_label": "Barcelona Over 1.5 Equipa",
+      "raw_module_score": 86,
+      "score_band": "A",
+      "eligibility": true,
+      "candidate_status": "candidate",
+      "rationale_short": "Favorito com base ofensiva suficiente para 2+ golos.",
+      "risk_flags": [
+        "rotacao_ligeira"
+      ]
+    },
+    {
+      "fixture_id": 1208499,
+      "match_label": "Valencia vs Barcelona",
+      "module_name": "v12",
+      "market_code": "over15_match",
+      "selection_label": "Over 1.5 Jogo",
+      "raw_module_score": 84,
+      "score_band": "A",
+      "eligibility": true,
+      "candidate_status": "candidate",
+      "rationale_short": "Base ofensiva suficiente para 2+ golos com perfil estável.",
+      "risk_flags": [
+        "pressao_competitiva_moderada"
+      ]
+    },
+    {
+      "fixture_id": 1208499,
+      "match_label": "Valencia vs Barcelona",
+      "module_name": "v12",
+      "market_code": "under35",
+      "selection_label": "Under 3.5",
+      "raw_module_score": 79,
+      "score_band": "B",
+      "eligibility": true,
+      "candidate_status": "watchlist",
+      "rationale_short": "Jogo ainda compatível com corredor controlado de golos.",
+      "risk_flags": [
+        "ataque_forte_visitante"
+      ]
+    }
+  ]
+}

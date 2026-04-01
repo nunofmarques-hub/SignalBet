@@ -1,29 +1,29 @@
-# v12 — linha ativa limpa
+# v12 — integration feed clean pack
 
-Linha ativa limpa da v12, preparada para substituir a pasta atual do módulo.
+Pack limpo de substituição para o feed oficial de integração da v12.
 
 ## Função
-Módulo analítico do núcleo de golos do SignalBet / ABC PRO.
+Disponibilizar `integration_feeds/v12/latest.json` como feed vivo, curto, estável e diretamente consumível pelo Orchestrator.
 
-## Núcleo maduro ativo
+## Escopo ativo
 - Over 1.5 equipa
 - Over 1.5 jogo
 - Under 3.5
 
-## O que esta linha inclui
-- `latest.json` ativo
-- `manifest.json` limpo
-- memória operacional ativa
-- contrato curto de `game_card` phase 1
-- exemplos parseáveis de `game_card`
-- export simples de `game_cards` para consumo do Orchestrator
+## Não inclui
+- BTTS
+- Over 2.5
+- Under 2.5
+- família Over/Under alargada
+- detalhe profundo do motor
+- histórico misturado
 
-## O que foi removido desta linha
-- artefactos redundantes
-- packs auxiliares soltos
-- variantes de manifest concorrentes
-- documentos temporários de correção/runtime já absorvidos
-- lixo intermédio e duplicações
+## Estrutura viva
+- `integration_feeds/v12/latest.json`
+- `run_smoke.py`
+- `manifest.json`
+- `docs/substituicao_integral.md`
+- `pack_check_report.txt`
 
-## Integração
-Esta linha deve substituir a pasta ativa de `modules/v12/`.
+## Nota
+Este pack existe para substituir integralmente a linha viva do feed da v12, removendo ruído, redundância e competição entre versões.

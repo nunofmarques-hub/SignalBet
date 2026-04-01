@@ -1,10 +1,6 @@
 # game_card v12 — phase 1 contract
 
-## Função
-Entregar `game_cards` curtos, estáveis e comparáveis da v12 ao Orchestrator para a app phase 1.
-
 ## Shape final
-
 - `fixture_id`
 - `match_label`
 - `module_name`
@@ -18,22 +14,22 @@ Entregar `game_cards` curtos, estáveis e comparáveis da v12 ao Orchestrator pa
 - `risk_flags`
 
 ## Regras
-- `module_name` deve ser sempre `v12`
-- `market_code` deve estar limitado a:
+- `module_name` = `v12`
+- `market_code` apenas:
   - `over15_team`
   - `over15_match`
   - `under35`
-- `candidate_status` deve usar taxonomia curta e estável:
+- `candidate_status`:
   - `candidate`
   - `watchlist`
   - `rejected`
-- `risk_flags` deve ser lista curta e parseável
-- `rationale_short` deve ser humano, breve e sem detalhe excessivo
+- `risk_flags` = lista curta e parseável
+- `rationale_short` = breve, humano, sem detalhe profundo
 
-## O que não entra
+## Não entra
 - BTTS
 - Over 2.5
 - Under 2.5
-- linhas finas
-- detalhe profundo de indicadores
-- dumps internos do motor
+- família Over/Under alargada
+- dumps internos
+- detalhe profundo do motor

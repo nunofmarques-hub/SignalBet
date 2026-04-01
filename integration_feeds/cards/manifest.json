@@ -1,0 +1,11 @@
+{
+  "pack_name": "Cards_Integration_Feeds_Material_2026-03-31",
+  "module_name": "cards",
+  "pack_version": "2026-03-31",
+  "status": "integrado",
+  "entrypoint": "integration_feeds/cards/latest.json",
+  "provider_type": "protected_feed",
+  "provider_name": "official_live_provider",
+  "provider_object": "module_feed.v1",
+  "contract_version": "module_feed.v1"
+}

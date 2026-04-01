@@ -1,118 +1,63 @@
 {
-  "module_id": "corners",
-  "status": "PASS",
-  "runtime": {
-    "source_type": "official_integration_feed",
-    "source_path": "integration_feeds/corners/latest.json",
-    "provider_name": "Data_API_Official_Trunk_v1",
-    "handoff_mode": "official_feed",
-    "depends_on_examples": false
-  },
-  "candidates": [
+  "module_name": "corners",
+  "module_version": "integrated_active",
+  "contract_version": "v1.1",
+  "generated_at": "2026-04-01T12:00:00Z",
+  "provider_name": "Orchestrator / App Core",
+  "provider_source": "protected_orchestrator_consumer",
+  "input_profile": "protected_runtime_payload",
+  "observed_mode": "orchestrator_real_protected",
+  "readiness_level": "real_ready",
+  "picks": [
     {
-      "case_id": "case_1_forte",
+      "pick_id": "corners_1208499_over_9_5",
+      "fixture_id": 1208499,
+      "league_id": 140,
+      "season": 2024,
+      "home_team_id": 529,
+      "away_team_id": 541,
+      "match_label": "Valencia vs Barcelona",
+      "market_family": "corners",
+      "market_code": "corners_over_9_5",
+      "selection_label": "Over 9.5 Corners",
+      "raw_module_score": 76.1,
+      "score_band": "Forte",
+      "eligibility": true,
       "candidate_status": "candidate",
-      "event_id": 878320,
-      "match_label": "Espanyol vs Almeria",
-      "competition": "La Liga",
-      "market_family": "corners",
-      "market": "match_corners_over",
-      "selection": "Over 10.5 Corners",
-      "line": 10.5,
-      "score": 76.07,
-      "confidence": "Alta",
-      "risk": "Baixo",
-      "edge": null,
-      "rationale": "Projeção 12.06, linha 10.5, score 76.07, confiança Alta, risco Baixo.",
-      "drivers": ["produção combinada acima do padrão"],
-      "penalties": [],
-      "provider_context": {
-        "provider_name": "Data_API_Official_Trunk_v1",
-        "provider_object": "fixtures + fixture_statistics"
-      },
-      "module_payload": {
-        "corner_projection": 12.06,
-        "band": "Forte",
-        "tempo_profile": "Volume Alto",
-        "match_corner_bias": "Over",
-        "line_grid": [
-          {"market": "Over 8.5 Corners", "score": 100.0},
-          {"market": "Over 9.5 Corners", "score": 100.0},
-          {"market": "Over 10.5 Corners", "score": 83.2}
-        ]
-      }
-    },
-    {
-      "case_id": "case_2_media",
-      "candidate_status": "watchlist",
-      "event_id": 878317,
-      "match_label": "Celta Vigo vs Barcelona",
-      "competition": "La Liga",
-      "market_family": "corners",
-      "market": "match_corners_over",
-      "selection": "Over 9.5 Corners",
-      "line": 9.5,
-      "score": 57.26,
-      "confidence": "Baixa",
-      "risk": "Médio",
-      "edge": null,
-      "rationale": "Projeção 9.88, linha 9.5, score 57.26, confiança Baixa, risco Médio.",
-      "drivers": ["produção combinada acima do padrão"],
-      "penalties": [],
-      "provider_context": {
-        "provider_name": "Data_API_Official_Trunk_v1",
-        "provider_object": "fixtures + fixture_statistics"
-      },
-      "module_payload": {
-        "corner_projection": 9.88,
-        "band": "Observação",
-        "tempo_profile": "Volume Médio/Alto",
-        "match_corner_bias": "Zona Cinzenta",
-        "line_grid": [
-          {"market": "Over 8.5 Corners", "score": 79.6},
-          {"market": "Over 9.5 Corners", "score": 59.6},
-          {"market": "Over 10.5 Corners", "score": 39.6}
-        ]
-      }
-    },
-    {
-      "case_id": "case_3_rejeitada",
-      "candidate_status": "rejected",
-      "event_id": 878312,
-      "match_label": "Real Betis vs Valencia",
-      "competition": "La Liga",
-      "market_family": "corners",
-      "market": "match_corners_over",
-      "selection": "Over 8.5 Corners",
-      "line": 8.5,
-      "score": 11.54,
-      "confidence": "Baixa",
-      "risk": "Alto",
-      "edge": null,
-      "rationale": "Projeção 8.11, linha 8.5, score 11.54, confiança Baixa, risco Alto.",
-      "drivers": ["produção combinada acima do padrão"],
-      "penalties": [
-        "rotação provável",
-        "perfil tático instável",
-        "qualidade de dados insuficiente",
-        "amostra insuficiente",
-        "ajustamento por adversário demasiado fraco"
+      "rationale_short": "Contexto de forcing e conceding favorável ao mercado total de cantos.",
+      "key_factors": [
+        "forcing_context_ok",
+        "conceding_context_ok",
+        "pressure_context_ok"
       ],
-      "provider_context": {
-        "provider_name": "Data_API_Official_Trunk_v1",
-        "provider_object": "fixtures + fixture_statistics"
-      },
-      "module_payload": {
-        "corner_projection": 8.11,
-        "band": "Rejeitar",
-        "tempo_profile": "Volume Médio",
-        "match_corner_bias": "Zona Cinzenta",
-        "line_grid": [
-          {"market": "Over 8.5 Corners", "score": 44.2},
-          {"market": "Over 9.5 Corners", "score": 24.2},
-          {"market": "Over 10.5 Corners", "score": 4.2}
-        ]
-      }
+      "risk_flags": [
+        "volatilidade_moderada"
+      ]
+    },
+    {
+      "pick_id": "corners_1208500_over_8_5",
+      "fixture_id": 1208500,
+      "league_id": 140,
+      "season": 2024,
+      "home_team_id": 548,
+      "away_team_id": 536,
+      "match_label": "Real Sociedad vs Sevilla",
+      "market_family": "corners",
+      "market_code": "corners_over_8_5",
+      "selection_label": "Over 8.5 Corners",
+      "raw_module_score": 58.4,
+      "score_band": "Observação",
+      "eligibility": true,
+      "candidate_status": "watchlist",
+      "rationale_short": "Sinais úteis de pressão, mas com menor convicção global.",
+      "key_factors": [
+        "forcing_context_mixed",
+        "pressure_context_mixed"
+      ],
+      "risk_flags": [
+        "confianca_baixa",
+        "ritmo_irregular"
+      ]
     }
   ]
 }

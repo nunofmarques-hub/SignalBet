@@ -1,14 +1,14 @@
-# CLOSURE_NOTE
-
-## estado final da frente
-integrado
-
-## fecho funcional desta linha
-- consumo protegido real validado
-- promoção formal a integrado
-- runner oficial congelado
-- logging residual corrigido
-- game_card Corners fechado para a app phase 1
+# Closure Note
 
 ## leitura final
-O Corners já não está em preparação. Deve ser lido como módulo integrado, com linha ativa limpa e sem necessidade de reabrir o motor nesta fase.
+O Corners deixa de ser tratado como módulo abaixo dos restantes por falta de motor.
+
+## fecho desta linha
+- linha oficial única
+- pack limpo
+- trio funcional preservado
+- provider oficial declarado
+- manifest final coerente com promoção
+
+## estado final
+pronto_para_integracao

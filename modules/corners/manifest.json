@@ -1,14 +1,15 @@
 {
-  "pack_name": "2026-03-31_corners_active_clean_pack",
+  "pack_name": "2026-04-01_Corners_Integral_Clean_Substitution_Pack",
   "module_name": "corners",
-  "pack_version": "active_clean",
+  "pack_version": "integral_clean_substitution",
   "status": "integrado",
+  "official_line": true,
   "entrypoint": "run_smoke.py",
   "entrypoint_command": "python run_smoke.py",
   "provider_type": "protected_orchestrator_consumer",
   "provider_name": "Orchestrator / App Core",
-  "provider_object": "protected payload for corners + official runtime compatibility",
+  "provider_object": "protected payload + official runner compatibility",
   "contract_version": "v1.1",
-  "official_line": true,
-  "notes": "Linha ativa limpa do Corners para substituição direta da linha atual."
+  "line_intent": "substituicao_integral_limpa",
+  "notes": "Pack limpo para ocupar a pasta oficial viva do módulo Corners sem histórico misturado nem subpastas redundantes."
 }

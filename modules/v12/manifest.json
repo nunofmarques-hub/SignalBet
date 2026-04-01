@@ -1,25 +1,37 @@
 {
-  "pack_name": "v12_clean_full_swap_pack",
+  "pack_name": "v12_full_clean_replacement_pack",
   "module_name": "v12",
-  "pack_version": "2026-03-29",
-  "status": "integrado_candidate_runtime_fix",
-  "entrypoint": "motor/smoke_test.py",
-  "output_contract": "market_pick.v1.1",
-  "provider_mode": "protected_central_only",
-  "provider_name": "orchestrator_protected_corridor",
+  "pack_version": "2026-04-01",
+  "status": "integrado",
+  "entrypoint": "run_smoke.py",
+  "output_contract": "module_feed.v1.0 + game_card_v12_phase1_v1",
+  "provider_type": "protected_central_only",
+  "provider_name": "Orchestrator / App Core",
+  "provider_object": [
+    "protected_phase1_payload",
+    "latest.json",
+    "game_cards_phase1_export"
+  ],
+  "contract_version": "v12_game_card_phase1_v1",
   "scope_limited_to": [
     "over15_team",
     "over15_match",
     "under35"
   ],
-  "runtime_fix_focus": "resolve league_id derivation from protected bundle without rigid nesting",
   "forbidden_in_this_round": [
-    "direct_trunk_access",
-    "direct_provider_access",
-    "new_markets",
-    "heavy_threshold_tuning",
-    "expanded_over_under_family"
+    "btts",
+    "over25",
+    "under25",
+    "expanded_over_under_family",
+    "deep_indicator_detail"
   ],
-  "contract_version": "v12_protected_input_contract_v1",
-  "notes": "clean full folder swap pack"
+  "replaces": "previous active modules/v12 line",
+  "becomes_active_line": "this pack v12/",
+  "remove_from_live_folder": [
+    "redundant manifests",
+    "obsolete helper packs",
+    "temporary runtime-fix docs already absorbed",
+    "historical duplicates",
+    "staging leftovers"
+  ]
 }

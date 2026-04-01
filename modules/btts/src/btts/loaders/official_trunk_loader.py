@@ -1,2 +1,0 @@
-class BTTSOfficialTrunkLoader:
-    pass

@@ -1,16 +1,28 @@
 # MEMORIA_OPERACIONAL_ATIVA_V12
-## SignalBet / modules / v12
 
-**estado atual:** fecho residual curto de runtime sobre `league_id` fechado nesta linha limpa de troca integral
+**frente:** v12  
+**estado atual:** integrado  
+**linha ativa:** limpa e pronta para substituição integral  
+**upstream oficial nesta fase:** Orchestrator / App Core  
+**modo de leitura:** corredor protegido / payload protegido  
+**núcleo maduro ativo:** Over 1.5 equipa, Over 1.5 jogo, Under 3.5  
+**data de atualização:** 2026-04-01
 
-## leitura curta
-- erro bruto `KeyError: 'league'` eliminado
-- adapter endurecido
-- derivação de `league_id` fechada por múltiplas origens semânticas
-- `hard_fail` mantido apenas para ausência real do campo após normalização
-- módulo pronto para rerun isolado via `motor/smoke_test.py`
+## papel atual
+A v12 é um módulo analítico integrado do núcleo de golos e alimenta o bloco `game_cards` da app phase 1 com leitura curta, estável e comparável.
 
-## próximo passo
-1. trocar a pasta atual por esta linha limpa
-2. correr `python motor/smoke_test.py`
-3. se passar, voltar ao shadow run ponta a ponta
+## o que fica vivo nesta linha
+- `latest.json` ativo
+- `game_cards` phase 1
+- contrato curto de saída
+- exemplos parseáveis
+- smoke simples da linha viva
+
+## o que sai da pasta viva
+- packs auxiliares antigos
+- docs temporárias já absorvidas
+- variantes redundantes
+- histórico misturado
+
+## próximo passo recomendado
+consumo estável pelo Orchestrator no payload protegido único da app phase 1.

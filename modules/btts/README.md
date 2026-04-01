@@ -1,34 +1,37 @@
-# README.md
+# BTTS
 
 ## objetivo do pack
-Manter a linha oficial ativa do módulo BTTS limpa e alinhada com a app phase 1, fechando a entrega curta de `game_cards` para consumo pelo Orchestrator.
+Substituição integral limpa da linha viva do módulo BTTS, alinhada com o fecho obrigatório do `game_card` da app phase 1.
 
 ## estado do pack
 integrado
 
-## dependências
-- Python 3.11+
-- `Data_API_Official_Trunk_v1`
-- corredor central protegido via Orchestrator / App Core
-- contrato transversal do módulo preservado
+## papel atual
+Fornecedor curto e estável de `game_cards` para o payload protegido da app phase 1 via Orchestrator.
 
 ## ponto de entrada
-`src/btts/run_minimal_flow.py`
+`run_smoke.py`
 
-## ponto de saída desta ronda
+## ponto de saída
 `latest.json`
 
-## saída curta desta fase
-`game_cards` curtos do BTTS para a app phase 1.
+## output ativo
+O output vivo desta linha é o `latest.json` com `game_cards` curtos.
 
-## regra desta ronda
-- sem odd justa
-- sem edge final
-- sem blocos internos do motor
-- sem payload rico
+## o que este pack substitui
+Substitui a linha viva anterior do BTTS que ainda misturava output rico de mercado, artefactos de handoff transitórios e exemplos redundantes.
 
-## linha oficial ativa
-Esta linha fica limpa e alinhada com a leitura curta da app phase 1.
+## o que passa a ser a linha ativa
+Este pack passa a ser a linha oficial viva do BTTS na pasta `modules/btts/`.
 
-## destino final pretendido
-`modules/btts/`
+## o que sai da pasta viva
+- outputs ricos antigos não necessários nesta ronda
+- notas transitórias duplicadas de handoff
+- artefactos de runtime já ultrapassados
+- exemplos redundantes que competiam com a linha ativa
+
+## o que deve ir para arquivo / histórico / legacy
+- packs anteriores
+- outputs ricos antigos
+- notas de aproximação e runtime já consolidadas
+- exemplos superseded

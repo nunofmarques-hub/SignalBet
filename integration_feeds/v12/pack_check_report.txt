@@ -1,0 +1,18 @@
+PACK CHECK REPORT — v12 integration feed clean pack
+
+[OK] README.md
+[OK] manifest.json
+[OK] run_smoke.py
+[OK] integration_feeds/v12/latest.json
+[OK] docs/substituicao_integral.md
+
+Higiene:
+[OK] sem __pycache__
+[OK] sem .pyc
+[OK] sem logs antigos
+[OK] sem histórico misturado
+[OK] sem subpastas redundantes
+[OK] sem duplicações
+
+Leitura final:
+frente pronta para substituição integral limpa

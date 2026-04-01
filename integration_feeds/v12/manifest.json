@@ -1,18 +1,15 @@
 {
-  "pack_name": "v12_active_clean_line",
+  "pack_name": "v12_integration_feed_clean_pack",
   "module_name": "v12",
   "pack_version": "2026-03-31",
   "status": "integrado",
-  "entrypoint": "motor/export_game_cards.py",
-  "output_contract": "market_pick.v1.1 + game_card_v12_phase1_v1",
+  "entrypoint": "run_smoke.py",
+  "feed_path": "integration_feeds/v12/latest.json",
+  "output_contract": "market_pick.v1.1 + game_cards_phase1_feed",
   "provider_type": "protected_central_only",
   "provider_name": "Orchestrator / App Core",
-  "provider_object": [
-    "protected_phase1_payload",
-    "latest.json",
-    "game_cards_phase1_export"
-  ],
-  "contract_version": "v12_game_card_phase1_v1",
+  "provider_source": "protected_central_corridor",
+  "contract_version": "v12_integration_feed_v1",
   "scope_limited_to": [
     "over15_team",
     "over15_match",
@@ -26,9 +23,10 @@
     "deep_indicator_detail"
   ],
   "runtime_validation": {
-    "protected_consumption_proved": true,
-    "trunk_direct_in_module": false,
-    "provider_direct_in_module": false,
-    "game_cards_phase1_ready": true
+    "latest_json_present": true,
+    "feed_parseable": true,
+    "shape_short_and_stable": true,
+    "direct_trunk_in_feed": false,
+    "direct_provider_in_module": false
   }
 }

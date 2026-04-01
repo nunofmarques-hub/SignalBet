@@ -3,7 +3,7 @@
 ## estado
 game_card Corners fechado
 
-## campos mínimos confirmados
+## campos mínimos
 - `fixture_id`
 - `match_label`
 - `module_name`

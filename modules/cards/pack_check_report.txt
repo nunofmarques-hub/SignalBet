@@ -1,17 +1,15 @@
-PACK CHECK REPORT — Cards Active Line / Game Card Phase 1
+PACK CHECK REPORT — CARDS CLEAN REPLACEMENT
 
-status_atual: integrado
-runner_oficial: run_smoke.py
-demo_local_nao_oficial: run_demo.py
-provider_oficial: providers/official_live_provider.py
-objeto_consumido:
-- data_api.services.fixtures_service.get_fixtures_by_league_season
-- data_api.services.events_service.get_fixture_events
-feed_oficial:
-- integration_feeds/cards/latest.json
-game_card_phase1: locked
-latest_json_atualizado: yes
-artefactos_de_cache: ausentes
-docs_redundantes_intermedias: removidas
-shape_minima_game_card: OK
-decisao: linha ativa limpa e pronta para substituir a anterior
+Estado: APTO PARA SUBSTITUIÇÃO INTEGRAL LIMPA
+Linha ativa: cards_integrated_active_line
+Runner oficial: run_smoke.py
+Smoke observado: {"mode": "contract-smoke", "errors": [], "eligibility": true}
+
+Limpeza aplicada:
+- sem __pycache__
+- sem .pyc
+- sem outputs redundantes
+- sem subpastas históricas misturadas
+- docs mínimas úteis preservadas
+
+Decisão: frente pronta para substituição integral limpa

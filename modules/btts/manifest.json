@@ -1,14 +1,16 @@
 {
-  "pack_name": "2026-03-31_btts_active_clean_game_card_phase1_pack",
+  "pack_name": "btts_clean_integral_replacement_2026-04-01",
   "module_name": "btts",
-  "pack_version": "2.0.0",
+  "official_line_name": "BTTS active clean line",
+  "pack_version": "1.0.0",
   "status": "integrado",
-  "entrypoint": "src/btts/run_minimal_flow.py",
-  "provider_type": "protected_corridor",
-  "provider_name": "Orchestrator_App_Core",
-  "provider_object": "ProtectedPayloadForBTTS",
-  "contract_version": "game_card.phase1",
+  "entrypoint": "run_smoke.py",
+  "primary_output": "latest.json",
+  "contract_focus": "app_phase1.game_cards",
+  "provider_mode": "protected_orchestrator_consumption",
   "official_active_line": true,
-  "runtime_validated": true,
-  "app_phase1_game_card_closed": true
+  "replaces": [
+    "mixed active line with redundant handoff/runtime artifacts",
+    "older rich-output latest variants"
+  ]
 }

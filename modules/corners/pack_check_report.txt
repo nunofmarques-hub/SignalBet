@@ -1,16 +1,24 @@
-PACK CHECK REPORT — Corners Active Clean Pack
+PACK CHECK REPORT — Corners Integral Clean Substitution Pack
 
 OK
 - README.md presente
 - manifest.json presente
-- src/ presente
-- examples/ presente
 - run_smoke.py presente
-- docs/ limpa e reduzida ao mínimo útil
-- runtime_inputs/ presente por compatibilidade estrutural limpa
-- entrypoint oficial confirmado: python run_smoke.py
-- estado do pack: integrado
-- linha ativa preparada para swap direto da linha atual
+- docs/ mínimas úteis presentes
+- pack_check_report.txt presente
+- estrutura viva real do módulo preservada
+- src/ presente
+- contracts/ presente
+- examples/ presente
+- runtime_inputs/ presente
+- sem __pycache__
+- sem .pyc
+- sem logs antigos desnecessários
+- sem docs redundantes principais
+- linha ativa clara
+- estado: integrado
 
-Removido nesta revisão
-- docs redundantes / intermédias sem papel vivo de continuidade
+Substituição
+- este pack substitui a linha viva anterior de modules/corners/
+- este pack passa a ser a única linha ativa
+- o histórico antigo deve sair da pasta viva e seguir para arquivo / legacy

@@ -1,0 +1,16 @@
+pack_check_report.txt
+status=OK
+module=v12
+line=clean_full_replacement
+checks:
+- README.md present
+- manifest.json present
+- run_smoke.py present
+- docs present
+- contracts present
+- examples present
+- latest.json present
+- __pycache__ absent
+- .pyc absent
+- redundant helper packs absent
+- historical subfolders absent

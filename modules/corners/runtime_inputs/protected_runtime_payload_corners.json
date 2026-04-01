@@ -3,8 +3,6 @@
   "source_mode": "project",
   "observed_mode": "orchestrator_real_protected",
   "readiness_level": "real_ready",
-  "home": "Valencia",
-  "away": "Barcelona",
   "fixture_corners_context": "OK",
   "forcing_context": "OK",
   "conceding_context": "OK",

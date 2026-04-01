@@ -1,0 +1,10 @@
+{
+  "module_name": "corners",
+  "status": "integrado",
+  "official_line": true,
+  "entrypoint_command": "python run_smoke.py",
+  "substitution_ready": true,
+  "shadow_run_ready": true,
+  "game_card_ready": true,
+  "note": "frente pronta para substituição integral limpa"
+}

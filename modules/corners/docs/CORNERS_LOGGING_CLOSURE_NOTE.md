@@ -4,7 +4,7 @@
 O step do Corners executava com `run_smoke.py`, mas o comando explícito não estava congelado para eco no log.
 
 ## correção aplicada
-Foi fixado o comando oficial desta fase como:
+Comando oficial desta fase fixado como:
 `python run_smoke.py`
 
 ## entrypoint oficial confirmado
@@ -15,6 +15,3 @@ Foi fixado o comando oficial desta fase como:
 - `STEP START: Modulo Corners`
 - `STEP CMD  : python run_smoke.py`
 - `STEP OK   : Modulo Corners`
-
-## impacto
-logging corrigido, sem regressão funcional no corredor.

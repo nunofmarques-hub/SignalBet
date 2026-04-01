@@ -1,8 +1,0 @@
-{
-  "event_id": 878317,
-  "data_api_context": {
-    "provider": "Data_API_Official_Trunk_v1",
-    "provider_version": "official_trunk.v1",
-    "source_profile": "fallback_serialized_for_test"
-  }
-}

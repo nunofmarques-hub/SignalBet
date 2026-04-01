@@ -1,12 +1,28 @@
-pack_name=2026-03-30_gps_shortlist_product_pack_v2
-status=staging
-scope=app_phase_1_shortlist_product
-smoke=NOT_RUN_IN_EXPORT_ENV
-checks:
-- README.md present
-- manifest.json present
-- contract present
-- export_shortlist_product.py present
-- examples present
-- run_smoke.py present
-- shortlist_level included
+pack_name=2026-04-01_gps_clean_integral_replacement_pack
+module_name=gps
+front_name=GPS / Global Pick Selector
+status=pronto_para_substituicao_integral_limpa
+official_line_name=gps_v6_clean_official_line
+line_state=official_active_frozen
+contract_version=v1.1
+provider_name=Data_API_Official_Trunk_v1
+runner_oficial_desta_fase=run_smoke.py
+smoke=PASS
+hygiene=PASS
+substitution_target=modules/gps/
+replaces=current_live_gps_line_fragmented_in_staging
+active_line_after_replacement=modules/gps/
+out_of_live_folder=intermediate_gps_packs, old variants, competing staging lines
+to_archive_or_legacy=previous GPS versions treated as superseded
+frozen_artifacts=docs/, contracts/, examples core line, app_phase_1 shortlist product export
+notes:
+- __pycache__ removed
+- .pyc removed
+- docs frozen in this line
+- contracts frozen in this line
+- previous GPS versions treated as superseded
+- app phase 1 shortlist product export included under docs/contracts/examples/src app_phase_1
+- line ready as official handoff base to Banca
+
+smoke_output:
+SMOKE_OK

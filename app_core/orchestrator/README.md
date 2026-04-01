@@ -1,18 +1,24 @@
-# SBO OR16 — Protected Output Increment
+# SignalBet — Orchestrator / App Core Active Clean Pack
 
 ## objetivo
-Fazer um incremento curto, útil e disciplinado no output protegido do Orchestrator.
+Pack limpo de substituição integral da linha ativa do Orchestrator / App Core.
 
-## regra desta ronda
-- manter compatibilidade com a UI atual
-- reforçar semântica operacional do corredor central
-- não abrir novo fluxo
-- não inflacionar escopo
+## linha ativa
+- official_line_name: OR16 protected output increment
+- current_status: linha oficial ativa
 
-## melhoria aplicada
-O snapshot protegido mantém os campos atuais da UI e acrescenta sinais centrais mais claros sobre:
-- saúde do corredor
-- disponibilidade da baseline
-- disponibilidade do complemento
-- relação entre base e complemento
-- situação consolidada final
+## o que este pack substitui
+Substitui a linha ativa dispersa baseada em iterações datadas do Orchestrator já absorvidas pela linha oficial.
+
+## o que passa a ser a linha viva
+- payload protegido da app phase 1
+- runner oficial desta fase
+- docs mínimas úteis
+- memória operacional ativa
+
+## destino pretendido
+- `modules/app_core_orchestrator/`
+ou equivalente oficial que o projeto fixar
+
+## leitura final
+Orchestrator pronto para substituição integral limpa.

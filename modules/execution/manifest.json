@@ -1,11 +1,11 @@
 {
-  "pack_name": "execution_tracking_official_active_line_cleanup_pack",
-  "module_name": "execution_tracking",
-  "pack_version": "2026-03-30",
-  "status": "linha_oficial_ativa_congelada",
+  "pack_name": "execution_active_line_clean_replacement_pack_2026-04-01",
+  "module_name": "execution",
+  "pack_version": "2026-04-01",
+  "status": "linha_oficial_ativa",
   "entrypoint": "run_smoke.py",
-  "provider_type": "upstream_and_data_api",
+  "provider_type": "official_upstream_and_fixture_context",
   "provider_name": "bank_to_exec_v24 + Data_API_Official_Trunk_v1",
-  "provider_object": "bank_to_exec_v24.json + execution_fixture_payload.json",
+  "provider_object": "bank_to_exec_v24 / execution_fixture_payload",
   "contract_version": "v1.1"
 }

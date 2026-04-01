@@ -1,15 +1,15 @@
 {
-  "pack_name": "bankroll_active_line_clean_v26",
+  "pack_name": "bankroll_substituicao_integral_limpa_v27",
   "module_name": "bankroll",
-  "pack_version": "v26",
-  "status": "official_active_clean",
+  "pack_version": "v27",
+  "status": "pronto_para_integracao",
   "entrypoint": "run_smoke.py",
-  "provider_type": "upstream_module",
+  "provider_type": "upstream_contract",
   "provider_name": "gps_v6_clean_pack",
   "provider_object": "contracts/gps_to_bank_v24.json",
-  "contract_version": "v24",
-  "official_line_name": "v24_cleanup_v25",
-  "official_upstream": "GPS v6 clean pack",
-  "official_payload_execution": "contracts/bank_to_exec_v24.json",
-  "app_phase1_block": "contracts/app_phase1/banking_decisions_phase1_contract.json"
+  "contract_version": "v1.1",
+  "official_active_line": "v24 estabilizada pelo v25",
+  "official_execution_payload": "contracts/bank_to_exec_v24.json",
+  "notes": "Substituição integral limpa da pasta viva; linha oficial mantém v24/v25; sem __pycache__, .pyc ou artefactos transitórios.",
+  "official_destination": "modules/bankroll/"
 }

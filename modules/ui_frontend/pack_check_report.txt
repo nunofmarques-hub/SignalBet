@@ -1,0 +1,21 @@
+UI / Frontend — pack_check_report
+
+Status: OK
+
+Checklist:
+- linha viva limpa preparada
+- src presente
+- README presente
+- manifest presente
+- run_smoke.bat presente
+- run_smoke.sh presente
+- docs mínimas presentes
+- runtime payload presente
+- tests presentes
+- sem __pycache__
+- sem .pyc
+- sem subpastas históricas redundantes
+- sem packs intermédios dentro da linha viva
+
+Leitura final:
+UI pronta para substituição integral limpa.

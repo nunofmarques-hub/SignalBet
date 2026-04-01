@@ -1,0 +1,18 @@
+PACK CHECK REPORT
+
+front_name: Orchestrator / App Core
+official_line_name: OR16 protected output increment
+status: official_active
+
+checks:
+- README.md present: OK
+- manifest.json present: OK
+- run_smoke.py present: OK
+- docs present: OK
+- app_phase1 payload present: OK
+- active memory present: OK
+- __pycache__ / .pyc included: NO
+- transient artifacts included: NO
+
+result:
+Orchestrator pronto para substituição integral limpa.

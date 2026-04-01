@@ -5,7 +5,7 @@ import sys
 
 BASE = Path(__file__).resolve().parent
 sys.path.insert(0, str(BASE / "src"))
-from flow_demo import corridor_summary, decide_pick, load_json
+from runtime_core import corridor_summary, decide_pick, load_json
 
 
 def main():
@@ -39,7 +39,7 @@ def main():
         results.append((result["decision_status"] == status, f"{fname} -> {status}"))
 
     ok = all(x for x, _ in results)
-    lines = ["PACK CHECK REPORT", "", "Pack: 20260324_brm_v24_gps6_freeze", "Module: bankroll_risk_manager", "Date: 2026-03-24", ""]
+    lines = ["PACK CHECK REPORT", "", "Pack: bankroll_substituicao_integral_limpa_v27", "Module: bankroll_risk_manager", "Date: 2026-04-01", ""]
     for passed, label in results:
         lines.append(f"[{'OK' if passed else 'FAIL'}] {label}")
     lines.extend([

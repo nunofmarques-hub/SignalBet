@@ -1,11 +1,19 @@
 {
-  "pack_name": "2026-03-27_sbo_or16_protected_output_increment",
-  "module_name": "app_core_orchestrator",
-  "pack_version": "16.0.0",
-  "status": "staging_forte",
-  "entrypoint": "src/app_orch/run_output_increment.py",
-  "provider_type": "data_api_official_trunk",
-  "provider_name": "fixtures_provider + statistics_context",
-  "provider_object": "central_corridor_protected_output_increment",
-  "contract_version": "1.6"
+  "pack_name": "SignalBet_Orchestrator_Active_Clean_Pack",
+  "front_name": "Orchestrator / App Core",
+  "official_line_name": "OR16 protected output increment",
+  "pack_version": "1.0.0",
+  "current_status": "official_active",
+  "entrypoint": "run_smoke.py",
+  "provider_type": "protected_payload_aggregator",
+  "provider_name": "Data_API_Official_Trunk_v1",
+  "provider_object": "app phase 1 protected payload",
+  "contract_version": "app_phase1_protected_payload.v1",
+  "upstream_oficial": "Data_API_Official_Trunk_v1",
+  "downstream_oficial": [
+    "UI / Frontend",
+    "GPS",
+    "consumer layers"
+  ],
+  "runner_oficial_desta_fase": "run_smoke.py"
 }

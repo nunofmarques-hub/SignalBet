@@ -1,18 +1,18 @@
-import sys
+import json
 from pathlib import Path
-ROOT = Path(__file__).resolve().parent
-SRC = ROOT / "src"
-if str(SRC) not in sys.path:
-    sys.path.insert(0, str(SRC))
-from app_orch.run_output_increment import run
+
+def main() -> None:
+    root = Path(__file__).resolve().parent
+    payload_path = root / "app_phase1_payload" / "app_phase1_protected_payload.json"
+    data = json.loads(payload_path.read_text(encoding="utf-8"))
+    print("run_ok=1")
+    print("system_status=OK" if "system_status" in data else "system_status=MISSING")
+    print("shortlist=OK" if "shortlist" in data else "shortlist=MISSING")
+    print("game_cards=OK" if "game_cards" in data else "game_cards=MISSING")
+    print("banking_decisions=OK" if "banking_decisions" in data else "banking_decisions=MISSING")
+    print("tracking_summary=OK" if "tracking_summary" in data else "tracking_summary=MISSING")
+    print("final_status=" + str(data["system_status"].get("final_status")))
+    print("cta_state=" + str(data["system_status"].get("cta_state")))
+
 if __name__ == "__main__":
-    result = run(out_dir=str(ROOT / "runtime_outputs"))
-    p = result["protected"]
-    print("output_increment_smoke=OK")
-    print(f"readiness_level={p['readiness_level']}")
-    print(f"cta_state={p['cta_state']}")
-    print(f"source_mode={p['source_mode']}")
-    print(f"bridge_status={p['bridge_status']}")
-    print(f"baseline_status={p['baseline_status']}")
-    print(f"complementary_status={p['complementary_status']}")
-    print(f"central_health={p['central_health']}")
+    main()

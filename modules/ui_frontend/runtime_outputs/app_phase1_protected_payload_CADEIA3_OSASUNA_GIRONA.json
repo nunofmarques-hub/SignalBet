@@ -1,0 +1,70 @@
+{
+  "system_status": {
+    "_block_source": "Orchestrator/App Core + Data/API Layer",
+    "readiness_level": "real_ready",
+    "cta_state": "ready_live",
+    "source_mode": "project",
+    "observed_mode": "orchestrator_real_protected",
+    "bridge_status": "protected_real_ready",
+    "snapshot_name": "storage_snapshot_manifest",
+    "final_status": "green",
+    "baseline_status": "green",
+    "complementary_status": "green",
+    "central_health": "healthy_enriched",
+    "summary_human": "Sistema pronto para ronda controlada."
+  },
+  "shortlist": [
+    {
+      "_block_source": "GPS / Global Pick Selector",
+      "pick_id": "GPS-CORNERS-220002-UC105-001",
+      "module_name": "corners",
+      "fixture_id": 220002,
+      "match_label": "Osasuna vs Girona",
+      "market_code": "CORNERS_UNDER_10_5",
+      "selection_label": "Under 10.5 Corners",
+      "rank_position": 1,
+      "rationale_short": "Perfil de cantos controlado e leitura limpa para under."
+    }
+  ],
+  "game_cards": [
+    {
+      "_block_source": "corners",
+      "fixture_id": 220002,
+      "match_label": "Osasuna vs Girona",
+      "module_name": "corners",
+      "market_code": "CORNERS_UNDER_10_5",
+      "selection_label": "Under 10.5 Corners",
+      "raw_module_score": 76,
+      "score_band": "A",
+      "eligibility": true,
+      "candidate_status": "candidate",
+      "rationale_short": "Perfil de cantos contido e adequado a under na ronda controlada.",
+      "risk_flags": []
+    }
+  ],
+  "banking_decisions": [
+    {
+      "_block_source": "Bankroll / Banca",
+      "pick_id": "GPS-CORNERS-220002-UC105-001",
+      "decision_status": "APPROVED_REDUCED",
+      "stake_approved": "0.50u",
+      "stake_suggested": "1.00u",
+      "stake_pct_bankroll": 0.005,
+      "execution_ready": true,
+      "daily_exposure_after_if_accepted": 0.005,
+      "decision_note_short": "Aprovada com redução para a ronda controlada."
+    }
+  ],
+  "tracking_summary": [
+    {
+      "_block_source": "Execution / Tracking",
+      "pick_id": "GPS-CORNERS-220002-UC105-001",
+      "execution_status": "OPEN",
+      "ticket_status": "OPEN",
+      "settlement_status": "UNSETTLED",
+      "result": null,
+      "pnl": null,
+      "timestamp": "2026-04-02T20:30:00Z"
+    }
+  ]
+}

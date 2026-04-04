@@ -1,0 +1,98 @@
+{
+  "system_status": {
+    "_block_source": "Orchestrator/App Core + Data/API Layer",
+    "readiness_level": "real_ready",
+    "cta_state": "ready_live",
+    "source_mode": "project",
+    "observed_mode": "orchestrator_real_protected",
+    "bridge_status": "protected_real_ready",
+    "snapshot_name": "storage_snapshot_manifest",
+    "final_status": "green",
+    "baseline_status": "green",
+    "complementary_status": "green",
+    "central_health": "healthy_enriched",
+    "summary_human": "Sistema pronto para primeira ronda controlada."
+  },
+  "shortlist": [
+    {
+      "_block_source": "GPS / Global Pick Selector",
+      "pick_id": "OSASUNA_GIRONA_U105C_T3",
+      "module_name": "corners",
+      "fixture_id": "OSASUNA_GIRONA",
+      "match_label": "Osasuna vs Girona",
+      "market_code": "CORNERS_UNDER_10_5",
+      "selection_label": "Under 10.5 Corners",
+      "rank_position": 1,
+      "rationale_short": "Jogo com perfil de cantos mais controlado e leitura limpa para under."
+    }
+  ],
+  "game_cards": [
+    {
+      "_block_source": "corners",
+      "fixture_id": "OSASUNA_GIRONA",
+      "match_label": "Osasuna vs Girona",
+      "module_name": "corners",
+      "market_code": "CORNERS_UNDER_10_5",
+      "selection_label": "Under 10.5 Corners",
+      "raw_module_score": 76,
+      "score_band": "A",
+      "eligibility": true,
+      "candidate_status": "candidate",
+      "rationale_short": "Perfil de cantos contido e adequado a under nesta ronda controlada.",
+      "risk_flags": []
+    },
+    {
+      "_block_source": "v12",
+      "fixture_id": "OSASUNA_GIRONA",
+      "match_label": "Osasuna vs Girona",
+      "module_name": "v12",
+      "market_code": "UNDER_3_5",
+      "selection_label": "Under 3.5 Goals",
+      "raw_module_score": 65,
+      "score_band": "B+",
+      "eligibility": true,
+      "candidate_status": "watchlist",
+      "rationale_short": "Leitura complementar de controlo, sem competir com a principal.",
+      "risk_flags": []
+    },
+    {
+      "_block_source": "cards",
+      "fixture_id": "OSASUNA_GIRONA",
+      "match_label": "Osasuna vs Girona",
+      "module_name": "cards",
+      "market_code": "CARDS_OVER",
+      "selection_label": "Over cartões",
+      "raw_module_score": 59,
+      "score_band": "B",
+      "eligibility": true,
+      "candidate_status": "watchlist",
+      "rationale_short": "Contexto disciplinar presente, mas abaixo da pick principal.",
+      "risk_flags": []
+    }
+  ],
+  "banking_decisions": [
+    {
+      "_block_source": "Bankroll / Banca",
+      "pick_id": "OSASUNA_GIRONA_U105C_T3",
+      "decision_status": "APPROVED_REDUCED",
+      "stake_approved": "0.50u",
+      "stake_suggested": "1.00u",
+      "stake_pct_bankroll": 0.005,
+      "execution_ready": true,
+      "daily_exposure_after_if_accepted": 0.005,
+      "decision_note_short": "Aprovada com redução para a primeira ronda controlada."
+    }
+  ],
+  "tracking_summary": [
+    {
+      "_block_source": "Execution / Tracking",
+      "pick_id": "OSASUNA_GIRONA_U105C_T3",
+      "execution_status": "READY",
+      "ticket_status": "READY",
+      "settlement_status": "UNSETTLED",
+      "result": null,
+      "pnl": null,
+      "timestamp": "2026-04-01T22:00:00Z"
+    }
+  ]
+}

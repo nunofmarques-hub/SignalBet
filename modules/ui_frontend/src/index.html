@@ -232,6 +232,20 @@
       <div class="tracking-list" id="tracking_list" hidden></div>
     </section>
 
+    <section class="panel">
+      <div class="section-title">Casos fechados recentes</div>
+      <div class="panel-subtitle">Camada secundária de casos já fechados, sem competir com o caso ativo principal.</div>
+      <div class="kv-grid">
+        <div><span class="label">Itens</span><strong id="recent_closed_count">0</strong></div>
+        <div><span class="label">Último resultado</span><strong id="recent_closed_first_result">—</strong></div>
+        <div><span class="label">Último PnL</span><strong id="recent_closed_first_pnl">—</strong></div>
+      </div>
+      <div class="loading-state" id="recent_closed_loading">A carregar casos fechados recentes…</div>
+      <div class="empty-state" id="recent_closed_empty" hidden>Sem casos fechados recentes.</div>
+      <div class="soft-error-state" id="recent_closed_error" hidden>Não foi possível montar os casos fechados recentes neste ambiente.</div>
+      <div class="tracking-list" id="recent_closed_list" hidden></div>
+    </section>
+
     <p class="note">Limite da UI: ler, interpretar e apresentar. Sem lógica direta de trunk ou provider.</p>
   </main>
 </div>
@@ -249,7 +263,8 @@
     shortlist: [],
     game_cards: [],
     banking_decisions: [],
-    tracking_summary: []
+    tracking_summary: [],
+    recent_closed_cases: []
   };
 
   function normalizeArray(value) { return Array.isArray(value) ? value : []; }
@@ -292,9 +307,19 @@
     return { cls: 'watch', label: status || 'observação' };
   }
   function trackingMeta(settlementStatus, result) {
-    const settled = (settlementStatus || '').toLowerCase().includes('settled') || result;
-    return settled ? { cls: 'settled', label: 'fechado' } : { cls: 'open', label: 'em aberto' };
+  const status = (settlementStatus || '').toUpperCase();
+  const finalStatuses = ['SETTLED', 'WIN', 'LOSS', 'VOID', 'PUSH'];
+
+  if (finalStatuses.includes(status)) {
+    return { cls: 'settled', label: 'concluído', secondaryLabel: 'SETTLED' };
   }
+
+  if (status === 'UNSETTLED' && (result === null || result === undefined || result === '')) {
+    return { cls: 'open', label: 'por apurar', secondaryLabel: 'OPEN' };
+  }
+
+  return { cls: 'open', label: 'em aberto', secondaryLabel: 'OPEN' };
+}
 
   function formatSelection(item) { return item.selection_label || item.market_code || 'Seleção não disponível'; }
   function formatStake(value) { return (value === null || value === undefined || value === '') ? '' : `${value}`; }
@@ -392,7 +417,7 @@
     wrapper.innerHTML = `
       <div class="tracking-topline">
         <span class="pill pill--${meta.cls}">${meta.label}</span>
-        <span class="pill">${item.execution_status || 'execution'}</span>
+        <span class="pill">${meta.secondaryLabel || item.execution_status || 'execution'}</span>
       </div>
       <div class="tracking-ref">${item.pick_id || 'referência indisponível'}</div>
       <div class="tracking-meta">
@@ -403,6 +428,54 @@
       <div class="tracking-note"><strong>PnL</strong> ${formatPnl(item.pnl)}</div>
       <div class="tracking-footer muted">${formatTimestamp(item.timestamp)}</div>`;
     return wrapper;
+  }
+
+  function buildRecentClosedItem(item) {
+    const wrapper = document.createElement('article');
+    wrapper.className = 'tracking-item tracking-item--settled';
+    wrapper.innerHTML = `
+      <div class="tracking-topline">
+        <span class="pill pill--settled">concluído</span>
+        <span class="pill">SETTLED</span>
+      </div>
+      <div class="tracking-ref">${item.pick_id || 'referência indisponível'}</div>
+      <div class="tracking-meta">
+        <span><strong>${item.match_label || 'Jogo não disponível'}</strong></span>
+        <span class="muted">•</span>
+        <span>${item.selection_label || 'Seleção não disponível'}</span>
+      </div>
+      <div class="tracking-note">
+        <strong>Resultado</strong> ${item.result || '—'}
+        <span class="muted">•</span>
+        <strong>PnL</strong> ${item.pnl || '—'}
+      </div>
+      <div class="tracking-footer muted">${item.timestamp || 'timestamp indisponível'}</div>`;
+    return wrapper;
+  }
+
+  function renderRecentClosedCases(recentClosedCases) {
+    const items = normalizeArray(recentClosedCases).slice(0, 3);
+    const first = items[0] || {};
+    const list = byId('recent_closed_list');
+
+    setCount('recent_closed_count', items);
+    setValue('recent_closed_first_result', first.result);
+    setValue('recent_closed_first_pnl', first.pnl);
+
+    list.innerHTML = '';
+    toggle('recent_closed_loading', false);
+
+    if (!items.length) {
+      toggle('recent_closed_empty', true);
+      toggle('recent_closed_error', false);
+      toggle('recent_closed_list', false);
+      return;
+    }
+
+    items.forEach(item => list.appendChild(buildRecentClosedItem(item)));
+    toggle('recent_closed_empty', false);
+    toggle('recent_closed_error', false);
+    toggle('recent_closed_list', true);
   }
 
   function renderSystemStatus(systemStatus) {
@@ -473,7 +546,8 @@
     const first = items[0] || {};
     const list = byId('tracking_list');
     setCount('tracking_count', items);
-    setValue('tracking_first_execution_status', first.execution_status);
+    const firstMeta = trackingMeta(first.settlement_status, first.result);
+    setValue('tracking_first_execution_status', firstMeta.secondaryLabel || first.execution_status);
     setValue('tracking_first_settlement_status', first.settlement_status);
     setValue('tracking_first_result', formatResult(first.result));
     list.innerHTML = '';
@@ -567,13 +641,15 @@
         shortlist: normalizeArray(d.shortlist),
         game_cards: normalizeArray(d.game_cards),
         banking_decisions: normalizeArray(d.banking_decisions),
-        tracking_summary: normalizeArray(d.tracking_summary)
+        tracking_summary: normalizeArray(d.tracking_summary),
+        recent_closed_cases: normalizeArray(d.recent_closed_cases)
       };
       renderSystemStatus(appData.system_status);
       renderShortlist(appData.shortlist, appData.banking_decisions);
       renderGameCards(appData.game_cards);
       renderBanking(appData.banking_decisions);
       renderTracking(appData.tracking_summary);
+      renderRecentClosedCases(appData.recent_closed_cases);
     })
     .catch((error) => {
       toggle('system_status_loading', false); toggle('system_status_error', true);
@@ -581,6 +657,7 @@
       toggle('game_cards_loading', false); toggle('game_cards_error', true);
       toggle('banking_loading', false); toggle('banking_error', true);
       toggle('tracking_loading', false); toggle('tracking_error', true);
+      toggle('recent_closed_loading', false); toggle('recent_closed_error', true);
       document.querySelector('.note').textContent = 'App Phase 1 indisponível neste ambiente de amostra.';
       console.error('Failed to load app phase 1 payload:', error);
     });

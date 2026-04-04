@@ -4,41 +4,37 @@
 Data/API Layer
 
 ## estado anterior da frente
-Linha oficial funcional e validada, mas topo da `data_api/` ainda com competição visual entre trunk ativo, packs de fase já absorvidos, apoio útil e auxiliares temporários.
+Linha oficial funcional e validada, com limpeza já praticamente fechada, mas ainda com um pack de exportação ao Orchestrator a competir visualmente no topo da frente e com lixo técnico residual (`__pycache__`, `.pyc`, ficheiro solto sem função viva).
 
 ## ruído identificado
-- packs de live activation e calibração ainda visíveis como se fossem linhas ativas
-- packs de statistics context já absorvidos ainda a competir com o trunk oficial
-- `compat/` sem separação clara face à linha oficial
-- `_temporary_aux/` ainda no topo ativo
-- `__pycache__`, `.pyc` e logs redundantes espalhados
+- pack `data_api_health_core_to_orchestrator_v1/` ainda no topo da frente, a competir com a linha oficial ativa
+- `__pycache__/` e `.pyc` residuais no trunk e no pack de exportação
+- ficheiro solto sem função viva no trunk oficial
+- falta de índice curto atualizado para leitura rápida da frente
 
 ## decisão de limpeza aplicada
 - manter `Data_API_Official_Trunk_v1/` como linha oficial ativa inequívoca
-- mover apoio vivo para `_support_live/`
-- mover packs absorvidos e auxiliares temporários para `_archive_superseded/`
-- remover lixo técnico (`__pycache__`, `.pyc`, logs redundantes)
-- adicionar índice curto no topo da frente para leitura futura
+- manter `_support_live/compat/` como apoio vivo
+- mover `data_api_health_core_to_orchestrator_v1/` para `_support_live/orchestrator_exports/`
+- remover `__pycache__/`, `.pyc` e ficheiro solto sem função viva
+- atualizar a memória operacional ativa
+- adicionar índice curto no topo da frente
+- adicionar nota curta no trunk sobre o health core mínimo para o Orchestrator
 
 ## o que foi mantido ativo
 - `Data_API_Official_Trunk_v1/`
 
 ## o que foi mantido como apoio vivo
 - `_support_live/compat/`
+- `_support_live/orchestrator_exports/data_api_health_core_to_orchestrator_v1/`
 
-## o que foi movido para arquivo ou removido
-- `_temporary_aux/` -> `_archive_superseded/_temporary_aux/`
-- `coverage_increase_order_v1/` -> `_archive_superseded/coverage_increase_order_v1/`
-- `fixture_statistics_context_activation_v1/` -> `_archive_superseded/fixture_statistics_context_activation_v1/`
-- `fixture_statistics_context_to_trunk_official_v1/` -> `_archive_superseded/fixture_statistics_context_to_trunk_official_v1/`
-- `live_data_activation_phase1_real_fixtures_snapshot_pack_v1/` -> `_archive_superseded/live_data_activation_phase1_real_fixtures_snapshot_pack_v1/`
-- `real_data_calibration_reliability_phase_v1_1_1/` -> `_archive_superseded/real_data_calibration_reliability_phase_v1_1_1/`
-- `real_data_calibration_reliability_phase_v1_1_2/` -> `_archive_superseded/real_data_calibration_reliability_phase_v1_1_2/`
-- `real_data_calibration_reliability_phase_v1_1_3/` -> `_archive_superseded/real_data_calibration_reliability_phase_v1_1_3/`
-- `__pycache__/`, `.pyc` e logs redundantes removidos
+## o que foi movido para apoio vivo ou removido
+- `data_api_health_core_to_orchestrator_v1/` -> `_support_live/orchestrator_exports/data_api_health_core_to_orchestrator_v1/`
+- `__pycache__/` e `.pyc` removidos
+- ficheiro solto sem função viva removido
 
 ## estado final da frente
-Topo da `data_api/` limpo, trunk oficial visualmente inequívoco, apoio vivo separado, histórico fora da linha ativa e frente mais legível para consumo futuro por outras frentes e módulos.
+Topo da `data_api/` mais limpo, trunk oficial visualmente inequívoco, apoio vivo concentrado em `_support_live/`, exportação curta ao Orchestrator separada da linha viva e menos ruído técnico para consumo futuro.
 
 ## próximo passo recomendado
-Usar `Data_API_Official_Trunk_v1/` como única linha viva da frente e só reabrir novas iterações Data/API quando houver novo objetivo funcional explícito do corredor central.
+Usar `Data_API_Official_Trunk_v1/` como única linha viva da frente e ler `_support_live/` apenas como apoio vivo não concorrente. A entrega ao Orchestrator do health core deve continuar curta e estável, sem subir detalhe técnico interno a produto.

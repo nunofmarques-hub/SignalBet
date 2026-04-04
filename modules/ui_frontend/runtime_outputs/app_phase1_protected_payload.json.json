@@ -1,0 +1,73 @@
+{
+  "system_status": {
+    "_block_source": "Orchestrator/App Core + Data/API Layer",
+    "readiness_level": "real_ready",
+    "cta_state": "ready_live",
+    "source_mode": "project",
+    "observed_mode": "orchestrator_real_protected",
+    "bridge_status": "protected_real_ready",
+    "snapshot_name": "storage_snapshot_manifest",
+    "final_status": "green",
+    "baseline_status": "green",
+    "complementary_status": "green",
+    "central_health": "healthy_enriched",
+    "summary_human": "Sistema pronto. Caso ativo e histórico recente disponíveis."
+  },
+  "shortlist": [
+    {
+      "_block_source": "GPS / Global Pick Selector",
+      "pick_id": "GPS-V12-1208499-O15T-001",
+      "module_name": "v12",
+      "fixture_id": 1208499,
+      "match_label": "Valencia vs Barcelona",
+      "market_code": "OVER_1_5_TEAM_HOME",
+      "selection_label": "Valencia Over 1.5",
+      "rank_position": 1,
+      "rationale_short": "Ataque e contexto mínimo favoráveis no cenário protegido."
+    }
+  ],
+  "game_cards": [
+    {
+      "_block_source": "v12",
+      "fixture_id": 1208499,
+      "match_label": "Valencia vs Barcelona",
+      "module_name": "v12",
+      "market_code": "OVER_1_5_TEAM_HOME",
+      "selection_label": "Valencia Over 1.5",
+      "raw_module_score": 7.8,
+      "score_band": "A",
+      "eligibility": true,
+      "candidate_status": "candidate",
+      "rationale_short": "Contexto ofensivo útil e mínimo protegido válido para o motor.",
+      "risk_flags": [
+        "opponent_strength_high"
+      ]
+    }
+  ],
+  "banking_decisions": [
+    {
+      "_block_source": "Bankroll / Banca",
+      "pick_id": "GPS-V12-1208499-O15T-001",
+      "decision_status": "APPROVED",
+      "stake_approved": "1.00u",
+      "stake_suggested": "1.00u",
+      "stake_pct_bankroll": 0.01,
+      "execution_ready": true,
+      "daily_exposure_after_if_accepted": 0.01,
+      "decision_note": "Aprovada para o caso ativo do corredor."
+    }
+  ],
+  "tracking_summary": [
+    {
+      "_block_source": "Execution / Tracking",
+      "pick_id": "GPS-V12-1208499-O15T-001",
+      "execution_status": "OPEN",
+      "ticket_status": "OPEN",
+      "settlement_status": "WIN",
+      "result": "WIN",
+      "pnl": "+1.00u",
+      "timestamp": "fecho registado com resultado final 2-1"
+    }
+  ],
+  "recent_closed_cases": []
+}

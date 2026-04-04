@@ -1,0 +1,43 @@
+{
+  "fixture_id": 1208499,
+  "match_label": "Valencia vs Barcelona",
+  "module_name": "v12",
+  "markets": [
+    {
+      "market_code": "over15_team",
+      "tsi": 0.74,
+      "dci": 0.42,
+      "market_probability": 0.63,
+      "fair_odds": 1.59,
+      "edge_pct": 0.082,
+      "eligibility": true,
+      "rationale_short": "Favorito com base ofensiva suficiente para 2+ golos."
+    },
+    {
+      "market_code": "over15_match",
+      "tsi": 0.68,
+      "dci": 0.45,
+      "market_probability": 0.69,
+      "fair_odds": 1.45,
+      "edge_pct": 0.055,
+      "eligibility": true,
+      "rationale_short": "Jogo com base ofensiva suficiente para 2+ golos."
+    },
+    {
+      "market_code": "under35",
+      "tsi": 0.49,
+      "dci": 0.66,
+      "market_probability": 0.58,
+      "fair_odds": 1.72,
+      "edge_pct": -0.012,
+      "eligibility": false,
+      "rationale_short": "Corredor ainda controlado, mas com pressão ofensiva relevante."
+    }
+  ],
+  "best_market_code": "over15_team",
+  "best_selection_label": "Barcelona Over 1.5 Equipa",
+  "best_market_probability": 0.63,
+  "best_fair_odds": 1.59,
+  "best_edge_pct": 0.082,
+  "decision_summary": "Melhor mercado elegível por combinação de probabilidade, odd justa e edge."
+}

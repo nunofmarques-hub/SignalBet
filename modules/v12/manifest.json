@@ -1,7 +1,7 @@
 {
-  "pack_name": "v12_full_clean_replacement_pack",
+  "pack_name": "v12_verified_clean_replacement_pack",
   "module_name": "v12",
-  "pack_version": "2026-04-01",
+  "pack_version": "2026-04-06",
   "status": "integrado",
   "entrypoint": "run_smoke.py",
   "output_contract": "module_feed.v1.0 + game_card_v12_phase1_v1",

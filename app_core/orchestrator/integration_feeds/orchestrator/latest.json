@@ -1,0 +1,57 @@
+{
+  "payload_name": "signalbet_official_cycle_payload",
+  "payload_version": "orchestrator_cycle_v1",
+  "payload_status": "active_cycle",
+  "payload_generated_at": "2026-04-05T20:05:00+01:00",
+  "source_module": "orchestrator",
+  "case_mode": "single_case_only",
+  "case_count": 1,
+  "active_case": {
+    "case_id": "CASE-2026-04-05-001",
+    "pick_id": "GPS-V12-1208499-O15T-001",
+    "fixture_id": 1208499,
+    "match_label": "PSV vs Utrecht",
+    "module_name": "v12",
+    "market_family": "goals",
+    "market_code": "O15_TEAM_HOME",
+    "selection_label": "PSV Over 1.5 Goals",
+    "candidate_status": "candidate",
+    "eligibility": true,
+    "raw_module_score": 91,
+    "score_band": "A+",
+    "rationale_short": "favorito forte em casa com base ofensiva clara",
+    "risk_flags": [],
+    "bankroll_decision": {
+      "decision_status": null,
+      "stake_approved": null,
+      "handoff_to_execution": null
+    },
+    "execution_tracking": {
+      "execution_status": null,
+      "ticket_status": null,
+      "tracking_status": null
+    },
+    "settlement": {
+      "settlement_status": null,
+      "result": null,
+      "pnl": null,
+      "settled_at": null
+    },
+    "corridor_state": {
+      "shortlist_status": "ready",
+      "bankroll_status": "pending",
+      "execution_status": "pending",
+      "tracking_status": "pending",
+      "settlement_status": "unsettled"
+    }
+  },
+  "system_status": {
+    "readiness_level": "real_ready",
+    "cta_state": "ready_live",
+    "source_mode": "project",
+    "observed_mode": "protected_cycle",
+    "bridge_status": "protected_real_ready",
+    "final_status": "cycle_active",
+    "health": "healthy"
+  }
+}

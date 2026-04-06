@@ -50,3 +50,9 @@ Linha ativa limpa do Corners, já integrada, com runner oficial congelado, loggi
 
 ## nota final
 **frente pronta para substituição integral limpa**
+
+
+## nota desta revisão
+- root normalizada (`market_pick_v1_1_note.md` movido para `contracts/`)
+- pack preparado para substituição integral limpa
+- integration feed entregue separadamente

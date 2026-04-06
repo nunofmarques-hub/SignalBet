@@ -13,5 +13,5 @@
   "total_goals": 3,
   "winner": "HOME",
   "settlement_timestamp": "2026-03-24T22:15:00Z",
-  "source_note": "Target payload shape for Execution settlement from official trunk. Replace with final provider object once frozen."
+  "source_note": "Payload físico oficial de fixture consumido pela Execution para settlement nesta linha ativa."
 }

@@ -1,17 +1,13 @@
-# Cards — material para integration_feeds
+# Cards — Integration Feeds Material
 
 ## objetivo
-Entregar o ficheiro oficial de feed do módulo Cards para consumo pelo Orchestrator.
-
-## conteúdo principal
-- `integration_feeds/cards/latest.json`
-- `docs/WHERE_TO_PASTE.md`
-
-## origem
-Gerado a partir da linha viva limpa do módulo Cards.
-
-## destino final
-`/<raiz_do_projeto>/integration_feeds/cards/latest.json`
+Entregar o feed oficial limpo do Cards para consumo do Orchestrator.
 
 ## estado
 integrado
+
+## ficheiro principal
+- `integration_feeds/cards/latest.json`
+
+## onde colar
+- `/<raiz_do_projeto>/integration_feeds/cards/latest.json`

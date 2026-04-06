@@ -1,35 +1,19 @@
-PACK CHECK REPORT
+PACK CHECK REPORT — bankroll active line clean replacement v28
 
-Pack: bankroll_substituicao_integral_limpa_v27
-Module: bankroll_risk_manager
-Date: 2026-04-01
+STATUS: PASS
 
-[OK] corridor approved count
-[OK] corridor approved_reduced count
-[OK] corridor blocked count
-[OK] corridor reserve count
-[OK] corridor execution_ready count
-[OK] edge_01_valid_approved.json -> APPROVED
-[OK] edge_02_partial_correlation_reduced.json -> APPROVED_REDUCED
-[OK] edge_03_duplicate_fixture_blocked.json -> BLOCKED
-[OK] edge_04_reserve_prudential.json -> RESERVE
-[OK] edge_05_odds_out_of_range_blocked.json -> BLOCKED
-[OK] edge_06_missing_field_blocked.json -> BLOCKED
-[OK] edge_07_reject_priority_blocked.json -> BLOCKED
-[OK] edge_08_protection_mode_non_premium.json -> RESERVE
-[OK] edge_09_min_stake_blocked.json -> BLOCKED
-[OK] edge_10_module_limit_blocked.json -> BLOCKED
-[OK] README.md presente
-[OK] manifest.json presente
-[OK] src/ presente
-[OK] docs/ presente
-[OK] examples/ presente
-[OK] run_smoke.py presente
-[OK] provider oficial declarado
-[OK] paths relativos confirmados
+Checks:
+- official active line preserved: v24 (cleanup/freeze v25)
+- upstream official preserved: GPS v6 clean pack
+- official execution payload preserved: contracts/bank_to_exec_v24.json
+- app phase 1 block preserved under contracts/app_phase1/
+- shortlist -> banca example present under contracts/app_phase1/
+- __pycache__ removed
+- .pyc removed
+- duplicate app phase 1 files outside app_phase1 removed
+- old closure notes removed from live line
+- README.md updated
+- manifest.json updated
+- run_smoke.py present
 
-Resultado final: APTO PARA ZIP
-[OK] sem __pycache__
-[OK] sem .pyc
-[OK] substituição integral preparada
-[OK] destino final alinhado com modules/bankroll/
+Result: READY FOR FULL REPLACEMENT OF modules/bankroll/

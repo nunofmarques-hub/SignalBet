@@ -13,3 +13,4 @@ redundant_subfolders_removed: yes
 pycache_present: no
 pyc_present: no
 old_logs_present: no
+integration_feed_pack_prepared: yes

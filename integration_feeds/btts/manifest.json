@@ -1,13 +1,12 @@
 {
-  "pack_name": "btts_integration_feed_clean_2026-04-01",
-  "front_name": "BTTS",
+  "pack_name": "btts_integration_feed_clean_2026-04-06",
   "module_name": "btts",
-  "pack_version": "2026-04-01",
-  "status": "integrado",
   "official_line_name": "BTTS integration feed clean line",
+  "pack_version": "1.0.1",
+  "status": "integrado",
   "target_path": "integration_feeds/btts/latest.json",
   "artifact_type": "integration_feed",
-  "contract_scope": "app_phase1_game_cards",
+  "contract_scope": "app_phase1.game_cards",
   "source_line": "modules/btts",
-  "contract_version": "market_pick.v1.1"
+  "official_active_line": true
 }

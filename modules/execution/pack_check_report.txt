@@ -1,5 +1,5 @@
 PACK CHECK REPORT — Execution / Tracking
-Date: 2026-04-01
+Date: 2026-04-06
 
 OK
 - README.md present
@@ -13,9 +13,10 @@ OK
 - MEMORIA_OPERACIONAL_ATIVA.md present
 - no __pycache__ included
 - no .pyc included
-- no staging/history subfolders mixed into active line
+- no empty historical/staging subfolders mixed into active line
 - active line aligned with official input bank_to_exec_v24
 - active line aligned with official fixture context Data_API_Official_Trunk_v1
+- run_smoke.py generates ledger, analytics, audit and tracking_summary outputs
 
 Result:
 frente pronta para substituição integral limpa

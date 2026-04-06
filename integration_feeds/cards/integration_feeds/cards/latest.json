@@ -3,11 +3,11 @@
   "module_id": "cards",
   "status": "ok",
   "generated_at": "2026-03-31T12:00:00Z",
-  "source_profile": "integrated_cards_phase1",
+  "source_profile": "cards_integrated_active_line",
   "provider_name": "cards_official_line",
   "contract_version": "market_pick.v1.1",
   "feed_path": "integration_feeds/cards/latest.json",
-  "notes": "Feed oficial curto do Cards para game_cards da app phase 1. Linha viva limpa e diretamente consumível pelo Orchestrator.",
+  "notes": "Feed oficial limpo do Cards para game_cards da app phase 1. Leitura curta, estável e diretamente consumível pelo Orchestrator.",
   "candidates": [
     {
       "fixture_id": 1208499,

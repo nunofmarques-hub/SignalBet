@@ -1,16 +1,27 @@
-pack_check_report.txt
-status=OK
-module=v12
-line=clean_full_replacement
-checks:
-- README.md present
-- manifest.json present
-- run_smoke.py present
-- docs present
-- contracts present
-- examples present
-- latest.json present
-- __pycache__ absent
-- .pyc absent
-- redundant helper packs absent
-- historical subfolders absent
+PACK CHECK REPORT — v12 verified clean replacement pack
+
+[OK] README.md
+[OK] manifest.json
+[OK] run_smoke.py
+[OK] latest.json
+[OK] MEMORIA_OPERACIONAL_ATIVA_V12.md
+[OK] contracts/game_card_v12_phase1.md
+[OK] contracts/market_decision_v12.md
+[OK] docs/implementation_sequence.md
+[OK] docs/intelligence_core_front.md
+[OK] docs/substituicao_integral.md
+[OK] examples/game_card_v12_examples.json
+[OK] examples/market_decision_example.json
+[OK] motor/export_game_cards.py
+[OK] motor/intelligence_core_stub.py
+
+Higiene:
+[OK] sem __pycache__
+[OK] sem .pyc
+[OK] sem logs antigos
+[OK] sem duplicações
+[OK] sem histórico misturado
+[OK] sem subpastas redundantes
+
+Leitura final:
+frente pronta para substituição integral limpa

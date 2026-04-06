@@ -21,3 +21,8 @@ Este pack.
 
 ## decisão
 **frente pronta para substituição integral limpa**
+
+
+## ajuste desta revisão
+- root normalizada
+- ficheiro contratual deslocado para `contracts/`

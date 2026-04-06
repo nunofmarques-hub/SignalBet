@@ -1,7 +1,7 @@
 {
-  "pack_name": "UI_Frontend_Official_Live_Line_2026-03-31",
+  "pack_name": "UI_Frontend_Official_Live_Line_Clean_2026-04-06",
   "module_name": "ui_frontend",
-  "pack_version": "v26-official-live-line",
+  "pack_version": "v26-official-live-clean",
   "status": "linha_oficial_viva",
   "entrypoint": "src/index.html",
   "provider_type": "protected_payload_consumer",

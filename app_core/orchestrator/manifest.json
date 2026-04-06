@@ -1,19 +1,17 @@
 {
-  "pack_name": "SignalBet_Orchestrator_Active_Clean_Pack",
+  "pack_name": "SignalBet_Orchestrator_Active_Clean_Pack_Cycle_Aligned",
   "front_name": "Orchestrator / App Core",
-  "official_line_name": "OR16 protected output increment",
-  "pack_version": "1.0.0",
+  "official_line_name": "OR16 protected output increment + official cycle payload",
+  "pack_version": "1.1.0",
   "current_status": "official_active",
   "entrypoint": "run_smoke.py",
   "provider_type": "protected_payload_aggregator",
   "provider_name": "Data_API_Official_Trunk_v1",
-  "provider_object": "app phase 1 protected payload",
-  "contract_version": "app_phase1_protected_payload.v1",
-  "upstream_oficial": "Data_API_Official_Trunk_v1",
+  "provider_object": "integration_feeds/orchestrator/latest.json",
+  "contract_version": "orchestrator_cycle_payload.v1",
+  "upstream_oficial": "Data/API Layer + integrated modules + GPS + Banca + Execution",
   "downstream_oficial": [
-    "UI / Frontend",
-    "GPS",
-    "consumer layers"
+    "UI / Frontend"
   ],
   "runner_oficial_desta_fase": "run_smoke.py"
 }

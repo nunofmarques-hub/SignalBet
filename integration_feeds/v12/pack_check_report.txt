@@ -1,4 +1,4 @@
-PACK CHECK REPORT — v12 integration feed clean pack
+PACK CHECK REPORT — v12 verified integration feeds pack
 
 [OK] README.md
 [OK] manifest.json

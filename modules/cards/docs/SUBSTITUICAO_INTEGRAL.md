@@ -1,27 +1,18 @@
-# Substituição integral limpa — Cards
+# SUBSTITUIÇÃO INTEGRAL — Cards
 
 ## o que este pack substitui
-- a linha viva anterior do Cards usada em staging forte e nos packs intermédios de polimento, live-ready e closure
-- iterações intermédias que já ficaram totalmente absorvidas pela linha integrada atual
+A linha viva anterior do Cards em staging/polimento/closure/live-ready.
 
 ## o que passa a ser a linha ativa
-- este pack passa a ser a linha viva oficial do módulo `cards`
-- estado da linha: `integrado`
-- feed ativo: `latest.json`
-- runner oficial: `run_smoke.py`
+Esta pasta `cards/`, com estado `integrado`, runner oficial `run_smoke.py` e feed ativo `latest.json`.
 
 ## o que sai da pasta viva
-- packs intermédios
-- subpastas históricas misturadas
-- outputs locais redundantes
-- exemplos locais não necessários à linha viva
-- notas antigas já absorvidas
+- histórico misturado
+- subpastas redundantes
 - caches e artefactos transitórios
+- notas antigas já absorvidas
 
 ## o que vai para arquivo / histórico / legacy
-- packs anteriores de staging, hygiene, closure, live-ready e polish
-- notas históricas que não são necessárias à operação da linha viva
-- qualquer artefacto apenas comparativo ou de prova já substituído pela linha integrada atual
-
-## decisão curta
-frente pronta para substituição integral limpa
+- packs intermédios anteriores
+- notas históricas não necessárias à operação da linha viva
+- artefactos comparativos já ultrapassados

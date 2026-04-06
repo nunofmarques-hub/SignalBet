@@ -1,16 +1,22 @@
 # State Update — Execution / Tracking
 
-## Estado da frente
-A frente Execution deixa de ter bloqueios externos estruturais para o corredor mínimo.
+## Linha oficial ativa
+Linha atual fechada em staging forte e congelada nesta fase.
 
-### Entrada oficial
-- `bank_to_exec_v24.json`
+## Input oficial
+- `bank_to_exec_v24`
 
-### Settlement oficial
-- `execution_fixture_payload.json`
-- referência de origem: `Data_API_Official_Trunk_v1`
+## Contexto oficial de fixture
+- payload físico final do provider de fixture do `Data_API_Official_Trunk_v1`
 
-## Classificação atual
-`pronto_para_integracao_condicional`
+## Outputs núcleo
+- `ledger`
+- `analytics`
+- `audit`
+- `tracking_summary`
 
-A classificação acima reflete que o corredor mínimo está fechado do ponto de vista contratual e operacional. A validação final em produção depende apenas do encaixe físico destes dois artefactos nos pontos de consumo do ambiente comum.
+## Estado desta linha
+`madura, congelada nesta fase, base oficial da camada final do corredor`
+
+## Leitura operacional
+Sem bloqueio estrutural nesta fase. Qualquer evolução futura depende de nova decisão formal do projeto.

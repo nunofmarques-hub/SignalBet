@@ -1,7 +1,7 @@
 {
-  "pack_name": "2026-04-01_Corners_Integral_Clean_Substitution_Pack",
+  "pack_name": "2026-04-01_Corners_Integral_Clean_Substitution_Pack_r2",
   "module_name": "corners",
-  "pack_version": "integral_clean_substitution",
+  "pack_version": "integral_clean_substitution_r2",
   "status": "integrado",
   "official_line": true,
   "entrypoint": "run_smoke.py",
@@ -11,5 +11,5 @@
   "provider_object": "protected payload + official runner compatibility",
   "contract_version": "v1.1",
   "line_intent": "substituicao_integral_limpa",
-  "notes": "Pack limpo para ocupar a pasta oficial viva do módulo Corners sem histórico misturado nem subpastas redundantes."
+  "notes": "Linha ativa limpa do Corners para substituição integral. Root normalizada e integration feed separado."
 }

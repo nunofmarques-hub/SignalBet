@@ -1,6 +1,6 @@
 {
   "module_name": "corners",
-  "module_version": "integrated_active",
+  "module_version": "integrated_active_r2",
   "contract_version": "v1.1",
   "generated_at": "2026-04-01T12:00:00Z",
   "provider_name": "Orchestrator / App Core",

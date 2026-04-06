@@ -1,55 +1,42 @@
-# UI / Frontend — Official Live Line
+# UI / Frontend — Official Live Line Final
 
-## Estado da frente
-Esta pasta é a **linha oficial viva** da frente UI / Frontend para a fase atual do projeto.
+## Estado
+Linha oficial viva da frente UI / Frontend.
 
-## O que este pack substitui
-Este pack substitui integralmente a linha ativa anterior baseada em iterações e packs intermédios da UI, incluindo variantes já absorvidas de:
-- materialização da App Phase 1
-- polimento visual curto
-- shortlist
-- game_cards
-- banking_decisions
-- tracking_summary
-- detalhe curto de jogo
+## Objetivo
+Fechar a base visual e funcional da App Phase 1 e da evolução curta já validada, sem reabrir arquitetura nem voltar a staging prolongado.
 
-## O que passa a ser a linha ativa
-Passa a ser linha ativa oficial:
-- **UI v26 — Official Live Line**
+## Esta linha inclui
+- `src/index.html` final consolidado
+- tracking final coerente
+- `recent_closed_cases`
+- empty state correto
+- metadata curta do caso ativo
+- leitura estável de caso ativo, banca curta, tracking curto e bloco secundário
 
-## Destino pretendido
-Destino físico pretendido da frente:
-- `modules/ui_frontend/`
+## Runner oficial
+- `run_smoke.bat`
+
+## Upstream oficial
+- Orchestrator / App Core
 
 ## Conteúdo da linha viva
 - `src/`
+- `runtime_outputs/app_phase1_protected_payload.json`
 - `README.md`
 - `manifest.json`
 - `run_smoke.bat`
 - `run_smoke.sh`
 - `docs/`
 - `pack_check_report.txt`
-- `runtime_outputs/app_phase1_protected_payload.json`
+- `UI_CHAT_MEMORY_CURRENT.md`
 - `tests/`
 
-## O que deve sair da pasta viva
-Devem sair da pasta viva:
-- packs intermédios zipados
-- variantes antigas da linha UI
-- documentação transitória já absorvida
-- notas redundantes
-- staging antigo
-- subpastas históricas
-- lixo técnico ou exports redundantes
+## O que este pack substitui
+Substitui integralmente a linha ativa anterior com payloads de teste antigos, cmd transitórios, backups, docs redundantes e artefactos já absorvidos.
 
-## O que deve ir para arquivo / histórico / legacy
-Devem ir para arquivo / histórico / legacy:
-- packs anteriores da UI
-- iterações v25/v26 já ultrapassadas
-- notas de ronda já absorvidas
-- variantes focadas apenas em um bloco específico
-- staging antigo que já não representa a linha viva
+## Destino físico pretendido
+- `modules/ui_frontend/`
 
-## Leitura final
-A frente UI deixa de viver como staging prolongado.
-Esta pasta deve passar a ocupar a pasta oficial viva da frente.
+## Nota final
+Esta pasta deve passar a ser a base oficial viva da frente UI / Frontend.

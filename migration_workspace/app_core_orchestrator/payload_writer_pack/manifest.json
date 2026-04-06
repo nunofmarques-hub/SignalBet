@@ -1,0 +1,17 @@
+{
+  "pack_name": "SignalBet_Orchestrator_Payload_Writer_Pack_2026-04-05",
+  "module_name": "orchestrator_payload_writer",
+  "front_name": "Orchestrator / App Core",
+  "pack_version": "1.0.0",
+  "status": "staging_forte",
+  "entrypoint": "src/orchestrator_payload_writer/demo_cycle.py",
+  "smoke_test": "run_smoke.py",
+  "provider_type": "internal_app_core",
+  "provider_name": "orchestrator_payload_writer",
+  "provider_object": "OfficialCyclePayloadWriter",
+  "contract_version": "signalbet.cycle_payload.v1",
+  "upstream_oficial": ["gps", "bankroll", "execution"],
+  "downstream_oficial": ["ui_protected_payload_reader"],
+  "scope": "writer_unico_do_payload_oficial_vivo_do_ciclo",
+  "notes": "Pack curto para materializar o writer único do payload vivo do corredor central."
+}

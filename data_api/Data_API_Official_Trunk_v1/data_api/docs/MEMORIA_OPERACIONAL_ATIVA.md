@@ -1,40 +1,31 @@
-# MEMORIA_OPERACIONAL_ATIVA
+# MEMORIA OPERACIONAL ATIVA — DATA/API LAYER
 
-## frente
-Data/API Layer
+## Estado anterior da frente
+Linha oficial ativa estabilizada em `Data_API_Official_Trunk_v1`, baseline real validada, fluxo complementar validado e uso como upstream protegido do Orchestrator sem regressão nesta fase.
 
-## estado anterior da frente
-Linha oficial funcional e validada, com limpeza já praticamente fechada, mas ainda com um pack de exportação ao Orchestrator a competir visualmente no topo da frente e com lixo técnico residual (`__pycache__`, `.pyc`, ficheiro solto sem função viva).
+## Ruído identificado nesta ronda
+- lixo técnico residual e risco de duplicação operacional no pack de exportação ao Orchestrator
+- presença desnecessária de `_trunk` embebido dentro de `_support_live/orchestrator_exports/data_api_health_core_to_orchestrator_v1/`
+- outputs gerados de exemplo a competir visualmente com artefactos vivos de exportação
 
-## ruído identificado
-- pack `data_api_health_core_to_orchestrator_v1/` ainda no topo da frente, a competir com a linha oficial ativa
-- `__pycache__/` e `.pyc` residuais no trunk e no pack de exportação
-- ficheiro solto sem função viva no trunk oficial
-- falta de índice curto atualizado para leitura rápida da frente
+## Decisão de limpeza aplicada
+- manter `Data_API_Official_Trunk_v1` como única linha oficial ativa
+- manter `_support_live` como apoio vivo
+- limpar o pack `data_api_health_core_to_orchestrator_v1` para ficar como exportador leve e não como cópia paralela do trunk
+- remover apenas ruído e artefactos gerados redundantes, sem tocar na lógica validada do trunk
 
-## decisão de limpeza aplicada
-- manter `Data_API_Official_Trunk_v1/` como linha oficial ativa inequívoca
-- manter `_support_live/compat/` como apoio vivo
-- mover `data_api_health_core_to_orchestrator_v1/` para `_support_live/orchestrator_exports/`
-- remover `__pycache__/`, `.pyc` e ficheiro solto sem função viva
-- atualizar a memória operacional ativa
-- adicionar índice curto no topo da frente
-- adicionar nota curta no trunk sobre o health core mínimo para o Orchestrator
-
-## o que foi mantido ativo
+## O que foi mantido ativo
 - `Data_API_Official_Trunk_v1/`
-
-## o que foi mantido como apoio vivo
 - `_support_live/compat/`
-- `_support_live/orchestrator_exports/data_api_health_core_to_orchestrator_v1/`
+- `_support_live/orchestrator_exports/data_api_health_core_to_orchestrator_v1/` (sem trunk embebido e sem outputs gerados redundantes)
 
-## o que foi movido para apoio vivo ou removido
-- `data_api_health_core_to_orchestrator_v1/` -> `_support_live/orchestrator_exports/data_api_health_core_to_orchestrator_v1/`
-- `__pycache__/` e `.pyc` removidos
-- ficheiro solto sem função viva removido
+## O que foi movido para arquivo ou removido
+- remoção de `_support_live/orchestrator_exports/data_api_health_core_to_orchestrator_v1/_trunk/`
+- remoção de outputs gerados redundantes do export pack
+- remoção de lixo técnico residual, quando existente
 
-## estado final da frente
-Topo da `data_api/` mais limpo, trunk oficial visualmente inequívoco, apoio vivo concentrado em `_support_live/`, exportação curta ao Orchestrator separada da linha viva e menos ruído técnico para consumo futuro.
+## Estado final da frente
+Frente limpa, com linha oficial ativa clara, apoio vivo separado e exportação ao Orchestrator sem competir visualmente com o trunk.
 
-## próximo passo recomendado
-Usar `Data_API_Official_Trunk_v1/` como única linha viva da frente e ler `_support_live/` apenas como apoio vivo não concorrente. A entrega ao Orchestrator do health core deve continuar curta e estável, sem subir detalhe técnico interno a produto.
+## Próximo passo recomendado
+Manter a Data/API Layer estável como upstream protegido do corredor e evitar novas cópias embebidas do trunk dentro de packs auxiliares.

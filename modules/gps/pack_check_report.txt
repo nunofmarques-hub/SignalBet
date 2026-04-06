@@ -26,3 +26,15 @@ notes:
 
 smoke_output:
 SMOKE_OK
+
+
+verification_rerun_date=2026-04-06T08:47:37.534486+00:00
+verification_rerun_scope=folder_check_and_clean_replacement
+verification_rerun_result=PASS
+verification_notes:
+- gps.zip inspected against official active line
+- no __pycache__ found
+- no .pyc found
+- run_smoke.py rerun passed
+- app_phase_1 shortlist product export present
+- pack considered clean for integral replacement

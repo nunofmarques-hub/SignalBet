@@ -22,3 +22,6 @@ Substituição
 - este pack substitui a linha viva anterior de modules/corners/
 - este pack passa a ser a única linha ativa
 - o histórico antigo deve sair da pasta viva e seguir para arquivo / legacy
+
+- root normalizada: `market_pick_v1_1_note.md` movido para `contracts/`
+- integration feed preparado separadamente

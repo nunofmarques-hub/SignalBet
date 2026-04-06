@@ -1,17 +1,23 @@
-# Nota curta de substituição integral
+# substituição integral — v12
 
-## O que este pack substitui
-A pasta viva anterior de `modules/v12/`.
+## o que este pack substitui
+Substitui integralmente a pasta viva anterior de `modules/v12/`.
 
-## O que passa a ser a linha ativa
-A pasta `v12/` contida neste pack.
+## o que passa a ser a linha ativa
+Esta própria pasta `v12/` deste pack.
 
-## O que sai da pasta viva
-- redundâncias
-- staging prolongado
-- artefactos transitórios
-- docs auxiliares já ultrapassadas
-- variantes concorrentes
+## o que sai da pasta viva
+- packs auxiliares soltos
+- staging residual
+- documentos temporários já absorvidos
+- variantes concorrentes de manifest
+- redundâncias de contratos e exemplos
 
-## O que vai para arquivo / histórico / legacy
-Tudo o que não entra nesta pasta limpa e que ainda precise de ser preservado por rastreabilidade.
+## o que vai para arquivo / histórico / legacy
+- packs anteriores da v12
+- materiais intermédios de correção runtime
+- mini-packs auxiliares já absorvidos
+- snapshots redundantes
+
+## nota final
+frente pronta para substituição integral limpa

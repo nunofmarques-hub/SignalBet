@@ -35,3 +35,6 @@ Este pack passa a ser a linha oficial viva do BTTS na pasta `modules/btts/`.
 - outputs ricos antigos
 - notas de aproximação e runtime já consolidadas
 - exemplos superseded
+
+## leitura final
+Frente pronta para substituição integral limpa.

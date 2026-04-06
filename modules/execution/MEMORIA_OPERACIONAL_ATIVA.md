@@ -7,7 +7,7 @@ Linha oficial ativa, madura e congelada nesta fase.
 `bank_to_exec_v24`
 
 ## Contexto oficial
-payload final de fixture do `Data_API_Official_Trunk_v1`
+payload físico final de fixture do `Data_API_Official_Trunk_v1`
 
 ## Outputs núcleo
 - ledger

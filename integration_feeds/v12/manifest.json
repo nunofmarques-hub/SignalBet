@@ -1,11 +1,11 @@
 {
-  "pack_name": "v12_integration_feed_clean_pack",
+  "pack_name": "v12_verified_integration_feeds_pack",
   "module_name": "v12",
-  "pack_version": "2026-03-31",
+  "pack_version": "2026-04-06",
   "status": "integrado",
   "entrypoint": "run_smoke.py",
   "feed_path": "integration_feeds/v12/latest.json",
-  "output_contract": "market_pick.v1.1 + game_cards_phase1_feed",
+  "output_contract": "game_cards_phase1_feed",
   "provider_type": "protected_central_only",
   "provider_name": "Orchestrator / App Core",
   "provider_source": "protected_central_corridor",
@@ -15,18 +15,9 @@
     "over15_match",
     "under35"
   ],
-  "forbidden_in_this_round": [
-    "btts",
-    "over25",
-    "under25",
-    "expanded_over_under_family",
-    "deep_indicator_detail"
-  ],
   "runtime_validation": {
     "latest_json_present": true,
     "feed_parseable": true,
-    "shape_short_and_stable": true,
-    "direct_trunk_in_feed": false,
-    "direct_provider_in_module": false
+    "shape_short_and_stable": true
   }
 }

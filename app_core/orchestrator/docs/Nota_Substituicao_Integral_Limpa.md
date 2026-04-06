@@ -1,27 +1,21 @@
 # Nota curta obrigatória — substituição integral limpa
 
 ## este pack substitui
-- iterações antigas do Orchestrator usadas no staging forte
-- linha dispersa baseada em packs datados já absorvidos pela linha ativa
+- linha ativa anterior centrada em payload separado de app phase 1
+- qualquer concorrência entre payload antigo e feed oficial vivo do ciclo
 
 ## passa a ser a linha ativa
-- OR16 protected output increment
-- payload protegido da app phase 1
+- OR16 protected output increment + official cycle payload
+- feed oficial vivo `integration_feeds/orchestrator/latest.json`
 - runner oficial `run_smoke.py`
 - docs mínimas vivas
 - memória operacional ativa
 
 ## sai da pasta viva
-- packs datados antigos
-- payloads duplicados
+- payloads ativos duplicados
 - notas intermédias
 - artefactos transitórios
 - caches e resíduos técnicos
 
-## deve ir para arquivo / histórico / legacy
-- iterações anteriores do Orchestrator já não competitivas
-- versões intermédias de estabilização
-- artefactos de prova já absorvidos pela linha viva
-
 ## leitura final
-Orchestrator pronto para substituição integral limpa.
+Orchestrator pronto para substituição integral limpa, com um único feed oficial para o ciclo real controlado.

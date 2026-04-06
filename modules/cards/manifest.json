@@ -1,9 +1,9 @@
 {
-  "pack_name": "cards_clean_replacement_pack",
+  "pack_name": "cards_clean_replacement_active_line",
   "module_name": "cards",
+  "official_line_name": "cards_integrated_active_line",
   "pack_version": "2.0.0",
   "status": "integrado",
-  "target_status": "integrado",
   "entrypoint": "run_smoke.py",
   "provider_type": "official_live_provider",
   "provider_name": "Data_API_Official_Trunk_v1",
@@ -12,14 +12,6 @@
     "data_api.services.events_service.get_fixture_events"
   ],
   "contract_version": "market_pick.v1.1",
-  "integration_ready_confirmed": true,
-  "live_runtime_validation": {
-    "trunk_import": "OK",
-    "smoke_basic": "OK",
-    "smoke_live": "OK",
-    "eligibility": true,
-    "pick_id_generated": true
-  },
   "official_phase_runner": "run_smoke.py",
   "demo_runner": "run_demo.py",
   "runtime_layout_hardened": true,
@@ -28,6 +20,13 @@
     "cards_module_package": true,
     "bootstrap_runtime": "bootstrap_runtime.py"
   },
-  "official_line_name": "cards_integrated_active_line",
-  "owner": "Cards"
+  "live_runtime_validation": {
+    "trunk_import": "OK",
+    "smoke_basic": "OK",
+    "smoke_live": "OK",
+    "eligibility": true,
+    "pick_id_generated": true
+  },
+  "app_phase1_role": "game_cards supplier",
+  "active_feed": "latest.json"
 }

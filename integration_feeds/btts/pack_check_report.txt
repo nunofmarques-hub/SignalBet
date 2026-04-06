@@ -1,14 +1,12 @@
 PACK CHECK REPORT
-pack_name: btts_integration_feed_clean_2026-04-01
-status: OK
-contains:
-- README.md
-- manifest.json
-- integration_feeds/btts/latest.json
-- docs/INTEGRATION_FEED_HANDOFF.md
-
-cleanliness:
-- no __pycache__
-- no .pyc
-- no logs
-- no duplicate feeds
+status: PASS
+artifact: integration_feed
+module: btts
+contains_readme: yes
+contains_manifest: yes
+contains_latest_feed: yes
+contains_docs: yes
+noise_removed: yes
+pycache_present: no
+pyc_present: no
+old_logs_present: no

@@ -1,9 +1,0 @@
-{
-  "version": "v1.1",
-  "required_fields": [
-    "time.elapsed",
-    "team.id",
-    "type",
-    "detail"
-  ]
-}

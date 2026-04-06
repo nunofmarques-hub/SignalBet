@@ -1,8 +1,8 @@
 {
-  "pack_name": "btts_clean_integral_replacement_2026-04-01",
+  "pack_name": "btts_clean_integral_replacement_2026-04-06",
   "module_name": "btts",
   "official_line_name": "BTTS active clean line",
-  "pack_version": "1.0.0",
+  "pack_version": "1.0.1",
   "status": "integrado",
   "entrypoint": "run_smoke.py",
   "primary_output": "latest.json",
